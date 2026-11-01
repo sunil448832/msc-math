@@ -33,8 +33,8 @@ $$|f^{(n)}(a)| \le \frac{n!\thinspace M}{R^{n}}.$$
 - **Liouville:** a bounded entire function is constant.
 - **Generalised Liouville:** if $`f`$ is entire and $`|f(z)| \le A + B|z|^{k}`$, then $`f`$ is a polynomial of degree $`\le \lfloor k\rfloor`$.
 - An entire $`f`$ is constant if any of these holds:
-  - $\operatorname{Re} f \le c$ (use $e^{f}$);
-  - $\operatorname{Re} f \ge c$ (use $e^{-f}$);
+  - $\mathop{\mathrm{Re}}\nolimits f \le c$ (use $e^{f}$);
+  - $\mathop{\mathrm{Re}}\nolimits f \ge c$ (use $e^{-f}$);
   - its range misses a disc (use $`1/(f - a)`$);
   - $|f| \ge \varepsilon \gt  0$ everywhere (use $1/f$);
   - $`f`$ is doubly periodic.
@@ -48,7 +48,7 @@ Uses: uniform limits of analytic functions are analytic; Schwarz reflection; fun
 ## 7. Maximum and minimum modulus
 - **Maximum modulus:** if $`f`$ is analytic and non-constant on a domain $`D`$, then $`|f|`$ has no local maximum in $`D`$. On a bounded $`D`$ with $`f`$ continuous on $`\bar D`$, $`\max_{\bar D}|f|`$ is attained on $`\partial D`$.
 - **Minimum modulus:** the same for the minimum, provided $f$ has no zeros in $D$.
-- The same principles hold for $\operatorname{Re} f$ (harmonic functions satisfy max and min principles).
+- The same principles hold for $\mathop{\mathrm{Re}}\nolimits f$ (harmonic functions satisfy max and min principles).
 - **Schwarz lemma:** if $f:\mathbb{D}\to\mathbb{D}$ is analytic with $f(0) = 0$, then $|f(z)| \le |z|$ and $|f'(0)| \le 1$. Equality in either holds iff $f(z) = e^{i\theta}z$.
 - Standard maximum: on $[0,2\pi]^2$, $\max|\sin z| = \cosh 2\pi$, using $|\sin z|^2 = \sin^2 x + \sinh^2 y$.
 

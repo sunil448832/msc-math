@@ -144,13 +144,13 @@ Distribution: A – 8, B – 8, C – 7, D – 7.
 
 **33 — (A)** $15=3\cdot5$ and $3\nmid(5-1)$, so the standard $pq$-theorem (Sylow subgroups both normal, $G\cong C_3\times C_5\cong C_{15}$) gives (A); (R) is exactly the reason.
 
-**34 — (D)** Order of a product of disjoint cycles $=\operatorname{lcm}$ of lengths $=\operatorname{lcm}(3,4,2)=12$.
+**34 — (D)** Order of a product of disjoint cycles $=\mathop{\mathrm{lcm}}\nolimits$ of lengths $=\mathop{\mathrm{lcm}}\nolimits(3,4,2)=12$.
 
 **35 — (A)** $\mathbb Z[x]/\langle x\rangle\cong\mathbb Z$, an integral domain but not a field ⟹ prime, not maximal (e.g. $\langle x\rangle\subsetneq\langle 2,x\rangle$).
 
 **36 — (C)** $\langle 2,x\rangle$ is not principal in $\mathbb Z[x]$, so $\mathbb Z[x]$ is a UFD but not a PID. (A), (B), (D) are standard true results.
 
-**37 — (D)** $[\mathbb Q(\sqrt2):\mathbb Q]=2$, $[\mathbb Q(\sqrt[3]2):\mathbb Q]=3$; both divide the degree, which is $\le 6$, so it is $\operatorname{lcm}(2,3)=6$.
+**37 — (D)** $[\mathbb Q(\sqrt2):\mathbb Q]=2$, $[\mathbb Q(\sqrt[3]2):\mathbb Q]=3$; both divide the degree, which is $\le 6$, so it is $\mathop{\mathrm{lcm}}\nolimits(2,3)=6$.
 
 **38 — (C)** Symmetric $n\times n$ matrices have dimension $n(n+1)/2=6$ for $n=3$.
 
@@ -160,7 +160,7 @@ Distribution: A – 8, B – 8, C – 7, D – 7.
 
 **41 — (C)** The block $`\begin{pmatrix}2&1\cr 0&2\end{pmatrix}`$ is a Jordan block of size 2, so $(x-2)$ must appear squared; $(A-2I)(A-3I)\ne0$ but $(A-2I)^2(A-3I)=0$.
 
-**42 — (D)** $\det(\operatorname{adj}A)=(\det A)^{n-1}=(1\cdot2\cdot3)^2=36$.
+**42 — (D)** $\det(\mathop{\mathrm{adj}}\nolimits A)=(\det A)^{n-1}=(1\cdot2\cdot3)^2=36$.
 
 **43 — (B)** $R_2=2R_1$; $R_1,R_3$ are independent, so rank $=2$.
 
@@ -184,11 +184,11 @@ Distribution: A – 8, B – 8, C – 7, D – 7.
 
 **53 — (B)** This is Bessel's inequality; equality for every $x$ (a complete orthonormal set) is Parseval's identity.
 
-**54 — (A)** For a pole of order 3, $\operatorname{Res}=\frac{1}{2!}\frac{d^2}{dz^2}e^z\big|_{z=1}=e/2$.
+**54 — (A)** For a pole of order 3, $\mathop{\mathrm{Res}}\nolimits=\frac{1}{2!}\frac{d^2}{dz^2}e^z\big|_{z=1}=e/2$.
 
 **55 — (C)** Both poles $\pm i$ lie inside $|z|=2$, with residues $\frac1{2i}$ and $-\frac1{2i}$; their sum is 0, so the integral is 0.
 
-**56 — (D)** For $\operatorname{Im}z\gt 0$, $z$ is closer to $i$ than to $-i$, so $|z-i|\lt |z+i|$, i.e. $|w|\lt 1$. The real axis maps to $|w|=1$.
+**56 — (D)** For $\mathop{\mathrm{Im}}\nolimits z\gt 0$, $z$ is closer to $i$ than to $-i$, so $|z-i|\lt |z+i|$, i.e. $|w|\lt 1$. The real axis maps to $|w|=1$.
 
 **57 — (B)** (A) is Liouville's theorem (proved by Cauchy's estimates). (R) is true, but a power series converging everywhere does not by itself give boundedness ⟹ constancy (e.g. $e^z$).
 
@@ -202,7 +202,7 @@ Distribution: A – 8, B – 8, C – 7, D – 7.
 
 **62 — (B)** Finite sets are closed, so points are closed: $T_1$. Any two nonempty open sets in an infinite cofinite space intersect, so it is not Hausdorff.
 
-**63 — (D)** Every interval contains irrationals, so $\operatorname{int}\mathbb Q=\emptyset$. $\mathbb Q$ is dense, so $\overline{\mathbb Q}=\mathbb R$.
+**63 — (D)** Every interval contains irrationals, so $\mathop{\mathrm{int}}\nolimits\mathbb Q=\emptyset$. $\mathbb Q$ is dense, so $\overline{\mathbb Q}=\mathbb R$.
 
 **64 — (A)** $\kappa=\frac{|r'\times r''|}{|r'|^3}=\frac{a\sqrt{a^2+b^2}}{(a^2+b^2)^{3/2}}=\frac{a}{a^2+b^2}$ (the torsion is $\frac{b}{a^2+b^2}$).
 

@@ -2,17 +2,17 @@
 
 ## 1. Eigenvalues and eigenvectors
 - $\lambda$ is an eigenvalue of $A$ $\iff$ $Av=\lambda v$ for some $v\ne0$ $\iff$ $\det(A-\lambda I)=0$.
-- **Characteristic polynomial:** $\chi_A(x)=\det(xI-A)=x^n-(\operatorname{tr}A)x^{n-1}+\dots+(-1)^n\det A$.
-- For $2\times2$ matrices: $\chi=x^2-(\operatorname{tr})x+\det$. For $3\times3$: $\chi=x^3-(\operatorname{tr})x^2+(\text{sum of principal }2\times2\text{ minors})x-\det$.
-- $\sum\lambda_i=\operatorname{tr}A$ and $\prod\lambda_i=\det A$. $A$ is singular $\iff 0$ is an eigenvalue.
-- **Algebraic multiplicity** (AM) is the multiplicity as a root of $\chi$. **Geometric multiplicity** (GM) is $\dim\ker(A-\lambda I)=n-\operatorname{rank}(A-\lambda I)$. Always $1\le\text{GM}\le\text{AM}$.
+- **Characteristic polynomial:** $\chi_A(x)=\det(xI-A)=x^n-(\mathop{\mathrm{tr}}\nolimits A)x^{n-1}+\dots+(-1)^n\det A$.
+- For $2\times2$ matrices: $\chi=x^2-(\mathop{\mathrm{tr}}\nolimits)x+\det$. For $3\times3$: $\chi=x^3-(\mathop{\mathrm{tr}}\nolimits)x^2+(\text{sum of principal }2\times2\text{ minors})x-\det$.
+- $\sum\lambda_i=\mathop{\mathrm{tr}}\nolimits A$ and $\prod\lambda_i=\det A$. $A$ is singular $\iff 0$ is an eigenvalue.
+- **Algebraic multiplicity** (AM) is the multiplicity as a root of $\chi$. **Geometric multiplicity** (GM) is $\dim\ker(A-\lambda I)=n-\mathop{\mathrm{rank}}\nolimits(A-\lambda I)$. Always $1\le\text{GM}\le\text{AM}$.
 
 | Matrix | Eigenvalues | Eigenvector |
 |---|---|---|
 | $A^k$ | $\lambda^k$ | same $v$ |
 | $p(A)$ | $p(\lambda)$ | same $v$ |
 | $A^{-1}$ | $1/\lambda$ | same $v$ |
-| $\operatorname{adj}A$ | $\det A/\lambda$ | same $v$ (for invertible $A$) |
+| $\mathop{\mathrm{adj}}\nolimits A$ | $\det A/\lambda$ | same $v$ (for invertible $A$) |
 | $A+cI$ | $\lambda+c$ | same $v$ |
 | $A^T$ | $\lambda$ | different in general |
 | $P^{-1}AP$ | $\lambda$ | $P^{-1}v$ |
@@ -37,7 +37,7 @@ Every square matrix satisfies its own characteristic equation: $\chi_A(A)=0$.
 - The multiplicity of $\lambda$ in $m_A$ equals the size of the largest Jordan block for $\lambda$.
 - Similar matrices have the same $m_A$.
 - **Diagonalizability test:** $A$ is diagonalizable over $F$ $\iff$ $m_A$ splits into **distinct** linear factors over $F$.
-- **Block diagonal:** $m_{A\oplus B}=\operatorname{lcm}(m_A,m_B)$.
+- **Block diagonal:** $m_{A\oplus B}=\mathop{\mathrm{lcm}}\nolimits(m_A,m_B)$.
 
 ## 4. Diagonalization
 $A$ ($n\times n$) is diagonalizable $\iff$ it has $n$ independent eigenvectors $\iff$ GM $=$ AM for every eigenvalue (and $\chi$ splits) $\iff$ $m_A$ has distinct roots.
@@ -50,11 +50,11 @@ $A$ ($n\times n$) is diagonalizable $\iff$ it has $n$ independent eigenvectors $
 ## 5. Special matrices
 | Type | Minimal polynomial | Eigenvalues | Key facts |
 |---|---|---|---|
-| Nilpotent ($N^k=0$) | $x^k$, $k\le n$ | all $0$ | $\operatorname{tr}=0$, $\det=0$, $I+N$ invertible, diagonalizable only if $N=0$, $N^n=0$ |
-| Idempotent ($P^2=P$) | divides $x(x-1)$ | $0,1$ | diagonalizable, $\operatorname{rank}=\operatorname{tr}$, $I-P$ idempotent, $V=\ker P\oplus\operatorname{range}P$ |
+| Nilpotent ($N^k=0$) | $x^k$, $k\le n$ | all $0$ | $\mathop{\mathrm{tr}}\nolimits=0$, $\det=0$, $I+N$ invertible, diagonalizable only if $N=0$, $N^n=0$ |
+| Idempotent ($P^2=P$) | divides $x(x-1)$ | $0,1$ | diagonalizable, $\mathop{\mathrm{rank}}\nolimits=\mathop{\mathrm{tr}}\nolimits$, $I-P$ idempotent, $V=\ker P\oplus\mathop{\mathrm{range}}\nolimits P$ |
 | Involution ($A^2=I$) | divides $x^2-1$ | $\pm1$ | diagonalizable (char $\ne2$) |
 | $A^k=I$ over $\mathbb C$ | divides $x^k-1$ | $k$-th roots of unity | diagonalizable |
-| Transpose map on $M_n$ | $x^2-1$ | $+1$ (mult. $n(n+1)/2$), $-1$ (mult. $n(n-1)/2$) | $\operatorname{tr}=n$ |
+| Transpose map on $M_n$ | $x^2-1$ | $+1$ (mult. $n(n+1)/2$), $-1$ (mult. $n(n-1)/2$) | $\mathop{\mathrm{tr}}\nolimits=n$ |
 
 - A real $n\times n$ matrix with $A^2=-I$ exists iff $n$ is even, since $\det(A)^2=(-1)^n$.
 

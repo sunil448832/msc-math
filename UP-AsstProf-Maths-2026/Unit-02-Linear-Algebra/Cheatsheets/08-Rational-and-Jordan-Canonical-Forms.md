@@ -3,7 +3,7 @@
 ## 1. Jordan canonical form (JCF)
 - **Jordan block:** $J_k(\lambda)=\lambda I_k+N_k$, where $N_k$ has 1's on the superdiagonal.
   - Its characteristic polynomial and minimal polynomial are both $(x-\lambda)^k$.
-  - $\operatorname{rank}(J_k(\lambda)-\lambda I)^j=\max(k-j,0)$.
+  - $\mathop{\mathrm{rank}}\nolimits(J_k(\lambda)-\lambda I)^j=\max(k-j,0)$.
   - Its eigenspace is 1-dimensional.
 - **Theorem:** if $\chi_A$ splits over $F$ (always the case over $\mathbb C$), then $A$ is similar to $\bigoplus J_{k_i}(\lambda_i)$. This form is unique up to the order of the blocks.
 - Two complex matrices are similar $\iff$ they have the same JCF.
@@ -11,10 +11,10 @@
 | Quantity | What it tells you about the blocks for $\lambda$ |
 |---|---|
 | Algebraic multiplicity | sum of the sizes of the blocks |
-| Geometric multiplicity $=n-\operatorname{rank}(A-\lambda I)$ | **number** of blocks |
+| Geometric multiplicity $=n-\mathop{\mathrm{rank}}\nolimits(A-\lambda I)$ | **number** of blocks |
 | Multiplicity in $m_A$ | size of the **largest** block |
-| $\operatorname{rank}(A-\lambda I)^{k-1}-\operatorname{rank}(A-\lambda I)^{k}$ | number of blocks of size $\ge k$ |
-| $r_{k-1}-2r_k+r_{k+1}$ (with $r_j=\operatorname{rank}(A-\lambda I)^j$) | number of blocks of size exactly $k$ |
+| $\mathop{\mathrm{rank}}\nolimits(A-\lambda I)^{k-1}-\mathop{\mathrm{rank}}\nolimits(A-\lambda I)^{k}$ | number of blocks of size $\ge k$ |
+| $r_{k-1}-2r_k+r_{k+1}$ (with $r_j=\mathop{\mathrm{rank}}\nolimits(A-\lambda I)^j$) | number of blocks of size exactly $k$ |
 
 - $A$ is diagonalizable $\iff$ every block is $1\times1$ $\iff$ $m_A$ has distinct roots.
 
@@ -42,7 +42,7 @@ C(f)=\begin{pmatrix}0&0&\cdots&-a_0\cr 1&0&\cdots&-a_1\cr &\ddots&&\vdots\cr 0&\
 - **Elementary divisors:** the prime-power factors of the $d_i$, which correspond to the Jordan blocks over $\mathbb C$.
 - **From elementary divisors to invariant factors:** $d_k$ is the product of the highest power of each prime, $d_{k-1}$ the product of the next highest, and so on.
   - Example: $(x-1),(x-1)^2,(x-2)$ gives $d_2=(x-1)^2(x-2)$ and $d_1=x-1$.
-- **Smith normal form** of $xI-A$ over $F[x]$ is $\operatorname{diag}(1,\dots,1,d_1,\dots,d_k)$, and $d_i$ is a ratio of determinantal divisors.
+- **Smith normal form** of $xI-A$ over $F[x]$ is $\mathop{\mathrm{diag}}\nolimits(1,\dots,1,d_1,\dots,d_k)$, and $d_i$ is a ratio of determinantal divisors.
 - $A$ is similar to $B$ over $F$ $\iff$ they have the same invariant factors. Similarity over an extension field $K\supseteq F$ implies similarity over $F$.
 - $m_A=\chi_A$ $\iff$ there is only one invariant factor $\iff A\sim C(\chi_A)$ $\iff$ $A$ is cyclic $\iff$ every eigenvalue has GM $=1$.
 

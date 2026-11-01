@@ -9,7 +9,7 @@
 - Standard examples:
   - $\mathbb C^n$: $\langle x,y\rangle=\sum x_i\bar y_i$.
   - $C[a,b]$: $\int_a^b f\bar g$.
-  - $M_n$: $\langle A,B\rangle=\operatorname{tr}(B^\ast A)$ (Frobenius).
+  - $M_n$: $\langle A,B\rangle=\mathop{\mathrm{tr}}\nolimits(B^\ast A)$ (Frobenius).
 
 ## 2. Key inequalities and identities
 | Name | Statement |
@@ -36,7 +36,7 @@
 ## 4. Gram–Schmidt process
 Given independent $v_1,\dots,v_k$:
 $$w_1=v_1,\qquad w_j=v_j-\sum_{i\lt j}\frac{\langle v_j,w_i\rangle}{\Vert w_i\Vert ^2}w_i,\qquad e_j=\frac{w_j}{\Vert w_j\Vert }.$$
-- $\operatorname{span}\lbrace e_1..e_j\rbrace =\operatorname{span}\lbrace v_1..v_j\rbrace$ for each $j$. If the $v$'s are dependent, some $w_j=0$.
+- $\mathop{\mathrm{span}}\nolimits\lbrace e_1..e_j\rbrace =\mathop{\mathrm{span}}\nolimits\lbrace v_1..v_j\rbrace$ for each $j$. If the $v$'s are dependent, some $w_j=0$.
 - Matrix form: $A=QR$ with $Q$ having orthonormal columns and $R$ upper triangular with positive diagonal.
 - Applied to $1,x,x^2,\dots$:
   - On $[-1,1]$ it gives the Legendre polynomials (up to scaling): $1,\ x,\ x^2-\tfrac13$.
@@ -44,9 +44,9 @@ $$w_1=v_1,\qquad w_j=v_j-\sum_{i\lt j}\frac{\langle v_j,w_i\rangle}{\Vert w_i\Ve
 
 ## 5. Orthogonal projection and best approximation
 - With an orthonormal basis $\lbrace e_i\rbrace$ of $W$: $P_Wx=\sum\langle x,e_i\rangle e_i$, and in general $P_W=A(A^TA)^{-1}A^T$ (columns of $A$ a basis of $W$).
-- Onto a line: $\operatorname{proj}_u x=\frac{\langle x,u\rangle}{\langle u,u\rangle}u$.
+- Onto a line: $\mathop{\mathrm{proj}}\nolimits_u x=\frac{\langle x,u\rangle}{\langle u,u\rangle}u$.
 - **Best approximation:** $\Vert x-P_Wx\Vert \le\Vert x-w\Vert$ for all $w\in W$. The residual $x-P_Wx\in W^\perp$, which gives the normal equations.
-- $P$ is an orthogonal projection $\iff P^2=P=P^\ast$. Its eigenvalues are 0 and 1, $\operatorname{tr}P=\operatorname{rank}P$, and $\Vert Px\Vert \le\Vert x\Vert$.
+- $P$ is an orthogonal projection $\iff P^2=P=P^\ast$. Its eigenvalues are 0 and 1, $\mathop{\mathrm{tr}}\nolimits P=\mathop{\mathrm{rank}}\nolimits P$, and $\Vert Px\Vert \le\Vert x\Vert$.
 - Distance from $x$ to the hyperplane $a\cdot x=0$ is $|a\cdot x|/\Vert a\Vert$.
 - $L^2[0,1]$ best linear approximation to $x^2$ is $x-\tfrac16$.
 
@@ -59,5 +59,5 @@ $$w_1=v_1,\qquad w_j=v_j-\sum_{i\lt j}\frac{\langle v_j,w_i\rangle}{\Vert w_i\Ve
 - Check positive definiteness, not just symmetry, when deciding whether a formula is an inner product: $x_1y_1-x_2y_2$ fails.
 - Gram–Schmidt depends on the **order** of the vectors and on the inner product.
 - $P^2=P$ alone is not an orthogonal projection.
-- Pythagoras' converse fails over $\mathbb C$: $\Vert u+v\Vert ^2=\Vert u\Vert ^2+\Vert v\Vert ^2$ only gives $\operatorname{Re}\langle u,v\rangle=0$.
+- Pythagoras' converse fails over $\mathbb C$: $\Vert u+v\Vert ^2=\Vert u\Vert ^2+\Vert v\Vert ^2$ only gives $\mathop{\mathrm{Re}}\nolimits\langle u,v\rangle=0$.
 - The $\ell^1$ and $\ell^\infty$ norms are not inner-product norms.

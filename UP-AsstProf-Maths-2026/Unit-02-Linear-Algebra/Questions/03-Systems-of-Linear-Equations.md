@@ -4,13 +4,13 @@
 
 **Q1.** `[Concept]` ★ A system $AX=B$ of $m$ equations in $n$ unknowns is consistent if and only if
 
-(A) $\operatorname{rank}A=n$
+(A) $\mathop{\mathrm{rank}}\nolimits A=n$
 
 (B) $\det A\neq0$
 
-(C) $\operatorname{rank}A=m$
+(C) $\mathop{\mathrm{rank}}\nolimits A=m$
 
-(D) $\operatorname{rank}A=\operatorname{rank}[A\thinspace |\thinspace B]$
+(D) $\mathop{\mathrm{rank}}\nolimits A=\mathop{\mathrm{rank}}\nolimits[A\thinspace |\thinspace B]$
 
 **Q2.** `[Numerical]` ★★ The system
 $$x+y+z=6,\quad x+2y+3z=10,\quad x+2y+\lambda z=\mu$$
@@ -36,11 +36,11 @@ has **no** solution when
 
 **Q4.** `[Multi-Statement]` ★★ For real matrices of compatible sizes, consider:
 
-I. $\operatorname{rank}(A^TA)=\operatorname{rank}A$.
+I. $\mathop{\mathrm{rank}}\nolimits(A^TA)=\mathop{\mathrm{rank}}\nolimits A$.
 
-II. $\operatorname{rank}(A+B)\le\operatorname{rank}A+\operatorname{rank}B$.
+II. $\mathop{\mathrm{rank}}\nolimits(A+B)\le\mathop{\mathrm{rank}}\nolimits A+\mathop{\mathrm{rank}}\nolimits B$.
 
-III. $\operatorname{rank}(AB)=\min(\operatorname{rank}A,\operatorname{rank}B)$.
+III. $\mathop{\mathrm{rank}}\nolimits(AB)=\min(\mathop{\mathrm{rank}}\nolimits A,\mathop{\mathrm{rank}}\nolimits B)$.
 
 Which is/are correct?
 
@@ -54,7 +54,7 @@ Which is/are correct?
 
 **Q5.** `[Assertion-Reason]` ★★
 **Assertion (A):** A homogeneous system of 3 equations in 5 unknowns always has a non-trivial solution.
-**Reason (R):** For the coefficient matrix $A$, $\operatorname{rank}A\le3\lt 5$, so the solution space has dimension $5-\operatorname{rank}A\ge2$.
+**Reason (R):** For the coefficient matrix $A$, $\mathop{\mathrm{rank}}\nolimits A\le3\lt 5$, so the solution space has dimension $5-\mathop{\mathrm{rank}}\nolimits A\ge2$.
 
 (A) Both A and R are true and R is the correct explanation of A
 
@@ -68,9 +68,9 @@ Which is/are correct?
 
 | List-I | List-II |
 |---|---|
-| (a) $\operatorname{rank}A=\operatorname{rank}[A\thinspace \vert \thinspace B]=n$ | 1. no solution |
-| (b) $\operatorname{rank}A=\operatorname{rank}[A\thinspace \vert \thinspace B]\lt n$ | 2. only the trivial solution of $AX=0$ |
-| (c) $\operatorname{rank}A\lt \operatorname{rank}[A\thinspace \vert \thinspace B]$ | 3. infinitely many solutions (over $\mathbb{R}$) |
+| (a) $\mathop{\mathrm{rank}}\nolimits A=\mathop{\mathrm{rank}}\nolimits[A\thinspace \vert \thinspace B]=n$ | 1. no solution |
+| (b) $\mathop{\mathrm{rank}}\nolimits A=\mathop{\mathrm{rank}}\nolimits[A\thinspace \vert \thinspace B]\lt n$ | 2. only the trivial solution of $AX=0$ |
+| (c) $\mathop{\mathrm{rank}}\nolimits A\lt \mathop{\mathrm{rank}}\nolimits[A\thinspace \vert \thinspace B]$ | 3. infinitely many solutions (over $\mathbb{R}$) |
 | (d) $\det A\neq0$, $B=0$ | 4. unique solution |
 
 (A) a-4, b-3, c-1, d-2
@@ -83,15 +83,15 @@ Which is/are correct?
 
 **Q7.** `[NOT-true / Counterexample]` ★★ Which of the following is **NOT** true for every real matrix $A$ (square where needed)?
 
-(A) $\operatorname{rank}A=\operatorname{rank}A^T$
+(A) $\mathop{\mathrm{rank}}\nolimits A=\mathop{\mathrm{rank}}\nolimits A^T$
 
-(B) $\operatorname{rank}(AA^T)=\operatorname{rank}A$
+(B) $\mathop{\mathrm{rank}}\nolimits(AA^T)=\mathop{\mathrm{rank}}\nolimits A$
 
-(C) $\operatorname{rank}(A^2)=\operatorname{rank}A$
+(C) $\mathop{\mathrm{rank}}\nolimits(A^2)=\mathop{\mathrm{rank}}\nolimits A$
 
-(D) $\operatorname{rank}(PAQ)=\operatorname{rank}A$ for invertible $P,Q$
+(D) $\mathop{\mathrm{rank}}\nolimits(PAQ)=\mathop{\mathrm{rank}}\nolimits A$ for invertible $P,Q$
 
-**Q8.** `[Application]` ★★★ Let $A,B$ be $5\times5$ real matrices with $\operatorname{rank}A=4$ and $\operatorname{rank}B=3$. The minimum possible value of $\operatorname{rank}(AB)$ is
+**Q8.** `[Application]` ★★★ Let $A,B$ be $5\times5$ real matrices with $\mathop{\mathrm{rank}}\nolimits A=4$ and $\mathop{\mathrm{rank}}\nolimits B=3$. The minimum possible value of $\mathop{\mathrm{rank}}\nolimits(AB)$ is
 
 (A) 1
 
@@ -133,7 +133,7 @@ is **inconsistent** for
 
 (D) $\tfrac12X_1$
 
-**Q12.** `[Application]` ★★★ Let $A$ be a $3\times3$ real matrix with $\operatorname{rank}A=2$. Then $\operatorname{rank}(\operatorname{adj}A)$ is
+**Q12.** `[Application]` ★★★ Let $A$ be a $3\times3$ real matrix with $\mathop{\mathrm{rank}}\nolimits A=2$. Then $\mathop{\mathrm{rank}}\nolimits(\mathop{\mathrm{adj}}\nolimits A)$ is
 
 (A) 0
 
@@ -163,19 +163,19 @@ is **inconsistent** for
 ## Solutions
 **Q1 — (D).** This is the Rouché–Capelli (Kronecker–Capelli) theorem. (A) and (B) are conditions for uniqueness or invertibility, not for consistency.
 
-**Q2 — (B).** Subtracting equation 2 from equation 3 gives $(\lambda-3)z=\mu-10$. If $\lambda=3$ and $\mu\ne10$, then $\operatorname{rank}A=2\lt \operatorname{rank}[A|B]=3$, so there is no solution. $\lambda=3,\mu=10$ gives infinitely many solutions, and $\lambda\ne3$ gives a unique one.
+**Q2 — (B).** Subtracting equation 2 from equation 3 gives $(\lambda-3)z=\mu-10$. If $\lambda=3$ and $\mu\ne10$, then $\mathop{\mathrm{rank}}\nolimits A=2\lt \mathop{\mathrm{rank}}\nolimits[A|B]=3$, so there is no solution. $\lambda=3,\mu=10$ gives infinitely many solutions, and $\lambda\ne3$ gives a unique one.
 
-**Q3 — (C).** The solution space has dimension $n-\operatorname{rank}A=6-3=3$. Here $n$ is the number of unknowns (columns), not the number of equations.
+**Q3 — (C).** The solution space has dimension $n-\mathop{\mathrm{rank}}\nolimits A=6-3=3$. Here $n$ is the number of unknowns (columns), not the number of equations.
 
-**Q4 — (A).** I: $A^TAx=0\Rightarrow\Vert Ax\Vert ^2=0$, so the null spaces agree. II is subadditivity. III is false: only $\operatorname{rank}(AB)\le\min$ holds. For example $`A=\begin{pmatrix}1&0\cr 0&0\end{pmatrix}`$, $`B=\begin{pmatrix}0&0\cr 0&1\end{pmatrix}`$ gives $AB=0$.
+**Q4 — (A).** I: $A^TAx=0\Rightarrow\Vert Ax\Vert ^2=0$, so the null spaces agree. II is subadditivity. III is false: only $\mathop{\mathrm{rank}}\nolimits(AB)\le\min$ holds. For example $`A=\begin{pmatrix}1&0\cr 0&0\end{pmatrix}`$, $`B=\begin{pmatrix}0&0\cr 0&1\end{pmatrix}`$ gives $AB=0$.
 
 **Q5 — (A).** R is precisely the reason. More unknowns than equations forces a non-zero null space.
 
 **Q6 — (A).** These are the standard consistency cases. A homogeneous system with $\det A\ne0$ has only $X=0$.
 
-**Q7 — (C).** For the nilpotent $`A=\begin{pmatrix}0&1\cr 0&0\end{pmatrix}`$, $\operatorname{rank}A=1$ but $A^2=0$. (B) holds over $\mathbb{R}$ (it fails over $\mathbb{C}$ without conjugation).
+**Q7 — (C).** For the nilpotent $`A=\begin{pmatrix}0&1\cr 0&0\end{pmatrix}`$, $\mathop{\mathrm{rank}}\nolimits A=1$ but $A^2=0$. (B) holds over $\mathbb{R}$ (it fails over $\mathbb{C}$ without conjugation).
 
-**Q8 — (B).** Sylvester's inequality gives $\operatorname{rank}(AB)\ge\operatorname{rank}A+\operatorname{rank}B-n=4+3-5=2$. The bound is attained when the 1-dimensional $\ker A$ lies inside the 3-dimensional range of $B$. (C) is the *maximum*.
+**Q8 — (B).** Sylvester's inequality gives $\mathop{\mathrm{rank}}\nolimits(AB)\ge\mathop{\mathrm{rank}}\nolimits A+\mathop{\mathrm{rank}}\nolimits B-n=4+3-5=2$. The bound is attained when the 1-dimensional $\ker A$ lies inside the 3-dimensional range of $B$. (C) is the *maximum*.
 
 **Q9 — (D).** Row $i$ equals $i\cdot(1,1,1,1)+(1,2,3,4)$, so every row lies in the span of two fixed vectors and the rank is 2. This holds for every $n\ge2$.
 
@@ -183,4 +183,4 @@ is **inconsistent** for
 
 **Q11 — (C).** $A(2X_1-X_2)=2B-B=B$. In general, $\sum c_iX_i$ is a solution iff $\sum c_i=1$ (an affine combination). (B) solves the homogeneous system instead.
 
-**Q12 — (D).** $\operatorname{rank}(\operatorname{adj}A)=n$, $1$ or $0$ according as $\operatorname{rank}A=n$, $n-1$ or $\le n-2$. Here $A\operatorname{adj}A=0$ puts the columns of adj $A$ in the 1-dimensional $\ker A$, and adj $A\ne0$ because some $2\times2$ minor is non-zero.
+**Q12 — (D).** $\mathop{\mathrm{rank}}\nolimits(\mathop{\mathrm{adj}}\nolimits A)=n$, $1$ or $0$ according as $\mathop{\mathrm{rank}}\nolimits A=n$, $n-1$ or $\le n-2$. Here $A\mathop{\mathrm{adj}}\nolimits A=0$ puts the columns of adj $A$ in the 1-dimensional $\ker A$, and adj $A\ne0$ because some $2\times2$ minor is non-zero.

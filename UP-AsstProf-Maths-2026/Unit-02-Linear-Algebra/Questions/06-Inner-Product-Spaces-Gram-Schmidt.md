@@ -22,7 +22,7 @@
 
 (D) $\tfrac1{\sqrt6}(1,-1,2)$
 
-**Q3.** `[Numerical]` ★★ The distance from the point $(1,2,3)$ to the line $\operatorname{span}\lbrace (1,1,1)\rbrace$ in $\mathbb R^3$ (standard inner product) is
+**Q3.** `[Numerical]` ★★ The distance from the point $(1,2,3)$ to the line $\mathop{\mathrm{span}}\nolimits\lbrace (1,1,1)\rbrace$ in $\mathbb R^3$ (standard inner product) is
 
 (A) $1$
 
@@ -99,7 +99,7 @@ Which is/are correct?
 
 (D) $3x_1y_1+5x_2y_2$
 
-**Q9.** `[Application]` ★★ On $M_n(\mathbb{R})$ with $\langle A,B\rangle=\operatorname{tr}(A^TB)$, the orthogonal complement of the subspace of symmetric matrices is
+**Q9.** `[Application]` ★★ On $M_n(\mathbb{R})$ with $\langle A,B\rangle=\mathop{\mathrm{tr}}\nolimits(A^TB)$, the orthogonal complement of the subspace of symmetric matrices is
 
 (A) $\lbrace 0\rbrace$
 
@@ -159,7 +159,7 @@ Which is/are correct?
 ## Solutions
 **Q1 — (C).** This is the equality case of Cauchy–Schwarz. (A) gives $\langle u,v\rangle=0$, which is the opposite extreme.
 
-**Q2 — (D).** $w_2=v_2-\frac{\langle v_2,v_1\rangle}{\Vert v_1\Vert ^2}v_1=(1,0,1)-\tfrac12(1,1,0)=(\tfrac12,-\tfrac12,1)\parallel(1,-1,2)$, with norm $\sqrt6$. (B) is a trap: it is a unit vector orthogonal to $v_1$, but it does **not** lie in $\operatorname{span}\lbrace v_1,v_2\rbrace$, whose normal is $v_1\times v_2=(1,-1,-1)$ and $\langle(-1,1,2),(1,-1,-1)\rangle=-4\neq0$. (C) fails the same way, since $\langle(1,-1,1),(1,-1,-1)\rangle=1\ne0$. (A) is orthogonal to $v_1$, but $(1,-1,0)\notin\operatorname{span}\lbrace v_1,v_2\rbrace$ either.
+**Q2 — (D).** $w_2=v_2-\frac{\langle v_2,v_1\rangle}{\Vert v_1\Vert ^2}v_1=(1,0,1)-\tfrac12(1,1,0)=(\tfrac12,-\tfrac12,1)\parallel(1,-1,2)$, with norm $\sqrt6$. (B) is a trap: it is a unit vector orthogonal to $v_1$, but it does **not** lie in $\mathop{\mathrm{span}}\nolimits\lbrace v_1,v_2\rbrace$, whose normal is $v_1\times v_2=(1,-1,-1)$ and $\langle(-1,1,2),(1,-1,-1)\rangle=-4\neq0$. (C) fails the same way, since $\langle(1,-1,1),(1,-1,-1)\rangle=1\ne0$. (A) is orthogonal to $v_1$, but $(1,-1,0)\notin\mathop{\mathrm{span}}\nolimits\lbrace v_1,v_2\rbrace$ either.
 
 **Q3 — (B).** The projection is $\frac{6}{3}(1,1,1)=(2,2,2)$, and the residual $(-1,0,1)$ has norm $\sqrt2$.
 
@@ -173,7 +173,7 @@ Which is/are correct?
 
 **Q8 — (B).** $\langle(0,1),(0,1)\rangle=-1\lt 0$, so it is not positive definite. (C) has matrix $`\begin{pmatrix}2&1\cr 1&1\end{pmatrix}`$ with leading minors $2,1\gt 0$, so it is positive definite.
 
-**Q9 — (C).** $M_n=\text{Sym}\oplus\text{Skew}$, and $\operatorname{tr}(S^TK)=\operatorname{tr}(SK)=0$ for $S$ symmetric and $K$ skew. The dimensions $n(n+1)/2+n(n-1)/2=n^2$ match.
+**Q9 — (C).** $M_n=\text{Sym}\oplus\text{Skew}$, and $\mathop{\mathrm{tr}}\nolimits(S^TK)=\mathop{\mathrm{tr}}\nolimits(SK)=0$ for $S$ symmetric and $K$ skew. The dimensions $n(n+1)/2+n(n-1)/2=n^2$ match.
 
 **Q10 — (D).** By Pythagoras $\Vert x-y\Vert ^2=9+16=25$. (C) assumes the vectors are parallel.
 

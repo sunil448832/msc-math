@@ -18,7 +18,7 @@
 | Order of $k$ in $\mathbb Z_n$ | $n/\gcd(k,n)$ |
 | Elements of order $d$ | In cyclic $G$ of order $n$: $\varphi(d)$ elements for each $d\mid n$, and $\sum_{d\mid n}\varphi(d)=n$ |
 | Prime order | $\vert G\vert =p$ implies $G\cong\mathbb Z_p$ |
-| Products | $\mathbb Z_m\times\mathbb Z_n\cong\mathbb Z_{mn}\iff\gcd(m,n)=1$. Order of $(a,b)$ is $\operatorname{lcm}(o(a),o(b))$ |
+| Products | $\mathbb Z_m\times\mathbb Z_n\cong\mathbb Z_{mn}\iff\gcd(m,n)=1$. Order of $(a,b)$ is $\mathop{\mathrm{lcm}}\nolimits(o(a),o(b))$ |
 | Infinite | $\mathbb{Z}$ is the only infinite cyclic group. $(\mathbb{Q},+)$ and $(\mathbb{R},+)$ are not cyclic, but every finitely generated subgroup of $\mathbb{Q}$ is cyclic |
 | Finite subgroups of $F^{\times}$ | Every finite subgroup of the multiplicative group of a field is cyclic |
 
@@ -30,21 +30,21 @@
 - **Second:** $H\le G$, $N\trianglelefteq G$ gives $HN/N\cong H/(H\cap N)$.
 - **Third:** $N\le K$ both normal in $G$ gives $(G/N)/(K/N)\cong G/K$.
 - **Correspondence:** subgroups of $G/N$ correspond to subgroups of $G$ containing $N$.
-- $\sharp \operatorname{Hom}(\mathbb Z_m,\mathbb Z_n)=\gcd(m,n)$. $\sharp \operatorname{Hom}(\mathbb{Z},G)=|G|$. The surjections $\mathbb Z_m\to\mathbb Z_n$ exist iff $n\mid m$, and there are $\varphi(n)$ of them.
+- $\sharp \mathop{\mathrm{Hom}}\nolimits(\mathbb Z_m,\mathbb Z_n)=\gcd(m,n)$. $\sharp \mathop{\mathrm{Hom}}\nolimits(\mathbb{Z},G)=|G|$. The surjections $\mathbb Z_m\to\mathbb Z_n$ exist iff $n\mid m$, and there are $\varphi(n)$ of them.
 - Standard quotients: $\mathbb{Z}/n\mathbb{Z}\cong\mathbb Z_n$, $\mathbb{R}/\mathbb{Z}\cong S^1$, $\mathbb C^{\times}/S^1\cong\mathbb R^+$, $GL_n/SL_n\cong F^{\times}$, $S_n/A_n\cong\mathbb Z_2$, $(\mathbb{Z}\times\mathbb{Z})/\langle(1,1)\rangle\cong\mathbb{Z}$, $\mathbb{Q}/\mathbb{Z}$ (infinite, every element of finite order).
 
 ## 4. Automorphisms
-- $\operatorname{Aut}(\mathbb Z_n)\cong U(n)$, with order $\varphi(n)$. $\operatorname{Aut}(\mathbb{Z})\cong\mathbb Z_2$.
+- $\mathop{\mathrm{Aut}}\nolimits(\mathbb Z_n)\cong U(n)$, with order $\varphi(n)$. $\mathop{\mathrm{Aut}}\nolimits(\mathbb{Z})\cong\mathbb Z_2$.
 - $U(n)$ is cyclic iff $n=1,2,4,p^k,2p^k$ ($p$ an odd prime). E.g. $U(8)\cong\mathbb Z_2^2$, $U(15)\cong\mathbb Z_2\times\mathbb Z_4$, $U(16)\cong\mathbb Z_2\times\mathbb Z_4$.
-- $\operatorname{Inn}(G)\cong G/Z(G)\trianglelefteq\operatorname{Aut}(G)$.
-- $\operatorname{Aut}(\mathbb Z_p^n)\cong GL_n(\mathbb F_p)$, of order $\prod_{i=0}^{n-1}(p^n-p^i)$. E.g. $|\operatorname{Aut}(\mathbb Z_2^2)|=6$ ($\cong S_3$) and $|\operatorname{Aut}(\mathbb Z_2^3)|=168$.
-- $\operatorname{Aut}(\mathbb Z_2\times\mathbb Z_4)\cong D_4$ (order 8). $\operatorname{Aut}(S_3)\cong S_3$. $\operatorname{Aut}(S_n)\cong S_n$ for $n\ne 2,6$. $\operatorname{Aut}(Q_8)\cong S_4$.
+- $\mathop{\mathrm{Inn}}\nolimits(G)\cong G/Z(G)\trianglelefteq\mathop{\mathrm{Aut}}\nolimits(G)$.
+- $\mathop{\mathrm{Aut}}\nolimits(\mathbb Z_p^n)\cong GL_n(\mathbb F_p)$, of order $\prod_{i=0}^{n-1}(p^n-p^i)$. E.g. $|\mathop{\mathrm{Aut}}\nolimits(\mathbb Z_2^2)|=6$ ($\cong S_3$) and $|\mathop{\mathrm{Aut}}\nolimits(\mathbb Z_2^3)|=168$.
+- $\mathop{\mathrm{Aut}}\nolimits(\mathbb Z_2\times\mathbb Z_4)\cong D_4$ (order 8). $\mathop{\mathrm{Aut}}\nolimits(S_3)\cong S_3$. $\mathop{\mathrm{Aut}}\nolimits(S_n)\cong S_n$ for $n\ne 2,6$. $\mathop{\mathrm{Aut}}\nolimits(Q_8)\cong S_4$.
 
 ## 5. Permutation groups
 - Every permutation is a product of disjoint cycles, uniquely up to order.
 - **Order** = lcm of the disjoint cycle lengths.
 - A $k$-cycle is a product of $k-1$ transpositions, so its sign is $(-1)^{k-1}$: **even-length cycles are odd**.
-- $\operatorname{sgn}\sigma=(-1)^{n-c}$, where $c$ is the number of cycles (counting fixed points).
+- $\mathop{\mathrm{sgn}}\nolimits\sigma=(-1)^{n-c}$, where $c$ is the number of cycles (counting fixed points).
 - $|S_n|=n!$ and $|A_n|=n!/2$ for $n\ge2$. $A_n$ is simple for $n\ge5$. $A_4$ is not simple ($V_4\trianglelefteq A_4$). $Z(S_n)=1$ for $n\ge3$.
 - Number of $k$-cycles in $S_n$: $\dfrac{n!}{(n-k)!\thinspace k}$.
 - Elements of order 2 in $S_n$: $\sum_{j\ge1}\dfrac{n!}{2^j j!(n-2j)!}$. For $S_4$ this is $6+3=9$, for $S_5$ it is $10+15=25$.
@@ -53,8 +53,8 @@
 - Two permutations are conjugate in $S_n$ iff they have the same cycle type.
 
 ## 6. Cayley's Theorem
-**Every group $G$ is isomorphic to a subgroup of $\operatorname{Sym}(G)$**, via the left regular representation $g\mapsto\lambda_g$ with $\lambda_g(x)=gx$. A finite group of order $n$ therefore embeds in $S_n$.
-- **Generalized Cayley:** if $H\le G$ with $[G:H]=n$, there is a homomorphism $G\to S_n$ whose kernel $\operatorname{core}(H)=\bigcap gHg^{-1}$ is contained in $H$. Consequence: if $|G|\nmid n!$ then $G$ has a non-trivial normal subgroup inside $H$ (non-simplicity test).
+**Every group $G$ is isomorphic to a subgroup of $\mathop{\mathrm{Sym}}\nolimits(G)$**, via the left regular representation $g\mapsto\lambda_g$ with $\lambda_g(x)=gx$. A finite group of order $n$ therefore embeds in $S_n$.
+- **Generalized Cayley:** if $H\le G$ with $[G:H]=n$, there is a homomorphism $G\to S_n$ whose kernel $\mathop{\mathrm{core}}\nolimits(H)=\bigcap gHg^{-1}$ is contained in $H$. Consequence: if $|G|\nmid n!$ then $G$ has a non-trivial normal subgroup inside $H$ (non-simplicity test).
 - Minimal $n$ with $G\hookrightarrow S_n$: $\mathbb Z_6$: 5 (as $`(1\thinspace 2)(3\thinspace 4\thinspace 5)`$). $Q_8$: 8. $\mathbb Z_{p^k}$: $p^k$. $D_n$ ($n$ odd prime): $n$.
 
 ## 7. Small groups to remember

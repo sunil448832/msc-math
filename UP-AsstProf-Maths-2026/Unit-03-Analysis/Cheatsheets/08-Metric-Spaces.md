@@ -12,7 +12,7 @@
 - **Discrete metric:** every set is open and closed, every function on it is uniformly continuous, it is complete, and it is compact $\iff$ finite and separable $\iff$ countable.
 - **Interior, closure, limit points:** $\bar A=A\cup A'$ and $x\in\bar A\iff$ some sequence in $A$ converges to $x$.
 - In a metric space, the closed ball $\bar B(x,r)$ need not equal $\overline{B(x,r)}$ (discrete metric, $r=1$).
-- **Dense:** $\bar A=X$. **Nowhere dense:** $\operatorname{int}\bar A=\varnothing$. **Separable:** has a countable dense subset.
+- **Dense:** $\bar A=X$. **Nowhere dense:** $\mathop{\mathrm{int}}\nolimits\bar A=\varnothing$. **Separable:** has a countable dense subset.
 
 ## 2. Convergence and continuity
 - Limits are unique (metric spaces are Hausdorff). A convergent sequence is Cauchy, and a Cauchy sequence is bounded.
@@ -38,7 +38,7 @@
   - Complete: $\mathbb R^n$, $\ell^p$, $C[a,b]$ with $\Vert \cdot\Vert _\infty$, $L^p$.
   - Not complete: $\mathbb Q$, $`(0,1)`$, $(C[0,1],\Vert \cdot\Vert _1)$, polynomials with sup norm.
 - A closed subset of a complete space is complete, and a complete subspace of any metric space is closed.
-- **Cantor intersection theorem:** $X$ is complete $\iff$ every nested sequence of non-empty closed sets with $\operatorname{diam}\to0$ has intersection **exactly one point**.
+- **Cantor intersection theorem:** $X$ is complete $\iff$ every nested sequence of non-empty closed sets with $\mathop{\mathrm{diam}}\nolimits\to0$ has intersection **exactly one point**.
 - **Baire category theorem:** in a complete metric space, a countable intersection of dense open sets is dense. Equivalently, a non-empty complete space is not a countable union of nowhere dense sets (it is of second category).
   - $\mathbb Q$ is not $G_\delta$, and the irrationals are not $F_\sigma$.
   - A complete metric space without isolated points is uncountable.
@@ -98,7 +98,7 @@
 ## Exam traps
 - Completeness and boundedness are **not topological**: $\mathbb R\cong(0,1)$.
 - "Closed and bounded $\Rightarrow$ compact" holds only in finite dimensions.
-- Cantor intersection needs $\operatorname{diam}\to0$ (or compactness). Contraction needs a uniform $\alpha\lt 1$ **and** completeness.
+- Cantor intersection needs $\mathop{\mathrm{diam}}\nolimits\to0$ (or compactness). Contraction needs a uniform $\alpha\lt 1$ **and** completeness.
 - Uniform continuity on $(a,b)$ is the same as continuous extendability to $[a,b]$. That test only works on **bounded** intervals.
 - Connected does not imply path-connected (topologist's sine curve).
 - Continuous onto maps $(0,1)\to[0,1]$ exist, but $[0,1]\to(0,1)$ onto maps do not.

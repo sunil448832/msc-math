@@ -51,13 +51,13 @@ Convention: $(z_1,z_2,z_3,z_4) = \dfrac{(z_1-z_3)(z_2-z_4)}{(z_1-z_4)(z_2-z_3)}$
 |---|---|
 | Automorphisms of $\mathbb{D}$ | $e^{i\theta}\dfrac{z-a}{1-\bar az}$, $\lvert a\rvert \lt  1$ |
 | Automorphisms of the UHP | $\dfrac{az+b}{cz+d}$, $a,b,c,d \in \mathbb{R}$, $ad - bc \gt  0$ |
-| UHP $\to \mathbb{D}$ | $e^{i\theta}\dfrac{z-a}{z-\bar a}$, $\operatorname{Im} a \gt  0$ |
+| UHP $\to \mathbb{D}$ | $e^{i\theta}\dfrac{z-a}{z-\bar a}$, $\mathop{\mathrm{Im}}\nolimits a \gt  0$ |
 | Cayley map | $\dfrac{z-i}{z+i}$ |
 | $\mathbb{D} \to$ right half-plane | $\dfrac{1+z}{1-z}$ |
 | $\mathbb{D} \to$ UHP | $i\dfrac{1+z}{1-z}$, or $i\dfrac{1-z}{1+z}$ |
 
 - For a disc automorphism $\varphi_a$ with $\varphi_a(a) = 0$: $|\varphi_a'(a)| = \frac{1}{1-|a|^2}$ and $|\varphi_a'(0)| = 1 - |a|^2$.
-- For UHP $\to \mathbb{D}$ with $a \mapsto 0$: $|T'(a)| = \frac{1}{2\operatorname{Im} a}$.
+- For UHP $\to \mathbb{D}$ with $a \mapsto 0$: $|T'(a)| = \frac{1}{2\mathop{\mathrm{Im}}\nolimits a}$.
 - **Schwarz–Pick:** an analytic $f:\mathbb{D}\to\mathbb{D}$ does not increase the hyperbolic distance, and $|f'(z)| \le \frac{1-|f(z)|^2}{1-|z|^2}$.
 
 ## 7. Standard elementary maps
@@ -65,8 +65,8 @@ Convention: $(z_1,z_2,z_3,z_4) = \dfrac{(z_1-z_3)(z_2-z_4)}{(z_1-z_4)(z_2-z_3)}$
 |---|---|
 | $z^2$ | first quadrant $\to$ UHP; UHP $\to \mathbb{C}\setminus[0,\infty)$; hyperbolas $\leftrightarrow$ lines |
 | $z^n$ | sector of angle $\pi/n$ $\to$ UHP; angles at $0$ multiplied by $n$ |
-| $e^z$ | strip $0 \lt  \operatorname{Im} z \lt  \pi$ $\to$ UHP; $0 \lt  \operatorname{Im} z \lt  \pi/2$ $\to$ first quadrant; vertical lines $\to$ circles; horizontal lines $\to$ rays |
-| $\operatorname{Log} z$ | UHP $\to$ strip $0 \lt  \operatorname{Im} w \lt  \pi$ |
+| $e^z$ | strip $0 \lt  \mathop{\mathrm{Im}}\nolimits z \lt  \pi$ $\to$ UHP; $0 \lt  \mathop{\mathrm{Im}}\nolimits z \lt  \pi/2$ $\to$ first quadrant; vertical lines $\to$ circles; horizontal lines $\to$ rays |
+| $\mathop{\mathrm{Log}}\nolimits z$ | UHP $\to$ strip $0 \lt  \mathop{\mathrm{Im}}\nolimits w \lt  \pi$ |
 | $\sin z$ | half-strip $-\frac\pi2 \lt  x \lt  \frac\pi2$, $y \gt  0$ $\to$ UHP |
 | $\frac1z$ | circles through $0$ $\to$ lines; $\lvert z\rvert \lt  1 \to \lvert w\rvert \gt  1$ |
 | $z + \frac1z$ (Joukowski) | $\lvert z\rvert = r \ne 1$ $\to$ ellipse; $\lvert z\rvert = 1$ $\to$ $[-2,2]$; exterior of $\mathbb{D}$ $\to$ $\mathbb{C}\setminus[-2,2]$ |

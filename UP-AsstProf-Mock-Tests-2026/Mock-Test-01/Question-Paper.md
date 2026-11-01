@@ -486,7 +486,7 @@ Choose the correct answer from the options given below :
 
 (D) $(x-2)(x-3)^2$
 
-**42.** If $A$ is a $3\times 3$ matrix with eigenvalues $1,2,3$, then $\det(\operatorname{adj}A)$ is
+**42.** If $A$ is a $3\times 3$ matrix with eigenvalues $1,2,3$, then $\det(\mathop{\mathrm{adj}}\nolimits A)$ is
 
 (A) 6
 
@@ -652,11 +652,11 @@ Choose the correct answer from the options given below :
 
 (D) $-2\pi i$
 
-**56.** The bilinear transformation $w=\dfrac{z-i}{z+i}$ maps the upper half plane $\operatorname{Im} z\gt 0$ onto
+**56.** The bilinear transformation $w=\dfrac{z-i}{z+i}$ maps the upper half plane $\mathop{\mathrm{Im}}\nolimits z\gt 0$ onto
 
-(A) the upper half plane $\operatorname{Im} w\gt 0$
+(A) the upper half plane $\mathop{\mathrm{Im}}\nolimits w\gt 0$
 
-(B) the right half plane $\operatorname{Re} w\gt 0$
+(B) the right half plane $\mathop{\mathrm{Re}}\nolimits w\gt 0$
 
 (C) the region $|w|\gt 1$
 
@@ -956,7 +956,7 @@ Choose the correct answer from the options given below :
 
 Assertion (A) : The fluid motion with velocity $\vec q=(-y,\ x,\ 0)$ is rotational.
 
-Reason (R) : For this motion $\operatorname{curl}\vec q=2\hat k\neq\vec 0$.
+Reason (R) : For this motion $\mathop{\mathrm{curl}}\nolimits\vec q=2\hat k\neq\vec 0$.
 
 In the light of the above statements, choose the correct answer from the options given below :
 

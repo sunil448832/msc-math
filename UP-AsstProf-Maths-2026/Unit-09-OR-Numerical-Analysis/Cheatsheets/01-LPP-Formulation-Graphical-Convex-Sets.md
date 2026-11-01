@@ -44,7 +44,7 @@
 - A non-empty closed convex set has an extreme point $\iff$ it contains no line.
 
 ## 3. Basic solutions
-- $Ax=b$ with $A$ of size $m\times n$, $\operatorname{rank} A = m \lt  n$.
+- $Ax=b$ with $A$ of size $m\times n$, $\mathop{\mathrm{rank}}\nolimits A = m \lt  n$.
 - **Basic solution:** choose $m$ columns forming a non-singular $B$; set the other $n-m$ (**non-basic**) variables to $0$; then $x_B = B^{-1}b$.
 - **Maximum number of basic solutions** $= \binom{n}{m}$. This is also an upper bound on the number of BFS and of extreme points.
 - **Basic feasible solution (BFS):** a basic solution with $x_B\ge0$. **Degenerate BFS:** at least one basic variable $=0$.

@@ -152,7 +152,7 @@ Which is/are correct?
 
 **Q3 — (B).** The matrix $(1-k)I+kJ$ has eigenvalues $1+2k$ (once) and $1-k$ (twice). Both are positive iff $-\tfrac12\lt k\lt 1$. (A) uses only the $2\times2$ leading minor $1-k^2\gt 0$.
 
-**Q4 — (B).** III is false: $\operatorname{diag}(0,-1)$ has leading minors $0,0$ but is negative semidefinite. For PSD you need **all** principal minors to be $\ge0$.
+**Q4 — (B).** III is false: $\mathop{\mathrm{diag}}\nolimits(0,-1)$ has leading minors $0,0$ but is negative semidefinite. For PSD you need **all** principal minors to be $\ge0$.
 
 **Q5 — (A).** The matrix $`\begin{pmatrix}1&-2\cr -2&1\end{pmatrix}`$ has $\det=-3\lt 0$, so the eigenvalues $3$ and $-1$ have opposite signs. Example values: $q(1,1)=-2$ and $q(1,0)=1$.
 

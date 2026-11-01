@@ -153,7 +153,7 @@ Which is/are correct?
 
 (B) Closedness of the $F_n$
 
-(C) $\operatorname{diam}(F_n)\to0$
+(C) $\mathop{\mathrm{diam}}\nolimits(F_n)\to0$
 
 (D) $F_{n+1}\subseteq F_n$
 
@@ -200,4 +200,4 @@ Which is/are correct?
 
 **Q12 — (D).** I: every singleton is an open ball $B(x,\tfrac12)$, so every set is open, and its complement is open too. II: Cauchy sequences are eventually constant, so $X$ is complete. The cover by singletons has no finite subcover, so $X$ is not compact. III: $\delta=\tfrac12$ works for every $\varepsilon$.
 
-**Q13 — (C).** $\mathbb R$ is complete and the $F_n$ are closed, nested and non-empty, but $\operatorname{diam}F_n=\infty$. With $\operatorname{diam}\to0$ the intersection is exactly one point. (Alternatively, compactness of $F_1$ would also do.)
+**Q13 — (C).** $\mathbb R$ is complete and the $F_n$ are closed, nested and non-empty, but $\mathop{\mathrm{diam}}\nolimits F_n=\infty$. With $\mathop{\mathrm{diam}}\nolimits\to0$ the intersection is exactly one point. (Alternatively, compactness of $F_1$ would also do.)

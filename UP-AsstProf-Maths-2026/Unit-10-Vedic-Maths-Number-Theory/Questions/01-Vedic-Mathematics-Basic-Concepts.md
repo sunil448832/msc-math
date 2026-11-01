@@ -176,7 +176,7 @@ is
 
 **Q3 — (A).** Ekadhikena = "by one more than the previous one"; Nikhilam = "all from 9 and the last from 10"; Urdhva-Tiryagbhyam = "vertically and crosswise"; Paravartya Yojayet = "transpose and apply".
 
-**Q4 — (C).** $1/19$: the denominator ends in 9, and the digit before it is 1, so the ekadhika is $1+1=2$. Start with 1 at the right and keep multiplying by 2 (with carries) from right to left: $1/19=0.\overline{052631578947368421}$. Since $\operatorname{ord}_{19}10=18$, the period is 18. (B) halves the period wrongly. (D) mixes up the ekadhika 2 with the auxiliary denominator $19+1=20$.
+**Q4 — (C).** $1/19$: the denominator ends in 9, and the digit before it is 1, so the ekadhika is $1+1=2$. Start with 1 at the right and keep multiplying by 2 (with carries) from right to left: $1/19=0.\overline{052631578947368421}$. Since $\mathop{\mathrm{ord}}\nolimits_{19}10=18$, the period is 18. (B) halves the period wrongly. (D) mixes up the ekadhika 2 with the auxiliary denominator $19+1=20$.
 
 **Q5 — (B).** I is true. II is true: the book was published posthumously in 1965 (the author died in 1960). III is false: the author said the sutras came from a *parishishta* (appendix) of the Atharvaveda, but they are not found in the standard extant Atharvaveda text. This is the usual criticism of the claim.
 

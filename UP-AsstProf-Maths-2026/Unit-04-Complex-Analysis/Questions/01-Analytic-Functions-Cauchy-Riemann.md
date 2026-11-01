@@ -82,11 +82,11 @@ Which of the above is/are correct?
 
 (D) A is false but R is true
 
-**Q8.** `[Match]` ★★ Match the principal values (principal branch of $\log$, $\operatorname{Arg}\in(-\pi,\pi]$):
+**Q8.** `[Match]` ★★ Match the principal values (principal branch of $\log$, $\mathop{\mathrm{Arg}}\nolimits\in(-\pi,\pi]$):
 
 | List-I | List-II |
 |---|---|
-| (a) $\operatorname{Log}(i)$ | 1. $i\sinh 1$ |
+| (a) $\mathop{\mathrm{Log}}\nolimits(i)$ | 1. $i\sinh 1$ |
 | (b) $i^{\thinspace i}$ | 2. $e^{-\pi/2}$ |
 | (c) $\sin(i)$ | 3. $i\pi/2$ |
 | (d) $\cos(i)$ | 4. $\cosh 1$ |
@@ -109,7 +109,7 @@ Which of the above is/are correct?
 
 (D) $e^{z} \neq 0$ for every $z\in\mathbb{C}$.
 
-**Q10.** `[Concept]` ★ The principal branch $\operatorname{Log} z = \ln|z| + i\operatorname{Arg} z$ is analytic on
+**Q10.** `[Concept]` ★ The principal branch $\mathop{\mathrm{Log}}\nolimits z = \ln|z| + i\mathop{\mathrm{Arg}}\nolimits z$ is analytic on
 
 (A) $\mathbb{C}\setminus\lbrace 0\rbrace$
 
@@ -139,7 +139,7 @@ Which of the above is/are correct?
 
 (D) no such $f$ exists
 
-**Q13.** `[Application]` ★★★ With $\operatorname{Log}$ the principal branch and $z = -1 + i$, the value of $\operatorname{Log}(z^2) - 2\operatorname{Log} z$ is
+**Q13.** `[Application]` ★★★ With $\mathop{\mathrm{Log}}\nolimits$ the principal branch and $z = -1 + i$, the value of $\mathop{\mathrm{Log}}\nolimits(z^2) - 2\mathop{\mathrm{Log}}\nolimits z$ is
 
 (A) $0$
 
@@ -170,7 +170,7 @@ Which of the above is/are correct?
 ## Solutions
 **Q1 — (D).** From $x = r\cos\theta$, $y = r\sin\theta$: $u_r = \frac1r v_\theta$ and $v_r = -\frac1r u_\theta$, i.e. $r u_r = v_\theta$. In (B) the factor $r$ is on the wrong side, and (C) has the signs swapped.
 
-**Q2 — (B).** $u_{xx} + u_{yy} = (a^2 - 4)e^{ax}\cos 2y = 0 \Rightarrow a^2 = 4$, so $a = \pm 2$. Option (A) forgets the negative root, since $e^{-2x}\cos 2y = \operatorname{Re} e^{-2z}$ is harmonic too.
+**Q2 — (B).** $u_{xx} + u_{yy} = (a^2 - 4)e^{ax}\cos 2y = 0 \Rightarrow a^2 = 4$, so $a = \pm 2$. Option (A) forgets the negative root, since $e^{-2x}\cos 2y = \mathop{\mathrm{Re}}\nolimits e^{-2z}$ is harmonic too.
 
 **Q3 — (B).** If $f = u + iv$ is analytic, then so is $-if = v - iu$, which has real part $v$ and imaginary part $-u$. So the conjugate of $v$ is $-u$, not $u$.
 
@@ -182,14 +182,14 @@ Which of the above is/are correct?
 
 **Q7 — (A).** $u = \sqrt{|xy|}$ and $v = 0$. Since $u(x,0) = u(0,y) = 0$, all four partials at $0$ vanish and CR holds. Along $y = x$, the difference quotient $\frac{|x|}{x(1+i)}$ has no limit. R is the general principle that this example illustrates.
 
-**Q8 — (A).** $\operatorname{Log} i = i\pi/2$. $i^i = e^{i\operatorname{Log} i} = e^{-\pi/2}$, which is real. $\sin(iy) = i\sinh y$ and $\cos(iy) = \cosh y$.
+**Q8 — (A).** $\mathop{\mathrm{Log}}\nolimits i = i\pi/2$. $i^i = e^{i\mathop{\mathrm{Log}}\nolimits i} = e^{-\pi/2}$, which is real. $\sin(iy) = i\sinh y$ and $\cos(iy) = \cosh y$.
 
 **Q9 — (A).** $|\sin(iy)| = \sinh|y| \to \infty$, so $\sin z$ is unbounded (as it must be, being a non-constant entire function, by Liouville). (B), (C) and (D) are true: $\sin z = 0 \iff e^{2iz} = 1 \iff z = n\pi$.
 
-**Q10 — (C).** $\operatorname{Arg}$ jumps by $2\pi$ across the negative real axis, and $0$ is excluded, so the cut is $(-\infty,0]$. On $\mathbb{C}\setminus(-\infty,0]$ we have $(\operatorname{Log} z)' = 1/z$.
+**Q10 — (C).** $\mathop{\mathrm{Arg}}\nolimits$ jumps by $2\pi$ across the negative real axis, and $0$ is excluded, so the cut is $(-\infty,0]$. On $\mathbb{C}\setminus(-\infty,0]$ we have $(\mathop{\mathrm{Log}}\nolimits z)' = 1/z$.
 
-**Q11 — (D).** $\operatorname{Log}(1+i) = \tfrac12\ln 2 + i\pi/4$. Then $i\operatorname{Log}(1+i) = -\pi/4 + \tfrac{i}{2}\ln 2$, and exponentiating gives (D) (numerically $0.4288 + 0.1549i$). Option (C) uses $\ln|1+i| = \ln 2$, which is wrong.
+**Q11 — (D).** $\mathop{\mathrm{Log}}\nolimits(1+i) = \tfrac12\ln 2 + i\pi/4$. Then $i\mathop{\mathrm{Log}}\nolimits(1+i) = -\pi/4 + \tfrac{i}{2}\ln 2$, and exponentiating gives (D) (numerically $0.4288 + 0.1549i$). Option (C) uses $\ln|1+i| = \ln 2$, which is wrong.
 
 **Q12 — (A).** $u_x = 2v v_x$ and $u_y = 2v v_y$. With CR ($u_x = v_y$, $u_y = -v_x$) this becomes $v_y = 2v v_x$ and $-v_x = 2v v_y$, so $v_y(1 + 4v^2) = 0$. Hence $v_y = 0$, and then $v_x = 0$. So $v$ is constant, $u = v^2$ is constant, and $f$ is constant (the open mapping theorem gives the same conclusion). Constants such as $f = 1 + i$ do exist, so (D) is false.
 
-**Q13 — (C).** $z^2 = -2i$, so $\operatorname{Log}(z^2) = \ln 2 - i\pi/2$. Also $\operatorname{Log} z = \tfrac12\ln 2 + 3\pi i/4$, so $2\operatorname{Log} z = \ln 2 + 3\pi i/2$. The difference is $-2\pi i$. Because $\operatorname{Log}(z^2) \ne 2\operatorname{Log} z$ in general, (A) is wrong; (B) has the wrong sign.
+**Q13 — (C).** $z^2 = -2i$, so $\mathop{\mathrm{Log}}\nolimits(z^2) = \ln 2 - i\pi/2$. Also $\mathop{\mathrm{Log}}\nolimits z = \tfrac12\ln 2 + 3\pi i/4$, so $2\mathop{\mathrm{Log}}\nolimits z = \ln 2 + 3\pi i/2$. The difference is $-2\pi i$. Because $\mathop{\mathrm{Log}}\nolimits(z^2) \ne 2\mathop{\mathrm{Log}}\nolimits z$ in general, (A) is wrong; (B) has the wrong sign.

@@ -14,7 +14,7 @@ and the numbers $p,q$ do not depend on the reduction.
 
 | Invariant | Value |
 |---|---|
-| rank $r$ | $p+q=\operatorname{rank}A$ |
+| rank $r$ | $p+q=\mathop{\mathrm{rank}}\nolimits A$ |
 | index | $p$, the number of positive eigenvalues |
 | signature | $s=p-q$ (some texts use $`(p,q)`$) |
 | nullity | $n-r$, the number of zero eigenvalues |
@@ -34,7 +34,7 @@ and the numbers $p,q$ do not depend on the reduction.
 | Indefinite | both signs | $p,q\ge1$ | |
 
 - **$2\times2$ shortcut** for $ax^2+2bxy+cy^2$ with $D=ac-b^2$: if $D\gt 0$ the form is PD when $a\gt 0$ and ND when $a\lt 0$; if $D\lt 0$ it is indefinite; if $D=0$ it is semidefinite.
-- PD implies: every diagonal entry $\gt 0$, $\det\gt 0$, $\operatorname{tr}\gt 0$, $A^{-1}$ is PD, $A=B^TB$ (Cholesky), and $|a_{ij}|^2\lt a_{ii}a_{jj}$.
+- PD implies: every diagonal entry $\gt 0$, $\det\gt 0$, $\mathop{\mathrm{tr}}\nolimits\gt 0$, $A^{-1}$ is PD, $A=B^TB$ (Cholesky), and $|a_{ij}|^2\lt a_{ii}a_{jj}$.
 - $A^TA$ is always PSD, and PD iff $A$ has full column rank.
 - The family $(1-k)I_n+kJ_n$ has eigenvalues $1+(n-1)k$ and $1-k$, so it is PD $\iff -\frac1{n-1}\lt k\lt 1$.
 
@@ -49,7 +49,7 @@ and the numbers $p,q$ do not depend on the reduction.
 
 ## Exam traps
 - Halve the cross-term coefficients when writing $A$.
-- PSD needs **all** principal minors $\ge0$, not just the leading ones (counterexample $`\operatorname{diag}(0,-1)`$).
+- PSD needs **all** principal minors $\ge0$, not just the leading ones (counterexample $`\mathop{\mathrm{diag}}\nolimits(0,-1)`$).
 - Signature means $p-q$ (unless the question defines it otherwise), and index means $p$.
 - Congruence preserves signs, not values, of the eigenvalues. Similarity preserves the values.
 - The leading $2\times2$ minor alone is not enough for $3\times3$ forms: check $\det A$ too.

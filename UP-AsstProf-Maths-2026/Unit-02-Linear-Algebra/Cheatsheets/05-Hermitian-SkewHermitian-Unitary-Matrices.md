@@ -33,7 +33,7 @@
 ## 4. Orthogonal matrices
 - $2\times2$, $\det=1$: rotation $`\begin{pmatrix}\cos\theta&-\sin\theta\cr \sin\theta&\cos\theta\end{pmatrix}`$ with eigenvalues $e^{\pm i\theta}$.
 - $2\times2$, $\det=-1$: reflection $`\begin{pmatrix}\cos\theta&\sin\theta\cr \sin\theta&-\cos\theta\end{pmatrix}`$, which is symmetric with eigenvalues $\pm1$.
-- $3\times3$ with $\det=1$: always has eigenvalue $1$ (a rotation axis), and $\operatorname{tr}=1+2\cos\theta$.
+- $3\times3$ with $\det=1$: always has eigenvalue $1$ (a rotation axis), and $\mathop{\mathrm{tr}}\nolimits=1+2\cos\theta$.
 - Any $n\times n$ orthogonal $Q$ with $\det Q=-1$ has eigenvalue $-1$. If $n$ is odd and $\det Q=1$, then $1$ is an eigenvalue.
 - The real eigenvalues of an orthogonal matrix are $\pm1$.
 

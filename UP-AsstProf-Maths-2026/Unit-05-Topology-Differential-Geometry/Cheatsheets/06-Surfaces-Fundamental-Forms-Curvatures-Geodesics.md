@@ -69,7 +69,7 @@ K=-\frac{1}{2\sqrt{EG}}\left[\Big(\frac{E_v}{\sqrt{EG}}\Big)_v+\Big(\frac{G_u}{\
 | Cone | $(u\cos v,u\sin v,u)$ | $2,0,u^2$ | $0$ | $\ne0$ |
 | Torus $(R\gt r)$ | $((R+r\cos u)\cos v,(R+r\cos u)\sin v,r\sin u)$ | $r^2,0,(R+r\cos u)^2$ | $\dfrac{\cos u}{r(R+r\cos u)}$ | – |
 | Helicoid | $(u\cos v,u\sin v,cv)$ | $1,0,u^2+c^2$ | $-\dfrac{c^2}{(u^2+c^2)^2}$ | $0$ |
-| Catenoid | $(\cosh u\cos v,\cosh u\sin v,u)$ | $\cosh^2u,0,\cosh^2u$ | $-\operatorname{sech}^4u$ | $0$ |
+| Catenoid | $(\cosh u\cos v,\cosh u\sin v,u)$ | $\cosh^2u,0,\cosh^2u$ | $-\mathop{\mathrm{sech}}\nolimits^4u$ | $0$ |
 | Pseudosphere | (tractrix of revolution) | – | $-1$ | – |
 
 - **Torus:** the outer equator has $K=\dfrac{1}{r(R+r)}\gt 0$, the inner equator has $K=-\dfrac{1}{r(R-r)}\lt 0$, and the top and bottom circles have $K=0$. The total curvature is $\iint K\thinspace dA=0$.

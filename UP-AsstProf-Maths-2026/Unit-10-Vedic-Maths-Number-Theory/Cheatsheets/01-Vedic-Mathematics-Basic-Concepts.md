@@ -70,7 +70,7 @@ $$ab = (a-y)\cdot B + xy \quad (\text{write } xy \text{ in } n \text{ digits, ca
 
 **Ekadhikena for $1/19$.** The ekadhika of 1 (in 19) is 2. Multiply by 2 from right to left starting with 1 (or divide by 2 from left to right). This gives
 $$1/19 = 0.\overline{052631578947368421}\quad(\text{period }18).$$
-For $1/29$ the multiplier is 3. In general the period is $\operatorname{ord}_p 10$.
+For $1/29$ the multiplier is 3. In general the period is $\mathop{\mathrm{ord}}\nolimits_p 10$.
 
 **Shunyam Samyasamuccaye (cases).**
 1. A common factor in every term gives that factor $=0$. Example: $12x+3x=4x+5x \Rightarrow x=0$.

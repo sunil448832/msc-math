@@ -34,7 +34,7 @@ Standard expansions:
 | $\sin z$ | $z - \frac{z^3}{3!} + \frac{z^5}{5!} - \cdots$ |
 | $\cos z$ | $1 - \frac{z^2}{2!} + \frac{z^4}{4!} - \cdots$ |
 | $\frac{1}{1-z}$ ($\lvert z\rvert\lt 1$) | $\sum z^n$ |
-| $\operatorname{Log}(1+z)$ ($\lvert z\rvert\lt 1$) | $z - \frac{z^2}{2} + \frac{z^3}{3} - \cdots$ |
+| $\mathop{\mathrm{Log}}\nolimits(1+z)$ ($\lvert z\rvert\lt 1$) | $z - \frac{z^2}{2} + \frac{z^3}{3} - \cdots$ |
 | $\tan z$ ($R = \pi/2$) | $z + \frac{z^3}{3} + \frac{2z^5}{15} + \cdots$ |
 | $\frac{z}{e^z-1}$ ($R = 2\pi$) | $1 - \frac z2 + \frac{z^2}{12} - \cdots$ |
 
@@ -71,7 +71,7 @@ The expansion is **unique for each annulus**, but different annuli give differen
 - **Casorati–Weierstrass:** near an essential singularity, the image of every punctured neighbourhood is dense in $\mathbb{C}$.
 - **Great Picard:** near an essential singularity, $f$ takes every complex value, with at most one exception, infinitely often.
 - If $f$ has a pole at $a$, then $e^{f}$ has an **essential** singularity at $a$. If $a$ is a zero of order $m$ of $g$, then it is a pole of order $m$ of $1/g$.
-- A **non-isolated** singularity is a limit of singularities: $\frac{1}{\sin(1/z)}$ and $\tan(1/z)$ at $0$, and $\operatorname{Log} z$ at $0$ (a branch point).
+- A **non-isolated** singularity is a limit of singularities: $\frac{1}{\sin(1/z)}$ and $\tan(1/z)$ at $0$, and $\mathop{\mathrm{Log}}\nolimits z$ at $0$ (a branch point).
 - **At $\infty$:** classify $f(1/w)$ at $w = 0$.
   - Polynomials of degree $n$ have a pole of order $n$ at $\infty$.
   - $e^z$, $\sin z$ and other transcendental entire functions have an essential singularity at $\infty$.

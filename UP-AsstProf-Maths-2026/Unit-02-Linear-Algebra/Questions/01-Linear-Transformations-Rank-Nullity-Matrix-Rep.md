@@ -51,8 +51,8 @@ Which of the above is/are correct?
 (D) I, II and III
 
 **Q5.** `[Assertion-Reason]` ★★
-**Assertion (A):** There is no linear map $T:\mathbb R^5\to\mathbb R^5$ with $\ker T=\operatorname{range}T$.
-**Reason (R):** If $\ker T=\operatorname{range}T$, then by the Rank–Nullity Theorem $5=2\operatorname{rank}T$, which is impossible.
+**Assertion (A):** There is no linear map $T:\mathbb R^5\to\mathbb R^5$ with $\ker T=\mathop{\mathrm{range}}\nolimits T$.
+**Reason (R):** If $\ker T=\mathop{\mathrm{range}}\nolimits T$, then by the Rank–Nullity Theorem $5=2\mathop{\mathrm{rank}}\nolimits T$, which is impossible.
 
 (A) Both A and R are true and R is the correct explanation of A
 
@@ -85,7 +85,7 @@ Which of the above is/are correct?
 
 (B) $f\mapsto \int_0^1 f(t)\thinspace dt$ on $C[0,1]$ over $\mathbb{R}$
 
-(C) $A\mapsto \operatorname{tr}A$ on $M_n(\mathbb{C})$ over $\mathbb{C}$
+(C) $A\mapsto \mathop{\mathrm{tr}}\nolimits A$ on $M_n(\mathbb{C})$ over $\mathbb{C}$
 
 (D) $z\mapsto \bar z$ on $\mathbb{C}$, regarded as a vector space over $\mathbb{C}$
 
@@ -165,13 +165,13 @@ Which of the above is/are correct?
 
 **Q4 — (A).** I is false: an injective map needs $\dim(\text{domain})\le\dim(\text{codomain})$. II is true (take the projection $`(x,y,z)\mapsto(x,y)`$). III is true: injective means nullity $0$, so rank $=\dim V$. III fails for infinite-dimensional $V$ (for example the right shift on sequences).
 
-**Q5 — (A).** If $\ker T=\operatorname{range}T$ then rank $=$ nullity $=r$ and $2r=5$, which is impossible. R gives exactly this argument. In even dimension such maps exist, e.g. $`\begin{pmatrix}0&1\cr 0&0\end{pmatrix}`$ on $\mathbb R^2$.
+**Q5 — (A).** If $\ker T=\mathop{\mathrm{range}}\nolimits T$ then rank $=$ nullity $=r$ and $2r=5$, which is impossible. R gives exactly this argument. In even dimension such maps exist, e.g. $`\begin{pmatrix}0&1\cr 0&0\end{pmatrix}`$ on $\mathbb R^2$.
 
 **Q6 — (A).** For $n=3$: $n^2=9$, $n(n+1)/2=6$, $n(n-1)/2=3$, $n^2-1=8$.
 
 **Q7 — (D).** Over $\mathbb{C}$, $\overline{iz}=-i\bar z\ne i\bar z$, so conjugation is not $\mathbb{C}$-linear. It is additive and commutes with real scalars, so (A) is linear. Linearity depends on the field of scalars.
 
-**Q8 — (D).** $T^2=0$ gives $\operatorname{range}T\subseteq\ker T$, so $r\le 6-r$ and $r\le3$. The bound is attained by three Jordan blocks $`\begin{pmatrix}0&1\cr 0&0\end{pmatrix}`$.
+**Q8 — (D).** $T^2=0$ gives $\mathop{\mathrm{range}}\nolimits T\subseteq\ker T$, so $r\le 6-r$ and $r\le3$. The bound is attained by three Jordan blocks $`\begin{pmatrix}0&1\cr 0&0\end{pmatrix}`$.
 
 **Q9 — (B).** Take $`P=\begin{pmatrix}1&1\cr 0&1\end{pmatrix}`$ (new basis vectors as columns). Then $`P^{-1}AP=\begin{pmatrix}1&0\cr 0&3\end{pmatrix}`$. This works because $(1,0)$ and $(1,1)$ are eigenvectors for $1$ and $3$. The order of the basis fixes the order on the diagonal, which rules out (C).
 

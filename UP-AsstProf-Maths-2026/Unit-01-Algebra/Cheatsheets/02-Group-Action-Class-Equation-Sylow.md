@@ -2,19 +2,19 @@
 > Questions: [../Questions/02-Group-Action-Class-Equation-Sylow.md](../Questions/02-Group-Action-Class-Equation-Sylow.md)
 
 ## 1. Group actions
-A (left) action of $G$ on a set $X$ is a map $G\times X\to X$ with $e\cdot x=x$ and $g\cdot(h\cdot x)=(gh)\cdot x$. Equivalently, it is a homomorphism $G\to\operatorname{Sym}(X)$.
+A (left) action of $G$ on a set $X$ is a map $G\times X\to X$ with $e\cdot x=x$ and $g\cdot(h\cdot x)=(gh)\cdot x$. Equivalently, it is a homomorphism $G\to\mathop{\mathrm{Sym}}\nolimits(X)$.
 - **Orbit** $Gx=\lbrace gx\rbrace$ and **stabilizer** $G_x=\lbrace g:gx=x\rbrace \le G$. The orbits partition $X$.
 - **Orbit–Stabilizer:** $|Gx|=[G:G_x]$, so orbit sizes divide $|G|$.
 - Stabilizers of points in the same orbit are conjugate: $G_{gx}=gG_xg^{-1}$.
 - **Faithful** means the kernel $\bigcap_x G_x$ is trivial. **Transitive** means there is one orbit.
-- **Burnside's (Cauchy–Frobenius) lemma:** $\sharp \text{orbits}=\dfrac1{|G|}\sum_{g\in G}|\operatorname{Fix}(g)|$.
+- **Burnside's (Cauchy–Frobenius) lemma:** $\sharp \text{orbits}=\dfrac1{|G|}\sum_{g\in G}|\mathop{\mathrm{Fix}}\nolimits(g)|$.
 - **$p$-group fixed points:** if $|G|=p^n$ acts on a finite $X$, then $|X|\equiv|X^G|\pmod p$.
 - Standard actions:
 
 | Action | Orbits | Stabilizer | Consequence |
 |---|---|---|---|
 | Left multiplication on $G$ | one | trivial | Cayley's theorem |
-| Left mult. on $G/H$ | one | $gHg^{-1}$ | $G\to S_{[G:H]}$, kernel $\operatorname{core}H$ |
+| Left mult. on $G/H$ | one | $gHg^{-1}$ | $G\to S_{[G:H]}$, kernel $\mathop{\mathrm{core}}\nolimits H$ |
 | Conjugation on $G$ | conjugacy classes | centralizer $C(a)$ | class equation |
 | Conjugation on subgroups | conjugates of $H$ | normalizer $N(H)$ | #conjugates $=[G:N(H)]$ |
 

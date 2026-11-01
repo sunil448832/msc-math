@@ -5,7 +5,7 @@
 - **Ring** $(R,+,\cdot)$: an abelian group under $+$, with associative multiplication that distributes over $+$. The terms *commutative* and *with unity* are added when they hold.
 - **Zero divisor:** $a\ne0$ with $ab=0$ for some $b\ne0$. **Integral domain (ID):** a commutative ring with $1\ne0$ and no zero divisors. **Field:** a commutative ring with $1\ne 0$ in which every non-zero element is a unit.
 - **Unit:** $a$ with $ab=1$. **Nilpotent:** $a^n=0$. **Idempotent:** $e^2=e$.
-- **Characteristic:** the least $n\gt 0$ with $n\cdot1=0$, or $0$ if there is none. For an ID it is $0$ or a prime. $\operatorname{char}(R\times S)=\operatorname{lcm}$ of the two characteristics.
+- **Characteristic:** the least $n\gt 0$ with $n\cdot1=0$, or $0$ if there is none. For an ID it is $0$ or a prime. $\mathop{\mathrm{char}}\nolimits(R\times S)=\mathop{\mathrm{lcm}}\nolimits$ of the two characteristics.
 - A finite ID is a field. In a finite commutative ring with 1, every element is a unit or a zero divisor (or 0).
 - Field $\subset$ ID, and the inclusion is strict: $\mathbb{Z}$ is an ID but not a field.
 
@@ -14,7 +14,7 @@
 |---|---|---|
 | Units | $\varphi(n)$ | 24 |
 | Non-zero zero divisors | $n-1-\varphi(n)$ | 47 |
-| Nilpotents | $n/\operatorname{rad}(n)$ (the multiples of $\prod p_i$) | 12 |
+| Nilpotents | $n/\mathop{\mathrm{rad}}\nolimits(n)$ (the multiples of $\prod p_i$) | 12 |
 | Idempotents | $2^{\omega(n)}$ | 4 |
 | Ideals | $d(n)$, all of the form $\langle d\rangle$ with $d\mid n$ | 12 |
 | Maximal ideals | $\omega(n)$, namely $\langle p_i\rangle$. Prime ideals are the same as maximal ones | 2 |
@@ -27,7 +27,7 @@ $\mathbb Z_n$ is a field $\iff$ an ID $\iff$ $n$ is prime. $\mathbb Z_n$ is redu
 - $I\subseteq R$ is an **ideal** if it is an additive subgroup and $rI\subseteq I\supseteq Ir$. If it contains a unit then $I=R$.
 - Sums, intersections and products of ideals are ideals. A union generally is not.
 - A commutative ring with 1 is a field iff its only ideals are $0$ and $R$.
-- Ideals of $\mathbb{Z}$ are the $n\mathbb{Z}$. $\gcd$ corresponds to the sum: $m\mathbb{Z}+n\mathbb{Z}=\gcd(m,n)\mathbb{Z}$. $\operatorname{lcm}$ corresponds to the intersection: $m\mathbb{Z}\cap n\mathbb{Z}=\operatorname{lcm}(m,n)\mathbb{Z}$. And $m\mathbb{Z}\cdot n\mathbb{Z}=mn\mathbb{Z}$.
+- Ideals of $\mathbb{Z}$ are the $n\mathbb{Z}$. $\gcd$ corresponds to the sum: $m\mathbb{Z}+n\mathbb{Z}=\gcd(m,n)\mathbb{Z}$. $\mathop{\mathrm{lcm}}\nolimits$ corresponds to the intersection: $m\mathbb{Z}\cap n\mathbb{Z}=\mathop{\mathrm{lcm}}\nolimits(m,n)\mathbb{Z}$. And $m\mathbb{Z}\cdot n\mathbb{Z}=mn\mathbb{Z}$.
 - $M_n(F)$ is a simple ring: it has no two-sided ideals except $0$ and $M_n(F)$.
 
 ## 4. Prime and maximal ideals (commutative ring $R$ with 1)

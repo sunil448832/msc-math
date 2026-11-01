@@ -2,7 +2,7 @@
 > Syllabus coverage: Calculus of residues, Contour integration (incl. residue formulas, residue at infinity, trigonometric and rational integrals, Jordan's lemma, indented contours / principal values)
 > Cheatsheet: [../Cheatsheets/04-Residues-Contour-Integration.md](../Cheatsheets/04-Residues-Contour-Integration.md)
 
-**Q1.** `[Numerical]` ★ $\operatorname{Res}_{z=0}\dfrac{e^{z}}{z^{3}}$ equals
+**Q1.** `[Numerical]` ★ $\mathop{\mathrm{Res}}\nolimits_{z=0}\dfrac{e^{z}}{z^{3}}$ equals
 
 (A) $1$
 
@@ -64,11 +64,11 @@
 
 **Q7.** `[Multi-Statement]` ★★ Consider the statements:
 
-I. $\operatorname{Res}_{z=0}\thinspace  z\cos(1/z) = -\tfrac12$.
+I. $\mathop{\mathrm{Res}}\nolimits_{z=0}\thinspace  z\cos(1/z) = -\tfrac12$.
 
-II. $\operatorname{Res}_{z=0}\dfrac{\sin z}{z^{2}} = 1$.
+II. $\mathop{\mathrm{Res}}\nolimits_{z=0}\dfrac{\sin z}{z^{2}} = 1$.
 
-III. $\operatorname{Res}_{z=0}\dfrac{\cot z}{z} = 1$.
+III. $\mathop{\mathrm{Res}}\nolimits_{z=0}\dfrac{\cot z}{z} = 1$.
 
 Which of the above is/are correct?
 
@@ -80,7 +80,7 @@ Which of the above is/are correct?
 
 (D) I and II only
 
-**Q8.** `[Assertion-Reason]` ★★ Let $C_R$ be the upper semicircle $|z| = R$, $\operatorname{Im} z \ge 0$.
+**Q8.** `[Assertion-Reason]` ★★ Let $C_R$ be the upper semicircle $|z| = R$, $\mathop{\mathrm{Im}}\nolimits z \ge 0$.
 **Assertion (A):** $\displaystyle\lim_{R\to\infty}\int_{C_R}\frac{e^{iz}}{z}\thinspace dz = 0$.
 **Reason (R):** If $f(z) \to 0$ uniformly on $C_R$ as $R\to\infty$ and $m \gt  0$, then $\displaystyle\int_{C_R}e^{imz}f(z)\thinspace dz \to 0$.
 
@@ -113,11 +113,11 @@ Which of the above is/are correct?
 
 (A) The residue of $f$ at a removable singularity is $0$.
 
-(B) If $f$ has a pole of order $m$ at $a$, then $`\operatorname{Res}_a f = \dfrac{1}{(m-1)!}\lim_{z\to a}\dfrac{d^{m-1}}{dz^{m-1}}\big[(z-a)^m f(z)\big]`$.
+(B) If $f$ has a pole of order $m$ at $a$, then $`\mathop{\mathrm{Res}}\nolimits_a f = \dfrac{1}{(m-1)!}\lim_{z\to a}\dfrac{d^{m-1}}{dz^{m-1}}\big[(z-a)^m f(z)\big]`$.
 
-(C) If $f$ is analytic at $\infty$, then $\operatorname{Res}_{z=\infty}f = 0$.
+(C) If $f$ is analytic at $\infty$, then $\mathop{\mathrm{Res}}\nolimits_{z=\infty}f = 0$.
 
-(D) If $f$ is even and has an isolated singularity at $0$, then $\operatorname{Res}_{z=0}f = 0$.
+(D) If $f$ is even and has an isolated singularity at $0$, then $\mathop{\mathrm{Res}}\nolimits_{z=0}f = 0$.
 
 **Q11.** `[Application]` ★★★ $\displaystyle\oint_{|z|=2}\frac{z^{15}}{(z^{2}+1)^{2}(z^{4}+2)^{3}}\thinspace dz$ equals
 
@@ -159,11 +159,11 @@ Which of the above is/are correct?
 ## Solutions
 **Q1 — (D).** $\frac{e^z}{z^3} = \sum\frac{z^{n-3}}{n!}$. The $z^{-1}$ term comes from $n = 2$, giving $\frac{1}{2!} = \frac12$. Option (C) uses $n = 3$.
 
-**Q2 — (C).** For a large circle $C$, $\oint_C f = 2\pi i\sum_{\text{finite}}\operatorname{Res}$, and also $\oint_C f = -2\pi i\operatorname{Res}_\infty f$. So the total of all residues is $0$.
+**Q2 — (C).** For a large circle $C$, $\oint_C f = 2\pi i\sum_{\text{finite}}\mathop{\mathrm{Res}}\nolimits$, and also $\oint_C f = -2\pi i\mathop{\mathrm{Res}}\nolimits_\infty f$. So the total of all residues is $0$.
 
 **Q3 — (A).** $x^2 + 2x + 2 = (x+1)^2 + 1$. Substituting $u = x + 1$ gives $\int\frac{du}{u^2+1} = \pi$. By residues: the pole in the upper half-plane is $-1 + i$, with residue $\frac{1}{2i}$, so the integral is $2\pi i\cdot\frac{1}{2i} = \pi$.
 
-**Q4 — (B).** At a simple pole, $\operatorname{Res} = \frac{p(a)}{q'(a)} = \frac{1}{4a^3} = \frac{a}{4a^4} = -\frac{a}{4}$, because $a^4 = -1$. Option (A) misses the sign.
+**Q4 — (B).** At a simple pole, $\mathop{\mathrm{Res}}\nolimits = \frac{p(a)}{q'(a)} = \frac{1}{4a^3} = \frac{a}{4a^4} = -\frac{a}{4}$, because $a^4 = -1$. Option (A) misses the sign.
 
 **Q5 — (B).** $\int_0^{2\pi}\frac{d\theta}{a + b\cos\theta} = \frac{2\pi}{\sqrt{a^2-b^2}}$ for $a \gt  |b|$. Here this is $\frac{2\pi}{\sqrt{25-16}} = \frac{2\pi}{3}$. Option (D) adds instead of subtracting.
 
@@ -175,16 +175,16 @@ Which of the above is/are correct?
 
 **Q9 — (A).** (a) $\frac{2\pi}{\sqrt{4-1}} = \frac{2\pi}{\sqrt3}$. (b) is the Dirichlet integral, $\frac\pi2$. (c) is half of $\int_{\mathbb{R}} = \frac\pi2$, so $\frac\pi4$. (d) The substitution $x \mapsto 1/x$ maps the integral to its negative, so it is $0$.
 
-**Q10 — (C).** $f = \frac1z$ is analytic at $`\infty`$ (it vanishes there), yet $`\operatorname{Res}_\infty f = -1`$. The residue at $\infty$ is $`-c_{-1}`$ from the expansion at $\infty$, and that coefficient can be non-zero even when $f$ is analytic at $\infty$. (D) is true: an even Laurent series has no $z^{-1}$ term.
+**Q10 — (C).** $f = \frac1z$ is analytic at $`\infty`$ (it vanishes there), yet $`\mathop{\mathrm{Res}}\nolimits_\infty f = -1`$. The residue at $\infty$ is $`-c_{-1}`$ from the expansion at $\infty$, and that coefficient can be non-zero even when $f$ is analytic at $\infty$. (D) is true: an even Laurent series has no $z^{-1}$ term.
 
-**Q11 — (C).** All poles ($\pm i$ and the fourth roots of $-2$, with modulus $2^{1/4} \approx 1.19$) lie inside $|z| = 2$, so the integral is $`-2\pi i\operatorname{Res}_\infty`$. The degrees are 15 over 16, so $`f = \frac1z + O(z^{-2})`$ at $`\infty`$ and $`\operatorname{Res}_\infty = -1`$. The integral is $2\pi i$. Computing 7 separate residues would be far too slow; checked numerically.
+**Q11 — (C).** All poles ($\pm i$ and the fourth roots of $-2$, with modulus $2^{1/4} \approx 1.19$) lie inside $|z| = 2$, so the integral is $`-2\pi i\mathop{\mathrm{Res}}\nolimits_\infty`$. The degrees are 15 over 16, so $`f = \frac1z + O(z^{-2})`$ at $`\infty`$ and $`\mathop{\mathrm{Res}}\nolimits_\infty = -1`$. The integral is $2\pi i$. Computing 7 separate residues would be far too slow; checked numerically.
 
 **Q12 — (B).** Indent around $x = 1$:
 ```math
-\mathrm{P.V.} = 2\pi i\operatorname{Res}_{i} + \pi i\operatorname{Res}_{1}.
+\mathrm{P.V.} = 2\pi i\mathop{\mathrm{Res}}\nolimits_{i} + \pi i\mathop{\mathrm{Res}}\nolimits_{1}.
 ```
-- $\operatorname{Res}_1 = \frac12$.
-- $\operatorname{Res}_i = \frac{1}{(i-1)\thinspace 2i} = -\frac{1-i}{4}$.
+- $\mathop{\mathrm{Res}}\nolimits_1 = \frac12$.
+- $\mathop{\mathrm{Res}}\nolimits_i = \frac{1}{(i-1)\thinspace 2i} = -\frac{1-i}{4}$.
 
 So
 $$\mathrm{P.V.} = -\frac{\pi i(1-i)}{2} + \frac{\pi i}{2} = -\frac{\pi}{2}$$

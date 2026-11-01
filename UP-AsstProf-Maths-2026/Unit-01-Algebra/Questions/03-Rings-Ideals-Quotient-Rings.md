@@ -170,7 +170,7 @@ Which of the above is/are correct?
 ## Solutions
 **Q1 — (B).** $\mathbb{Z}[x]/\langle x\rangle\cong\mathbb{Z}$, which is an integral domain but not a field, so $\langle x\rangle$ is prime but not maximal. It sits strictly inside the maximal ideal $\langle 2,x\rangle$. Option (D) is impossible: in a commutative ring with $1$, maximal implies prime.
 
-**Q2 — (C).** $a\in\mathbb Z_n$ is nilpotent iff $a$ is divisible by $\operatorname{rad}(n)$. Here $72=2^3\cdot3^2$ has radical $6$, so the nilpotents are the multiples of 6: $72/6=12$ of them, including 0.
+**Q2 — (C).** $a\in\mathbb Z_n$ is nilpotent iff $a$ is divisible by $\mathop{\mathrm{rad}}\nolimits(n)$. Here $72=2^3\cdot3^2$ has radical $6$, so the nilpotents are the multiples of 6: $72/6=12$ of them, including 0.
 
 **Q3 — (D).** $\mathbb Z_{30}\cong\mathbb Z_2\times\mathbb Z_3\times\mathbb Z_5$, and each field factor contributes the idempotents $0,1$. So there are $2^{\omega(30)}=2^3=8$. Option (A) is the field answer.
 
@@ -182,11 +182,11 @@ Which of the above is/are correct?
 
 **Q7 — (C).** (a) $x\mapsto i$ gives $\mathbb{C}$. (b) $x\mapsto0$ gives $\mathbb{Z}$. (c) $N(1+i)=2$, so the quotient has 2 elements and is $\mathbb Z_2$. (d) $x^2+1$ has no root in $\mathbb Z_3$ ($0,1,2\mapsto1,2,2$), so it is irreducible and the quotient is a field of order $3^2=9$.
 
-**Q8 — (B).** $\mathbb{Z}$ is a subring of $\mathbb{Q}$ but not an ideal, since $\tfrac12\cdot1\notin\mathbb{Z}$. (A) is Wedderburn's little theorem in its easy commutative form ($x\mapsto ax$ is injective, hence onto). (D) holds because $\operatorname{char}=mn$ would give $(m1)(n1)=0$. (C) is standard.
+**Q8 — (B).** $\mathbb{Z}$ is a subring of $\mathbb{Q}$ but not an ideal, since $\tfrac12\cdot1\notin\mathbb{Z}$. (A) is Wedderburn's little theorem in its easy commutative form ($x\mapsto ax$ is injective, hence onto). (D) holds because $\mathop{\mathrm{char}}\nolimits=mn$ would give $(m1)(n1)=0$. (C) is standard.
 
 **Q9 — (C).** Over $\mathbb Z_3$, $x^2+x+1=x^2-2x+1=(x-1)^2$. So $\bar x-1\ne0$ but $(\bar x-1)^2=0$: a non-zero nilpotent. The ring is therefore not a field or an integral domain, and not $\mathbb Z_3\times\mathbb Z_3$, which is reduced. The trap is (A): "$`x^2+x+1`$ is irreducible" is true over $\mathbb Z_2$ and $\mathbb{Q}$ but not over $\mathbb Z_3$.
 
-**Q10 — (B).** $\operatorname{char}(R\times S)=\operatorname{lcm}(\operatorname{char}R,\operatorname{char}S)=\operatorname{lcm}(3,4)=12$. Option (D), 7, adds the characteristics, and (A) and (C) take a single factor.
+**Q10 — (B).** $\mathop{\mathrm{char}}\nolimits(R\times S)=\mathop{\mathrm{lcm}}\nolimits(\mathop{\mathrm{char}}\nolimits R,\mathop{\mathrm{char}}\nolimits S)=\mathop{\mathrm{lcm}}\nolimits(3,4)=12$. Option (D), 7, adds the characteristics, and (A) and (C) take a single factor.
 
 **Q11 — (A).** Evaluation $f\mapsto f(1/2)$ is an onto ring homomorphism $C[0,1]\to\mathbb{R}$ with kernel $M$. Then $R/M\cong\mathbb{R}$ is a field, so $M$ is maximal. (In fact every maximal ideal of $C[0,1]$ has this form.)
 

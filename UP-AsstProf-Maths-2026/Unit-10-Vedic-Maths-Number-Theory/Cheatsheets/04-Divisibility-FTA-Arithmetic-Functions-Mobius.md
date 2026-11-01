@@ -5,10 +5,10 @@
 - **Division algorithm:** for $a\in\mathbb Z$ and $b\gt 0$ there are unique $q, r$ with $a=bq+r$ and $0\le r\lt b$.
 - **Bézout:** $\gcd(a,b)=ax+by$ for some $x,y\in\mathbb Z$. In fact $\gcd(a,b)$ is the least positive element of $\lbrace ax+by\rbrace$.
 - **Euclidean algorithm:** $\gcd(a,b)=\gcd(b,a\bmod b)$. Example: $\gcd(1071,462)=21$.
-- $\gcd(a,b)\cdot\operatorname{lcm}(a,b)=ab$ for $a,b\gt 0$. This fails for three numbers: $\gcd(a,b,c)\operatorname{lcm}(a,b,c)\ne abc$ in general.
+- $\gcd(a,b)\cdot\mathop{\mathrm{lcm}}\nolimits(a,b)=ab$ for $a,b\gt 0$. This fails for three numbers: $\gcd(a,b,c)\mathop{\mathrm{lcm}}\nolimits(a,b,c)\ne abc$ in general.
 - **Euclid's lemma:** if $`p`$ is prime and $`p\mid ab`$, then $`p\mid a`$ or $`p\mid b`$. More generally, if $`a\mid bc`$ and $`\gcd(a,b)=1`$, then $`a\mid c`$.
 - $\gcd(2^m-1,2^n-1)=2^{\gcd(m,n)}-1$ and $\gcd(F_m,F_n)=F_{\gcd(m,n)}$ (Fibonacci).
-- The number of ordered pairs with $\operatorname{lcm}(a,b)=n$ is $d(n^2)$. The number of pairs with $\gcd=1$ and $ab=n$ is $2^{\omega(n)}$.
+- The number of ordered pairs with $\mathop{\mathrm{lcm}}\nolimits(a,b)=n$ is $d(n^2)$. The number of pairs with $\gcd=1$ and $ab=n$ is $2^{\omega(n)}$.
 
 ## 2. Fundamental theorem of arithmetic
 Every $n\gt 1$ factors as $n=p_1^{a_1}\cdots p_k^{a_k}$, and this factorisation is **unique** up to order.
@@ -98,4 +98,4 @@ $$v_p(n!)=\sum_{k\ge1}\left\lfloor\frac{n}{p^k}\right\rfloor=\frac{n-s_p(n)}{p-1
 - In Legendre's formula, **keep adding** the terms for $p^2, p^3, \dots$. The trailing zeros of $1000!$ are $249$, not $200$.
 - The count of pairs with lcm $=n$ is $d(n^2)$, not $d(n)^2$.
 - $2^p-1$ need not be prime for prime $`p`$.
-- $\gcd\cdot\operatorname{lcm}=$ product holds only for **two** numbers.
+- $\gcd\cdot\mathop{\mathrm{lcm}}\nolimits=$ product holds only for **two** numbers.

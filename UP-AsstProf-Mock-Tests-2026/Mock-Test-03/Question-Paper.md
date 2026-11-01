@@ -527,7 +527,7 @@ Choose the correct answer from the code given below :
 
 | List-I | List-II |
 |---|---|
-| a. $A^2 = A$ | I. $\operatorname{Re}\lambda = 0$ |
+| a. $A^2 = A$ | I. $\mathop{\mathrm{Re}}\nolimits\lambda = 0$ |
 | b. $A^2 = I$ | II. $\lambda \in \lbrace 0, 1\rbrace$ |
 | c. $A^{\ast }A = I$ | III. $\lvert\lambda\rvert = 1$ |
 | d. $A^{\ast } = -A$ | IV. $\lambda \in \lbrace 1, -1\rbrace$ |
@@ -690,7 +690,7 @@ Choose the correct answer from the options given below :
 
 **57.** Given below are two statements, one is labeled as Assertion (A) and other is labeled as Reason (R).
 
-Assertion (A): If $f$ is an entire function with $\operatorname{Re} f(z) \le 3$ for all $z \in \mathbb{C}$, then $f$ is constant.
+Assertion (A): If $f$ is an entire function with $\mathop{\mathrm{Re}}\nolimits f(z) \le 3$ for all $z \in \mathbb{C}$, then $f$ is constant.
 
 Reason (R): Every bounded entire function is constant.
 

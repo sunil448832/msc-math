@@ -44,7 +44,7 @@ Basic facts:
 - Thomae's function: Riemann integrable (discontinuous only on $\mathbb Q$), integral $0$.
 
 ## 5. $L^p$ basics
-- $\Vert f\Vert _p=\left(\int|f|^p\right)^{1/p}$ for $1\le p\lt \infty$, and $\Vert f\Vert _\infty=\operatorname{ess\thinspace sup}|f|$. Elements are classes of functions equal a.e.
+- $\Vert f\Vert _p=\left(\int|f|^p\right)^{1/p}$ for $1\le p\lt \infty$, and $\Vert f\Vert _\infty=\mathop{\mathrm{ess\thinspace sup}}\nolimits|f|$. Elements are classes of functions equal a.e.
 - **Hölder:** $\Vert fg\Vert _1\le\Vert f\Vert _p\Vert g\Vert _q$ for $\frac1p+\frac1q=1$. **Minkowski:** $\Vert f+g\Vert _p\le\Vert f\Vert _p+\Vert g\Vert _p$ for $p\ge1$.
 - **Riesz–Fischer:** $L^p$ is a Banach space for $1\le p\le\infty$. $L^2$ is a **Hilbert** space, and it is the only $L^p$ that is one.
 - If $f_n\to f$ in $L^p$, a **subsequence** converges a.e.

@@ -40,7 +40,7 @@ $a_n=\frac1L\int_{-L}^{L}f\cos\frac{n\pi x}{L}dx$, $b_n=\frac1L\int_{-L}^{L}f\si
 | $x$ | $2\sum\frac{(-1)^{n+1}}{n}\sin nx$ | $x=\frac\pi2$: $1-\frac13+\frac15-\cdots=\frac\pi4$; Parseval: $\sum\frac1{n^2}=\frac{\pi^2}{6}$ |
 | $x^2$ | $\frac{\pi^2}3+4\sum\frac{(-1)^n}{n^2}\cos nx$ | $x=\pi$: $\sum\frac1{n^2}=\frac{\pi^2}6$; $x=0$: $\sum\frac{(-1)^{n+1}}{n^2}=\frac{\pi^2}{12}$; Parseval: $\sum\frac1{n^4}=\frac{\pi^4}{90}$ |
 | $\lvert x\rvert$ | $\frac\pi2-\frac4\pi\sum_{n\text{ odd}}\frac{\cos nx}{n^2}$ | $x=0$: $\sum_{n\text{ odd}}\frac1{n^2}=\frac{\pi^2}8$; Parseval: $\sum_{\text{odd}}\frac1{n^4}=\frac{\pi^4}{96}$ |
-| $\operatorname{sgn}x$ (square wave) | $\frac4\pi\sum_{n\text{ odd}}\frac{\sin nx}{n}$ | $x=\frac\pi2$: Leibniz $\frac\pi4$; Parseval: $\sum_{\text{odd}}\frac1{n^2}=\frac{\pi^2}8$ |
+| $\mathop{\mathrm{sgn}}\nolimits x$ (square wave) | $\frac4\pi\sum_{n\text{ odd}}\frac{\sin nx}{n}$ | $x=\frac\pi2$: Leibniz $\frac\pi4$; Parseval: $\sum_{\text{odd}}\frac1{n^2}=\frac{\pi^2}8$ |
 | $\lvert\sin x\rvert$ | $\frac2\pi-\frac4\pi\sum_{m\ge1}\frac{\cos2mx}{4m^2-1}$ | $x=0$: $\sum\frac1{4m^2-1}=\frac12$ |
 | $\frac{\pi-x}{2}$ on $(0,2\pi)$ | $\sum_{n\ge1}\frac{\sin nx}{n}$ | |
 | $e^{ax}$ | $\frac{2\sinh a\pi}{\pi}\left[\frac1{2a}+\sum\frac{(-1)^n}{a^2+n^2}(a\cos nx-n\sin nx)\right]$ | $\sum\frac{(-1)^n}{a^2+n^2}$ |

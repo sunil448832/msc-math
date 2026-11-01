@@ -2,7 +2,7 @@
 > Syllabus coverage: eigen values and eigen vectors, Cayley-Hamilton Theorem, diagonalization (with minimal polynomial, trace/determinant, nilpotent/idempotent matrices)
 > Cheatsheet: [../Cheatsheets/04-Eigenvalues-Cayley-Hamilton-Diagonalization.md](../Cheatsheets/04-Eigenvalues-Cayley-Hamilton-Diagonalization.md)
 
-**Q1.** `[Concept]` ★ If $\lambda$ is an eigenvalue of an invertible $n\times n$ matrix $A$, then an eigenvalue of $\operatorname{adj}A$ is
+**Q1.** `[Concept]` ★ If $\lambda$ is an eigenvalue of an invertible $n\times n$ matrix $A$, then an eigenvalue of $\mathop{\mathrm{adj}}\nolimits A$ is
 
 (A) $\lambda\det A$
 
@@ -83,7 +83,7 @@ Which is/are correct?
 
 (A) every eigenvalue of $N$ is $0$
 
-(B) $\operatorname{tr}N=0$
+(B) $\mathop{\mathrm{tr}}\nolimits N=0$
 
 (C) $I+N$ is invertible
 
@@ -99,7 +99,7 @@ Which is/are correct?
 
 (D) 9
 
-**Q9.** `[Application]` ★★ Let $P$ be a $4\times4$ real matrix with $P^2=P$ and $\operatorname{tr}P=2$. Then $\operatorname{rank}P$ is
+**Q9.** `[Application]` ★★ Let $P$ be a $4\times4$ real matrix with $P^2=P$ and $\mathop{\mathrm{tr}}\nolimits P=2$. Then $\mathop{\mathrm{rank}}\nolimits P$ is
 
 (A) 1
 
@@ -168,7 +168,7 @@ Which is/are correct?
 | 13 | B | Application |
 
 ## Solutions
-**Q1 — (D).** $\operatorname{adj}A=(\det A)A^{-1}$ and $A^{-1}v=\lambda^{-1}v$, so $\operatorname{adj}A\thinspace v=\dfrac{\det A}{\lambda}v$.
+**Q1 — (D).** $\mathop{\mathrm{adj}}\nolimits A=(\det A)A^{-1}$ and $A^{-1}v=\lambda^{-1}v$, so $\mathop{\mathrm{adj}}\nolimits A\thinspace v=\dfrac{\det A}{\lambda}v$.
 
 **Q2 — (C).** The eigenvalues of $A^2+I$ are $\lambda^2+1=2,5,10$, and their product is $100$. (A) adds instead of multiplying.
 
@@ -180,11 +180,11 @@ Which is/are correct?
 
 **Q6 — (A).** Nilpotent of index $k$ gives $x^k$. A non-trivial idempotent gives $x(x-1)$, a non-trivial involution gives $x^2-1$, and $cI$ gives $x-c$.
 
-**Q7 — (D).** A diagonalizable nilpotent matrix is similar to $\operatorname{diag}(0,\dots,0)=0$, so it is $0$. Since $N\ne0$, (D) fails. (C) holds because the eigenvalues of $I+N$ are all $1$, so $\det(I+N)=1$.
+**Q7 — (D).** A diagonalizable nilpotent matrix is similar to $\mathop{\mathrm{diag}}\nolimits(0,\dots,0)=0$, so it is $0$. Since $N\ne0$, (D) fails. (C) holds because the eigenvalues of $I+N$ are all $1$, so $\det(I+N)=1$.
 
-**Q8 — (B).** $T$ is $+1$ on symmetric matrices (dimension 6) and $-1$ on skew-symmetric matrices (dimension 3), so $\operatorname{tr}T=6-3=3$. In general $\operatorname{tr}T=n$ and $\det T=(-1)^{n(n-1)/2}$. (C) counts only the $+1$ eigenspace.
+**Q8 — (B).** $T$ is $+1$ on symmetric matrices (dimension 6) and $-1$ on skew-symmetric matrices (dimension 3), so $\mathop{\mathrm{tr}}\nolimits T=6-3=3$. In general $\mathop{\mathrm{tr}}\nolimits T=n$ and $\det T=(-1)^{n(n-1)/2}$. (C) counts only the $+1$ eigenspace.
 
-**Q9 — (C).** An idempotent is diagonalizable with eigenvalues 0 and 1, so $\operatorname{rank}P=\operatorname{tr}P=2$.
+**Q9 — (C).** An idempotent is diagonalizable with eigenvalues 0 and 1, so $\mathop{\mathrm{rank}}\nolimits P=\mathop{\mathrm{tr}}\nolimits P=2$.
 
 **Q10 — (B).** The trace is 7 and the determinant is 10, so $\lambda^2-7\lambda+10=0$ and $\lambda=2,5$.
 

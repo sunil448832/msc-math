@@ -22,7 +22,7 @@
 
 (D) $7$
 
-**Q3.** `[Numerical]` ★★ In $L^2[0,1]$ (real), the distance from $f(t)=t^2$ to the subspace $\operatorname{span}\lbrace 1,t\rbrace$ is
+**Q3.** `[Numerical]` ★★ In $L^2[0,1]$ (real), the distance from $f(t)=t^2$ to the subspace $\mathop{\mathrm{span}}\nolimits\lbrace 1,t\rbrace$ is
 
 (A) $\dfrac{1}{6\sqrt5}$
 
@@ -133,11 +133,11 @@ Which is/are correct?
 
 (A) $\lbrace 0\rbrace$
 
-(B) $\operatorname{span}\lbrace (1,1,0,0,\dots)\rbrace$
+(B) $\mathop{\mathrm{span}}\nolimits\lbrace (1,1,0,0,\dots)\rbrace$
 
 (C) $\lbrace x: x_1=-x_2\rbrace$
 
-(D) $\operatorname{span}\lbrace (1,-1,0,0,\dots)\rbrace$
+(D) $\mathop{\mathrm{span}}\nolimits\lbrace (1,-1,0,0,\dots)\rbrace$
 
 **Q13.** `[Numerical]` ★★★ Let $P:\mathbb R^2\to\mathbb R^2$, $P(x,y)=(x+y,0)$, with the Euclidean norm. Then $P^2=P$ and $\Vert P\Vert$ equals
 
@@ -190,6 +190,6 @@ Which is/are correct?
 
 **Q11 — (B).** The Cauchy–Schwarz inequality is an equality exactly when one vector is a scalar multiple of the other. (A) gives $\langle x,y\rangle=0$, which is the opposite extreme.
 
-**Q12 — (D).** $M=\lbrace x: \langle x,u\rangle=0\rbrace$ for $u=(1,-1,0,\dots)$, i.e. $M=\lbrace u\rbrace ^\perp$, which is closed. So $M^\perp=\lbrace u\rbrace ^{\perp\perp}=\operatorname{span}\lbrace u\rbrace$. Option (B) is the common sign slip.
+**Q12 — (D).** $M=\lbrace x: \langle x,u\rangle=0\rbrace$ for $u=(1,-1,0,\dots)$, i.e. $M=\lbrace u\rbrace ^\perp$, which is closed. So $M^\perp=\lbrace u\rbrace ^{\perp\perp}=\mathop{\mathrm{span}}\nolimits\lbrace u\rbrace$. Option (B) is the common sign slip.
 
 **Q13 — (B).** The matrix is $`\begin{pmatrix}1&1\cr 0&0\end{pmatrix}`$, and $`A^TA=\begin{pmatrix}1&1\cr 1&1\end{pmatrix}`$ has largest eigenvalue $2$, so $\Vert P\Vert =\sqrt2$. $P$ is idempotent but not self-adjoint, i.e. an oblique projection. Only **orthogonal** projections ($P^2=P=P^\ast$, $P\neq0$) have norm exactly $1$. That makes (A) the trap.

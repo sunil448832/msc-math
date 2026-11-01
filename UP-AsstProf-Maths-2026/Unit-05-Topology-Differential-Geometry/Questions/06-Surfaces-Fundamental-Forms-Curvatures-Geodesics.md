@@ -189,7 +189,7 @@ Which of the above is/are correct?
 
 **Q3 — (B).** If $\kappa_1=\kappa_2$ everywhere, then $dN=-\kappa\thinspace d\mathbf r$ with $\kappa$ constant. If $\kappa=0$ the surface is a plane; otherwise it is a sphere of radius $1/|\kappa|$. A cylinder is not umbilic: its principal curvatures are $0$ and $1/a$.
 
-**Q4 — (B).** Sphere: $\kappa_1=\kappa_2=1/a$. Cylinder: $\kappa_1=1/a$, $\kappa_2=0$, so $K=0$ and $H\ne0$. Plane: both principal curvatures are $0$. Catenoid: minimal ($H=0$) with $K=-\operatorname{sech}^4u\lt 0$.
+**Q4 — (B).** Sphere: $\kappa_1=\kappa_2=1/a$. Cylinder: $\kappa_1=1/a$, $\kappa_2=0$, so $K=0$ and $H\ne0$. Plane: both principal curvatures are $0$. Catenoid: minimal ($H=0$) with $K=-\mathop{\mathrm{sech}}\nolimits^4u\lt 0$.
 
 **Q5 — (A).** For the torus with radii $R,r$: $K=\dfrac{\cos u}{r(R+r\cos u)}$. With $R=3$, $r=1$, $u=\pi$: $K=\dfrac{-1}{1\cdot2}=-\tfrac12$ (saddle-like inner side). The outer equator gives $\tfrac14$, which is option (B).
 

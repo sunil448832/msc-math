@@ -10,7 +10,7 @@
 
 (C) the multiplicity of $\lambda$ as a root of the minimal polynomial
 
-(D) $\operatorname{rank}(A-\lambda I)$
+(D) $\mathop{\mathrm{rank}}\nolimits(A-\lambda I)$
 
 **Q2.** `[Numerical]` ★★ The number of similarity classes of $4\times4$ nilpotent complex matrices is
 
@@ -42,7 +42,7 @@
 
 (D) 4
 
-**Q5.** `[Application]` ★★★ Let $N$ be a $6\times6$ nilpotent matrix with $\operatorname{rank}N=3$, $\operatorname{rank}N^2=1$ and $N^3=0$. The sizes of the Jordan blocks of $N$ are
+**Q5.** `[Application]` ★★★ Let $N$ be a $6\times6$ nilpotent matrix with $\mathop{\mathrm{rank}}\nolimits N=3$, $\mathop{\mathrm{rank}}\nolimits N^2=1$ and $N^3=0$. The sizes of the Jordan blocks of $N$ are
 
 (A) $3,3$
 
@@ -86,7 +86,7 @@ Which is/are correct?
 
 | List-I | List-II |
 |---|---|
-| (a) $\operatorname{rank}J_4(0)$ | 1. 1 |
+| (a) $\mathop{\mathrm{rank}}\nolimits J_4(0)$ | 1. 1 |
 | (b) minimal polynomial of $J_4(2)$ | 2. 2 |
 | (c) $\dim$ of the eigenspace of $J_4(2)$ | 3. 3 |
 | (d) nullity of $J_4(0)^2$ | 4. $(x-2)^4$ |
@@ -165,13 +165,13 @@ Which is/are correct?
 
 **Q4 — (A).** The largest block must have size exactly 2, so the partitions of 4 with largest part 2 are $2{+}2$ and $2{+}1{+}1$. This also shows that the characteristic and minimal polynomials do not determine the class when $n\ge4$.
 
-**Q5 — (C).** The number of blocks of size $\ge k$ is $\operatorname{rank}N^{k-1}-\operatorname{rank}N^k$. That gives $6-3=3$ blocks of size $\ge1$, $3-1=2$ of size $\ge2$, $1-0=1$ of size $\ge3$, and none of size $\ge4$. So the sizes are $3,2,1$. Check: (A) gives rank sequence $4,2,0$ and (B) gives $3,0$.
+**Q5 — (C).** The number of blocks of size $\ge k$ is $\mathop{\mathrm{rank}}\nolimits N^{k-1}-\mathop{\mathrm{rank}}\nolimits N^k$. That gives $6-3=3$ blocks of size $\ge1$, $3-1=2$ of size $\ge2$, $1-0=1$ of size $\ge3$, and none of size $\ge4$. So the sizes are $3,2,1$. Check: (A) gives rank sequence $4,2,0$ and (B) gives $3,0$.
 
 **Q6 — (C).** II fails for $n\ge4$: $J_2(0)\oplus J_2(0)$ and $J_2(0)\oplus J_1(0)\oplus J_1(0)$ both have $\chi=x^4$ and $m=x^2$ but different ranks (2 and 1). II does hold for $n\le3$. III is true because $J_k(\lambda)^T$ is similar to $J_k(\lambda)$ via the reversal permutation.
 
 **Q7 — (A).** The Jordan form is upper triangular and exists exactly because $\chi_A$ splits over $\mathbb{C}$. (Schur's theorem gives this unitarily as well.)
 
-**Q8 — (A).** $\operatorname{rank}J_4(0)=3$. The minimal polynomial of $J_4(2)$ is $(x-2)^4$. A single block has a 1-dimensional eigenspace. $J_4(0)^2$ has rank 2, so its nullity is 2.
+**Q8 — (A).** $\mathop{\mathrm{rank}}\nolimits J_4(0)=3$. The minimal polynomial of $J_4(2)$ is $(x-2)^4$. A single block has a 1-dimensional eigenspace. $J_4(0)^2$ has rank 2, so its nullity is 2.
 
 **Q9 — (C).** $`C(x^2)=\begin{pmatrix}0&0\cr 1&0\end{pmatrix}`$ is non-zero nilpotent, so it is not diagonalizable. $C(f)$ is diagonalizable over $\mathbb C$ iff $f$ has distinct roots. (A), (B) and (D) always hold: $C(f)$ is cyclic, so each eigenvalue has a single Jordan block.
 

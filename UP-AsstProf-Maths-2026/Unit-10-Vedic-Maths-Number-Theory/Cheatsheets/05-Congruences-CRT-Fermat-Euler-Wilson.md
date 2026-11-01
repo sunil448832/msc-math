@@ -4,7 +4,7 @@
 ## 1. Basics
 - $a\equiv b\pmod m$ means $m\mid a-b$. This is an equivalence relation compatible with $+$ and $\times$.
 - **Cancellation:** $ca\equiv cb\pmod m \iff a\equiv b\pmod{m/\gcd(c,m)}$. You may cancel freely only when $\gcd(c,m)=1$.
-- If $a\equiv b$ modulo $m_1,\dots,m_k$, then $a\equiv b\pmod{\operatorname{lcm}(m_i)}$.
+- If $a\equiv b$ modulo $m_1,\dots,m_k$, then $a\equiv b\pmod{\mathop{\mathrm{lcm}}\nolimits(m_i)}$.
 - **Divisibility tests:** 3 and 9 use the digit sum. 11 uses the alternating digit sum. 7, 11 and 13 use alternating sums of 3-digit blocks (since $1001=7\cdot11\cdot13$).
 
 ## 2. Linear congruences
@@ -22,7 +22,7 @@ Examples:
 ## 3. Chinese remainder theorem
 If $m_1,\dots,m_k$ are **pairwise coprime**, then the system $x\equiv a_i\pmod{m_i}$ has a **unique** solution mod $M=\prod m_i$:
 $$x\equiv\sum a_iM_iy_i,\qquad M_i=M/m_i,\quad y_i\equiv M_i^{-1}\pmod{m_i}.$$
-- **General version:** $x\equiv a_i\pmod{m_i}$ is solvable iff $a_i\equiv a_j\pmod{\gcd(m_i,m_j)}$ for all $i,j$. The solution is then unique mod $\operatorname{lcm}$.
+- **General version:** $x\equiv a_i\pmod{m_i}$ is solvable iff $a_i\equiv a_j\pmod{\gcd(m_i,m_j)}$ for all $i,j$. The solution is then unique mod $\mathop{\mathrm{lcm}}\nolimits$.
 - **Ring form:** $\mathbb Z_{mn}\cong\mathbb Z_m\times\mathbb Z_n$ iff $\gcd(m,n)=1$. As a consequence, $\varphi$ is multiplicative and solution counts multiply.
 - **Sunzi** (*Sunzi Suanjing*, c. 3rd–5th c.): $x\equiv2\ (3)$, $3\ (5)$, $2\ (7)$ gives $x=23$ (mod 105).
 
@@ -46,17 +46,17 @@ $$x\equiv\sum a_iM_iy_i,\qquad M_i=M/m_i,\quad y_i\equiv M_i^{-1}\pmod{m_i}.$$
 - **Korselt's criterion:** $n$ is a Carmichael number iff $n$ is square-free and $p-1\mid n-1$ for every $p\mid n$. Every Carmichael number has at least 3 prime factors. There are infinitely many (Alford–Granville–Pomerance, 1994).
 
 ## 5. Order and primitive roots
-- $\operatorname{ord}_m a$ is the least $k\ge1$ with $a^k\equiv1$.
-- $a^n\equiv1\iff\operatorname{ord}_m a\mid n$. In particular $\operatorname{ord}_m a\mid\varphi(m)$.
-- $\operatorname{ord}(a^k)=\dfrac{\operatorname{ord}a}{\gcd(k,\operatorname{ord}a)}$.
-- A **primitive root** mod $m$ is an element $g$ with $\operatorname{ord}_m g=\varphi(m)$.
+- $\mathop{\mathrm{ord}}\nolimits_m a$ is the least $k\ge1$ with $a^k\equiv1$.
+- $a^n\equiv1\iff\mathop{\mathrm{ord}}\nolimits_m a\mid n$. In particular $\mathop{\mathrm{ord}}\nolimits_m a\mid\varphi(m)$.
+- $\mathop{\mathrm{ord}}\nolimits(a^k)=\dfrac{\mathop{\mathrm{ord}}\nolimits a}{\gcd(k,\mathop{\mathrm{ord}}\nolimits a)}$.
+- A **primitive root** mod $m$ is an element $g$ with $\mathop{\mathrm{ord}}\nolimits_m g=\varphi(m)$.
 - **Primitive roots exist iff $m=1,2,4,p^k,2p^k$** ($p$ an odd prime). Then $U(\mathbb Z_m)$ is cyclic and there are **$\varphi(\varphi(m))$** primitive roots.
 - No primitive root exists mod 8, 12, 15, 16, 20, 21, 24, …
 - **Test:** $g$ is a primitive root mod $p$ iff $g^{(p-1)/q}\not\equiv1$ for every prime $q\mid p-1$.
 - Least primitive roots: 2 for $p=3,5,11,13,19,29$; 3 for $p=7,17,31$; 5 for $p=23$. (2 is **not** a primitive root mod 7 or 17.)
 - If $g$ is a primitive root mod $p$ and $g^{p-1}\not\equiv1\pmod{p^2}$, then $g$ is a primitive root mod $p^k$ for all $k$.
 - $U(\mathbb Z_{2^k})\cong\mathbb Z_2\times\mathbb Z_{2^{k-2}}$ for $k\ge3$, and $x^2\equiv1\pmod{2^k}$ has 4 solutions.
-- **Decimal periods:** the period of $1/p$ is $\operatorname{ord}_p10$. Examples: $1/7$ has period 6, $1/13$ period 6, $1/17$ period 16, $1/19$ period 18.
+- **Decimal periods:** the period of $1/p$ is $\mathop{\mathrm{ord}}\nolimits_p10$. Examples: $1/7$ has period 6, $1/13$ period 6, $1/17$ period 16, $1/19$ period 18.
 
 ## 6. Counting solutions of $x^2\equiv1\pmod n$
 For $n=2^e p_1^{a_1}\cdots p_r^{a_r}$, the number of solutions is $2^r\cdot c(e)$, where

@@ -51,6 +51,19 @@ GitHub runs Markdown *before* MathJax. Because of that, some ordinary LaTeX gets
 | `<` `>` | `\lt` `\gt` |
 | `*` | `\ast` |
 | `\mathbb{Z}_n` | `\mathbb Z_n` (braces dropped when the argument is a single character) |
+| `\operatorname{rank}` | `\mathop{\mathrm{rank}}\nolimits`, because GitHub blocks `\operatorname` |
+
+**Macros GitHub blocks** (taken from GitHub's math-renderer source):
+- `\operatorname`
+- `\DeclareMathOperator`, `\DeclarePairedDelimiters`
+- `\phantom`, `\hphantom`, `\vphantom`
+- `\colorbox`, `\fcolorbox`, `\definecolor`
+- `\unicode`, `\mathchoice`
+- `\newtagform`, `\renewtagform`, `\Newextarrow`, `\mmlToken`
+
+The `newcommand`, `html`, `bbox`, `require` and `action` packages are also disabled.
+
+**Brace budget:** GitHub stops rendering the rest of a page once the sum over its formulas of (number of `{` + 1) passes **2000**. Keep files within this limit. Use `x^2` rather than `x^{2}`, and `\frac12` rather than `\frac{1}{2}`.
 
 **Delimiters:**
 - Use `$...$` for normal inline math.

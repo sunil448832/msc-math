@@ -24,20 +24,20 @@
 ## 2. Linear transformations
 - $T:V\to W$ is linear iff $T(au+bv)=aT(u)+bT(v)$. Consequently $T(0)=0$, so $x\mapsto x+c$ with $c\ne0$ is **not** linear.
 - Linearity depends on the scalar field. $z\mapsto\bar z$ is $\mathbb{R}$-linear but not $\mathbb{C}$-linear.
-- $\ker T$ is a subspace of $V$ and $\operatorname{range}T$ is a subspace of $W$.
+- $\ker T$ is a subspace of $V$ and $\mathop{\mathrm{range}}\nolimits T$ is a subspace of $W$.
 - $T$ is injective $\iff \ker T=\lbrace 0\rbrace$.
 - A linear map is determined by its values on a basis, and those values can be chosen arbitrarily.
 - **Algebra of linear maps:** $L(V,W)$ is a vector space. $L(V,V)$ is an algebra under composition, and it is non-commutative when $\dim V\ge2$.
 
 ## 3. Rank–Nullity Theorem
 For $V$ finite-dimensional and $T:V\to W$ linear:
-$$\dim V=\operatorname{rank}T+\operatorname{nullity}T.$$
+$$\dim V=\mathop{\mathrm{rank}}\nolimits T+\mathop{\mathrm{nullity}}\nolimits T.$$
 Consequences:
 - An injective $T$ needs $\dim V\le \dim W$, and a surjective $T$ needs $\dim V\ge\dim W$.
 - If $\dim V=\dim W\lt \infty$, then injective $\iff$ surjective $\iff$ bijective.
-- $\ker T=\operatorname{range}T$ forces $\dim V=2\thinspace \operatorname{rank}T$, so $\dim V$ must be even.
-- $T^2=0 \iff \operatorname{range}T\subseteq\ker T$, which gives $\operatorname{rank}T\le n/2$.
-- Composition: $\operatorname{rank}(ST)\le\min(\operatorname{rank}S,\operatorname{rank}T)$ and $\operatorname{nullity}(ST)\le \operatorname{nullity}S+\operatorname{nullity}T$.
+- $\ker T=\mathop{\mathrm{range}}\nolimits T$ forces $\dim V=2\thinspace \mathop{\mathrm{rank}}\nolimits T$, so $\dim V$ must be even.
+- $T^2=0 \iff \mathop{\mathrm{range}}\nolimits T\subseteq\ker T$, which gives $\mathop{\mathrm{rank}}\nolimits T\le n/2$.
+- Composition: $\mathop{\mathrm{rank}}\nolimits(ST)\le\min(\mathop{\mathrm{rank}}\nolimits S,\mathop{\mathrm{rank}}\nolimits T)$ and $\mathop{\mathrm{nullity}}\nolimits(ST)\le \mathop{\mathrm{nullity}}\nolimits S+\mathop{\mathrm{nullity}}\nolimits T$.
 
 ## 4. Matrix representation
 - With ordered bases $\mathcal{B}=\lbrace v_j\rbrace$ of $V$ and $\mathcal{C}=\lbrace w_i\rbrace$ of $W$, the $j$-th **column** of $`[T]_{\mathcal{C},\mathcal{B}}`$ is the coordinate vector $`[T v_j]_{\mathcal{C}}`$.
@@ -56,7 +56,7 @@ Consequences:
 | Projection $(x,y,z)\mapsto(x,y,0)$ | $z$-axis | $xy$-plane |
 | $D$ on $P_n$ | constants | $P_{n-1}$ |
 | $A\mapsto A-A^T$ on $M_n$ | symmetric matrices | skew-symmetric matrices |
-| $A\mapsto\operatorname{tr}A$ | trace-zero matrices ($\dim n^2-1$) | $F$ |
+| $A\mapsto\mathop{\mathrm{tr}}\nolimits A$ | trace-zero matrices ($\dim n^2-1$) | $F$ |
 | Right shift on $\mathbb R^\infty$ | $\lbrace 0\rbrace$ | not onto, so injective $\not\Rightarrow$ surjective in infinite dimensions |
 
 ## Exam traps

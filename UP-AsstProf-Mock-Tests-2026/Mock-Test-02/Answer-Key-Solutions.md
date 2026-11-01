@@ -128,7 +128,7 @@ Distribution: A = 18, B = 16, C = 18, D = 18.
 
 **34 — (A)** $r^2\equiv-1\pmod 7$ has no solution ($7\equiv3\bmod4$), so the quadratic $x^2+1$ is irreducible, $\langle x^2+1\rangle$ is maximal and the quotient is a field of order $7^2=49$. R explains A.
 
-**35 — (B)** Characteristic of $\mathbb Z_m\times\mathbb Z_n$ is $\operatorname{lcm}(m,n)=\operatorname{lcm}(4,6)=12$.
+**35 — (B)** Characteristic of $\mathbb Z_m\times\mathbb Z_n$ is $\mathop{\mathrm{lcm}}\nolimits(m,n)=\mathop{\mathrm{lcm}}\nolimits(4,6)=12$.
 
 **36 — (D)** $6=2\cdot3=(1+\sqrt{-5})(1-\sqrt{-5})$ gives two distinct factorizations into irreducibles, so $\mathbb Z[\sqrt{-5}]$ is not a UFD. (A), (B), (C) are standard true results.
 

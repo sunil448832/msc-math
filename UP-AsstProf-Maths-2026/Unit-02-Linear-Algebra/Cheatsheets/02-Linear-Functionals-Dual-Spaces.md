@@ -6,7 +6,7 @@
 - Non-examples: $\det$ (for $n\ge2$), $x\mapsto\Vert x\Vert$, $x\mapsto x_1x_2$, $x\mapsto x_1+1$.
 - If $f\ne0$, then $f$ is onto $F$ and $\ker f$ is a **hyperplane** of dimension $n-1$.
 - If $\ker f\subseteq\ker g$ and $f\ne0$, then $g=cf$. Two non-zero functionals with the same kernel are scalar multiples of each other.
-- More generally, $g\in\operatorname{span}\lbrace f_1,\dots,f_k\rbrace \iff\bigcap\ker f_i\subseteq\ker g$.
+- More generally, $g\in\mathop{\mathrm{span}}\nolimits\lbrace f_1,\dots,f_k\rbrace \iff\bigcap\ker f_i\subseteq\ker g$.
 
 ## 2. Dual basis
 - For a basis $\mathcal B=\lbrace v_1,\dots,v_n\rbrace$ the dual basis $\lbrace f_i\rbrace$ is defined by $f_i(v_j)=\delta_{ij}$. Hence $\dim V^\ast =\dim V$ when $V$ is finite-dimensional.
@@ -35,13 +35,13 @@ $W^0=\lbrace f\in V^\ast : f|_W=0\rbrace$ is a subspace of $V^\ast$.
 ## 5. Transpose (dual map)
 For $T:V\to W$, define $T^t:W^\ast \to V^\ast$ by $T^t(g)=g\circ T$.
 - $`[T^t]_{\mathcal B^\ast ,\mathcal C^\ast }=\big([T]_{\mathcal C,\mathcal B}\big)^T`$.
-- $\ker T^t=(\operatorname{range}T)^0$ and $\operatorname{range}T^t=(\ker T)^0$.
-- $\operatorname{rank}T^t=\operatorname{rank}T$, which is the abstract form of *row rank = column rank*.
+- $\ker T^t=(\mathop{\mathrm{range}}\nolimits T)^0$ and $\mathop{\mathrm{range}}\nolimits T^t=(\ker T)^0$.
+- $\mathop{\mathrm{rank}}\nolimits T^t=\mathop{\mathrm{rank}}\nolimits T$, which is the abstract form of *row rank = column rank*.
 - $(ST)^t=T^tS^t$ and $(T^{-1})^t=(T^t)^{-1}$.
 - $T$ is injective $\iff T^t$ is surjective, and $T$ is surjective $\iff T^t$ is injective.
 
 ## Exam traps
-- $\dim\ker T^t$ uses $\dim W$ (the *codomain* of $T$): $\dim\ker T^t=\dim W-\operatorname{rank}T$.
+- $\dim\ker T^t$ uses $\dim W$ (the *codomain* of $T$): $\dim\ker T^t=\dim W-\mathop{\mathrm{rank}}\nolimits T$.
 - The dual basis of a non-standard basis is **not** made of the coordinate functionals $x,y$. You must invert.
 - $(W_1\cap W_2)^0$ is a **sum**, not an intersection.
 - Injectivity of $V\to V^{\ast \ast }$ holds always; only surjectivity needs finite dimension.

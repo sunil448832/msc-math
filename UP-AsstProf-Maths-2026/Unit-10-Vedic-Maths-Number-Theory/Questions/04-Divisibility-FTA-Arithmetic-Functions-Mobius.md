@@ -109,7 +109,7 @@ Which of the above is/are correct?
 
 (D) $8128$ is a perfect number.
 
-**Q10.** `[Numerical]` ★★★ The number of ordered pairs $(a, b)$ of positive integers with $\operatorname{lcm}(a, b) = 36$ is
+**Q10.** `[Numerical]` ★★★ The number of ordered pairs $(a, b)$ of positive integers with $\mathop{\mathrm{lcm}}\nolimits(a, b) = 36$ is
 
 (A) 9
 

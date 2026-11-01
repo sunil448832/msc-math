@@ -22,7 +22,7 @@
 
 (D) $f_1(x,y)=x+y,\ f_2(x,y)=-y$
 
-**Q3.** `[Numerical]` ★★ Let $W=\operatorname{span}\lbrace (1,2,0,0,1),\thinspace (2,4,0,0,2),\thinspace (0,0,1,1,0)\rbrace \subseteq\mathbb R^5$. The dimension of the annihilator $W^0\subseteq(\mathbb R^5)^\ast$ is
+**Q3.** `[Numerical]` ★★ Let $W=\mathop{\mathrm{span}}\nolimits\lbrace (1,2,0,0,1),\thinspace (2,4,0,0,2),\thinspace (0,0,1,1,0)\rbrace \subseteq\mathbb R^5$. The dimension of the annihilator $W^0\subseteq(\mathbb R^5)^\ast$ is
 
 (A) 1
 
@@ -67,7 +67,7 @@ Which is/are correct?
 | List-I | List-II |
 |---|---|
 | (a) $\ker T^t$ | 1. $(\ker T)^0$ |
-| (b) $\operatorname{range}T^t$ | 2. $(\operatorname{range}T)^0$ |
+| (b) $\mathop{\mathrm{range}}\nolimits T^t$ | 2. $(\mathop{\mathrm{range}}\nolimits T)^0$ |
 | (c) $\dim U^0$ | 3. transpose of $[T]_{\mathcal C,\mathcal B}$ |
 | (d) $[T^t]_{\mathcal B^\ast ,\mathcal C^\ast }$ | 4. $\dim V-\dim U$ |
 
@@ -81,7 +81,7 @@ Which is/are correct?
 
 **Q7.** `[NOT-true / Counterexample]` ★★ For $n\ge2$, which of the following is **NOT** a linear functional on $M_n(\mathbb{R})$?
 
-(A) $A\mapsto\operatorname{tr}A$
+(A) $A\mapsto\mathop{\mathrm{tr}}\nolimits A$
 
 (B) $A\mapsto a_{11}$
 
@@ -167,7 +167,7 @@ Which is/are correct?
 
 **Q5 — (B).** Both statements are true. A holds because for infinite-dimensional $V$, $\dim V^{\ast \ast }\gt \dim V$, so $J$ is injective but not onto. R gives injectivity, but injectivity does not explain why $J$ fails to be onto. The explanation is the dimension jump.
 
-**Q6 — (D).** $g\in\ker T^t\iff g\circ T=0\iff g$ vanishes on range $T$. Also $\operatorname{range}T^t=(\ker T)^0$, $\dim U^0=\dim V-\dim U$, and the matrix of $T^t$ in the dual bases is the transpose $A^T$.
+**Q6 — (D).** $g\in\ker T^t\iff g\circ T=0\iff g$ vanishes on range $T$. Also $\mathop{\mathrm{range}}\nolimits T^t=(\ker T)^0$, $\dim U^0=\dim V-\dim U$, and the matrix of $T^t$ in the dual bases is the transpose $A^T$.
 
 **Q7 — (C).** $\det(2I)=2^n\ne2\det I$, so $\det$ is not linear (it is multilinear in the rows). The others are linear.
 
@@ -177,6 +177,6 @@ Which is/are correct?
 
 **Q10 — (B).** $\varphi(1)=1$, $\varphi(x)=\tfrac12$, $\varphi(x^2)=\tfrac13$, and any functional equals $\sum\varphi(v_i)f_i$.
 
-**Q11 — (D).** $\operatorname{rank}T^t=\operatorname{rank}T=2$, and $T^t$ has a 3-dimensional domain, so nullity $=3-2=1$. Equivalently, $\ker T^t=(\operatorname{range}T)^0$ has dimension $3-2$. (C) wrongly uses the domain of $T$.
+**Q11 — (D).** $\mathop{\mathrm{rank}}\nolimits T^t=\mathop{\mathrm{rank}}\nolimits T=2$, and $T^t$ has a 3-dimensional domain, so nullity $=3-2=1$. Equivalently, $\ker T^t=(\mathop{\mathrm{range}}\nolimits T)^0$ has dimension $3-2$. (C) wrongly uses the domain of $T$.
 
 **Q12 — (A).** Applying $f_j$ to $v=\sum a_iv_i$ gives $a_j=f_j(v)$. So the dual basis returns the coordinates.

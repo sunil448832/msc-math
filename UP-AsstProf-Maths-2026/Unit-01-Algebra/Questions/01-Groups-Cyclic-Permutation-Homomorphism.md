@@ -42,7 +42,7 @@
 
 (D) 36
 
-**Q5.** `[Concept]` ★ The automorphism group $\operatorname{Aut}(\mathbb Z_8)$ is isomorphic to
+**Q5.** `[Concept]` ★ The automorphism group $\mathop{\mathrm{Aut}}\nolimits(\mathbb Z_8)$ is isomorphic to
 
 (A) $\mathbb Z_8$
 
@@ -149,7 +149,7 @@ Which of the above is/are correct?
 
 (D) $(1\thinspace 2)(3\thinspace 4)(5\thinspace 6)$
 
-**Q14.** `[Numerical]` ★★★ The order of the automorphism group $\operatorname{Aut}(\mathbb Z_2\times\mathbb Z_4)$ is
+**Q14.** `[Numerical]` ★★★ The order of the automorphism group $\mathop{\mathrm{Aut}}\nolimits(\mathbb Z_2\times\mathbb Z_4)$ is
 
 (A) 4
 
@@ -181,19 +181,19 @@ Which of the above is/are correct?
 ## Solutions
 **Q1 — (B).** The generators of $\mathbb Z_n$ are the $k$ with $\gcd(k,n)=1$, so there are $\varphi(20)=20\cdot\frac12\cdot\frac45=8$. 19 counts all the non-zero elements, and 10 is $n/2$.
 
-**Q2 — (C).** The cycles are disjoint, so the order is $\operatorname{lcm}(3,2,4)=12$. Option (B), 24, is the product of the cycle lengths, which is the usual mistake.
+**Q2 — (C).** The cycles are disjoint, so the order is $\mathop{\mathrm{lcm}}\nolimits(3,2,4)=12$. Option (B), 24, is the product of the cycle lengths, which is the usual mistake.
 
 **Q3 — (D).** The elements of order 2 are the transpositions, $\binom42=6$ of them, and the double transpositions $(ab)(cd)$, $3$ of them, giving $6+3=9$. Option (A) forgets the double transpositions.
 
-**Q4 — (A).** $\sharp \operatorname{Hom}(\mathbb Z_m,\mathbb Z_n)=\gcd(m,n)=\gcd(12,18)=6$. The image of $1$ must be an $a$ with $12a\equiv0 \pmod{18}$.
+**Q4 — (A).** $\sharp \mathop{\mathrm{Hom}}\nolimits(\mathbb Z_m,\mathbb Z_n)=\gcd(m,n)=\gcd(12,18)=6$. The image of $1$ must be an $a$ with $12a\equiv0 \pmod{18}$.
 
-**Q5 — (C).** $\operatorname{Aut}(\mathbb Z_8)\cong U(8)=\lbrace 1,3,5,7\rbrace$, and every element squares to $1$, so the group is the Klein four-group. Order 4 alone does not make it $\mathbb Z_4$, and $U(n)$ is cyclic only for $n=1,2,4,p^k,2p^k$.
+**Q5 — (C).** $\mathop{\mathrm{Aut}}\nolimits(\mathbb Z_8)\cong U(8)=\lbrace 1,3,5,7\rbrace$, and every element squares to $1$, so the group is the Klein four-group. Order 4 alone does not make it $\mathbb Z_4$, and $U(n)$ is cyclic only for $n=1,2,4,p^k,2p^k$.
 
 **Q6 — (B).** I holds because $G/Z(G)$ cyclic forces $G$ abelian, and $Z(G)\ne 1$ for $p$-groups. III is standard. II is false: $\mathbb Z_2\times\mathbb Z_2$ and $(\mathbb{Q},+)$ are abelian but not cyclic.
 
 **Q7 — (A).** $3^2\equiv5^2\equiv7^2\equiv1\pmod 8$. A cyclic group of order 4 needs an element of order 4, and $U(8)$ has none, so R is exactly why A holds.
 
-**Q8 — (A).** In $S_5$ the possible orders are $`\operatorname{lcm}`$s of the cycle types of 5, and the maximum is $\operatorname{lcm}(2,3)=6$ (a). There are $\binom43\cdot2=8$ 3-cycles in $S_4$ (b). $|A_5|=60$ (c). The number of subgroups of $\mathbb Z_{36}$ is $d(36)=9$ (d).
+**Q8 — (A).** In $S_5$ the possible orders are $`\mathop{\mathrm{lcm}}\nolimits`$s of the cycle types of 5, and the maximum is $\mathop{\mathrm{lcm}}\nolimits(2,3)=6$ (a). There are $\binom43\cdot2=8$ 3-cycles in $S_4$ (b). $|A_5|=60$ (c). The number of subgroups of $\mathbb Z_{36}$ is $d(36)=9$ (d).
 
 **Q9 — (C).** $\mathbb Z_4$ has an element of order 4 and $\mathbb Z_2\times\mathbb Z_2$ does not. $\mathbb Z_m\times\mathbb Z_n\cong\mathbb Z_{mn}$ iff $\gcd(m,n)=1$, which gives (B). In (D) the map $n\mapsto2n$ is an isomorphism. (Note that $\mathbb{Z}\cong 2\mathbb{Z}$ as groups but not as rings.)
 
@@ -205,4 +205,4 @@ Which of the above is/are correct?
 
 **Q13 — (B).** A $k$-cycle has sign $(-1)^{k-1}$. In (B) the transposition is odd and the 4-cycle is odd, so the product is even. (A) and (C) are cycles of even length, so they are odd. (D) is three transpositions, so it is odd.
 
-**Q14 — (B).** An automorphism sends the generator $u$ of order 2 to an element of order $\le 2$ and $v$ (of order 4) to an element of order 4, with the images generating the group. There are 4 choices for $v$'s image, namely $(0,1),(0,3),(1,1),(1,3)$, and then 2 valid choices for $u$'s image, namely $(1,0),(1,2)$. That gives $4\times2=8$, and $\operatorname{Aut}(\mathbb Z_2\times\mathbb Z_4)\cong D_4$. (Verified by enumeration.) Option (C), 6, is $|\operatorname{Aut}(\mathbb Z_2\times\mathbb Z_2)|$.
+**Q14 — (B).** An automorphism sends the generator $u$ of order 2 to an element of order $\le 2$ and $v$ (of order 4) to an element of order 4, with the images generating the group. There are 4 choices for $v$'s image, namely $(0,1),(0,3),(1,1),(1,3)$, and then 2 valid choices for $u$'s image, namely $(1,0),(1,2)$. That gives $4\times2=8$, and $\mathop{\mathrm{Aut}}\nolimits(\mathbb Z_2\times\mathbb Z_4)\cong D_4$. (Verified by enumeration.) Option (C), 6, is $|\mathop{\mathrm{Aut}}\nolimits(\mathbb Z_2\times\mathbb Z_2)|$.

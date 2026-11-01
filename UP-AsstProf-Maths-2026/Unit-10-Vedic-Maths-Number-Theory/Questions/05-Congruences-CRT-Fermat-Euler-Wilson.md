@@ -193,7 +193,7 @@ Which of the above is/are correct?
 
 **Q9 — (A).** $\varphi(8)=4$, but every unit mod 8 has order at most 2 because $x^2\equiv1$. So no unit has order 4. R gives exactly this reason.
 
-**Q10 — (D).** $2^3=8\equiv1\pmod7$, so $`\operatorname{ord}_7 2=3\ne6`$. The others are true: $`\operatorname{ord}_{11}2=10`$; $\operatorname{ord}_{13}2=12$; and 10 is a primitive root mod 7, which is why $1/7$ has period 6.
+**Q10 — (D).** $2^3=8\equiv1\pmod7$, so $`\mathop{\mathrm{ord}}\nolimits_7 2=3\ne6`$. The others are true: $`\mathop{\mathrm{ord}}\nolimits_{11}2=10`$; $\mathop{\mathrm{ord}}\nolimits_{13}2=12$; and 10 is a primitive root mod 7, which is why $1/7$ has period 6.
 
 **Q11 — (B).** $17\cdot38=646=15\cdot43+1$. The Euclidean algorithm gives this directly: $43=2\cdot17+9$, $17=9+8$, $9=8+1$.
 

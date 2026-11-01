@@ -21,9 +21,9 @@
 - $M^\perp=\lbrace x:\langle x,m\rangle=0\ \forall m\in M\rbrace$ is a **closed subspace for every subset $M$**.
 - **Basic properties:**
   - $M\subseteq N\Rightarrow N^\perp\subseteq M^\perp$
-  - $M^\perp=\overline M^\perp=(\operatorname{span}M)^\perp$
+  - $M^\perp=\overline M^\perp=(\mathop{\mathrm{span}}\nolimits M)^\perp$
   - $M\cap M^\perp\subseteq\lbrace 0\rbrace$
-- **Double complement:** $M^{\perp\perp}=\overline{\operatorname{span}M}$, which equals $M$ iff $M$ is a closed subspace.
+- **Double complement:** $M^{\perp\perp}=\overline{\mathop{\mathrm{span}}\nolimits M}$, which equals $M$ iff $M$ is a closed subspace.
 - **Density test:** $M$ is dense $\iff$ $M^\perp=\lbrace 0\rbrace$ (for a subspace $M$).
 - **Closest point theorem:** in a Hilbert space, every non-empty **closed convex** set $K$ has a **unique** point nearest to any $x$. This fails in general Banach spaces: in $(\mathbb R^2,\Vert \cdot\Vert _\infty)$ there are infinitely many nearest points.
 - **Projection theorem:** if $M$ is a closed subspace, then $H=M\oplus M^\perp$ and $x=Px+(x-Px)$, where $Px$ is the best approximation and is characterised by $x-Px\perp M$.
@@ -31,9 +31,9 @@
   - $d(x,M)^2=\Vert x\Vert ^2-\Vert Px\Vert ^2$.
   - For $M=\lbrace u\rbrace ^\perp$: $d(x,M)=\frac{|\langle x,u\rangle|}{\Vert u\Vert }$.
   - For a finite-dimensional $M$: solve the normal equations with the Gram matrix.
-  - $d(t^2,\operatorname{span}\lbrace 1,t\rbrace )$ in $L^2[0,1]$ is $\frac{1}{6\sqrt5}$, with projection $t-\frac16$.
+  - $d(t^2,\mathop{\mathrm{span}}\nolimits\lbrace 1,t\rbrace )$ in $L^2[0,1]$ is $\frac{1}{6\sqrt5}$, with projection $t-\frac16$.
 - **Orthogonal projection $P$:** the following are equivalent for an idempotent $P$ ($P^2=P$):
-  - $P$ is orthogonal ($\operatorname{ran}P\perp\ker P$)
+  - $P$ is orthogonal ($\mathop{\mathrm{ran}}\nolimits P\perp\ker P$)
   - $P=P^\ast$
   - $\Vert P\Vert \le1$
 
@@ -46,7 +46,7 @@
 - **Equivalent conditions for a maximal (complete) orthonormal set $\lbrace e_\alpha\rbrace$:**
   - $\lbrace e_\alpha\rbrace$ is maximal (complete)
   - $\lbrace e_\alpha\rbrace ^\perp=\lbrace 0\rbrace$
-  - $\overline{\operatorname{span}}=H$
+  - $\overline{\mathop{\mathrm{span}}\nolimits}=H$
   - $x=\sum\langle x,e_\alpha\rangle e_\alpha$ for every $x$
   - **Parseval:** $\Vert x\Vert ^2=\sum|\langle x,e_\alpha\rangle|^2$ for every $x$
   - $\langle x,y\rangle=\sum\langle x,e_\alpha\rangle\overline{\langle y,e_\alpha\rangle}$
@@ -70,7 +70,7 @@
   - $\Vert T^\ast \Vert =\Vert T\Vert$ and $T^{\ast \ast }=T$
   - $(ST)^\ast =T^\ast S^\ast$ and $(\alpha T)^\ast =\bar\alpha T^\ast$
   - **C\*-identity:** $\Vert T^\ast T\Vert =\Vert T\Vert ^2$
-  - $\ker T^\ast =(\operatorname{ran}T)^\perp$ and $\overline{\operatorname{ran}T}=(\ker T^\ast )^\perp$
+  - $\ker T^\ast =(\mathop{\mathrm{ran}}\nolimits T)^\perp$ and $\overline{\mathop{\mathrm{ran}}\nolimits T}=(\ker T^\ast )^\perp$
 - **Classes of operators:**
 
 | Class | Definition | Spectrum / remarks |

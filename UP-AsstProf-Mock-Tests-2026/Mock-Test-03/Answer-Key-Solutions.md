@@ -148,7 +148,7 @@ Distribution: A = 7, B = 7, C = 8, D = 8.
 
 **39 — (D)** $`\begin{pmatrix}1&1\cr 0&1\end{pmatrix}`$ has the repeated eigenvalue 1 with a 1-dimensional eigenspace (it is a Jordan block). (A) has distinct eigenvalues and (B) has eigenvalues $\pm i$ (distinct), so both are diagonalisable.
 
-**40 — (C)** Unitary matrices are normal, so the spectral theorem makes them unitarily diagonalisable. Their eigenvalues have $|\lambda| = 1$ but need not be $\pm1$, e.g. $\operatorname{diag}(i, 1)$.
+**40 — (C)** Unitary matrices are normal, so the spectral theorem makes them unitarily diagonalisable. Their eigenvalues have $|\lambda| = 1$ but need not be $\pm1$, e.g. $\mathop{\mathrm{diag}}\nolimits(i, 1)$.
 
 **41 — (B)** This is the Cayley transform. $I + iH$ is invertible because the eigenvalues of $iH$ are purely imaginary. The factors commute, and $U^\ast U = (I-iH)^{-1}(I+iH)(I-iH)(I+iH)^{-1} = I$.
 
@@ -182,9 +182,9 @@ Distribution: A = 7, B = 7, C = 8, D = 8.
 
 **56 — (D)** Rouché. On $|z| = 2$: $|z^5| = 32 \gt  3\cdot 8 + 7 = 31$, so there are 5 zeros in $|z| \lt  2$. On $|z| = 1$: $|7| \gt  1 + 3$, so there are 0 zeros in $|z| \lt  1$. All 5 lie in the annulus (moduli ≈ 1.17, 1.30, 1.30, 1.88, 1.88).
 
-**57 — (A)** $g = e^{f}$ is entire with $|g| = e^{\operatorname{Re} f} \le e^3$. Liouville makes $g$ constant, so $f$ is constant. (R) is exactly the tool used.
+**57 — (A)** $g = e^{f}$ is entire with $|g| = e^{\mathop{\mathrm{Re}}\nolimits f} \le e^3$. Liouville makes $g$ constant, so $f$ is constant. (R) is exactly the tool used.
 
-**58 — (C)** Fixed points come from $z^2 - 4z + 4 = 0$, giving the single fixed point $z = 2$. Equivalently, $(\operatorname{tr})^2/\det = 4/1 = 4$. One fixed point means the map is parabolic.
+**58 — (C)** Fixed points come from $z^2 - 4z + 4 = 0$, giving the single fixed point $z = 2$. Equivalently, $(\mathop{\mathrm{tr}}\nolimits)^2/\det = 4/1 = 4$. One fixed point means the map is parabolic.
 
 **59 — (B)** The poles of $1/\sin(1/z)$ are at $z = 1/(n\pi)$ and accumulate at 0. So 0 is a non-isolated singularity. (C): $1-\cos z = z^2/2 - \dots$, which gives a pole of order 2.
 

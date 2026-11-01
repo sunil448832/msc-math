@@ -50,7 +50,7 @@
 
 (C) the imaginary axis
 
-(D) the line $\operatorname{Re} w = 1$
+(D) the line $\mathop{\mathrm{Re}}\nolimits w = 1$
 
 **Q6.** `[Numerical]` ★★ With the cross ratio defined as $(z_1,z_2,z_3,z_4) = \dfrac{(z_1-z_3)(z_2-z_4)}{(z_1-z_4)(z_2-z_3)}$, the value of $(0,\thinspace 1,\thinspace -1,\thinspace i)$ is
 
@@ -96,10 +96,10 @@ Which of the above is/are correct?
 
 | List-I | List-II |
 |---|---|
-| (a) $w = e^{z}$ on $\lbrace 0 \lt  \operatorname{Im} z \lt  \pi/2\rbrace$ | 1. unit disc $\lvert w\rvert \lt  1$ |
-| (b) $w = \operatorname{Log} z$ on $\lbrace \operatorname{Im} z \gt  0\rbrace$ | 2. right half-plane $\operatorname{Re} w \gt  0$ |
-| (c) $w = \dfrac{z-i}{z+i}$ on $\lbrace \operatorname{Im} z \gt  0\rbrace$ | 3. first quadrant |
-| (d) $w = \dfrac{1+z}{1-z}$ on $\lbrace \lvert z\rvert \lt  1\rbrace$ | 4. strip $0 \lt  \operatorname{Im} w \lt  \pi$ |
+| (a) $w = e^{z}$ on $\lbrace 0 \lt  \mathop{\mathrm{Im}}\nolimits z \lt  \pi/2\rbrace$ | 1. unit disc $\lvert w\rvert \lt  1$ |
+| (b) $w = \mathop{\mathrm{Log}}\nolimits z$ on $\lbrace \mathop{\mathrm{Im}}\nolimits z \gt  0\rbrace$ | 2. right half-plane $\mathop{\mathrm{Re}}\nolimits w \gt  0$ |
+| (c) $w = \dfrac{z-i}{z+i}$ on $\lbrace \mathop{\mathrm{Im}}\nolimits z \gt  0\rbrace$ | 3. first quadrant |
+| (d) $w = \dfrac{1+z}{1-z}$ on $\lbrace \lvert z\rvert \lt  1\rbrace$ | 4. strip $0 \lt  \mathop{\mathrm{Im}}\nolimits w \lt  \pi$ |
 
 (A) a-3, b-4, c-2, d-1
 
@@ -184,7 +184,7 @@ Which of the above is/are correct?
 
 **Q8 — (C).** $(e^z)' = e^z \ne 0$ everywhere, so $e^z$ is conformal everywhere. But $e^z$ has period $2\pi i$, so it is not injective. Conformality is a local property and does not need injectivity.
 
-**Q9 — (C).** (a) $e^{x+iy}$ with $0 \lt  y \lt  \pi/2$ covers all arguments in $(0,\pi/2)$ and all moduli, giving the first quadrant. (b) $\operatorname{Arg} \in (0,\pi)$ gives the strip. (c) is the Cayley map: points of the UHP are closer to $i$ than to $-i$. (d) $0 \mapsto 1$ and $|z| = 1 \mapsto i\mathbb{R}$, so the image is the right half-plane.
+**Q9 — (C).** (a) $e^{x+iy}$ with $0 \lt  y \lt  \pi/2$ covers all arguments in $(0,\pi/2)$ and all moduli, giving the first quadrant. (b) $\mathop{\mathrm{Arg}}\nolimits \in (0,\pi)$ gives the strip. (c) is the Cayley map: points of the UHP are closer to $i$ than to $-i$. (d) $0 \mapsto 1$ and $|z| = 1 \mapsto i\mathbb{R}$, so the image is the right half-plane.
 
 **Q10 — (D).** A circle through the pole $-d/c$ goes onto a straight line. Q5 is an example. The correct statement is that circles go to circles *or lines*.
 
@@ -192,4 +192,4 @@ Which of the above is/are correct?
 
 **Q12 — (D).** $f = e^{i\theta}\frac{z-a}{1-\bar az}$ with $a = 1/2$, so $|f'(a)| = \frac{1}{1-|a|^2} = \frac{1}{1-1/4} = \frac43$. Option (A) is $|(f^{-1})'(0)| = 1 - |a|^2$.
 
-**Q13 — (A).** $T = e^{i\theta}\frac{z-2i}{z+2i}$, and $T(\infty) = 1$ forces $e^{i\theta} = 1$. Then $T'(z) = \frac{4i}{(z+2i)^2}$, so $|T'(2i)| = \frac{4}{16} = \frac14$. In general, $|T'(a)| = \frac{1}{2\operatorname{Im} a}$. Option (D) inverts this.
+**Q13 — (A).** $T = e^{i\theta}\frac{z-2i}{z+2i}$, and $T(\infty) = 1$ forces $e^{i\theta} = 1$. Then $T'(z) = \frac{4i}{(z+2i)^2}$, so $|T'(2i)| = \frac{4}{16} = \frac14$. In general, $|T'(a)| = \frac{1}{2\mathop{\mathrm{Im}}\nolimits a}$. Option (D) inverts this.
