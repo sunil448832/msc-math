@@ -42,7 +42,7 @@
 
 (D) $\big(e^{-x^2}y'\big)'+\lambda e^{-x^2}y=0$
 
-**Q5.** `[Multi-Statement]` ★★ For a regular Sturm–Liouville problem $(p y')'+(q+\lambda r)y=0$ on $[a,b]$ with separated boundary conditions ($p>0$, $r>0$), consider:
+**Q5.** `[Multi-Statement]` ★★ For a regular Sturm–Liouville problem $(p y')'+(q+\lambda r)y=0$ on $[a,b]$ with separated boundary conditions ($p\gt 0$, $r\gt 0$), consider:
 
 I. All eigenvalues are real.
 
@@ -50,7 +50,7 @@ II. Eigenfunctions corresponding to distinct eigenvalues are orthogonal on $[a,b
 
 III. Each eigenvalue has two linearly independent eigenfunctions.
 
-IV. The eigenvalues form an increasing sequence $\lambda_1<\lambda_2<\cdots$ with $\lambda_n\to\infty$.
+IV. The eigenvalues form an increasing sequence $\lambda_1\lt \lambda_2\lt \cdots$ with $\lambda_n\to\infty$.
 
 Which are correct?
 
@@ -97,11 +97,11 @@ Which are correct?
 
 (B) The zeros of two linearly independent solutions strictly interlace.
 
-(C) If $q(x)<0$ on an interval, a non-trivial solution can have infinitely many zeros there.
+(C) If $q(x)\lt 0$ on an interval, a non-trivial solution can have infinitely many zeros there.
 
-(D) If $q_2>q_1$, then between any two consecutive zeros of a non-trivial solution of $y''+q_1y=0$ there is at least one zero of every solution of $y''+q_2y=0$.
+(D) If $q_2\gt q_1$, then between any two consecutive zeros of a non-trivial solution of $y''+q_1y=0$ there is at least one zero of every solution of $y''+q_2y=0$.
 
-**Q9.** `[Numerical]` ★★★ The Green's function $G(x,s)$ for $-y''=f(x)$, $y(0)=y(1)=0$ (so that $y(x)=\int_0^1G(x,s)f(s)\,ds$) gives $G\!\left(\tfrac14,\tfrac12\right)=$
+**Q9.** `[Numerical]` ★★★ The Green's function $G(x,s)$ for $-y''=f(x)$, $y(0)=y(1)=0$ (so that $y(x)=\int_0^1G(x,s)f(s)\thinspace ds$) gives $G\negthinspace \left(\tfrac14,\tfrac12\right)=$
 
 (A) $1/8$
 
@@ -159,13 +159,13 @@ Which are correct?
 | 12 | D | Concept |
 
 ## Solutions
-**Q1 — (D).** For $\lambda\le0$ only the trivial solution satisfies the conditions. For $\lambda=k^2>0$, $y=\sin kx$ with $\sin k\pi=0$, so $k=n\ge1$. The value $n=0$ (option A) gives $y\equiv0$, which is not an eigenfunction.
+**Q1 — (D).** For $\lambda\le0$ only the trivial solution satisfies the conditions. For $\lambda=k^2\gt 0$, $y=\sin kx$ with $\sin k\pi=0$, so $k=n\ge1$. The value $n=0$ (option A) gives $y\equiv0$, which is not an eigenfunction.
 
 **Q2 — (A).** With Neumann conditions, $\lambda=0$ has the eigenfunction $y=1$. The eigenvalues are $n^2$ for $n=0,1,2,\dots$, with eigenfunctions $\cos nx$.
 
-**Q3 — (C).** $y=\sin\sqrt\lambda x$ and $\cos\sqrt\lambda\,\pi=0$ give $\sqrt\lambda=\frac{2n-1}{2}$. So $\lambda_1=1/4$. $\pi^2/4$ is what you get by confusing $L=\pi$ with $L=1$.
+**Q3 — (C).** $y=\sin\sqrt\lambda x$ and $\cos\sqrt\lambda\thinspace \pi=0$ give $\sqrt\lambda=\frac{2n-1}{2}$. So $\lambda_1=1/4$. $\pi^2/4$ is what you get by confusing $L=\pi$ with $L=1$.
 
-**Q4 — (D).** The integrating factor is $p=e^{\int -2x\,dx}=e^{-x^2}$. Multiplying gives $e^{-x^2}y''-2xe^{-x^2}y'=(e^{-x^2}y')'$, so the weight is $e^{-x^2}$. (C) is the Laguerre form and (B) is Legendre.
+**Q4 — (D).** The integrating factor is $p=e^{\int -2x\thinspace dx}=e^{-x^2}$. Multiplying gives $e^{-x^2}y''-2xe^{-x^2}y'=(e^{-x^2}y')'$, so the weight is $e^{-x^2}$. (C) is the Laguerre form and (B) is Legendre.
 
 **Q5 — (C).** For separated conditions, each eigenvalue is **simple** (one-dimensional eigenspace), so III is false. I, II and IV are the standard theorems.
 
@@ -173,7 +173,7 @@ Which are correct?
 
 **Q7 — (A).** These are the standard weights: Legendre $1$, Hermite $e^{-x^2}$, Laguerre $e^{-x}$, Chebyshev $(1-x^2)^{-1/2}$.
 
-**Q8 — (C).** If $q<0$ and $y(x_0)=0$, then $y''=-qy$ has the sign of $y$, so $y$ is convex where it is positive and concave where it is negative. A non-trivial solution then has **at most one** zero, so it is non-oscillatory. (A) holds by uniqueness, (B) is the Sturm separation theorem, and (D) is the Sturm comparison theorem.
+**Q8 — (C).** If $q\lt 0$ and $y(x_0)=0$, then $y''=-qy$ has the sign of $y$, so $y$ is convex where it is positive and concave where it is negative. A non-trivial solution then has **at most one** zero, so it is non-oscillatory. (A) holds by uniqueness, (B) is the Sturm separation theorem, and (D) is the Sturm comparison theorem.
 
 **Q9 — (A).** $G(x,s)=x(1-s)$ for $x\le s$ and $s(1-x)$ for $x\ge s$. Here $x=\frac14\le s=\frac12$, so $G=\frac14\cdot\frac12=\frac18$. The sign is positive because the equation is $-y''=f$; for $y''=f$ the Green's function would be $-G$.
 
@@ -181,4 +181,4 @@ Which are correct?
 
 **Q11 — (B).** Put $x=e^t$, $t\in[0,1]$. The equation becomes $\ddot y+\lambda y=0$ with $y(0)=y(1)=0$, so $\lambda=n^2\pi^2$ and $y_n=\sin(n\pi\ln x)$. These are orthogonal with weight $1/x$, since the self-adjoint form is $(xy')'+\frac{\lambda}{x}y=0$.
 
-**Q12 — (D).** $L^*[y]=(a_0y)''-(a_1y)'+a_2y$, and $L^*=L$ iff $a_0'=a_1$. Then $L[y]=(a_0y')'+a_2y$.
+**Q12 — (D).** $L^\ast [y]=(a_0y)''-(a_1y)'+a_2y$, and $L^\ast =L$ iff $a_0'=a_1$. Then $L[y]=(a_0y')'+a_2y$.

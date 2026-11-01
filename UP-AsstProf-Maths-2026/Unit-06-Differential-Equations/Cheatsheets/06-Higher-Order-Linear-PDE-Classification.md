@@ -22,25 +22,25 @@ The factor $(bD-aD')$ gives $f(ax+by)$ (since $b\cdot a-a\cdot b=0$), and $(D-mD
 | $e^{ax+by}$ | $\dfrac{e^{ax+by}}{F(a,b)}$ if $F(a,b)\ne0$ |
 | failure: $(bD-aD')^r$ divides $F$ | for $F=(D-mD')^r$ and RHS $\phi(y+mx)$: $\frac{x^r}{r!}\phi(y+mx)$ |
 | $\sin(ax+by)$, $\cos(ax+by)$ | replace $D^2\to-a^2$, $DD'\to-ab$, $D'^2\to-b^2$ |
-| $\phi(ax+by)$ general | $\frac{1}{F(a,b)}\iint\cdots\int\phi(u)\,du^n$ with $u=ax+by$ (if $F(a,b)\ne0$) |
+| $\phi(ax+by)$ general | $\frac{1}{F(a,b)}\iint\cdots\int\phi(u)\thinspace du^n$ with $u=ax+by$ (if $F(a,b)\ne0$) |
 | $x^my^n$ | expand $F^{-1}$ in powers of $D'/D$ or $D/D'$ |
 
-Key formula: $\dfrac{1}{D-mD'}\,\phi(x,y)=\int\phi(x,c-mx)\,dx\Big|_{c=y+mx}$.
+Key formula: $\dfrac{1}{D-mD'}\thinspace \phi(x,y)=\int\phi(x,c-mx)\thinspace dx\Big|_{c=y+mx}$.
 
 **Worked failure case:** $(D^2-D'^2)z=e^{x+y}$ gives $\frac{1}{(D-D')}\frac{e^{x+y}}{2}=\frac{x}{2}e^{x+y}$.
 
 ## 3. Non-homogeneous equations (terms of mixed order)
-- **Reducible** (factors into linear factors $(D-mD'-c)$): each factor contributes $e^{cx}f(y+mx)$, and a repeated factor gives $e^{cx}[f_1+xf_2](y+mx)$. A factor $(\beta D-\alpha D'-\gamma)$ gives $e^{\gamma x/\beta}f(\beta y+\alpha x)$.
-- **Irreducible** (e.g. $D-D'^2$): use $z=\sum A\,e^{hx+ky}$ with $F(h,k)=0$. For $D-D'^2$ this gives $h=k^2$.
+- **Reducible** (factors into linear factors $`(D-mD'-c)`$): each factor contributes $e^{cx}f(y+mx)$, and a repeated factor gives $`e^{cx}[f_1+xf_2](y+mx)`$. A factor $`(\beta D-\alpha D'-\gamma)`$ gives $e^{\gamma x/\beta}f(\beta y+\alpha x)$.
+- **Irreducible** (e.g. $D-D'^2$): use $z=\sum A\thinspace e^{hx+ky}$ with $F(h,k)=0$. For $D-D'^2$ this gives $h=k^2$.
 - **PI:** $\frac{1}{F}e^{ax+by}=\frac{e^{ax+by}}{F(a,b)}$; $\frac{1}{F(D,D')}e^{ax+by}V=e^{ax+by}\frac{1}{F(D+a,D'+b)}V$.
 
 ## 4. Classification of second-order linear PDEs
 $$Au_{xx}+Bu_{xy}+Cu_{yy}+Du_x+Eu_y+Fu=G .$$
 | $\Delta=B^2-4AC$ | Type | Prototype | Canonical form |
 |---|---|---|---|
-| $>0$ | hyperbolic | $u_{tt}=c^2u_{xx}$ | $u_{\xi\eta}=\dots$ or $u_{\xi\xi}-u_{\eta\eta}=\dots$ |
+| $\gt 0$ | hyperbolic | $u_{tt}=c^2u_{xx}$ | $u_{\xi\eta}=\dots$ or $u_{\xi\xi}-u_{\eta\eta}=\dots$ |
 | $=0$ | parabolic | $u_t=ku_{xx}$ | $u_{\eta\eta}=\dots$ |
-| $<0$ | elliptic | $u_{xx}+u_{yy}=0$ | $u_{\alpha\alpha}+u_{\beta\beta}=\dots$ |
+| $\lt 0$ | elliptic | $u_{xx}+u_{yy}=0$ | $u_{\alpha\alpha}+u_{\beta\beta}=\dots$ |
 
 (If the equation is written as $Au_{xx}+2Bu_{xy}+Cu_{yy}$, use $B^2-AC$ instead.)
 - The type depends **only on the principal part** and may vary from point to point.
@@ -49,8 +49,8 @@ $$Au_{xx}+Bu_{xy}+Cu_{yy}+Du_x+Eu_y+Fu=G .$$
 
 | Equation | Type |
 |---|---|
-| $yu_{xx}+u_{yy}=0$ (Tricomi) | hyperbolic for $y<0$, parabolic on $y=0$, elliptic for $y>0$ |
-| $u_{xx}+xu_{yy}=0$ | hyperbolic for $x<0$, elliptic for $x>0$ |
+| $yu_{xx}+u_{yy}=0$ (Tricomi) | hyperbolic for $y\lt 0$, parabolic on $y=0$, elliptic for $y\gt 0$ |
+| $u_{xx}+xu_{yy}=0$ | hyperbolic for $x\lt 0$, elliptic for $x\gt 0$ |
 | $x^2u_{xx}-y^2u_{yy}=0$ | hyperbolic for $xy\ne0$ |
 | $u_{xx}-x^2u_{yy}=0$ | hyperbolic for $x\ne0$, parabolic on $x=0$ |
 | $x^2u_{xx}+2xyu_{xy}+y^2u_{yy}=0$ | parabolic everywhere ($\Delta=0$) |
@@ -59,7 +59,7 @@ $$Au_{xx}+Bu_{xy}+Cu_{yy}+Du_x+Eu_y+Fu=G .$$
 
 ## 5. Characteristics and reduction to canonical form
 The characteristic equation is
-$$A\,dy^2-B\,dx\,dy+C\,dx^2=0\quad\Longleftrightarrow\quad A\Big(\frac{dy}{dx}\Big)^2-B\frac{dy}{dx}+C=0 .$$
+$$A\thinspace dy^2-B\thinspace dx\thinspace dy+C\thinspace dx^2=0\quad\Longleftrightarrow\quad A\Big(\frac{dy}{dx}\Big)^2-B\frac{dy}{dx}+C=0 .$$
 - **Hyperbolic:** two real families $\phi_1=c$ and $\phi_2=c$. Put $\xi=\phi_1$, $\eta=\phi_2$ to get $u_{\xi\eta}=\dots$.
   - Example: $u_{xx}-u_{yy}=0$ has characteristics $x\pm y=c$.
   - Example: $u_{xx}-x^2u_{yy}=0$ has $\frac{dy}{dx}=\pm x$, so $\xi=y+\frac{x^2}{2}$ and $\eta=y-\frac{x^2}{2}$.

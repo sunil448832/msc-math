@@ -385,7 +385,7 @@ Choose the correct answer from the code given below :
 
 Assertion (A) : Every group of order 15 is cyclic.
 
-Reason (R) : If $p<q$ are primes and $p \nmid (q-1)$, then every group of order $pq$ is cyclic.
+Reason (R) : If $p\lt q$ are primes and $p \nmid (q-1)$, then every group of order $pq$ is cyclic.
 
 In the light of the above statements, choose the correct answer from the options given below :
 
@@ -397,7 +397,7 @@ In the light of the above statements, choose the correct answer from the options
 
 (D) (A) is not correct but (R) is correct
 
-**34.** The order of the permutation $\sigma=(1\,2\,3)(4\,5\,6\,7)(8\,9)$ in $S_9$ is
+**34.** The order of the permutation $\sigma=(1\thinspace 2\thinspace 3)(4\thinspace 5\thinspace 6\thinspace 7)(8\thinspace 9)$ in $S_9$ is
 
 (A) 9
 
@@ -447,7 +447,7 @@ In the light of the above statements, choose the correct answer from the options
 
 (D) 5
 
-**39.** Let $T:\mathbb{R}^4\to\mathbb{R}^3$ be a linear transformation of rank 2. Then the nullity of $T$ is
+**39.** Let $T:\mathbb R^4\to\mathbb R^3$ be a linear transformation of rank 2. Then the nullity of $T$ is
 
 (A) 2
 
@@ -476,7 +476,7 @@ Choose the correct answer from the options given below :
 
 (D) a – III, b – IV, c – II, d – I
 
-**41.** The minimal polynomial of the matrix $A=\begin{pmatrix}2&1&0\\0&2&0\\0&0&3\end{pmatrix}$ is
+**41.** The minimal polynomial of the matrix $`A=\begin{pmatrix}2&1&0\cr 0&2&0\cr 0&0&3\end{pmatrix}`$ is
 
 (A) $(x-2)(x-3)$
 
@@ -496,7 +496,7 @@ Choose the correct answer from the options given below :
 
 (D) 36
 
-**43.** The rank of the matrix $\begin{pmatrix}1&2&3\\2&4&6\\1&1&1\end{pmatrix}$ is
+**43.** The rank of the matrix $`\begin{pmatrix}1&2&3\cr 2&4&6\cr 1&1&1\end{pmatrix}`$ is
 
 (A) 1
 
@@ -506,7 +506,7 @@ Choose the correct answer from the options given below :
 
 (D) 0
 
-**44.** The value of $k$ for which the vectors $(1,2,k),\ (2,1,1),\ (3,3,2)$ in $\mathbb{R}^3$ are linearly dependent is
+**44.** The value of $k$ for which the vectors $(1,2,k),\ (2,1,1),\ (3,3,2)$ in $\mathbb R^3$ are linearly dependent is
 
 (A) 1
 
@@ -518,13 +518,13 @@ Choose the correct answer from the options given below :
 
 **45.** Which of the following matrices is **not** diagonalizable over $\mathbb{R}$ ?
 
-(A) $\begin{pmatrix}1&0\\0&2\end{pmatrix}$
+(A) $`\begin{pmatrix}1&0\cr 0&2\end{pmatrix}`$
 
-(B) $\begin{pmatrix}1&1\\0&2\end{pmatrix}$
+(B) $`\begin{pmatrix}1&1\cr 0&2\end{pmatrix}`$
 
-(C) $\begin{pmatrix}0&1\\1&0\end{pmatrix}$
+(C) $`\begin{pmatrix}0&1\cr 1&0\end{pmatrix}`$
 
-(D) $\begin{pmatrix}2&1\\0&2\end{pmatrix}$
+(D) $`\begin{pmatrix}2&1\cr 0&2\end{pmatrix}`$
 
 **46.** The power series $\displaystyle\sum_{n=1}^{\infty}\frac{x^n}{n}$ converges for $x$ in
 
@@ -622,7 +622,7 @@ Choose the correct answer from the options given below :
 
 (D) b, d only
 
-**53.** If $\{e_n\}$ is an orthonormal set in a Hilbert space $H$, then $\displaystyle\sum_n |\langle x,e_n\rangle|^2\le\|x\|^2$ for every $x\in H$. This result is known as
+**53.** If $\lbrace e_n\rbrace$ is an orthonormal set in a Hilbert space $H$, then $\displaystyle\sum_n |\langle x,e_n\rangle|^2\le\Vert x\Vert ^2$ for every $x\in H$. This result is known as
 
 (A) Parseval's identity
 
@@ -652,15 +652,15 @@ Choose the correct answer from the options given below :
 
 (D) $-2\pi i$
 
-**56.** The bilinear transformation $w=\dfrac{z-i}{z+i}$ maps the upper half plane $\operatorname{Im} z>0$ onto
+**56.** The bilinear transformation $w=\dfrac{z-i}{z+i}$ maps the upper half plane $\operatorname{Im} z\gt 0$ onto
 
-(A) the upper half plane $\operatorname{Im} w>0$
+(A) the upper half plane $\operatorname{Im} w\gt 0$
 
-(B) the right half plane $\operatorname{Re} w>0$
+(B) the right half plane $\operatorname{Re} w\gt 0$
 
-(C) the region $|w|>1$
+(C) the region $|w|\gt 1$
 
-(D) the disc $|w|<1$
+(D) the disc $|w|\lt 1$
 
 **57.** Given below are two statements, one is labeled as Assertion (A) and other is labeled as Reason (R).
 
@@ -811,7 +811,7 @@ Choose the correct answer from the options given below :
 
 Assertion (A) : The partial differential equation $u_{xx}+2u_{xy}+u_{yy}=0$ is parabolic.
 
-Reason (R) : The equation $Au_{xx}+2Bu_{xy}+Cu_{yy}=0$ is parabolic when $B^2-AC>0$.
+Reason (R) : The equation $Au_{xx}+2Bu_{xy}+Cu_{yy}=0$ is parabolic when $B^2-AC\gt 0$.
 
 In the light of the above statements, choose the correct answer from the options given below :
 
@@ -847,7 +847,7 @@ In the light of the above statements, choose the correct answer from the options
 
 (A) $\phi_1(y-x)+\phi_2(y-2x)$
 
-(B) $\phi_1(y+x)+x\,\phi_2(y+x)$
+(B) $\phi_1(y+x)+x\thinspace \phi_2(y+x)$
 
 (C) $\phi_1(y+x)+\phi_2(2y+x)$
 
@@ -863,7 +863,7 @@ In the light of the above statements, choose the correct answer from the options
 
 (D) $y=\dfrac{x^3+x}{2}$
 
-**75.** The solution of the Volterra integral equation $y(x)=x+\displaystyle\int_0^x (x-t)\,y(t)\,dt$ is
+**75.** The solution of the Volterra integral equation $y(x)=x+\displaystyle\int_0^x (x-t)\thinspace y(t)\thinspace dt$ is
 
 (A) $\sin x$
 
@@ -875,7 +875,7 @@ In the light of the above statements, choose the correct answer from the options
 
 **76.** Match List-I with List-II.
 
-| List-I $F(t)$ | List-II $\mathcal{L}\{F(t)\}$ |
+| List-I $F(t)$ | List-II $\mathcal{L}\lbrace F(t)\rbrace$ |
 |---|---|
 | a. $\sin at$ | I. $6/s^4$ |
 | b. $\cosh at$ | II. $a/(s^2+a^2)$ |
@@ -892,7 +892,7 @@ Choose the correct answer from the options given below :
 
 (D) a – II, b – IV, c – I, d – III
 
-**77.** $\mathcal{L}^{-1}\left\{\dfrac{1}{s(s+1)}\right\}$ is
+**77.** $\mathcal L^{-1}\left\lbrace \dfrac{1}{s(s+1)}\right\rbrace$ is
 
 (A) $e^{-t}$
 
@@ -902,7 +902,7 @@ Choose the correct answer from the options given below :
 
 (D) $te^{-t}$
 
-**78.** The eigenvalue of the homogeneous Fredholm integral equation $\phi(x)=\lambda\displaystyle\int_0^1 e^{x+t}\phi(t)\,dt$ is
+**78.** The eigenvalue of the homogeneous Fredholm integral equation $\phi(x)=\lambda\displaystyle\int_0^1 e^{x+t}\phi(t)\thinspace dt$ is
 
 (A) $\dfrac{2}{e^2+1}$
 
@@ -1048,7 +1048,7 @@ Choose the correct answer from the code given below :
 
 (D) II, IV, I, III
 
-**90.** The value of the two-person zero-sum game with payoff matrix (for player A) $\begin{pmatrix}3&5&4\\2&1&6\\1&0&2\end{pmatrix}$ is
+**90.** The value of the two-person zero-sum game with payoff matrix (for player A) $`\begin{pmatrix}3&5&4\cr 2&1&6\cr 1&0&2\end{pmatrix}`$ is
 
 (A) 1
 
@@ -1062,13 +1062,13 @@ Choose the correct answer from the code given below :
 
 (A) The Newton–Raphson method converges quadratically near a simple root
 
-(B) The bisection method always converges if $f$ is continuous on $[a,b]$ and $f(a)f(b)<0$
+(B) The bisection method always converges if $f$ is continuous on $[a,b]$ and $f(a)f(b)\lt 0$
 
 (C) The order of convergence of the Regula Falsi method is 2
 
 (D) The order of convergence of the secant method is $(1+\sqrt5)/2$
 
-**92.** Using the trapezoidal rule with $h=0.5$, the value of $\displaystyle\int_0^1 x^2\,dx$ is
+**92.** Using the trapezoidal rule with $h=0.5$, the value of $\displaystyle\int_0^1 x^2\thinspace dx$ is
 
 (A) 0.333
 
@@ -1078,7 +1078,7 @@ Choose the correct answer from the code given below :
 
 (D) 0.375
 
-**93.** Simpson's $1/3$ rule gives the exact value of $\int_a^b f(x)\,dx$ whenever $f$ is a polynomial of degree at most
+**93.** Simpson's $1/3$ rule gives the exact value of $\int_a^b f(x)\thinspace dx$ whenever $f$ is a polynomial of degree at most
 
 (A) 3
 

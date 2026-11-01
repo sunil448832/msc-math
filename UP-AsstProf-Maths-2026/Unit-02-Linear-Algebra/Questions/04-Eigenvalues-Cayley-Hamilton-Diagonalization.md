@@ -22,7 +22,7 @@
 
 (D) 196
 
-**Q3.** `[Numerical]` ★★ For $A=\begin{pmatrix}1&2\\2&1\end{pmatrix}$, the Cayley–Hamilton theorem gives $A^{-1}=$
+**Q3.** `[Numerical]` ★★ For $`A=\begin{pmatrix}1&2\cr 2&1\end{pmatrix}`$, the Cayley–Hamilton theorem gives $A^{-1}=$
 
 (A) $\tfrac13(A-2I)$
 
@@ -51,7 +51,7 @@ Which is/are correct?
 (D) I, II and III
 
 **Q5.** `[Assertion-Reason]` ★
-**Assertion (A):** $\begin{pmatrix}1&1\\0&1\end{pmatrix}$ is not diagonalizable.
+**Assertion (A):** $`\begin{pmatrix}1&1\cr 0&1\end{pmatrix}`$ is not diagonalizable.
 **Reason (R):** Its only eigenvalue $1$ has geometric multiplicity 1, which is less than its algebraic multiplicity 2.
 
 (A) Both A and R are true and R is the correct explanation of A
@@ -109,7 +109,7 @@ Which is/are correct?
 
 (D) cannot be determined
 
-**Q10.** `[Numerical]` ★ The eigenvalues of $\begin{pmatrix}4&1\\2&3\end{pmatrix}$ are
+**Q10.** `[Numerical]` ★ The eigenvalues of $`\begin{pmatrix}4&1\cr 2&3\end{pmatrix}`$ are
 
 (A) $1,6$
 
@@ -129,17 +129,17 @@ Which is/are correct?
 
 (D) $(x-1)^3(x-2)$
 
-**Q12.** `[Numerical]` ★★★ Let $A=\begin{pmatrix}1&0&0\\1&0&1\\0&1&0\end{pmatrix}$. Using $A^n=A^{n-2}+A^2-I$ (for $n\ge3$), which follows from Cayley–Hamilton, $A^{50}$ equals
+**Q12.** `[Numerical]` ★★★ Let $`A=\begin{pmatrix}1&0&0\cr 1&0&1\cr 0&1&0\end{pmatrix}`$. Using $A^n=A^{n-2}+A^2-I$ (for $n\ge3$), which follows from Cayley–Hamilton, $A^{50}$ equals
 
 (A) $I$
 
-(B) $\begin{pmatrix}1&0&0\\50&1&0\\50&0&1\end{pmatrix}$
+(B) $`\begin{pmatrix}1&0&0\cr 50&1&0\cr 50&0&1\end{pmatrix}`$
 
-(C) $\begin{pmatrix}1&0&0\\25&0&1\\25&1&0\end{pmatrix}$
+(C) $`\begin{pmatrix}1&0&0\cr 25&0&1\cr 25&1&0\end{pmatrix}`$
 
-(D) $\begin{pmatrix}1&0&0\\25&1&0\\25&0&1\end{pmatrix}$
+(D) $`\begin{pmatrix}1&0&0\cr 25&1&0\cr 25&0&1\end{pmatrix}`$
 
-**Q13.** `[Application]` ★★ Let $A=\begin{pmatrix}0&1&0\\0&0&1\\1&0&0\end{pmatrix}$. Then $A^{100}$ equals
+**Q13.** `[Application]` ★★ Let $`A=\begin{pmatrix}0&1&0\cr 0&0&1\cr 1&0&0\end{pmatrix}`$. Then $A^{100}$ equals
 
 (A) $I$
 
@@ -168,7 +168,7 @@ Which is/are correct?
 | 13 | B | Application |
 
 ## Solutions
-**Q1 — (D).** $\operatorname{adj}A=(\det A)A^{-1}$ and $A^{-1}v=\lambda^{-1}v$, so $\operatorname{adj}A\,v=\dfrac{\det A}{\lambda}v$.
+**Q1 — (D).** $\operatorname{adj}A=(\det A)A^{-1}$ and $A^{-1}v=\lambda^{-1}v$, so $\operatorname{adj}A\thinspace v=\dfrac{\det A}{\lambda}v$.
 
 **Q2 — (C).** The eigenvalues of $A^2+I$ are $\lambda^2+1=2,5,10$, and their product is $100$. (A) adds instead of multiplying.
 
@@ -176,7 +176,7 @@ Which is/are correct?
 
 **Q4 — (B).** I and II are standard. III is false: $I_n$ has a repeated eigenvalue and is diagonal. A repeated eigenvalue is only *necessary* for non-diagonalizability, not sufficient.
 
-**Q5 — (A).** A matrix is diagonalizable iff GM $=$ AM for every eigenvalue. Here $A-I$ has rank 1, so GM $=1<2$.
+**Q5 — (A).** A matrix is diagonalizable iff GM $=$ AM for every eigenvalue. Here $A-I$ has rank 1, so GM $=1\lt 2$.
 
 **Q6 — (A).** Nilpotent of index $k$ gives $x^k$. A non-trivial idempotent gives $x(x-1)$, a non-trivial involution gives $x^2-1$, and $cI$ gives $x-c$.
 

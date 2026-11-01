@@ -3,9 +3,9 @@
 
 ## 1. Euler (Fourier) coefficients
 For $f$ integrable on $[-\pi,\pi]$ (period $2\pi$):
-$$f(x)\sim\frac{a_0}{2}+\sum_{n=1}^\infty(a_n\cos nx+b_n\sin nx),\qquad a_n=\frac1\pi\int_{-\pi}^{\pi}f(x)\cos nx\,dx,\quad b_n=\frac1\pi\int_{-\pi}^{\pi}f(x)\sin nx\,dx.$$
+$$f(x)\sim\frac{a_0}{2}+\sum_{n=1}^\infty(a_n\cos nx+b_n\sin nx),\qquad a_n=\frac1\pi\int_{-\pi}^{\pi}f(x)\cos nx\thinspace dx,\quad b_n=\frac1\pi\int_{-\pi}^{\pi}f(x)\sin nx\thinspace dx.$$
 - The constant term is $\frac{a_0}{2}=\frac1{2\pi}\int_{-\pi}^{\pi}f$, the **mean value** of $f$.
-- **Orthogonality** ($m,n\ge1$): $\int_{-\pi}^{\pi}\cos mx\cos nx=\int\sin mx\sin nx=\pi\delta_{mn}$; $\int\sin mx\cos nx=0$; $\int_{-\pi}^{\pi}1\,dx=2\pi$.
+- **Orthogonality** ($m,n\ge1$): $\int_{-\pi}^{\pi}\cos mx\cos nx=\int\sin mx\sin nx=\pi\delta_{mn}$; $\int\sin mx\cos nx=0$; $\int_{-\pi}^{\pi}1\thinspace dx=2\pi$.
 - Any interval of length $2\pi$ works, e.g. $(0,2\pi)$: $a_n=\frac1\pi\int_0^{2\pi}f\cos nx$.
 - **Period $2L$** on $(-L,L)$: replace $nx$ by $\frac{n\pi x}{L}$ and $\frac1\pi$ by $\frac1L$:
 $a_n=\frac1L\int_{-L}^{L}f\cos\frac{n\pi x}{L}dx$, $b_n=\frac1L\int_{-L}^{L}f\sin\frac{n\pi x}{L}dx$.
@@ -25,8 +25,8 @@ $a_n=\frac1L\int_{-L}^{L}f\cos\frac{n\pi x}{L}dx$, $b_n=\frac1L\int_{-L}^{L}f\si
 - **Riemann–Lebesgue lemma:** $f\in L^1$ ⇒ $a_n,b_n\to0$.
 - **Fejér:** for continuous periodic $f$, the Cesàro means of the partial sums converge **uniformly** to $f$.
 - A continuous $f$ can have a Fourier series that **diverges at a point** (du Bois-Reymond). Carleson: for $f\in L^2$ the series converges a.e.
-- **Uniform convergence:** if $f$ is continuous, periodic ($f(-\pi)=f(\pi)$) and piecewise $C^1$, then $\sum(|a_n|+|b_n|)<\infty$ and the convergence is uniform. If the periodic extension has a jump, the convergence is **never** uniform near the jump.
-- **Gibbs phenomenon:** near a jump the partial sums overshoot by about $9\%$ of the jump size, and this does not vanish as $n\to\infty$.
+- **Uniform convergence:** if $f$ is continuous, periodic ($`f(-\pi)=f(\pi)`$) and piecewise $C^1$, then $\sum(|a_n|+|b_n|)\lt \infty$ and the convergence is uniform. If the periodic extension has a jump, the convergence is **never** uniform near the jump.
+- **Gibbs phenomenon:** near a jump the partial sums overshoot by about $9\text{ percent}$ of the jump size, and this does not vanish as $n\to\infty$.
 - **Term-by-term:** you may always integrate a Fourier series term by term (for integrable $f$). Differentiation needs more (continuity, periodicity, $f'$ piecewise smooth).
 
 ## 4. Bessel and Parseval

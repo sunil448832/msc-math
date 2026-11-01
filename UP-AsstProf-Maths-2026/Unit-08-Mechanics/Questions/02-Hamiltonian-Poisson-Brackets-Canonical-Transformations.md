@@ -32,7 +32,7 @@
 
 (D) $\dfrac{p_r^2}{2m} + \dfrac{p_\theta^2}{2mr^2} - V(r)$
 
-**Q4.** `[Numerical]` ★★ For a particle of charge $e$ and mass $m$ with $L = \tfrac12 m\dot{\vec r}^{\,2} + e\,\dot{\vec r}\cdot\vec A - e\phi$, the Hamiltonian is
+**Q4.** `[Numerical]` ★★ For a particle of charge $e$ and mass $m$ with $L = \tfrac12 m\dot{\vec r}^{\thinspace 2} + e\thinspace \dot{\vec r}\cdot\vec A - e\phi$, the Hamiltonian is
 
 (A) $\dfrac{p^2}{2m} + e\phi$
 
@@ -42,7 +42,7 @@
 
 (D) $\dfrac{(\vec p - e\vec A)^2}{2m} - e\phi$
 
-**Q5.** `[Numerical]` ★ With $L_x, L_y, L_z$ the components of $\vec L = \vec r\times\vec p$, the Poisson bracket $\{L_x, L_y\}$ is
+**Q5.** `[Numerical]` ★ With $L_x, L_y, L_z$ the components of $\vec L = \vec r\times\vec p$, the Poisson bracket $\lbrace L_x, L_y\rbrace$ is
 
 (A) $0$
 
@@ -64,9 +64,9 @@
 
 **Q7.** `[Multi-Statement]` ★★ Consider the following statements.
 
-I. $\{q_i, p_j\} = \delta_{ij}$ and $\{q_i, q_j\} = \{p_i, p_j\} = 0$.
+I. $\lbrace q_i, p_j\rbrace  = \delta_{ij}$ and $\lbrace q_i, q_j\rbrace  = \lbrace p_i, p_j\rbrace  = 0$.
 
-II. If $f$ and $g$ are constants of motion (with no explicit $t$-dependence), so is $\{f, g\}$.
+II. If $f$ and $g$ are constants of motion (with no explicit $t$-dependence), so is $\lbrace f, g\rbrace$.
 
 III. The Hamiltonian is always a constant of motion.
 
@@ -139,7 +139,7 @@ Which of the above is/are correct?
 
 (D) $L_z$ is also conserved
 
-**Q13.** `[Numerical]` ★★★ For $\vec L = \vec r\times\vec p$, the Poisson bracket $\{x, L_z\}$ equals
+**Q13.** `[Numerical]` ★★★ For $\vec L = \vec r\times\vec p$, the Poisson bracket $\lbrace x, L_z\rbrace$ equals
 
 (A) $-y$
 
@@ -168,7 +168,7 @@ Which of the above is/are correct?
 | 13 | A | Numerical |
 
 ## Solutions
-**Q1 — (B).** $H = \sum p\dot q - L$. Compare $dH = \sum(\dot q\,dp - \dot p\,dq) - \dfrac{\partial L}{\partial t}dt$ with Lagrange's equation $\dot p = \partial L/\partial q$.
+**Q1 — (B).** $H = \sum p\dot q - L$. Compare $dH = \sum(\dot q\thinspace dp - \dot p\thinspace dq) - \dfrac{\partial L}{\partial t}dt$ with Lagrange's equation $\dot p = \partial L/\partial q$.
 
 **Q2 — (A).** The same Legendre-transform differential gives $\partial H/\partial t = -\partial L/\partial t$. Also $dH/dt = \partial H/\partial t$ along the motion.
 
@@ -176,13 +176,13 @@ Which of the above is/are correct?
 
 **Q4 — (C).** $\vec p = m\dot{\vec r} + e\vec A$, so $m\dot{\vec r} = \vec p - e\vec A$. Then $H = \vec p\cdot\dot{\vec r} - L = \tfrac12 m\dot r^2 + e\phi = (\vec p - e\vec A)^2/2m + e\phi$. The sign inside the bracket is the usual trap.
 
-**Q5 — (D).** $\{L_x, L_y\} = L_z$ (cyclic), which is the classical analogue of $[L_x, L_y] = i\hbar L_z$. Checked symbolically: $\{L_x,L_y\} = xp_y - yp_x$.
+**Q5 — (D).** $\lbrace L_x, L_y\rbrace  = L_z$ (cyclic), which is the classical analogue of $[L_x, L_y] = i\hbar L_z$. Checked symbolically: $\lbrace L_x,L_y\rbrace  = xp_y - yp_x$.
 
-**Q6 — (C).** $\{Q,P\}_{q,p} = \alpha\beta\,q^{2\alpha-1}(\cos^2\beta p + \sin^2\beta p) = \alpha\beta\,q^{2\alpha-1}$. This equals 1 identically iff $2\alpha - 1 = 0$ and $\alpha\beta = 1$, so $\alpha = 1/2$, $\beta = 2$. Option (D) gives $\{Q,P\} = 1/4$.
+**Q6 — (C).** $\lbrace Q,P\rbrace _{q,p} = \alpha\beta\thinspace q^{2\alpha-1}(\cos^2\beta p + \sin^2\beta p) = \alpha\beta\thinspace q^{2\alpha-1}$. This equals 1 identically iff $2\alpha - 1 = 0$ and $\alpha\beta = 1$, so $\alpha = 1/2$, $\beta = 2$. Option (D) gives $\lbrace Q,P\rbrace  = 1/4$.
 
 **Q7 — (B).** I gives the fundamental brackets. II is Poisson's theorem, which follows from the Jacobi identity. III is false: $dH/dt = \partial H/\partial t$, so $H$ is not conserved when it depends explicitly on $t$ (for example a driven oscillator).
 
-**Q8 — (D).** $\{Q,P\} = \{p,q\} = -1 \ne 1$, so A is false. R is a true description of the map. The correct exchange transformation is $Q = p,\ P = -q$ (or $Q = -p,\ P = q$).
+**Q8 — (D).** $\lbrace Q,P\rbrace  = \lbrace p,q\rbrace  = -1 \ne 1$, so A is false. R is a true description of the map. The correct exchange transformation is $Q = p,\ P = -q$ (or $Q = -p,\ P = q$).
 
 **Q9 — (B).** The four standard types:
 - $F_1$: $p = \partial_q F_1,\ P = -\partial_Q F_1$
@@ -192,8 +192,8 @@ Which of the above is/are correct?
 
 **Q10 — (C).** (A): $p = \partial F_2/\partial q = P$ and $Q = \partial F_2/\partial P = q$, so it is the identity. (B): $p = Q$ and $P = -q$, so it is true. (D) is Liouville's theorem (the Jacobian of a canonical map is 1). (C) is false: $H = T + V$ needs scleronomic constraints and a velocity-independent $V$. For example, for a charged particle $H$ is not given by $p^2/2m + V$, and in a rotating frame $H \ne E$.
 
-**Q11 — (A).** Substituting gives $K = P\omega(\cos^2Q + \sin^2Q) = \omega P$, and one checks $\{q,p\}_{Q,P} = 1$. Then $\dot Q = \partial K/\partial P = \omega$ and $\dot P = 0$. This is the action–angle form. Option (C) confuses $Q$ with the conserved $P$.
+**Q11 — (A).** Substituting gives $K = P\omega(\cos^2Q + \sin^2Q) = \omega P$, and one checks $\lbrace q,p\rbrace _{Q,P} = 1$. Then $\dot Q = \partial K/\partial P = \omega$ and $\dot P = 0$. This is the action–angle form. Option (C) confuses $Q$ with the conserved $P$.
 
-**Q12 — (D).** By Poisson's theorem, $\{L_x, L_y\} = L_z$ is a constant of motion because $L_x$ and $L_y$ are. If two components of $\vec L$ are conserved, so is the third. (C) adds an unnecessary hypothesis.
+**Q12 — (D).** By Poisson's theorem, $\lbrace L_x, L_y\rbrace  = L_z$ is a constant of motion because $L_x$ and $L_y$ are. If two components of $\vec L$ are conserved, so is the third. (C) adds an unnecessary hypothesis.
 
-**Q13 — (A).** $L_z = xp_y - yp_x$. Then $\{x, L_z\} = \dfrac{\partial x}{\partial x}\dfrac{\partial L_z}{\partial p_x} = -y$. The answer $+y$ is $\{L_z, x\}$, the bracket with the order reversed (antisymmetry).
+**Q13 — (A).** $L_z = xp_y - yp_x$. Then $\lbrace x, L_z\rbrace  = \dfrac{\partial x}{\partial x}\dfrac{\partial L_z}{\partial p_x} = -y$. The answer $+y$ is $\lbrace L_z, x\rbrace$, the bracket with the order reversed (antisymmetry).

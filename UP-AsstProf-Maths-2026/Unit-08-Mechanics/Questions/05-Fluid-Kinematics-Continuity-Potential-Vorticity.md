@@ -88,7 +88,7 @@ Which of the above is/are correct?
 |---|---|
 | a. Lagrangian form | 1. $\dfrac{\partial\rho}{\partial t} + \dfrac{1}{r^2}\dfrac{\partial}{\partial r}(r^2\rho q_r) = 0$ |
 | b. Spherically symmetric radial flow | 2. $\dfrac{\partial\rho}{\partial t} + \dfrac1r\dfrac{\partial}{\partial r}(r\rho q_r) = 0$ |
-| c. Cylindrically symmetric (axial-independent) radial flow | 3. $\rho\,J = \rho_0$, $J = \dfrac{\partial(x,y,z)}{\partial(a,b,c)}$ |
+| c. Cylindrically symmetric (axial-independent) radial flow | 3. $\rho\thinspace J = \rho_0$, $J = \dfrac{\partial(x,y,z)}{\partial(a,b,c)}$ |
 | d. Incompressible fluid | 4. $\nabla\cdot\vec q = 0$ |
 
 (A) a-3, b-2, c-1, d-4
@@ -170,7 +170,7 @@ Then
 | 13 | B | Application |
 
 ## Solutions
-**Q1 — (A).** It is the differential form of $\dfrac{d}{dt}\displaystyle\int_V\rho\,dV = -\oint\rho\,\vec q\cdot d\vec S$, i.e. conservation of mass.
+**Q1 — (A).** It is the differential form of $\dfrac{d}{dt}\displaystyle\int_V\rho\thinspace dV = -\oint\rho\thinspace \vec q\cdot d\vec S$, i.e. conservation of mass.
 
 **Q2 — (D).** Incompressibility needs $\partial u/\partial x + \partial v/\partial y = 0$. For (D), $1 - 1 = 0$. The others give $2x + 2y$, $y + x$ and $3$.
 
@@ -178,20 +178,20 @@ Then
 
 **Q4 — (C).** $\dfrac{dx}{x} = \dfrac{dy}{-y}$ gives $\ln x = -\ln y + c$, so $xy = c$. The hyperbolas $x^2 - y^2 = c$ are the equipotentials (with $\phi \propto x^2 - y^2$), which are orthogonal to the streamlines.
 
-**Q5 — (D).** $\vec a = (\vec q\cdot\nabla)\vec q = (u\,u_x,\ v\,v_y) = (x,\ y)$. At $(1,1)$, $|\vec a| = \sqrt2$. The flow is steady, but the acceleration is not zero (A), because the convective part survives.
+**Q5 — (D).** $\vec a = (\vec q\cdot\nabla)\vec q = (u\thinspace u_x,\ v\thinspace v_y) = (x,\ y)$. At $(1,1)$, $|\vec a| = \sqrt2$. The flow is steady, but the acceleration is not zero (A), because the convective part survives.
 
 **Q6 — (B).** I is true: in steady flow a particle stays on its streamline. II is false: at a crossing point the velocity would have two directions, so crossings occur only at stagnation points or singularities. III is true: $\nabla\times\vec q = 0$ on a simply connected domain gives $\vec q = -\nabla\phi$ with $\phi$ single-valued.
 
-**Q7 — (B).** $\partial v/\partial x - \partial u/\partial y = \dfrac{y^2 - x^2}{r^4} + \dfrac{x^2 - y^2}{r^4} = 0$ for $r \ne 0$, so A is true. The circulation is $\displaystyle\int_0^{2\pi}(\sin^2\theta + \cos^2\theta)\,d\theta = 2\pi$, so R is true. But a non-zero circulation round the origin does not explain irrotationality away from it. It only shows that the potential $\phi = -\theta$ is many-valued (the region is not simply connected).
+**Q7 — (B).** $\partial v/\partial x - \partial u/\partial y = \dfrac{y^2 - x^2}{r^4} + \dfrac{x^2 - y^2}{r^4} = 0$ for $r \ne 0$, so A is true. The circulation is $\displaystyle\int_0^{2\pi}(\sin^2\theta + \cos^2\theta)\thinspace d\theta = 2\pi$, so R is true. But a non-zero circulation round the origin does not explain irrotationality away from it. It only shows that the potential $\phi = -\theta$ is many-valued (the region is not simply connected).
 
 **Q8 — (C).** The Lagrangian form is $\rho J = \rho_0$. The spherical divergence carries $r^2$ and the cylindrical one carries $r$. Incompressible flow means $\nabla\cdot\vec q = 0$.
 
-**Q9 — (A).** The potential flow $\vec q = (x, y)$ (with $\phi = -\tfrac12(x^2 + y^2)$) is irrotational, but $\nabla\cdot\vec q = 2 \ne 0$. (D) is true because $\nabla\cdot\vec q = -\nabla^2\phi = 0$ (with either sign convention).
+**Q9 — (A).** The potential flow $\vec q = (x, y)$ (with $`\phi = -\tfrac12(x^2 + y^2)`$) is irrotational, but $\nabla\cdot\vec q = 2 \ne 0$. (D) is true because $\nabla\cdot\vec q = -\nabla^2\phi = 0$ (with either sign convention).
 
 **Q10 — (A).** A direct calculation gives $\nabla\cdot\vec q = 0$ and $\nabla\times\vec q = \vec 0$ (verified with sympy). So the motion is possible and irrotational. This is a textbook classic; the field is $-\nabla\phi$ with $\phi = \dfrac{yz}{x^2+y^2}$ up to sign.
 
 **Q11 — (B).** In either sign convention, speed $= |\nabla\psi| = \sqrt{(2x)^2 + (2y)^2} = 2\sqrt{x^2 + y^2} = 2\sqrt5$. The answer $\sqrt5$ forgets the factor 2.
 
-**Q12 — (D).** The continuity equation $\dfrac{1}{r^2}\dfrac{d}{dr}(r^2f) = 0$ gives $r^2f = $ const. Equivalently, the flux through every sphere $4\pi r^2f$ is the same. The answer $1/r$ is the 2-D (cylindrical) result.
+**Q12 — (D).** The continuity equation $\dfrac{1}{r^2}\dfrac{d}{dr}(r^2f) = 0$ gives $r^2f =$ const. Equivalently, the flux through every sphere $4\pi r^2f$ is the same. The answer $1/r$ is the 2-D (cylindrical) result.
 
 **Q13 — (B).** The pathline equations are $\dfrac{dx}{dt} = \dfrac{x}{1+t}$, giving $x = 1 + t$, and $\dfrac{dy}{dt} = 1$, giving $y = t$. Eliminating $t$ gives $x = 1 + y$. The trap (A)/(D): $x = e^{y}$ is the **streamline** through $(1,0)$ at $t = 0$, from $\dfrac{dx}{x} = \dfrac{dy}{1+t}$ with $t$ frozen at 0. In unsteady flow pathlines and streamlines differ.

@@ -22,7 +22,7 @@ Notation: $z=z(x,y)$, $p=z_x$, $q=z_y$.
 
 (C) $\phi(x+y,\ z)=0$
 
-(D) $\phi\!\left(\dfrac{y}{x},\dfrac{z}{x}\right)=0$
+(D) $\phi\negthinspace \left(\dfrac{y}{x},\dfrac{z}{x}\right)=0$
 
 **Q3.** `[Numerical]` ★★ The general solution of $(y-z)p+(z-x)q=x-y$ is
 
@@ -121,7 +121,7 @@ Which are correct?
 
 (C) Eliminating $a,b$ from $z=ax+by$ gives $z=px+qy$.
 
-(D) Eliminating $\phi$ from $u=\phi(x-ct)$ (with $u=u(x,t)$) gives $u_t+cu_x=0$.
+(D) Eliminating $\phi$ from $u=\phi(x-ct)$ (with $`u=u(x,t)`$) gives $u_t+cu_x=0$.
 
 **Q11.** `[Application]` ★★★ The integral surface of $xp+yq=z$ passing through the curve $x=1$, $z=y^2$ is
 
@@ -161,9 +161,9 @@ Which are correct?
 | 12 | D | Concept |
 
 ## Solutions
-**Q1 — (C).** Lagrange's theorem: $\phi(u,v)=0$ (equivalently, $v=\psi(u)$) with $\phi$ an arbitrary function. Arbitrary constants (B) would give only a complete-type family, not the general solution.
+**Q1 — (C).** Lagrange's theorem: $\phi(u,v)=0$ (equivalently, $`v=\psi(u)`$) with $\phi$ an arbitrary function. Arbitrary constants (B) would give only a complete-type family, not the general solution.
 
-**Q2 — (D).** From $\frac{dx}{x}=\frac{dy}{y}$ we get $y/x=c_1$, and from $\frac{dx}{x}=\frac{dz}{z}$ we get $z/x=c_2$. So $\phi(y/x,z/x)=0$, i.e. $z=x\,f(y/x)$: $z$ is homogeneous of degree 1 (Euler).
+**Q2 — (D).** From $\frac{dx}{x}=\frac{dy}{y}$ we get $y/x=c_1$, and from $\frac{dx}{x}=\frac{dz}{z}$ we get $z/x=c_2$. So $\phi(y/x,z/x)=0$, i.e. $z=x\thinspace f(y/x)$: $z$ is homogeneous of degree 1 (Euler).
 
 **Q3 — (C).** With multipliers $1,1,1$, we get $P+Q+R=0$, so $x+y+z=c_1$. With multipliers $x,y,z$, we get $xP+yQ+zR=0$, so $x^2+y^2+z^2=c_2$.
 
@@ -173,7 +173,7 @@ Which are correct?
 
 **Q6 — (B).** For the type $f(z,p,q)=0$, put $u=x+ay$, so $q=ap$ and $p=dz/du$. Then $a p^2=z$, so $p=\sqrt{z/a}$, and $2\sqrt{az}=u+b$, i.e. $4az=(x+ay+b)^2$. Check: $p=\frac{x+ay+b}{2a}$ and $q=\frac{x+ay+b}{2}$, so $pq=z$. Option (D) misses the factor $4$.
 
-**Q7 — (D).** The equation is separable: $p^2-x=y-q^2=a$. So $p=\sqrt{x+a}$ and $q=\sqrt{y-a}$, and $z=\int p\,dx+\int q\,dy$ gives (D). Option (B) has only one constant, so it is not complete.
+**Q7 — (D).** The equation is separable: $p^2-x=y-q^2=a$. So $p=\sqrt{x+a}$ and $q=\sqrt{y-a}$, and $z=\int p\thinspace dx+\int q\thinspace dy$ gives (D). Option (B) has only one constant, so it is not complete.
 
 **Q8 — (B).** III is false: not every PDE has a singular integral. For example, the eliminants of $p^2+q^2=1$ give no surface. I, II and IV are the standard definitions.
 
@@ -181,6 +181,6 @@ Which are correct?
 
 **Q10 — (B).** For $z=(x+a)(y+b)$, $p=y+b$ and $q=x+a$, so $z=pq$, not $p+q$. Checks: (A) $p=2x\phi'$ and $q=2y\phi'$, so $yp-xq=0$. (C) $p=a$, $q=b$. (D) $u_t=-c\phi'$ and $u_x=\phi'$.
 
-**Q11 — (A).** The general solution is $z=x\,F(y/x)$. On $x=1$ this gives $F(y)=y^2$, so $z=x(y/x)^2=y^2/x$. Check: $xp+yq=-y^2/x+2y^2/x=y^2/x=z$. Option (C) satisfies the data but not the PDE, since $xp+yq=2y^2\ne z$.
+**Q11 — (A).** The general solution is $z=x\thinspace F(y/x)$. On $x=1$ this gives $F(y)=y^2$, so $z=x(y/x)^2=y^2/x$. Check: $xp+yq=-y^2/x+2y^2/x=y^2/x=z$. Option (C) satisfies the data but not the PDE, since $xp+yq=2y^2\ne z$.
 
 **Q12 — (D).** These are the standard Charpit equations: $\frac{dp}{f_x+pf_z}=\frac{dq}{f_y+qf_z}=\frac{dz}{-pf_p-qf_q}=\frac{dx}{-f_p}=\frac{dy}{-f_q}$. Option (B) has the signs flipped.

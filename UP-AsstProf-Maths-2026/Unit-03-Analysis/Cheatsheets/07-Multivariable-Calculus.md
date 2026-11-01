@@ -2,7 +2,7 @@
 > Questions: [../Questions/07-Multivariable-Calculus.md](../Questions/07-Multivariable-Calculus.md)
 
 ## 1. Limits and continuity in $\mathbb R^2$
-- $\lim_{(x,y)\to(a,b)}f=L$ means $|f-L|<\varepsilon$ whenever $0<\|(x,y)-(a,b)\|<\delta$.
+- $\lim_{(x,y)\to(a,b)}f=L$ means $|f-L|\lt \varepsilon$ whenever $0\lt \Vert (x,y)-(a,b)\Vert \lt \delta$.
 - **Path test:** if two paths give different limits, the limit does not exist. Use $y=mx$, and then $y=mx^2$ (curves can expose what lines miss).
 - **Polar test:** if $|f(r\cos\theta,r\sin\theta)-L|\le g(r)\to0$ **uniformly in $\theta$**, the limit is $L$.
 - Iterated limits may exist and differ: $\frac{x^2-y^2}{x^2+y^2}$ gives $1$ and $-1$. If the double limit exists and the iterated limits exist, all three are equal.
@@ -13,20 +13,20 @@
 | $\frac{x^2y}{x^4+y^2}$ | DNE ($\frac12$ on $y=x^2$) | limit $0$ along every line; all directional derivatives exist |
 | $\frac{x^2y}{x^2+y^2}$ | $0$ | continuous, not differentiable ($D_uf=a^2b$ is not linear) |
 | $\frac{xy(x^2-y^2)}{x^2+y^2}$ | $0$ | $C^1$, but $f_{xy}(0,0)\ne f_{yx}(0,0)$ ($\pm1$) |
-| $\sqrt{|xy|}$ | $0$ | partials $0$, not differentiable |
+| $\sqrt{\vert xy\vert }$ | $0$ | partials $0$, not differentiable |
 | $(x^2+y^2)\sin\frac1{\sqrt{x^2+y^2}}$ | $0$ | differentiable, but the partials are **not continuous** |
 
 ## 2. Derivatives
 - **Partial derivative:** $f_x(a,b)=\lim_{h\to0}\frac{f(a+h,b)-f(a,b)}{h}$.
 - **Directional derivative** along a **unit** vector $\mathbf u$: $D_{\mathbf u}f(p)=\lim_{t\to0}\frac{f(p+t\mathbf u)-f(p)}{t}$.
 - **Total derivative (Fréchet):** $f:\mathbb R^n\to\mathbb R^m$ is differentiable at $p$ if there is a linear map $L$ with
-  $$\lim_{h\to0}\frac{\|f(p+h)-f(p)-Lh\|}{\|h\|}=0.$$
+  $$\lim_{h\to0}\frac{\Vert f(p+h)-f(p)-Lh\Vert }{\Vert h\Vert }=0.$$
   Then $L=Df(p)$, whose matrix is the **Jacobian** $\left(\partial f_i/\partial x_j\right)_{m\times n}$.
-- If $f$ is differentiable: $D_{\mathbf u}f=\nabla f\cdot\mathbf u$. The maximum of $D_{\mathbf u}f$ is $\|\nabla f\|$, in the direction of $\nabla f$, and $\nabla f$ is normal to the level set.
+- If $f$ is differentiable: $D_{\mathbf u}f=\nabla f\cdot\mathbf u$. The maximum of $D_{\mathbf u}f$ is $\Vert \nabla f\Vert$, in the direction of $\nabla f$, and $\nabla f$ is normal to the level set.
 - **Differentiability test at $(0,0)$:** check $\frac{f(h,k)-f(0,0)-f_xh-f_yk}{\sqrt{h^2+k^2}}\to0$.
 
 ### Implications
-$$C^1\ (\text{continuous partials}) \Rightarrow \text{differentiable} \Rightarrow \begin{cases}\text{continuous}\\ \text{all } D_uf \text{ exist, linear in } u\end{cases}\Rightarrow\text{partials exist}$$
+$$C^1\ (\text{continuous partials}) \Rightarrow \text{differentiable} \Rightarrow \begin{cases}\text{continuous}\cr  \text{all } D_uf \text{ exist, linear in } u\end{cases}\Rightarrow\text{partials exist}$$
 - **No arrow reverses.**
 - Partials existing does **not** give continuity.
 - Every directional derivative existing does **not** give continuity.
@@ -40,7 +40,7 @@ $$C^1\ (\text{continuous partials}) \Rightarrow \text{differentiable} \Rightarro
 - **Euler (homogeneous of degree $n$):** $xf_x+yf_y=nf$ and $x^2f_{xx}+2xyf_{xy}+y^2f_{yy}=n(n-1)f$.
 
 ## 4. Chain rule, Jacobians, implicit and inverse functions
-- $D(g\circ f)(p)=Dg(f(p))\,Df(p)$ (matrix product).
+- $D(g\circ f)(p)=Dg(f(p))\thinspace Df(p)$ (matrix product).
 - **Jacobian rules:** $\frac{\partial(u,v)}{\partial(x,y)}\cdot\frac{\partial(x,y)}{\partial(u,v)}=1$. If $u,v$ are functionally dependent, then $J\equiv0$.
 - **Standard Jacobians:**
   - polar: $r$
@@ -59,12 +59,12 @@ $$C^1\ (\text{continuous partials}) \Rightarrow \text{differentiable} \Rightarro
 
 | Condition | Nature |
 |---|---|
-| $rt-s^2>0,\ r>0$ | local minimum |
-| $rt-s^2>0,\ r<0$ | local maximum |
-| $rt-s^2<0$ | saddle point |
+| $rt-s^2\gt 0,\ r\gt 0$ | local minimum |
+| $rt-s^2\gt 0,\ r\lt 0$ | local maximum |
+| $rt-s^2\lt 0$ | saddle point |
 | $rt-s^2=0$ | inconclusive (e.g. $x^4+y^4$ min, $x^3+y^3$ neither, $x^4-y^4$ saddle) |
 
-- **$n$ variables:** the Hessian is positive definite (all leading principal minors $>0$) for a minimum, negative definite (minors alternate $-,+,-,\dots$) for a maximum, and indefinite for a saddle.
+- **$n$ variables:** the Hessian is positive definite (all leading principal minors $\gt 0$) for a minimum, negative definite (minors alternate $-,+,-,\dots$) for a maximum, and indefinite for a saddle.
 - **Worked example:** $x^3+y^3-3xy$ has a saddle at $(0,0)$ and a local minimum $-1$ at $(1,1)$.
 - **Extreme value theorem:** a continuous function on a compact set attains its max and min. Check interior critical points **and** the boundary.
 
@@ -73,10 +73,10 @@ $$C^1\ (\text{continuous partials}) \Rightarrow \text{differentiable} \Rightarro
 - With two constraints: $\nabla f=\lambda\nabla g+\mu\nabla h$.
 - **Standard answers:**
   - Distance from the origin to $ax+by+cz=d$: $\frac{|d|}{\sqrt{a^2+b^2+c^2}}$, so $\min(x^2+y^2+z^2)=\frac{d^2}{a^2+b^2+c^2}$.
-  - $\max xyz$ subject to $x+y+z=3k$ ($x,y,z>0$): $k^3$ (AM–GM).
+  - $\max xyz$ subject to $x+y+z=3k$ ($x,y,z\gt 0$): $k^3$ (AM–GM).
   - $\max xyz$ on $x^2+y^2+z^2=3$: $1$.
   - Extrema of $ax+by$ on $x^2+y^2=1$: $\pm\sqrt{a^2+b^2}$.
-  - Extrema of a quadratic form $\mathbf x^TA\mathbf x$ on $\|\mathbf x\|=1$: the extreme eigenvalues of $A$.
+  - Extrema of a quadratic form $\mathbf x^TA\mathbf x$ on $\Vert \mathbf x\Vert =1$: the extreme eigenvalues of $A$.
 
 ## Exam traps
 - Normalise the direction vector before computing a directional derivative.

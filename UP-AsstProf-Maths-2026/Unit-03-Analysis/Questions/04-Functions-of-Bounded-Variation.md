@@ -23,7 +23,9 @@
 (D) $2\pi$
 
 **Q3.** `[Numerical]` ★★ Define $f$ on $[0,2]$ by
-$$f(x)=\begin{cases}x,&0\le x<1\\3,&x=1\\x+1,&1<x\le2\end{cases}$$
+```math
+f(x)=\begin{cases}x,&0\le x\lt 1\cr 3,&x=1\cr x+1,&1\lt x\le2\end{cases}
+```
 The total variation $V_0^2(f)$ is
 
 (A) $3$
@@ -52,7 +54,7 @@ Which of the above is/are necessarily correct?
 
 (D) I and III only
 
-**Q5.** `[Assertion-Reason]` ★★ Let $f(x)=x\sin(1/x)$ for $0<x\le1$ and $f(0)=0$.
+**Q5.** `[Assertion-Reason]` ★★ Let $f(x)=x\sin(1/x)$ for $0\lt x\le1$ and $f(0)=0$.
 **Assertion (A):** $f$ is continuous on $[0,1]$ but is not of bounded variation on $[0,1]$.
 **Reason (R):** Every continuous function on a closed bounded interval is of bounded variation.
 
@@ -85,21 +87,21 @@ Which of the above is/are necessarily correct?
 
 (A) $f+g$ and $fg$ are of bounded variation.
 
-(B) If $|g|\ge c>0$ on $[a,b]$, then $f/g$ is of bounded variation.
+(B) If $|g|\ge c\gt 0$ on $[a,b]$, then $f/g$ is of bounded variation.
 
 (C) $f$ is differentiable almost everywhere on $[a,b]$.
 
 (D) $f\circ g$ is of bounded variation whenever it is defined.
 
-**Q8.** `[Application]` ★★★ Let $f_\alpha(x)=x^\alpha\sin(1/x)$ for $0<x\le1$ and $f_\alpha(0)=0$. Then $f_\alpha$ is of bounded variation on $[0,1]$ if and only if
+**Q8.** `[Application]` ★★★ Let $f_\alpha(x)=x^\alpha\sin(1/x)$ for $0\lt x\le1$ and $f_\alpha(0)=0$. Then $f_\alpha$ is of bounded variation on $[0,1]$ if and only if
 
-(A) $\alpha>0$
+(A) $\alpha\gt 0$
 
 (B) $\alpha\ge1$
 
-(C) $\alpha>1$
+(C) $\alpha\gt 1$
 
-(D) $\alpha>2$
+(D) $\alpha\gt 2$
 
 **Q9.** `[Numerical]` ★★ For $f(x)=x^3-3x$ on $[-2,2]$, the **positive variation** $P_{-2}^{2}(f)$ is
 
@@ -121,7 +123,7 @@ Which of the above is/are necessarily correct?
 
 (D) $V-f$ is decreasing.
 
-**Q11.** `[Application]` ★★★ Define $f$ on $[0,1]$ by $f\!\left(\frac1n\right)=\frac1{n^2}$ for $n=1,2,3,\dots$ and $f(x)=0$ at every other point. The total variation $V_0^1(f)$ equals
+**Q11.** `[Application]` ★★★ Define $f$ on $[0,1]$ by $f\negthinspace \left(\frac1n\right)=\frac1{n^2}$ for $n=1,2,3,\dots$ and $f(x)=0$ at every other point. The total variation $V_0^1(f)$ equals
 
 (A) $\dfrac{\pi^2}{6}$
 
@@ -161,9 +163,9 @@ Which of the above is/are necessarily correct?
 ## Solutions
 **Q1 — (B).** This is Jordan's theorem: $f=\frac{V+f}{2}-\frac{V-f}{2}$, or $f=V-(V-f)$, with both parts increasing. (C) is a consequence, not a characterisation: $x\sin(1/x)$ is differentiable a.e. but not BV.
 
-**Q2 — (B).** $V=\int_0^{2\pi}|\cos x|\,dx=4$. Equivalently, $\sin$ goes $0\to1\to-1\to0$, which gives $1+2+1$. The value $0=f(2\pi)-f(0)$ is the net change, not the variation.
+**Q2 — (B).** $V=\int_0^{2\pi}|\cos x|\thinspace dx=4$. Equivalently, $\sin$ goes $0\to1\to-1\to0$, which gives $1+2+1$. The value $0=f(2\pi)-f(0)$ is the net change, not the variation.
 
-**Q3 — (C).** Use the partition $0<1-\varepsilon<1<1+\varepsilon<2$. The rise on $[0,1)$ contributes $\to1$, the jump up from $1^-$ to $f(1)=3$ contributes $2$, the drop from $3$ to $f(1^+)=2$ contributes $1$, and the rise from $2$ to $3$ on $(1,2]$ contributes $1$. Total $1+2+1+1=5$. Ignoring the isolated value $f(1)=3$ gives $3$.
+**Q3 — (C).** Use the partition $0\lt 1-\varepsilon\lt 1\lt 1+\varepsilon\lt 2$. The rise on $[0,1)$ contributes $\to1$, the jump up from $1^-$ to $f(1)=3$ contributes $2$, the drop from $3$ to $f(1^+)=2$ contributes $1$, and the rise from $2$ to $3$ on $(1,2]$ contributes $1$. Total $1+2+1+1=5$. Ignoring the isolated value $f(1)=3$ gives $3$.
 
 **Q4 — (D).** $|f(x)|\le|f(a)|+V_a^b f$, so $f$ is bounded. $f$ is a difference of monotone functions, each with countably many jumps, so III holds. II is false: a step function is BV but discontinuous.
 
@@ -173,7 +175,7 @@ Which of the above is/are necessarily correct?
 
 **Q7 — (D).** Let $g(x)=x^2\sin^2(1/x)$ (Lipschitz on $[0,1]$, hence BV) and $f(t)=\sqrt t$ (monotone, hence BV). Then $f\circ g=|x\sin(1/x)|$, which is not BV. (A) and (B) are standard closure properties. (C) is Lebesgue's theorem for monotone functions applied to the Jordan decomposition.
 
-**Q8 — (C).** The general fact is that $x^\alpha\sin(x^{-\beta})$ is BV on $[0,1]$ iff $\alpha>\beta$. Here $\beta=1$. For $\alpha>1$, the variation is about $\sum_k (k\pi)^{-\alpha}<\infty$. At $\alpha=1$ it is the harmonic-type divergence of Q5. Option (B) is the usual trap.
+**Q8 — (C).** The general fact is that $x^\alpha\sin(x^{-\beta})$ is BV on $[0,1]$ iff $\alpha\gt \beta$. Here $\beta=1$. For $\alpha\gt 1$, the variation is about $\sum_k (k\pi)^{-\alpha}\lt \infty$. At $\alpha=1$ it is the harmonic-type divergence of Q5. Option (B) is the usual trap.
 
 **Q9 — (B).** $f(-2)=-2$, $f(-1)=2$, $f(1)=-2$, $f(2)=2$. The increases are $4+4=8$ and the decrease is $4$. So $V=12$, $P=8$, $N=4$. Check: $P-N=4=f(2)-f(-2)$ and $P+N=V$.
 

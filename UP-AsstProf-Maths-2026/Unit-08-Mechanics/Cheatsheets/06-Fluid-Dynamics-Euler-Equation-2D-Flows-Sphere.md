@@ -13,7 +13,7 @@ $$\frac{D\vec q}{Dt} = \frac{\partial\vec q}{\partial t} + (\vec q\cdot\nabla)\v
 | Steady **and** irrotational | the same $C$ **throughout** the fluid |
 | Unsteady, irrotational ($\vec q = -\nabla\phi$) | $-\dfrac{\partial\phi}{\partial t} + \tfrac12q^2 + \Omega + \int dp/\rho = F(t)$ (pressure equation) |
 
-- Incompressible fluid under gravity: $\dfrac p\rho + \tfrac12q^2 + gz = $ const.
+- Incompressible fluid under gravity: $\dfrac p\rho + \tfrac12q^2 + gz =$ const.
 - **Torricelli:** $v = \sqrt{2gh}$. Stagnation pressure $p_0 = p + \tfrac12\rho q^2$.
 
 ## 3. Circulation and vorticity theorems
@@ -34,7 +34,7 @@ $$\frac{D\vec q}{Dt} = \frac{\partial\vec q}{\partial t} + (\vec q\cdot\nabla)\v
 | Stream at angle $\alpha$ | $-Ue^{-i\alpha}z$ | parallel lines |
 | Source of strength $m$ at $z_0$ | $-m\log(z - z_0)$ | radial lines |
 | Sink | $+m\log(z - z_0)$ | radial lines |
-| Doublet (strength $\mu$, axis along $x$) | $\mu/z$ (more generally $\mu e^{i\alpha}/(z - z_0)$) | circles through $O$ tangent to the axis |
+| Doublet (strength $\mu$, axis along $x$) | $\mu/z$ (more generally $`\mu e^{i\alpha}/(z - z_0)`$) | circles through $O$ tangent to the axis |
 | Line vortex (circulation $\Gamma$) | $\dfrac{i\Gamma}{2\pi}\log z$ ($ik\log z$) | concentric circles |
 | Corner flow (angle $\pi/n$) | $Az^n$; $z^2$ is a $90^\circ$ corner | $r^n\sin n\theta = c$ |
 
@@ -51,9 +51,9 @@ $$\frac{D\vec q}{Dt} = \frac{\partial\vec q}{\partial t} + (\vec q\cdot\nabla)\v
 | Vortex $\Gamma$ at $z_0$ | circle | vortex $-\Gamma$ at $a^2/\bar z_0$ (optionally $+\Gamma$ at $O$) |
 | Doublet at $z_0$ | circle | doublet at the inverse point |
 
-- **Milne-Thomson circle theorem:** let $f(z)$ have all its singularities in $|z| > a$. Then
-$$w = f(z) + \overline{f}\!\left(\frac{a^2}{z}\right)$$
-  has the same singularities in $|z| > a$ and $|z| = a$ is a streamline.
+- **Milne-Thomson circle theorem:** let $f(z)$ have all its singularities in $|z| \gt  a$. Then
+$$w = f(z) + \overline{f}\negthinspace \left(\frac{a^2}{z}\right)$$
+  has the same singularities in $|z| \gt  a$ and $|z| = a$ is a streamline.
 - For a uniform stream this gives the flow past a cylinder, $w = U\left(z + \dfrac{a^2}{z}\right)$.
   - Surface speed $2U|\sin\theta|$, with maximum $2U$ at $\theta = 90^\circ$ and stagnation points at $\theta = 0, \pi$.
   - Surface pressure $p = p_\infty + \tfrac12\rho U^2(1 - 4\sin^2\theta)$, equal to $p_\infty$ at $\theta = 30^\circ$, $150^\circ$, ….
@@ -72,9 +72,9 @@ Sphere of radius $a$, velocity $U$, liquid at rest at infinity, $\vec q = -\nabl
 - **Kinetic energy of the liquid:** $T = \tfrac14M'U^2 = \tfrac13\pi\rho a^3U^2$, where $M' = \tfrac43\pi a^3\rho$ is the mass displaced.
 - **Added (virtual) mass:** $\tfrac12M'$ for a sphere, and $M'$ (per unit length) for a circular cylinder.
 - **Equation of motion** (sphere of density $\sigma$ falling under gravity): $\left(\sigma + \tfrac12\rho\right)\dot U = (\sigma - \rho)g$, so
-$$\dot U = \frac{\sigma - \rho}{\sigma + \rho/2}\,g .$$
+$$\dot U = \frac{\sigma - \rho}{\sigma + \rho/2}\thinspace g .$$
   An air bubble ($\sigma \approx 0$) accelerates upward at $2g$.
-- **Pressure on a moving sphere** (unsteady Bernoulli): it contains a term $\rho a\cos\theta\,\dot U/2$ that produces the added-mass force. Uniform motion gives zero net force.
+- **Pressure on a moving sphere** (unsteady Bernoulli): it contains a term $\rho a\cos\theta\thinspace \dot U/2$ that produces the added-mass force. Uniform motion gives zero net force.
 - **Stokes stream function** for a sphere moving along the axis: $\psi = -\dfrac{Ua^3}{2r}\sin^2\theta$ (sign by convention).
 
 ## Exam traps

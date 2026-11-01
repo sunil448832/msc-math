@@ -12,7 +12,7 @@
 
 (D) a constant
 
-**Q2.** `[Numerical]` ★★ Let $y_1,y_2$ be solutions of $x\,y''+2y'+xe^{x}y=0$ on $(0,\infty)$ with $W(y_1,y_2)(1)=2$. Then $W(y_1,y_2)(2)$ equals
+**Q2.** `[Numerical]` ★★ Let $y_1,y_2$ be solutions of $x\thinspace y''+2y'+xe^{x}y=0$ on $(0,\infty)$ with $W(y_1,y_2)(1)=2$. Then $W(y_1,y_2)(2)$ equals
 
 (A) $1$
 
@@ -32,15 +32,15 @@
 
 (D) $-x e^{x}$
 
-**Q4.** `[Numerical]` ★ The general solution of $x^2y''-3xy'+4y=0$ on $x>0$ is
+**Q4.** `[Numerical]` ★ The general solution of $x^2y''-3xy'+4y=0$ on $x\gt 0$ is
 
-(A) $(c_1+c_2\ln x)\,x^2$
+(A) $(c_1+c_2\ln x)\thinspace x^2$
 
 (B) $c_1x^2+c_2x^{-2}$
 
 (C) $c_1x+c_2x^4$
 
-(D) $(c_1+c_2x)\,e^{2x}$
+(D) $(c_1+c_2x)\thinspace e^{2x}$
 
 **Q5.** `[Multi-Statement]` ★★ Consider the following statements.
 
@@ -111,13 +111,13 @@ Which of the above is/are correct?
 
 **Q10.** `[Numerical]` ★★ By variation of parameters, a particular solution of $y''+y=\sec x$ on $(-\pi/2,\pi/2)$ is
 
-(A) $x\cos x+\sin x\,\ln|\cos x|$
+(A) $x\cos x+\sin x\thinspace \ln|\cos x|$
 
-(B) $x\sin x-\cos x\,\ln|\cos x|$
+(B) $x\sin x-\cos x\thinspace \ln|\cos x|$
 
-(C) $x\sin x+\cos x\,\ln|\cos x|$
+(C) $x\sin x+\cos x\thinspace \ln|\cos x|$
 
-(D) $\sin x\,\ln|\sec x+\tan x|$
+(D) $\sin x\thinspace \ln|\sec x+\tan x|$
 
 **Q11.** `[Application]` ★★ The functions $x$, $x+e^{x}$ and $1+x+e^{x}$ are solutions of a non-homogeneous equation $y''+p(x)y'+q(x)y=r(x)$. Its general solution is
 
@@ -157,17 +157,17 @@ Which of the above is/are correct?
 | 12 | C | Concept |
 
 ## Solutions
-**Q1 — (A).** Abel's formula $W(x)=W(x_0)\exp\!\big(-\int_{x_0}^x p\big)$ shows that $W$ is either $\equiv0$ (when $W(x_0)=0$) or never zero. (D) holds only when $p\equiv0$.
+**Q1 — (A).** Abel's formula $W(x)=W(x_0)\exp\negthinspace \big(-\int_{x_0}^x p\big)$ shows that $W$ is either $\equiv0$ (when $W(x_0)=0$) or never zero. (D) holds only when $p\equiv0$.
 
-**Q2 — (B).** In normal form, $p(x)=2/x$. Abel's formula gives $W=Ce^{-\int 2/x\,dx}=C/x^2$. From $W(1)=2$ we get $C=2$, so $W(2)=2/4=1/2$. Forgetting to divide by the leading coefficient $x$ gives wrong answers like $2e^{-2}$.
+**Q2 — (B).** In normal form, $p(x)=2/x$. Abel's formula gives $W=Ce^{-\int 2/x\thinspace dx}=C/x^2$. From $W(1)=2$ we get $C=2$, so $W(2)=2/4=1/2$. Forgetting to divide by the leading coefficient $x$ gives wrong answers like $2e^{-2}$.
 
-**Q3 — (D).** The roots are $1$ and $2$. Since $e^{x}$ solves the homogeneous equation, try $Axe^{x}$. Substituting gives $A\,e^x[(2+x)-3(1+x)+2x]=-Ae^x$, so $A=-1$. (A) and (B) ignore resonance.
+**Q3 — (D).** The roots are $1$ and $2$. Since $e^{x}$ solves the homogeneous equation, try $Axe^{x}$. Substituting gives $A\thinspace e^x[(2+x)-3(1+x)+2x]=-Ae^x$, so $A=-1$. (A) and (B) ignore resonance.
 
 **Q4 — (A).** The indicial equation is $m(m-1)-3m+4=m^2-4m+4=0$, so $m=2$ is a double root. Hence $y=(c_1+c_2\ln x)x^2$. Option (D) is the analogue for a constant-coefficient equation, which is the wrong pattern for Cauchy–Euler.
 
-**Q5 — (D).** I: $W=-1\ne0$. II: on $x\ge0$ we have $x|x|=x^2$, and on $x<0$ we have $x|x|=-x^2$. The equation $c_1x^2+c_2x|x|\equiv0$ forces $c_1+c_2=0$ and $c_1-c_2=0$, so the functions are independent. But $W\equiv0$, as checked on each side. III: $W(x,x^2)=x^2$, which vanishes at $0$ but not identically. This is impossible for solutions (Q1).
+**Q5 — (D).** I: $W=-1\ne0$. II: on $x\ge0$ we have $x|x|=x^2$, and on $x\lt 0$ we have $x|x|=-x^2$. The equation $c_1x^2+c_2x|x|\equiv0$ forces $c_1+c_2=0$ and $c_1-c_2=0$, so the functions are independent. But $W\equiv0$, as checked on each side. III: $W(x,x^2)=x^2$, which vanishes at $0$ but not identically. This is impossible for solutions (Q1).
 
-**Q6 — (C).** Here $|x|^3=x^3$ for $x\ge0$ and $-x^3$ for $x<0$, so the functions are independent on $[-1,1]$, while $W\equiv0$. So A is true, and this same pair is a counterexample showing R is false. R holds only for **solutions** of a linear ODE with continuous coefficients.
+**Q6 — (C).** Here $|x|^3=x^3$ for $x\ge0$ and $-x^3$ for $x\lt 0$, so the functions are independent on $[-1,1]$, while $W\equiv0$. So A is true, and this same pair is a counterexample showing R is false. R holds only for **solutions** of a linear ODE with continuous coefficients.
 
 **Q7 — (B).** (a) $\pm i$ are roots, so multiply by $x$: $x(A\cos x+B\sin x)$. (b) $1$ is a simple root, so $Axe^x$. (c) $1$ is a double root, so $Ax^2e^x$. (d) $0$ is not a root, so $Ax+B$.
 
@@ -175,7 +175,7 @@ Which of the above is/are correct?
 
 **Q9 — (B).** Reduction of order gives $y_2=y_1\int\frac{e^{-\int p}}{y_1^2}dx$ with $p=\frac{-2x}{1-x^2}$, so $e^{-\int p}=\frac{1}{1-x^2}$. Then $y_2=x\int\frac{dx}{x^2(1-x^2)}=x\Big(-\frac1x+\frac12\ln\frac{1+x}{1-x}\Big)=\frac{x}{2}\ln\frac{1+x}{1-x}-1$. This is $-Q_1(x)$, a Legendre function of the second kind, so it is equally valid; it was verified symbolically. (D) is $P_2$, which solves the $n=2$ equation, not this one.
 
-**Q10 — (C).** With $y_1=\cos x$, $y_2=\sin x$ and $W=1$, we get $u_1=-\int\sin x\sec x\,dx=\ln|\cos x|$ and $u_2=\int\cos x\sec x\,dx=x$. So $y_p=\cos x\ln|\cos x|+x\sin x$. Option (B) has a sign error.
+**Q10 — (C).** With $y_1=\cos x$, $y_2=\sin x$ and $W=1$, we get $u_1=-\int\sin x\sec x\thinspace dx=\ln|\cos x|$ and $u_2=\int\cos x\sec x\thinspace dx=x$. So $y_p=\cos x\ln|\cos x|+x\sin x$. Option (B) has a sign error.
 
 **Q11 — (A).** Differences of solutions of the non-homogeneous equation solve the homogeneous equation. So $e^{x}$ and $1$ are independent homogeneous solutions, and $y=x+c_1e^x+c_2$. Option (C) wrongly uses an arbitrary linear combination of non-homogeneous solutions, which does not satisfy the equation unless the coefficients sum to $1$.
 

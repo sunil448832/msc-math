@@ -58,8 +58,8 @@ Which of the above is/are correct?
 |---|---|
 | a. the Cantor ternary set | 1. $1$ |
 | b. $[0,1]\setminus\mathbb{Q}$ | 2. $\infty$ |
-| c. $\bigcup_{n\ge1}\left[n,\,n+\tfrac1n\right]$ | 3. $0$ |
-| d. $\{x\in[0,2\pi]:\sin x>\tfrac12\}$ | 4. $\dfrac{2\pi}{3}$ |
+| c. $\bigcup_{n\ge1}\left[n,\thinspace n+\tfrac1n\right]$ | 3. $0$ |
+| d. $\lbrace x\in[0,2\pi]:\sin x\gt \tfrac12\rbrace$ | 4. $\dfrac{2\pi}{3}$ |
 
 (A) a-3, b-1, c-2, d-4
 
@@ -99,7 +99,7 @@ Which of the above is/are correct?
 
 (D) $2$
 
-**Q9.** `[Application]` ★★ The sequence $f_n=\chi_{[n,\infty)}$ on $\mathbb{R}$ converges to $0$ everywhere, but there is no measurable set $F$ with $m(\mathbb{R}\setminus F)<1$ on which $f_n\to0$ uniformly. Which hypothesis of **Egorov's theorem** does this example show cannot be dropped?
+**Q9.** `[Application]` ★★ The sequence $f_n=\chi_{[n,\infty)}$ on $\mathbb{R}$ converges to $0$ everywhere, but there is no measurable set $F$ with $m(\mathbb{R}\setminus F)\lt 1$ on which $f_n\to0$ uniformly. Which hypothesis of **Egorov's theorem** does this example show cannot be dropped?
 
 (A) measurability of each $f_n$
 
@@ -109,11 +109,11 @@ Which of the above is/are correct?
 
 (D) monotonicity of the sequence $(f_n)$
 
-**Q10.** `[Concept]` ★ Lusin's theorem states that if $f:[a,b]\to\mathbb{R}$ is Lebesgue measurable, then for every $\varepsilon>0$
+**Q10.** `[Concept]` ★ Lusin's theorem states that if $f:[a,b]\to\mathbb{R}$ is Lebesgue measurable, then for every $\varepsilon\gt 0$
 
 (A) $f$ is continuous except on a set of measure less than $\varepsilon$
 
-(B) there is a closed set $F$ with $m([a,b]\setminus F)<\varepsilon$ such that $f|_F$ is continuous
+(B) there is a closed set $F$ with $m([a,b]\setminus F)\lt \varepsilon$ such that $f|_F$ is continuous
 
 (C) there is a step function $g$ with $f=g$ outside a set of measure $0$
 
@@ -176,11 +176,11 @@ Which of the above is/are correct?
 | 13 | A | Numerical |
 
 ## Solutions
-**Q1 — (A).** The set is countable: $\{r_k\}$. Cover $r_k$ by an interval of length $\varepsilon/2^k$; the total length is $\le\varepsilon$. Density is irrelevant to measure, which is why (B) is the trap.
+**Q1 — (A).** The set is countable: $\lbrace r_k\rbrace$. Cover $r_k$ by an interval of length $\varepsilon/2^k$; the total length is $\le\varepsilon$. Density is irrelevant to measure, which is why (B) is the trap.
 
 **Q2 — (C).** The total removed length is $\sum_{n\ge1}2^{n-1}\cdot4^{-n}=\frac14\sum_{n\ge0}2^{-n}=\frac12$, so $m(F)=1-\frac12=\frac12$. $F$ is closed, nowhere dense and perfect, yet has positive measure. (A) is the ordinary Cantor set.
 
-**Q3 — (C).** $C$ is in bijection with ternary expansions using only the digits $0$ and $2$, hence with $\{0,1\}^{\mathbb N}$, so it is uncountable. Its complement has length $\sum\frac{2^{n-1}}{3^n}=1$, so $m(C)=0$. $C$ is **perfect** (closed, no isolated points), so III is false.
+**Q3 — (C).** $C$ is in bijection with ternary expansions using only the digits $0$ and $2$, hence with $\lbrace 0,1\rbrace ^{\mathbb N}$, so it is uncountable. Its complement has length $\sum\frac{2^{n-1}}{3^n}=1$, so $m(C)=0$. $C$ is **perfect** (closed, no isolated points), so III is false.
 
 **Q4 — (D).** The Cantor set is a counterexample to A: it is uncountable with measure zero. So A is false and R is true. (Countable ⇒ null holds, but the converse fails.)
 
@@ -192,12 +192,12 @@ Which of the above is/are correct?
 
 **Q8 — (C).** On each removed open interval $\phi$ is constant, so $\psi$ there is a translation and preserves length. Hence $m(\psi([0,1]\setminus C))=m([0,1]\setminus C)=1$. Since $\psi$ is a bijection onto $[0,2]$, $m(\psi(C))=2-1=1$. So a homeomorphism can map a null set onto a set of positive measure. (This also shows that a subset of $\psi(C)$ which is non-measurable pulls back to a measurable null set.)
 
-**Q9 — (B).** Each $f_n$ is measurable and the convergence is monotone, but $\sup|f_n-0|=1$ on every set that contains points of $[n,\infty)$ for all $n$. Egorov needs $m(E)<\infty$. Egorov never requires (C) or (D).
+**Q9 — (B).** Each $f_n$ is measurable and the convergence is monotone, but $\sup|f_n-0|=1$ on every set that contains points of $[n,\infty)$ for all $n$. Egorov needs $m(E)\lt \infty$. Egorov never requires (C) or (D).
 
-**Q10 — (B).** This is Lusin's theorem: the **restriction** to a large closed set is continuous, and in fact there is a continuous $g$ on $\mathbb{R}$ with $m\{f\ne g\}<\varepsilon$. (A) is false: $\chi_{\mathbb Q}$ is measurable but discontinuous everywhere. Its restriction to the irrationals is continuous, though.
+**Q10 — (B).** This is Lusin's theorem: the **restriction** to a large closed set is continuous, and in fact there is a continuous $g$ on $\mathbb{R}$ with $m\lbrace f\ne g\rbrace \lt \varepsilon$. (A) is false: $\chi_{\mathbb Q}$ is measurable but discontinuous everywhere. Its restriction to the irrationals is continuous, though.
 
-**Q11 — (D).** $|f|=\phi\circ f$ with $\phi$ continuous, so I holds. III holds because Lebesgue measure is complete. II fails: if $V$ is non-measurable, $f=\chi_V-\chi_{V^c}$ has $|f|\equiv1$ but $\{f>0\}=V$.
+**Q11 — (D).** $|f|=\phi\circ f$ with $\phi$ continuous, so I holds. III holds because Lebesgue measure is complete. II fails: if $V$ is non-measurable, $f=\chi_V-\chi_{V^c}$ has $|f|\equiv1$ but $\lbrace f\gt 0\rbrace =V$.
 
-**Q12 — (D).** $g\circ f$ is fine, because preimages of open sets under $g$ are open. But $f\circ g$ can fail. With $\psi$ from Q8, take a non-measurable $N\subset\psi(C)$. Then $A=\psi^{-1}(N)\subset C$ is null, hence measurable, and $\chi_A\circ\psi^{-1}=\chi_N$ is not measurable even though $\psi^{-1}$ is continuous. (A) and (B) are standard ($\{f>a\}$ is an interval for monotone $f$).
+**Q12 — (D).** $g\circ f$ is fine, because preimages of open sets under $g$ are open. But $f\circ g$ can fail. With $\psi$ from Q8, take a non-measurable $N\subset\psi(C)$. Then $A=\psi^{-1}(N)\subset C$ is null, hence measurable, and $\chi_A\circ\psi^{-1}=\chi_N$ is not measurable even though $\psi^{-1}$ is continuous. (A) and (B) are standard ($\lbrace f\gt a\rbrace$ is an interval for monotone $f$).
 
 **Q13 — (A).** The set of $x$ whose first $n$ digits avoid $7$ has measure $(9/10)^n$, which tends to $0$. Being "most" digits does not help: almost every number uses every digit (Borel's normal numbers). (B) only accounts for the first digit.

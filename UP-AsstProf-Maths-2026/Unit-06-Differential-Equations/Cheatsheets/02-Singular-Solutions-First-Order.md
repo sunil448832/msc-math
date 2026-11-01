@@ -1,7 +1,7 @@
 # Cheatsheet · Unit 6 · Topic 02 — Singular Solutions of First Order ODEs
 > Questions: [../Questions/02-Singular-Solutions-First-Order.md](../Questions/02-Singular-Solutions-First-Order.md)
 
-Notation: $p=y'$. We consider equations of degree $>1$ in $p$: $F(x,y,p)=0$.
+Notation: $p=y'$. We consider equations of degree $\gt 1$ in $p$: $F(x,y,p)=0$.
 
 ## 1. Definitions
 - **General solution:** a one-parameter family $\phi(x,y,c)=0$.
@@ -21,7 +21,7 @@ Here $E$ is the envelope (**a singular solution**), $T$ the tac-locus, $N$ the n
 - For a quadratic $Ap^2+Bp+C=0$, the $p$-discriminant is $B^2-4AC=0$. The same applies to $c$ in the family.
 
 ## 3. Clairaut's equation $y=px+f(p)$
-- Differentiating gives $(x+f'(p))\,p'=0$.
+- Differentiating gives $(x+f'(p))\thinspace p'=0$.
 - **General solution:** $y=cx+f(c)$, a family of straight lines.
 - **Singular solution:** eliminate $p$ from $y=px+f(p)$ and $x+f'(p)=0$. This is the envelope of the lines.
 
@@ -46,14 +46,14 @@ Here $E$ is the envelope (**a singular solution**), $T$ the tac-locus, $N$ the n
 - **Solvable for $p$:** factor into $(p-f_1)(p-f_2)\cdots=0$ and solve each factor.
 - **Solvable for $y$:** $y=f(x,p)$. Differentiate w.r.t. $x$ to get an equation in $x,p$.
 - **Solvable for $x$:** $x=f(y,p)$. Differentiate w.r.t. $y$, using $\frac{dx}{dy}=\frac1p$.
-- **Lagrange (d'Alembert) equation** $y=x\,g(p)+f(p)$: this is linear in $x$ as a function of $p$.
+- **Lagrange (d'Alembert) equation** $y=x\thinspace g(p)+f(p)$: this is linear in $x$ as a function of $p$.
 - **Standard examples:**
   - $p^2=4y$: general solution $y=(x+c)^2$, singular solution $y=0$.
   - $y'=3y^{2/3}$: general solution $y=(x-c)^3$, singular solution $y=0$ (the envelope at the inflection points).
   - $y^2(1+p^2)=1$ (unit circles centred on the $x$-axis): singular solutions $y=\pm1$.
 
 ## 5. Exact equations and integrating factors (brief)
-$M\,dx+N\,dy=0$ is **exact** iff $M_y=N_x$ (on a simply connected domain).
+$M\thinspace dx+N\thinspace dy=0$ is **exact** iff $M_y=N_x$ (on a simply connected domain).
 
 | Condition | Integrating factor |
 |---|---|
@@ -61,10 +61,10 @@ $M\,dx+N\,dy=0$ is **exact** iff $M_y=N_x$ (on a simply connected domain).
 | $\frac{N_x-M_y}{M}=g(y)$ | $e^{\int g(y)dy}$ |
 | homogeneous, $Mx+Ny\ne0$ | $\frac{1}{Mx+Ny}$ |
 | $M=yf(xy)$, $N=xg(xy)$, $Mx-Ny\neq0$ | $\frac{1}{Mx-Ny}$ |
-| $x^ay^b(my\,dx+nx\,dy)+x^cy^d(m'y\,dx+n'x\,dy)=0$ | $x^hy^k$ |
+| $x^ay^b(my\thinspace dx+nx\thinspace dy)+x^cy^d(m'y\thinspace dx+n'x\thinspace dy)=0$ | $x^hy^k$ |
 | linear $y'+Py=Q$ | $e^{\int P}$ |
 
-Useful exact differentials: $d(xy)=x\,dy+y\,dx$; $d\big(\tfrac{x}{y}\big)=\tfrac{y\,dx-x\,dy}{y^2}$; $d\big(\tan^{-1}\tfrac{y}{x}\big)=\tfrac{x\,dy-y\,dx}{x^2+y^2}$; $d\ln(x^2+y^2)=\tfrac{2(x\,dx+y\,dy)}{x^2+y^2}$.
+Useful exact differentials: $d(xy)=x\thinspace dy+y\thinspace dx$; $d\big(\tfrac{x}{y}\big)=\tfrac{y\thinspace dx-x\thinspace dy}{y^2}$; $d\big(\tan^{-1}\tfrac{y}{x}\big)=\tfrac{x\thinspace dy-y\thinspace dx}{x^2+y^2}$; $d\ln(x^2+y^2)=\tfrac{2(x\thinspace dx+y\thinspace dy)}{x^2+y^2}$.
 
 ## Exam traps
 - A factor of the $p$-discriminant is **not automatically** a singular solution. Check that it satisfies the ODE and that it appears in the $c$-discriminant too.

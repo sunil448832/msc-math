@@ -50,7 +50,7 @@
 
 **11 — (D)** The UGC was inaugurated on 28 December 1953 and became a statutory body under the UGC Act, 1956. The Radhakrishnan Commission (1948–49) had recommended it.
 
-**12 — (A)** $100 = 1\cdot 64 + 4\cdot 8 + 4$, so $(100)_{10} = (144)_8$. The hexadecimal form is $(64)_{16}$, which is a distractor. Checked with Python: `oct(100) = '0o144'`.
+**12 — (A)** $100 = 1\cdot 64 + 4\cdot 8 + 4$, so $`(100)_{10} = (144)_8`$. The hexadecimal form is $`(64)_{16}`$, which is a distractor. Checked with Python: `oct(100) = '0o144'`.
 
 **13 — (B)** BCC means Blind Carbon Copy: the other recipients cannot see the addresses in the BCC field. CC means Carbon Copy.
 
@@ -132,17 +132,17 @@ Distribution: A = 18, B = 16, C = 18, D = 18.
 
 **36 — (D)** $6=2\cdot3=(1+\sqrt{-5})(1-\sqrt{-5})$ gives two distinct factorizations into irreducibles, so $\mathbb Z[\sqrt{-5}]$ is not a UFD. (A), (B), (C) are standard true results.
 
-**37 — (A)** $GF(25)^*$ is cyclic of order 24, so it has $\varphi(24)=8$ generators (primitive elements).
+**37 — (A)** $GF(25)^\ast$ is cyclic of order 24, so it has $\varphi(24)=8$ generators (primitive elements).
 
-**38 — (A)** Matrix $\begin{pmatrix}1&2&0\\2&1&0\\0&0&1\end{pmatrix}$ has eigenvalues $3,-1,1$: $p=2$, $n=1$, so rank 3, signature $p-n=1$.
+**38 — (A)** Matrix $`\begin{pmatrix}1&2&0\cr 2&1&0\cr 0&0&1\end{pmatrix}`$ has eigenvalues $3,-1,1$: $p=2$, $n=1$, so rank 3, signature $p-n=1$.
 
 **39 — (B)** Largest Jordan block has size 2 (from the minimal polynomial); block sizes form a partition of 5 with largest part 2: $2+2+1$ and $2+1+1+1$. Two forms.
 
 **40 — (A)** $w=v_2-\frac{\langle v_2,v_1\rangle}{\langle v_1,v_1\rangle}v_1=(1,0,1)-\frac12(1,1,0)=(\tfrac12,-\tfrac12,1)$; normalise: $\frac1{\sqrt6}(1,-1,2)$.
 
-**41 — (D)** Eigenvalues: a. $3,-1$ (indefinite); b. $2,0$ (PSD); c. $3,1$ (PD); d. $\det=1>0$, trace $<0$ (ND). So a–III, b–IV, c–I, d–II.
+**41 — (D)** Eigenvalues: a. $3,-1$ (indefinite); b. $2,0$ (PSD); c. $3,1$ (PD); d. $\det=1\gt 0$, trace $\lt 0$ (ND). So a–III, b–IV, c–I, d–II.
 
-**42 — (D)** $\langle1,x\rangle=\tfrac12$, $\|1\|=1$, $\|x\|=1/\sqrt3$; $\cos\theta=\tfrac{\sqrt3}{2}$, $\theta=\pi/6$.
+**42 — (D)** $\langle1,x\rangle=\tfrac12$, $\Vert 1\Vert =1$, $\Vert x\Vert =1/\sqrt3$; $\cos\theta=\tfrac{\sqrt3}{2}$, $\theta=\pi/6$.
 
 **43 — (C)** Distance = length of the component along the normal $(1,1,1)$: $\frac{|1+2+3|}{\sqrt3}=2\sqrt3$.
 
@@ -158,13 +158,13 @@ Distribution: A = 18, B = 16, C = 18, D = 18.
 
 **49 — (A)** $x^2=\frac{\pi^2}{3}+\sum\frac{4(-1)^n}{n^2}\cos nx$. Parseval: $\frac1\pi\int_{-\pi}^{\pi}x^4dx=\frac{2\pi^4}{5}=\frac{2\pi^4}{9}+16\sum\frac1{n^4}$, giving $\sum\frac1{n^4}=\frac{\pi^4}{90}$.
 
-**50 — (B)** Continuous approximations of a step function are $\|\cdot\|_1$-Cauchy with no continuous limit, so A is true. R is a true theorem, but $C[0,1]$ is infinite-dimensional, so R does not explain A.
+**50 — (B)** Continuous approximations of a step function are $\Vert \cdot\Vert _1$-Cauchy with no continuous limit, so A is true. R is a true theorem, but $C[0,1]$ is infinite-dimensional, so R does not explain A.
 
-**51 — (C)** For $\phi(f)=\int g f$ on $C[0,1]$ with sup norm, $\|\phi\|=\int_0^1|g|=\int_0^1t^2dt=1/3$ (attained at $f\equiv1$).
+**51 — (C)** For $\phi(f)=\int g f$ on $C[0,1]$ with sup norm, $\Vert \phi\Vert =\int_0^1|g|=\int_0^1t^2dt=1/3$ (attained at $f\equiv1$).
 
 **52 — (D)** $C^1$ ⟹ Lipschitz (MVT, bounded derivative) ⟹ BV ⟹ differentiable a.e. (Lebesgue's theorem). II, IV, I, III.
 
-**53 — (A)** $\|x\|_2^2=\sum_{n\ge0}4^{-n}=\frac{1}{1-1/4}=\frac43$, so $\|x\|_2=2/\sqrt3$.
+**53 — (A)** $`\Vert x\Vert _2^2=\sum_{n\ge0}4^{-n}=\frac{1}{1-1/4}=\frac43`$, so $\Vert x\Vert _2=2/\sqrt3$.
 
 **54 — (B)** Pole of order 3: Res $=\frac1{2!}\frac{d^2}{dz^2}e^{2z}\big|_{z=1}=\frac{4e^2}{2}=2e^2$.
 
@@ -172,13 +172,13 @@ Distribution: A = 18, B = 16, C = 18, D = 18.
 
 **56 — (B)** Limits at 0: $\frac{\sin z}z\to1$, $\frac{1-\cos z}{z^2}\to\frac12$, $\frac{z}{e^z-1}\to1$ (removable); $e^{1/z}$ has an essential singularity.
 
-**57 — (C)** Rouché: on $|z|=1$, $|7z^2|=7>|z^5+1|$ ⇒ 2 zeros in $|z|<1$; on $|z|=2$, $|z^5|=32>|7z^2+1|\le29$ ⇒ 5 zeros in $|z|<2$. Annulus: $5-2=3$.
+**57 — (C)** Rouché: on $|z|=1$, $|7z^2|=7\gt |z^5+1|$ ⇒ 2 zeros in $|z|\lt 1$; on $|z|=2$, $|z^5|=32\gt |7z^2+1|\le29$ ⇒ 5 zeros in $|z|\lt 2$. Annulus: $5-2=3$.
 
 **58 — (D)** For $\bar z$: $u=x,v=-y$, $u_x=1\ne v_y=-1$, so C–R fails everywhere; A is false. R is the standard sufficient condition (true).
 
 **59 — (A)** $z=\frac{z-1}{z+1}\Rightarrow z^2+z=z-1\Rightarrow z^2=-1$, so $z=\pm i$.
 
-**60 — (D)** Closed sets: $X,\{b,c\},\{c\},\emptyset$. The smallest closed set containing $b$ is $\{b,c\}$.
+**60 — (D)** Closed sets: $X,\lbrace b,c\rbrace ,\lbrace c\rbrace ,\emptyset$. The smallest closed set containing $b$ is $\lbrace b,c\rbrace$.
 
 **61 — (C)** Closure of $\mathbb Q\cap[0,1]$ is $[0,1]$, interior is $\emptyset$ (density of irrationals); boundary $=[0,1]$.
 
@@ -196,7 +196,7 @@ Distribution: A = 18, B = 16, C = 18, D = 18.
 
 **68 — (B)** $\int_{-1}^1P_n^2dx=\frac{2}{2n+1}$; for $n=2$: $2/5$.
 
-**69 — (C)** $B^2-4AC$: a. $16-16=0$ parabolic; b. $1+8>0$ hyperbolic; c. $4-20<0$ elliptic; d. $-4x$: elliptic for $x>0$, hyperbolic for $x<0$.
+**69 — (C)** $B^2-4AC$: a. $16-16=0$ parabolic; b. $1+8\gt 0$ hyperbolic; c. $4-20\lt 0$ elliptic; d. $-4x$: elliptic for $x\gt 0$, hyperbolic for $x\lt 0$.
 
 **70 — (B)** Separation of variables: mode $\sin nx$ decays as $e^{-n^2t}$; $n=2$ ⇒ $u=3e^{-4t}\sin2x$.
 
@@ -208,13 +208,13 @@ Distribution: A = 18, B = 16, C = 18, D = 18.
 
 **74 — (A)** Euler–Lagrange: $12x-2y''=0\Rightarrow y''=6x\Rightarrow y=x^3+c_1x+c_2$; the boundary conditions give $c_1=c_2=0$.
 
-**75 — (B)** Separable kernel: $\phi=\lambda c\sin x$, $c=\int_0^\pi\sin t\,\phi\,dt=\lambda c\int_0^\pi\sin^2t\,dt=\lambda c\frac\pi2$ ⇒ $\lambda=2/\pi$.
+**75 — (B)** Separable kernel: $\phi=\lambda c\sin x$, $c=\int_0^\pi\sin t\thinspace \phi\thinspace dt=\lambda c\int_0^\pi\sin^2t\thinspace dt=\lambda c\frac\pi2$ ⇒ $\lambda=2/\pi$.
 
-**76 — (D)** $\mathcal L^{-1}\{F(s)/s\}=\int_0^tf$: $\int_0^t\sin u\,du=1-\cos t$. (Or partial fractions $\frac1s-\frac{s}{s^2+1}$.)
+**76 — (D)** $\mathcal L^{-1}\lbrace F(s)/s\rbrace =\int_0^tf$: $\int_0^t\sin u\thinspace du=1-\cos t$. (Or partial fractions $\frac1s-\frac{s}{s^2+1}$.)
 
 **77 — (B)** Standard transforms: $\sinh2t\to\frac{2}{s^2-4}$, $t^2\to\frac{2}{s^3}$, $e^{3t}\to\frac1{s-3}$, $\cos2t\to\frac{s}{s^2+4}$.
 
-**78 — (C)** $\int_0^\infty e^{-st}t\sin t\,dt=\mathcal L\{t\sin t\}=\frac{2s}{(s^2+1)^2}$; at $s=2$: $\frac{4}{25}$.
+**78 — (C)** $\int_0^\infty e^{-st}t\sin t\thinspace dt=\mathcal L\lbrace t\sin t\rbrace =\frac{2s}{(s^2+1)^2}$; at $s=2$: $\frac{4}{25}$.
 
 **79 — (C)** Parallel-axis theorem: $\frac25Ma^2+Ma^2=\frac75Ma^2$.
 
@@ -228,7 +228,7 @@ Distribution: A = 18, B = 16, C = 18, D = 18.
 
 **84 — (A)** $\frac{dw}{dz}=U\left(1-\frac{a^2}{z^2}\right)=0\Rightarrow z=\pm a$ (front and rear of the cylinder).
 
-**85 — (B)** Green/Stokes: $\Gamma=\oint(-y\,dx+x\,dy)=\iint 2\,dA=2\cdot\pi\cdot4=8\pi$.
+**85 — (B)** Green/Stokes: $\Gamma=\oint(-y\thinspace dx+x\thinspace dy)=\iint 2\thinspace dA=2\cdot\pi\cdot4=8\pi$.
 
 **86 — (A)** Corner points $(0,0),(4,0),(3,1),(0,2)$ give $z=0,12,11,4$; the maximum is 12 at $(4,0)$.
 
@@ -244,7 +244,7 @@ Distribution: A = 18, B = 16, C = 18, D = 18.
 
 **92 — (A)** Orders: bisection 1 (linear), secant ≈1.618, Newton–Raphson 2, Chebyshev 3.
 
-**93 — (D)** For a cubic $a_0x^3+\dots$, $\Delta^3f=a_0\,3!\,h^3=6\cdot8=48$.
+**93 — (D)** For a cubic $a_0x^3+\dots$, $\Delta^3f=a_0\thinspace 3!\thinspace h^3=6\cdot8=48$.
 
 **94 — (D)** $k_1=hf(0,1)=0.1$; $k_2=hf(0.1,1.1)=0.12$; $y_1=1+\frac{k_1+k_2}{2}=1.11$. (1.1103 is the RK4/exact value.)
 

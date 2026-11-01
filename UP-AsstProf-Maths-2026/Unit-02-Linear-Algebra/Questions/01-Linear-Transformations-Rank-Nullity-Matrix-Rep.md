@@ -2,7 +2,7 @@
 > Syllabus coverage: Linear transformations, Algebra of linear transformations, kernel, range, Rank-Nullity Theorem, Matrix representation of a linear transformation, change of bases
 > Cheatsheet: [../Cheatsheets/01-Linear-Transformations-Rank-Nullity-Matrix-Rep.md](../Cheatsheets/01-Linear-Transformations-Rank-Nullity-Matrix-Rep.md)
 
-**Q1.** `[Concept]` ★ Let $T:\mathbb{R}^7\to\mathbb{R}^4$ be a linear transformation that is onto. Then $\dim\ker T$ equals
+**Q1.** `[Concept]` ★ Let $T:\mathbb R^7\to\mathbb R^4$ be a linear transformation that is onto. Then $\dim\ker T$ equals
 
 (A) 0
 
@@ -12,7 +12,7 @@
 
 (D) 3
 
-**Q2.** `[Numerical]` ★ Let $T:\mathbb{R}^3\to\mathbb{R}^3$, $T(x,y,z)=(x+y,\;y+z,\;x-z)$. The nullity of $T$ is
+**Q2.** `[Numerical]` ★ Let $T:\mathbb R^3\to\mathbb R^3$, $T(x,y,z)=(x+y,\ y+z,\ x-z)$. The nullity of $T$ is
 
 (A) 0
 
@@ -34,9 +34,9 @@
 
 **Q4.** `[Multi-Statement]` ★★ Consider the statements:
 
-I. There exists an injective linear map $\mathbb{R}^3\to\mathbb{R}^2$.
+I. There exists an injective linear map $\mathbb R^3\to\mathbb R^2$.
 
-II. There exists a surjective linear map $\mathbb{R}^3\to\mathbb{R}^2$.
+II. There exists a surjective linear map $\mathbb R^3\to\mathbb R^2$.
 
 III. If $V$ is finite-dimensional and $T:V\to V$ is linear and one-one, then $T$ is onto.
 
@@ -51,7 +51,7 @@ Which of the above is/are correct?
 (D) I, II and III
 
 **Q5.** `[Assertion-Reason]` ★★
-**Assertion (A):** There is no linear map $T:\mathbb{R}^5\to\mathbb{R}^5$ with $\ker T=\operatorname{range}T$.
+**Assertion (A):** There is no linear map $T:\mathbb R^5\to\mathbb R^5$ with $\ker T=\operatorname{range}T$.
 **Reason (R):** If $\ker T=\operatorname{range}T$, then by the Rank–Nullity Theorem $5=2\operatorname{rank}T$, which is impossible.
 
 (A) Both A and R are true and R is the correct explanation of A
@@ -83,7 +83,7 @@ Which of the above is/are correct?
 
 (A) $z\mapsto \bar z$ on $\mathbb{C}$, regarded as a vector space over $\mathbb{R}$
 
-(B) $f\mapsto \int_0^1 f(t)\,dt$ on $C[0,1]$ over $\mathbb{R}$
+(B) $f\mapsto \int_0^1 f(t)\thinspace dt$ on $C[0,1]$ over $\mathbb{R}$
 
 (C) $A\mapsto \operatorname{tr}A$ on $M_n(\mathbb{C})$ over $\mathbb{C}$
 
@@ -99,17 +99,17 @@ Which of the above is/are correct?
 
 (D) 3
 
-**Q9.** `[Numerical]` ★★ A linear operator $T$ on $\mathbb{R}^2$ has matrix $\begin{pmatrix}1&2\\0&3\end{pmatrix}$ with respect to the standard basis. Its matrix with respect to the ordered basis $\mathcal{B}=\{(1,0),(1,1)\}$ is
+**Q9.** `[Numerical]` ★★ A linear operator $T$ on $\mathbb R^2$ has matrix $`\begin{pmatrix}1&2\cr 0&3\end{pmatrix}`$ with respect to the standard basis. Its matrix with respect to the ordered basis $\mathcal{B}=\lbrace (1,0),(1,1)\rbrace$ is
 
-(A) $\begin{pmatrix}1&2\\0&3\end{pmatrix}$
+(A) $`\begin{pmatrix}1&2\cr 0&3\end{pmatrix}`$
 
-(B) $\begin{pmatrix}1&0\\0&3\end{pmatrix}$
+(B) $`\begin{pmatrix}1&0\cr 0&3\end{pmatrix}`$
 
-(C) $\begin{pmatrix}3&0\\0&1\end{pmatrix}$
+(C) $`\begin{pmatrix}3&0\cr 0&1\end{pmatrix}`$
 
-(D) $\begin{pmatrix}1&3\\0&3\end{pmatrix}$
+(D) $`\begin{pmatrix}1&3\cr 0&3\end{pmatrix}`$
 
-**Q10.** `[Concept]` ★ The dimension of the real vector space $L(\mathbb{R}^3,\mathbb{R}^4)$ of all linear maps from $\mathbb{R}^3$ to $\mathbb{R}^4$ is
+**Q10.** `[Concept]` ★ The dimension of the real vector space $L(\mathbb R^3,\mathbb R^4)$ of all linear maps from $\mathbb R^3$ to $\mathbb R^4$ is
 
 (A) 7
 
@@ -119,7 +119,7 @@ Which of the above is/are correct?
 
 (D) 81
 
-**Q11.** `[Application]` ★★★ Let $U$ and $W$ be subspaces of $\mathbb{R}^7$ with $\dim U=4$ and $\dim W=5$. The smallest possible value of $\dim(U\cap W)$ is
+**Q11.** `[Application]` ★★★ Let $U$ and $W$ be subspaces of $\mathbb R^7$ with $\dim U=4$ and $\dim W=5$. The smallest possible value of $\dim(U\cap W)$ is
 
 (A) 0
 
@@ -159,21 +159,21 @@ Which of the above is/are correct?
 ## Solutions
 **Q1 — (D).** Onto means rank $=4$. Rank–Nullity: nullity $=7-4=3$. (C) mixes up rank and nullity.
 
-**Q2 — (B).** The matrix $\begin{pmatrix}1&1&0\\0&1&1\\1&0&-1\end{pmatrix}$ has determinant $0$ and two independent rows, so rank $2$ and nullity $3-2=1$. The kernel is spanned by $(1,-1,1)$.
+**Q2 — (B).** The matrix $`\begin{pmatrix}1&1&0\cr 0&1&1\cr 1&0&-1\end{pmatrix}`$ has determinant $0$ and two independent rows, so rank $2$ and nullity $3-2=1$. The kernel is spanned by $(1,-1,1)$.
 
 **Q3 — (B).** $D^2$ sends $1,x\mapsto 0$ and $x^2,x^3,x^4\mapsto 2,6x,12x^2$, so its kernel is $P_1$, of dimension 2. (A) is the nullity of $D$ itself.
 
-**Q4 — (A).** I is false: an injective map needs $\dim(\text{domain})\le\dim(\text{codomain})$. II is true (take the projection $(x,y,z)\mapsto(x,y)$). III is true: injective means nullity $0$, so rank $=\dim V$. III fails for infinite-dimensional $V$ (for example the right shift on sequences).
+**Q4 — (A).** I is false: an injective map needs $\dim(\text{domain})\le\dim(\text{codomain})$. II is true (take the projection $`(x,y,z)\mapsto(x,y)`$). III is true: injective means nullity $0$, so rank $=\dim V$. III fails for infinite-dimensional $V$ (for example the right shift on sequences).
 
-**Q5 — (A).** If $\ker T=\operatorname{range}T$ then rank $=$ nullity $=r$ and $2r=5$, which is impossible. R gives exactly this argument. In even dimension such maps exist, e.g. $\begin{pmatrix}0&1\\0&0\end{pmatrix}$ on $\mathbb{R}^2$.
+**Q5 — (A).** If $\ker T=\operatorname{range}T$ then rank $=$ nullity $=r$ and $2r=5$, which is impossible. R gives exactly this argument. In even dimension such maps exist, e.g. $`\begin{pmatrix}0&1\cr 0&0\end{pmatrix}`$ on $\mathbb R^2$.
 
 **Q6 — (A).** For $n=3$: $n^2=9$, $n(n+1)/2=6$, $n(n-1)/2=3$, $n^2-1=8$.
 
 **Q7 — (D).** Over $\mathbb{C}$, $\overline{iz}=-i\bar z\ne i\bar z$, so conjugation is not $\mathbb{C}$-linear. It is additive and commutes with real scalars, so (A) is linear. Linearity depends on the field of scalars.
 
-**Q8 — (D).** $T^2=0$ gives $\operatorname{range}T\subseteq\ker T$, so $r\le 6-r$ and $r\le3$. The bound is attained by three Jordan blocks $\begin{pmatrix}0&1\\0&0\end{pmatrix}$.
+**Q8 — (D).** $T^2=0$ gives $\operatorname{range}T\subseteq\ker T$, so $r\le 6-r$ and $r\le3$. The bound is attained by three Jordan blocks $`\begin{pmatrix}0&1\cr 0&0\end{pmatrix}`$.
 
-**Q9 — (B).** Take $P=\begin{pmatrix}1&1\\0&1\end{pmatrix}$ (new basis vectors as columns). Then $P^{-1}AP=\begin{pmatrix}1&0\\0&3\end{pmatrix}$. This works because $(1,0)$ and $(1,1)$ are eigenvectors for $1$ and $3$. The order of the basis fixes the order on the diagonal, which rules out (C).
+**Q9 — (B).** Take $`P=\begin{pmatrix}1&1\cr 0&1\end{pmatrix}`$ (new basis vectors as columns). Then $`P^{-1}AP=\begin{pmatrix}1&0\cr 0&3\end{pmatrix}`$. This works because $(1,0)$ and $(1,1)$ are eigenvectors for $1$ and $3$. The order of the basis fixes the order on the diagonal, which rules out (C).
 
 **Q10 — (C).** $\dim L(V,W)=\dim V\cdot\dim W=3\cdot4=12$, since these maps correspond to $4\times3$ matrices.
 

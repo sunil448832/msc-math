@@ -23,15 +23,15 @@ $$u_x = v_y,\qquad u_y = -v_x,\qquad f'(z) = u_x + i v_x = v_y - i u_y.$$
 
 ## 3. Harmonic functions
 - $u$ is harmonic if $u\in C^2$ and $\Delta u = u_{xx} + u_{yy} = 0$. The real and imaginary parts of an analytic function are harmonic.
-- $v$ is a **harmonic conjugate** of $u$ if $u + iv$ is analytic. A conjugate exists on any **simply connected** domain and is unique up to an additive constant. Counterexample: $\ln|z|$ on $\mathbb{C}\setminus\{0\}$ has no single-valued conjugate.
+- $v$ is a **harmonic conjugate** of $u$ if $u + iv$ is analytic. A conjugate exists on any **simply connected** domain and is unique up to an additive constant. Counterexample: $\ln|z|$ on $\mathbb{C}\setminus\lbrace 0\rbrace$ has no single-valued conjugate.
 - The conjugate of $v$ is $-u$; the relation is *not* symmetric.
 - Products: $uv = \tfrac12\operatorname{Im}(f^2)$ **is** harmonic, but $u^2$ is harmonic only if $u$ is constant. A product of two harmonic functions need not be harmonic.
 - Level curves $u = c_1$ and $v = c_2$ cut orthogonally wherever $f' \ne 0$.
 - Polar Laplacian: $u_{rr} + \frac1r u_r + \frac1{r^2}u_{\theta\theta} = 0$. Examples: $r^n\cos n\theta$ and $\ln r$ are harmonic.
 
 **Finding $f$ from $u$ (Milne-Thomson):**
-$$f'(z) = u_x(z,0) - i\,u_y(z,0),\qquad f(z) = \int f'(z)\,dz + iC.$$
-Given $v$ instead: $f'(z) = v_y(z,0) + i\,v_x(z,0)$.
+$$f'(z) = u_x(z,0) - i\thinspace u_y(z,0),\qquad f(z) = \int f'(z)\thinspace dz + iC.$$
+Given $v$ instead: $f'(z) = v_y(z,0) + i\thinspace v_x(z,0)$.
 
 **Rigidity:** $f$ analytic on a domain is constant if any of the following holds: $f' \equiv 0$; $\operatorname{Re} f$ is constant; $\operatorname{Im} f$ is constant; $|f|$ is constant; $\bar f$ is analytic; $f$ is real-valued; $f(D)$ lies on a line, circle or other curve (by the open mapping theorem). An example is $u = v^2$.
 
@@ -55,7 +55,7 @@ Standard values: $\operatorname{Log}(-1) = i\pi$; $\operatorname{Log} i = i\pi/2
 - The principal branch is discontinuous across the cut: $\operatorname{Log}(-1 + i0^+) = i\pi$ but $\operatorname{Log}(-1 - i0^+) \to -i\pi$.
 
 ## Exam traps
-1. CR holding at a point does **not** give differentiability. You also need continuity of the partials (or differentiability of $(u,v)$).
+1. CR holding at a point does **not** give differentiability. You also need continuity of the partials (or differentiability of $`(u,v)`$).
 2. Differentiable on a line or at a point does **not** mean analytic there, because analyticity needs an open set.
 3. The conjugate of $v$ is $-u$, not $u$.
 4. In polar CR, the factor $1/r$ goes with the $\theta$-derivative: $r u_r = v_\theta$.

@@ -69,7 +69,7 @@ Which is/are correct?
 | (a) $x^2+y^2$ | 1. $rt-s^2=0$ (test inconclusive), yet a local minimum |
 | (b) $x^2-y^2$ | 2. saddle point |
 | (c) $-x^2-y^2$ | 3. local maximum |
-| (d) $x^4+y^4$ | 4. local minimum with $rt-s^2>0$ |
+| (d) $x^4+y^4$ | 4. local minimum with $rt-s^2\gt 0$ |
 
 (A) a-4, b-2, c-3, d-1
 
@@ -141,11 +141,11 @@ Which is/are correct?
 
 **Q13.** `[Concept]` ★ Let $(a,b)$ be a critical point of a $C^2$ function $f(x,y)$, with $r=f_{xx}, s=f_{xy}, t=f_{yy}$ evaluated at $(a,b)$. Then $(a,b)$ is a saddle point if
 
-(A) $rt-s^2>0$ and $r>0$
+(A) $rt-s^2\gt 0$ and $r\gt 0$
 
-(B) $rt-s^2>0$ and $r<0$
+(B) $rt-s^2\gt 0$ and $r\lt 0$
 
-(C) $rt-s^2<0$
+(C) $rt-s^2\lt 0$
 
 (D) $rt-s^2=0$
 
@@ -172,24 +172,24 @@ Which is/are correct?
 
 **Q2 — (B).** $\nabla f=(2xy,\ x^2+2z,\ 2y)=(4,3,4)$ at $(1,2,1)$. The unit vector is $\frac13(2,1,2)$, so $D_{\mathbf u}f=\frac{8+3+8}{3}=\frac{19}{3}$. Option (A) forgets to normalise the direction vector.
 
-**Q3 — (C).** $J=\begin{vmatrix}2x&-2y\\2y&2x\end{vmatrix}=4(x^2+y^2)=8$ at $(1,1)$. This is $|f'(z)|^2$ for $f(z)=z^2$.
+**Q3 — (C).** $`J=\begin{vmatrix}2x&-2y\cr 2y&2x\end{vmatrix}=4(x^2+y^2)=8`$ at $(1,1)$. This is $|f'(z)|^2$ for $f(z)=z^2$.
 
 **Q4 — (A).** For $\mathbf u=(a,b)$ with $b\ne0$: $\frac{f(ta,tb)}{t}=\frac{a^2b}{t^2a^4+b^2}\to\frac{a^2}{b}$. For $b=0$, $f=0$ and the derivative is $0$. So I holds. Along $y=x^2$, $f=\frac12$, so $f$ is not continuous and II fails. $a^2/b$ is not linear in $(a,b)$, so III fails. (If $f$ were differentiable, the map in III would be $\nabla f\cdot\mathbf u$, which is linear.)
 
 **Q5 — (B).** $f(x,0)=0$ and $f(0,y)=0$, so both partials are $0$ (R is true). If $f$ were differentiable, $\frac{f(h,k)}{\sqrt{h^2+k^2}}\to0$. Along $h=k$ this quotient is $\frac{|h|}{\sqrt2|h|}=\frac1{\sqrt2}$, so A is true. R does not explain A: existence of the partials is consistent with both differentiability and non-differentiability.
 
-**Q6 — (A).** $x^2+y^2$: $r=t=2$, $s=0$, $rt-s^2=4>0$, $r>0$, so a minimum (4). $x^2-y^2$: $rt-s^2=-4<0$, a saddle (2). $-x^2-y^2$: a maximum (3). $x^4+y^4$: all second derivatives vanish, so the test fails, but $f\ge0=f(0,0)$ shows it is a minimum (1).
+**Q6 — (A).** $x^2+y^2$: $r=t=2$, $s=0$, $rt-s^2=4\gt 0$, $r\gt 0$, so a minimum (4). $x^2-y^2$: $rt-s^2=-4\lt 0$, a saddle (2). $-x^2-y^2$: a maximum (3). $x^4+y^4$: all second derivatives vanish, so the test fails, but $f\ge0=f(0,0)$ shows it is a minimum (1).
 
 **Q7 — (D).** $\frac{xy}{x^2+y^2}$ (Q1) has both partials at $0$ but is discontinuous there. (A), (B) and (C) are standard. (C) is the usual sufficient condition for differentiability, and it even suffices that one partial is continuous.
 
 **Q8 — (B).** The minimum is the squared distance from the origin to the plane: $\left(\frac{9}{\sqrt{1+4+4}}\right)^2=9$, attained at $(1,2,2)$. Lagrange: $(2x,2y,2z)=\lambda(1,2,2)$. Option (A) is the distance, not its square.
 
-**Q9 — (D).** The critical points are $(0,0)$ and $(1,1)$. At $(0,0)$: $rt-s^2=0\cdot0-9<0$, a saddle. At $(1,1)$: $r=6,t=6,s=-3$, $rt-s^2=27>0$, $r>0$, a local minimum with value $1+1-3=-1$. (Globally $f$ is unbounded below, but the question asks for the local minimum.)
+**Q9 — (D).** The critical points are $(0,0)$ and $(1,1)$. At $(0,0)$: $rt-s^2=0\cdot0-9\lt 0$, a saddle. At $(1,1)$: $r=6,t=6,s=-3$, $rt-s^2=27\gt 0$, $r\gt 0$, a local minimum with value $1+1-3=-1$. (Globally $f$ is unbounded below, but the question asks for the local minimum.)
 
 **Q10 — (A).** With $F=xyz+x^2+z^3-3$: $F_x=yz+2x=3$ and $F_z=xy+3z^2=4$ at $(1,1,1)$. So $z_x=-F_x/F_z=-\frac34$. Option (B) inverts the ratio.
 
 **Q11 — (C).** $f_x(0,y)=-y$, so $\partial_y(f_x)(0,0)=-1$. $f_y(x,0)=x$, so $\partial_x(f_y)(0,0)=1$. The mixed partials exist and are unequal, because they are not continuous at the origin (the hypothesis of Schwarz/Clairaut fails). Whichever notation convention is used, one value is $1$ and the other is $-1$.
 
-**Q12 — (D).** $JF=\begin{pmatrix}e^x\cos y&-e^x\sin y\\e^x\sin y&e^x\cos y\end{pmatrix}$, $\det=e^{2x}>0$. By the inverse function theorem $F$ is a local diffeomorphism. But $F(x,y)=F(x,y+2\pi)$, so $F$ is not injective, and $F$ never takes the value $(0,0)$, so it is not onto. ($F$ is $z\mapsto e^z$.)
+**Q12 — (D).** $`JF=\begin{pmatrix}e^x\cos y&-e^x\sin y\cr e^x\sin y&e^x\cos y\end{pmatrix}`$, $\det=e^{2x}\gt 0$. By the inverse function theorem $F$ is a local diffeomorphism. But $F(x,y)=F(x,y+2\pi)$, so $F$ is not injective, and $F$ never takes the value $(0,0)$, so it is not onto. ($F$ is $z\mapsto e^z$.)
 
-**Q13 — (C).** $rt-s^2<0$ means the Hessian is indefinite, which gives a saddle. (A) gives a minimum, (B) a maximum, and (D) is inconclusive.
+**Q13 — (C).** $rt-s^2\lt 0$ means the Hessian is indefinite, which gives a saddle. (A) gives a minimum, (B) a maximum, and (D) is inconclusive.

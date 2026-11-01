@@ -2,13 +2,13 @@
 > Questions: [../Questions/05-Space-Curves-Serret-Frenet.md](../Questions/05-Space-Curves-Serret-Frenet.md)
 
 ## 1. Arc length and the Frenet frame
-- **Arc length:** $s(t)=\int_{t_0}^t|\mathbf r'(u)|\,du$. A curve is **unit speed** if $|\mathbf r'(s)|=1$. Every regular curve ($\mathbf r'\ne0$) can be reparametrised by arc length.
+- **Arc length:** $s(t)=\int_{t_0}^t|\mathbf r'(u)|\thinspace du$. A curve is **unit speed** if $|\mathbf r'(s)|=1$. Every regular curve ($\mathbf r'\ne0$) can be reparametrised by arc length.
 - Dashes below denote $d/ds$.
 
 | Object | Definition (unit speed) |
 |---|---|
 | Unit tangent | $T=\mathbf r'$ |
-| Curvature | $\kappa=|T'|=|\mathbf r''|\ge0$ |
+| Curvature | $\kappa=\vert T'\vert =\vert \mathbf r''\vert \ge0$ |
 | Radius of curvature | $\rho=1/\kappa$ |
 | Principal normal | $N=T'/\kappa$ (needs $\kappa\ne0$) |
 | Binormal | $B=T\times N$ |
@@ -22,7 +22,7 @@ Planes through $\mathbf r(s)$:
 
 ## 2. Serret–Frenet formulae
 $$
-\begin{pmatrix}T\\N\\B\end{pmatrix}'=\begin{pmatrix}0&\kappa&0\\-\kappa&0&\tau\\0&-\tau&0\end{pmatrix}\begin{pmatrix}T\\N\\B\end{pmatrix}
+\begin{pmatrix}T\cr N\cr B\end{pmatrix}'=\begin{pmatrix}0&\kappa&0\cr -\kappa&0&\tau\cr 0&-\tau&0\end{pmatrix}\begin{pmatrix}T\cr N\cr B\end{pmatrix}
 $$
 - The coefficient matrix is skew-symmetric.
 - **Darboux vector:** $\boldsymbol\omega=\tau T+\kappa B$, and $X'=\boldsymbol\omega\times X$ for $X=T,N,B$. Its length $|\boldsymbol\omega|=\sqrt{\kappa^2+\tau^2}$ is the "total curvature".
@@ -52,17 +52,17 @@ $$
 
 - **Helix:** the length of one turn is $2\pi\sqrt{a^2+b^2}$ and the pitch is $2\pi b$. The tangent makes angle $\alpha$ with the axis, where $\cos\alpha=b/\sqrt{a^2+b^2}$.
 - **Inverse formulas:** given constant $\kappa,\tau$, the helix has $a=\dfrac{\kappa}{\kappa^2+\tau^2}$ and $b=\dfrac{\tau}{\kappa^2+\tau^2}$.
-- A right-handed helix ($b>0$) has $\tau>0$.
+- A right-handed helix ($b\gt 0$) has $\tau\gt 0$.
 
 ## 5. Key theorems
 - $\kappa\equiv0\iff$ the curve is a straight line (segment).
 - For $\kappa\ne0$: $\tau\equiv0\iff$ the curve is planar ($B$ is constant).
-- $\kappa$ constant $>0$ and $\tau\equiv0$ $\iff$ the curve is an arc of a circle of radius $1/\kappa$.
+- $\kappa$ constant $\gt 0$ and $\tau\equiv0$ $\iff$ the curve is an arc of a circle of radius $1/\kappa$.
 - $\kappa,\tau$ both constant (non-zero) $\iff$ the curve is a circular helix.
 - **Lancret:** generalized helix (the tangent makes a constant angle with a fixed direction $\mathbf u$) $\iff$ $\kappa/\tau$ is constant. The axis is along the Darboux vector, $\mathbf u\parallel\tau T+\kappa B$.
-- **Fundamental theorem of curves:** given smooth $\kappa(s)>0$ and $\tau(s)$, there is a unit-speed curve with these as its curvature and torsion. It is unique up to a rigid (proper Euclidean) motion.
+- **Fundamental theorem of curves:** given smooth $\kappa(s)\gt 0$ and $\tau(s)$, there is a unit-speed curve with these as its curvature and torsion. It is unique up to a rigid (proper Euclidean) motion.
 - **Spherical curves** ($\tau\ne0$, $\kappa'\ne0$): the curve lies on a sphere of radius $R$ iff $\rho^2+(\rho'\sigma)^2=R^2$ is constant, with $\rho=1/\kappa$ and $\sigma=1/\tau$. Equivalently $\dfrac{\tau}{\kappa}=\Big(\dfrac{\kappa'}{\kappa^2\tau}\Big)'$.
-- **Spherical indicatrices** (curvatures; $ds_T=\kappa\,ds$, $ds_B=|\tau|\,ds$):
+- **Spherical indicatrices** (curvatures; $ds_T=\kappa\thinspace ds$, $ds_B=|\tau|\thinspace ds$):
   - tangent indicatrix: $\sqrt{\kappa^2+\tau^2}/\kappa$
   - binormal indicatrix: $\sqrt{\kappa^2+\tau^2}/|\tau|$
 - **Bertrand curves:** two curves sharing principal normals. They exist iff $a\kappa+b\tau=1$ for constants $a\ne0$ and $b$.

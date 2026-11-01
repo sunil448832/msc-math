@@ -42,7 +42,7 @@
 
 (D) $g/2$
 
-**Q5.** `[Numerical]` ★★ A particle moves in a plane under a force $\vec F = F_r\,\hat r + F_\theta\,\hat\theta$. The generalised force associated with the polar coordinate $\theta$ is
+**Q5.** `[Numerical]` ★★ A particle moves in a plane under a force $\vec F = F_r\thinspace \hat r + F_\theta\thinspace \hat\theta$. The generalised force associated with the polar coordinate $\theta$ is
 
 (A) $F_\theta$
 
@@ -52,7 +52,7 @@
 
 (D) $r F_\theta$
 
-**Q6.** `[Multi-Statement]` ★★ Consider a system with Lagrangian $L(q,\dot q,t)$ and the Jacobi integral $h = \sum_j \dot q_j\,\dfrac{\partial L}{\partial \dot q_j} - L$.
+**Q6.** `[Multi-Statement]` ★★ Consider a system with Lagrangian $L(q,\dot q,t)$ and the Jacobi integral $h = \sum_j \dot q_j\thinspace \dfrac{\partial L}{\partial \dot q_j} - L$.
 
 I. If $\partial L/\partial t = 0$, then $h$ is a constant of motion.
 
@@ -72,7 +72,7 @@ Which of the above is/are correct?
 
 **Q7.** `[Assertion-Reason]` ★★
 **Assertion (A):** For a charged particle in a magnetic field, the canonical momentum $\partial L/\partial \dot{\vec r}$ is not equal to $m\dot{\vec r}$.
-**Reason (R):** The Lagrangian of a charged particle contains the velocity-dependent term $e\,\dot{\vec r}\cdot\vec A$.
+**Reason (R):** The Lagrangian of a charged particle contains the velocity-dependent term $e\thinspace \dot{\vec r}\cdot\vec A$.
 
 (A) Both A and R are true and R is the correct explanation of A
 
@@ -86,7 +86,7 @@ Which of the above is/are correct?
 
 | List-I (Principle) | List-II (Statement) |
 |---|---|
-| a. Principle of virtual work | 1. $\delta\displaystyle\int_{t_1}^{t_2} L\,dt = 0$ with $\delta q(t_1)=\delta q(t_2)=0$ |
+| a. Principle of virtual work | 1. $\delta\displaystyle\int_{t_1}^{t_2} L\thinspace dt = 0$ with $\delta q(t_1)=\delta q(t_2)=0$ |
 | b. D'Alembert's principle | 2. $\sum_i \vec F_i\cdot\delta\vec r_i = 0$ |
 | c. Hamilton's principle | 3. $\dfrac{d}{dt}\dfrac{\partial L}{\partial \dot q_j} - \dfrac{\partial L}{\partial q_j} = 0$ |
 | d. Lagrange's equations | 4. $\sum_i (\vec F_i - \dot{\vec p}_i)\cdot\delta\vec r_i = 0$ |
@@ -109,7 +109,7 @@ Which of the above is/are correct?
 
 (D) Generalised coordinates need not have the dimension of length.
 
-**Q10.** `[Application]` ★★★ The Lagrangian $L = e^{\gamma t}\left(\tfrac12 m\dot q^2 - \tfrac12 k q^2\right)$, where $\gamma, m, k > 0$ are constants, describes
+**Q10.** `[Application]` ★★★ The Lagrangian $L = e^{\gamma t}\left(\tfrac12 m\dot q^2 - \tfrac12 k q^2\right)$, where $\gamma, m, k \gt  0$ are constants, describes
 
 (A) a simple harmonic oscillator of frequency $\sqrt{k/m}$
 
@@ -119,7 +119,7 @@ Which of the above is/are correct?
 
 (D) an oscillator with growing amplitude $m\ddot q - \gamma m\dot q + kq = 0$
 
-**Q11.** `[Concept]` ★ Hamilton's principle applied to $\displaystyle\int_{x_1}^{x_2}\sqrt{1+y'^2}\,dx$ (the length of a plane curve) gives as extremals
+**Q11.** `[Concept]` ★ Hamilton's principle applied to $\displaystyle\int_{x_1}^{x_2}\sqrt{1+y'^2}\thinspace dx$ (the length of a plane curve) gives as extremals
 
 (A) straight lines
 
@@ -182,14 +182,14 @@ Which of the above is/are correct?
 
 **Q7 — (A).** $L = \tfrac12 m\dot{\vec r}^2 - e\phi + e\dot{\vec r}\cdot\vec A$, so $\vec p = m\dot{\vec r} + e\vec A$. The velocity-dependent term is exactly what makes $\vec p$ differ from $m\dot{\vec r}$, so R explains A.
 
-**Q8 — (A).** Virtual work (statics) is $\sum \vec F\cdot\delta\vec r = 0$. D'Alembert adds the inertial "force" $-\dot{\vec p}$. Hamilton's principle is the stationary action $\delta\int L\,dt = 0$. The Euler–Lagrange form is Lagrange's equations.
+**Q8 — (A).** Virtual work (statics) is $\sum \vec F\cdot\delta\vec r = 0$. D'Alembert adds the inertial "force" $-\dot{\vec p}$. Hamilton's principle is the stationary action $\delta\int L\thinspace dt = 0$. The Euler–Lagrange form is Lagrange's equations.
 
 **Q9 — (B).** The Lagrangian is not unique. $L$ and $L + dF/dt$, and also $L$ and $\lambda L$, give the same equations. (A), (C) and (D) are standard true facts.
 
 **Q10 — (B).** $\dfrac{d}{dt}\left(e^{\gamma t} m\dot q\right) = -e^{\gamma t} k q$. Expanding gives $e^{\gamma t}(m\ddot q + \gamma m\dot q + kq) = 0$. This is the Caldirola–Kanai Lagrangian. The factor 2 in (C) is a common slip; it appears only if one writes $e^{2\gamma t}$.
 
-**Q11 — (A).** $F = \sqrt{1+y'^2}$ does not contain $y$, so $\partial F/\partial y' = y'/\sqrt{1+y'^2} = $ const. Hence $y' = $ const and the extremals are straight lines. Cycloids answer the brachistochrone problem and catenaries answer the minimum surface of revolution.
+**Q11 — (A).** $F = \sqrt{1+y'^2}$ does not contain $y$, so $\partial F/\partial y' = y'/\sqrt{1+y'^2} =$ const. Hence $y' =$ const and the extremals are straight lines. Cycloids answer the brachistochrone problem and catenaries answer the minimum surface of revolution.
 
 **Q12 — (D).** Change to $u = x - y$ and $s = x + y$. Then $L = \tfrac14(\dot u^2 + \dot s^2) - V(u)$ and $s$ is cyclic. Equivalently, $\dot p_x + \dot p_y = -V' + V' = 0$, so the total momentum $\dot x + \dot y$ is conserved (translation invariance). Option (C) leaves out the kinetic energy of $y$; the conserved energy is $\tfrac12(\dot x^2+\dot y^2)+V$.
 
-**Q13 — (C).** The equation of motion is $\ddot\theta = \sin\theta\,(\omega^2\cos\theta - g/a)$, so equilibrium needs $\cos\theta_0 = g/(a\omega^2) = 1/2$. Linearising about $\theta_0$ gives $\ddot\eta = -\omega^2\sin^2\theta_0\,\eta$. So $\Omega^2 = \omega^2\sin^2\theta_0 = (2g/a)(3/4) = 3g/(2a)$. (A non-trivial equilibrium exists only if $\omega^2 > g/a$.)
+**Q13 — (C).** The equation of motion is $\ddot\theta = \sin\theta\thinspace (\omega^2\cos\theta - g/a)$, so equilibrium needs $\cos\theta_0 = g/(a\omega^2) = 1/2$. Linearising about $\theta_0$ gives $\ddot\eta = -\omega^2\sin^2\theta_0\thinspace \eta$. So $\Omega^2 = \omega^2\sin^2\theta_0 = (2g/a)(3/4) = 3g/(2a)$. (A non-trivial equilibrium exists only if $\omega^2 \gt  g/a$.)

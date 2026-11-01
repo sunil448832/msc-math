@@ -72,7 +72,7 @@
 
 (D) $5/8$
 
-**Q8.** `[Multi-Statement]` ★★ With $E$ the shift operator ($Ef(x)=f(x+h)$), consider:
+**Q8.** `[Multi-Statement]` ★★ With $E$ the shift operator ($`Ef(x)=f(x+h)`$), consider:
 
 I. $\Delta-\nabla=\Delta\nabla$
 
@@ -119,7 +119,7 @@ Which are correct?
 
 (D) A-2, B-4, C-1, D-3
 
-**Q11.** `[NOT-true / Counterexample]` ★★ For a natural cubic spline $S$ interpolating data at nodes $x_0<x_1<\dots<x_n$, which statement is NOT true?
+**Q11.** `[NOT-true / Counterexample]` ★★ For a natural cubic spline $S$ interpolating data at nodes $x_0\lt x_1\lt \dots\lt x_n$, which statement is NOT true?
 
 (A) $S$ is a cubic on each $[x_{i-1},x_i]$ and $S\in C^2[x_0,x_n]$.
 
@@ -129,7 +129,7 @@ Which are correct?
 
 (D) $S$ is always a single cubic polynomial on the whole interval $[x_0,x_n]$.
 
-**Q12.** `[Application]` ★★ The table $x:0,1,2,3,4$; $y:1,3,9,\,?\,,81$ has one missing entry. Assuming the data come from a polynomial of degree 3 (so $\Delta^4y_0=0$), the missing value is
+**Q12.** `[Application]` ★★ The table $x:0,1,2,3,4$; $y:1,3,9,\thinspace ?\thinspace ,81$ has one missing entry. Assuming the data come from a polynomial of degree 3 (so $\Delta^4y_0=0$), the missing value is
 
 (A) $27$
 
@@ -140,7 +140,9 @@ Which are correct?
 (D) $33$
 
 **Q13.** `[Application]` ★★★ The function
-$$S(x)=\begin{cases}x^3,&0\le x\le1\\[2pt] 1+3(x-1)+3(x-1)^2+c(x-1)^3,&1\le x\le2\end{cases}$$
+```math
+S(x)=\begin{cases}x^3,&0\le x\le1\cr  1+3(x-1)+3(x-1)^2+c(x-1)^3,&1\le x\le2\end{cases}
+```
 is a cubic spline for every $c$. It is a **natural** cubic spline on $[0,2]$ exactly when $c=$
 
 (A) $1$
@@ -174,7 +176,7 @@ is a cubic spline for every $c$. It is a **natural** cubic spline on $[0,2]$ exa
 
 **Q2 — (B).** Backward differences use $y_n,\nabla y_n,\nabla^2y_n,\dots$, which are available at the end of the table. Forward suits the beginning, and central formulas (Gauss, Stirling, Bessel) suit the middle.
 
-**Q3 — (D).** $\Delta^n x^n=n!\,h^n$, so $\Delta^3x^3=6\cdot8=48$. (A) is the $h=1$ value.
+**Q3 — (D).** $\Delta^n x^n=n!\thinspace h^n$, so $\Delta^3x^3=6\cdot8=48$. (A) is the $h=1$ value.
 
 **Q4 — (B).** $p(x)=1-6x+8x^2$ fits all three points, and $p(2)=1-12+32=21$.
 

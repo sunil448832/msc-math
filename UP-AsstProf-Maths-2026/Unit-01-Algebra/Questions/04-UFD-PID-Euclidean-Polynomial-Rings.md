@@ -22,7 +22,7 @@
 
 (D) infinitely many
 
-**Q3.** `[Application]` ★★ The number of roots of $x^2-1$ in $\mathbb{Z}_8$ is
+**Q3.** `[Application]` ★★ The number of roots of $x^2-1$ in $\mathbb Z_8$ is
 
 (A) 1
 
@@ -69,7 +69,7 @@ Which of the above is/are correct?
 | (a) $\mathbb{Z}[x]$ | 1. Euclidean domain |
 | (b) $\mathbb{Q}[x]$ | 2. PID but not a Euclidean domain |
 | (c) $\mathbb{Z}[\sqrt{-5}]$ | 3. UFD but not a PID |
-| (d) $\mathbb{Z}\!\left[\frac{1+\sqrt{-19}}{2}\right]$ | 4. integral domain but not a UFD |
+| (d) $\mathbb{Z}\negthinspace \left[\frac{1+\sqrt{-19}}{2}\right]$ | 4. integral domain but not a UFD |
 
 (A) a-3, b-1, c-2, d-4
 
@@ -119,7 +119,7 @@ Which of the above is/are correct?
 
 (D) reducible in both $\mathbb{Z}[x]$ and $\mathbb{Q}[x]$
 
-**Q11.** `[Concept]` ★★ The number of units in the ring $\mathbb{Z}[\sqrt2]=\{a+b\sqrt2: a,b\in\mathbb{Z}\}$ is
+**Q11.** `[Concept]` ★★ The number of units in the ring $\mathbb{Z}[\sqrt2]=\lbrace a+b\sqrt2: a,b\in\mathbb{Z}\rbrace$ is
 
 (A) 2
 
@@ -172,7 +172,7 @@ Which of the above is/are correct?
 
 **Q2 — (B).** A unit has norm $a^2+b^2=1$, so the units are $\pm1,\pm i$, four in all.
 
-**Q3 — (B).** $1^2,3^2,5^2,7^2$ are all $\equiv1\pmod8$, so there are 4 roots. A degree-$n$ polynomial has at most $n$ roots only over an **integral domain**, and $\mathbb{Z}_8$ is not one. Option (D) applies the field bound wrongly.
+**Q3 — (B).** $1^2,3^2,5^2,7^2$ are all $\equiv1\pmod8$, so there are 4 roots. A degree-$`n`$ polynomial has at most $n$ roots only over an **integral domain**, and $\mathbb Z_8$ is not one. Option (D) applies the field bound wrongly.
 
 **Q4 — (A).** ED ⊂ PID ⊂ UFD, and both inclusions are strict. $\mathbb{Z}[\tfrac{1+\sqrt{-19}}2]$ is a PID that is not an ED, so II fails. $\mathbb{Z}[x]$ is a UFD that is not a PID, so III fails.
 
@@ -190,6 +190,6 @@ Which of the above is/are correct?
 
 **Q11 — (D).** $(1+\sqrt2)(-1+\sqrt2)=1$, so $1+\sqrt2$ is a unit of infinite order and $\pm(1+\sqrt2)^n$ are all units (Pell's equation $a^2-2b^2=\pm1$). The trap is to think of $\mathbb{Z}[i]$ (4 units) or of the imaginary quadratic rings, which have only finitely many units.
 
-**Q12 — (C).** $|\mathbb{Z}[i]/\langle a+bi\rangle|=a^2+b^2=4+9=13$. Since 13 is prime, the quotient is $\cong\mathbb{Z}_{13}$, a field. This agrees with $2+3i$ being a Gaussian prime.
+**Q12 — (C).** $|\mathbb{Z}[i]/\langle a+bi\rangle|=a^2+b^2=4+9=13$. Since 13 is prime, the quotient is $\cong\mathbb Z_{13}$, a field. This agrees with $2+3i$ being a Gaussian prime.
 
 **Q13 — (C).** With $N(a+b\sqrt{-5})=a^2+5b^2$, a factorization $2=\alpha\beta$ into non-units would need $N(\alpha)=2$, which is impossible. So $2$ is irreducible. But $2\mid 6=(1+\sqrt{-5})(1-\sqrt{-5})$ while $2\nmid1\pm\sqrt{-5}$, so 2 is not prime. In a UFD irreducible = prime, so this is another proof that $\mathbb{Z}[\sqrt{-5}]$ is not a UFD.

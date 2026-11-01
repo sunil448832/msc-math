@@ -2,7 +2,7 @@
 > Syllabus coverage: Cauchy's theorem, Morera's theorem, Liouville's theorem, Cauchy's Integral formula (incl. Cauchy estimates, maximum/minimum modulus principle, fundamental theorem of algebra)
 > Cheatsheet: [../Cheatsheets/02-Cauchy-Theorem-Integral-Formula-Morera-Liouville.md](../Cheatsheets/02-Cauchy-Theorem-Integral-Formula-Morera-Liouville.md)
 
-**Q1.** `[Concept]` ★ Morera's theorem states that if $f$ is **continuous** on a domain $D$ and $\oint_{\partial T} f(z)\,dz = 0$ for every closed triangle $T \subset D$, then
+**Q1.** `[Concept]` ★ Morera's theorem states that if $f$ is **continuous** on a domain $D$ and $\oint_{\partial T} f(z)\thinspace dz = 0$ for every closed triangle $T \subset D$, then
 
 (A) $f$ has a primitive on all of $D$
 
@@ -12,7 +12,7 @@
 
 (D) $f$ is bounded on $D$
 
-**Q2.** `[Numerical]` ★ $\displaystyle\oint_{|z|=2} \frac{e^{z}}{z-1}\,dz$ equals
+**Q2.** `[Numerical]` ★ $\displaystyle\oint_{|z|=2} \frac{e^{z}}{z-1}\thinspace dz$ equals
 
 (A) $2\pi i$
 
@@ -22,7 +22,7 @@
 
 (D) $2\pi i e$
 
-**Q3.** `[Numerical]` ★★ $\displaystyle\oint_{|z|=1} \frac{e^{2z}}{z^{4}}\,dz$ equals
+**Q3.** `[Numerical]` ★★ $\displaystyle\oint_{|z|=1} \frac{e^{2z}}{z^{4}}\thinspace dz$ equals
 
 (A) $\dfrac{8\pi i}{3}$
 
@@ -32,7 +32,7 @@
 
 (D) $\dfrac{\pi i}{3}$
 
-**Q4.** `[Application]` ★ $\displaystyle\oint_{|z|=1} \bar z\,dz$ (counter-clockwise) equals
+**Q4.** `[Application]` ★ $\displaystyle\oint_{|z|=1} \bar z\thinspace dz$ (counter-clockwise) equals
 
 (A) $0$, by Cauchy's theorem
 
@@ -86,7 +86,7 @@ Which of the above is/are correct?
 
 | List-I | List-II |
 |---|---|
-| (a) Liouville | 1. $\lvert f^{(n)}(a)\rvert \le n!\,M/R^{n}$ |
+| (a) Liouville | 1. $\lvert f^{(n)}(a)\rvert \le n!\thinspace M/R^{n}$ |
 | (b) Maximum modulus | 2. $f$ continuous with vanishing triangle integrals $\Rightarrow$ $f$ analytic |
 | (c) Cauchy's estimate | 3. bounded entire $\Rightarrow$ constant |
 | (d) Morera | 4. a non-constant analytic $\lvert f\rvert$ has no interior local maximum |
@@ -101,9 +101,9 @@ Which of the above is/are correct?
 
 **Q9.** `[NOT-true / Counterexample]` ★★ Which of the following is NOT true?
 
-(A) Since $1/z$ is analytic on the annulus $\tfrac12 < |z| < 2$, which contains $|z|=1$, Cauchy's theorem gives $\oint_{|z|=1} \frac{dz}{z} = 0$.
+(A) Since $1/z$ is analytic on the annulus $\tfrac12 \lt  |z| \lt  2$, which contains $|z|=1$, Cauchy's theorem gives $\oint_{|z|=1} \frac{dz}{z} = 0$.
 
-(B) If $f$ is analytic on a simply connected domain $D$, then $\oint_\gamma f\,dz = 0$ for every closed contour $\gamma$ in $D$.
+(B) If $f$ is analytic on a simply connected domain $D$, then $\oint_\gamma f\thinspace dz = 0$ for every closed contour $\gamma$ in $D$.
 
 (C) Every non-constant polynomial with complex coefficients has a root in $\mathbb{C}$.
 
@@ -170,7 +170,7 @@ Which of the above is/are correct?
 ## Solutions
 **Q1 — (B).** Morera's theorem is the converse of Goursat's theorem: such an $f$ has local primitives, and a primitive is analytic, so its derivative $f$ is analytic too. Option (A), a *global* primitive, needs zero integrals over *all* closed curves (or a simply connected $D$).
 
-**Q2 — (D).** By Cauchy's integral formula, with $1$ inside $|z| = 2$, the integral is $2\pi i\,e^{1}$.
+**Q2 — (D).** By Cauchy's integral formula, with $1$ inside $|z| = 2$, the integral is $2\pi i\thinspace e^{1}$.
 
 **Q3 — (A).** $\oint \frac{f(z)}{z^{n+1}}dz = \frac{2\pi i}{n!}f^{(n)}(0)$. Here $n = 3$ and $f'''(0) = 8$, so the value is $2\pi i\cdot 8/6 = 8\pi i/3$. Option (C) forgets to divide by $3!$.
 
@@ -178,15 +178,15 @@ Which of the above is/are correct?
 
 **Q5 — (C).** Only $z = i$ lies inside $|z - i| = 1$; $-i$ is at distance 2. Writing $\frac{1}{z^2+1} = \frac{1/(z+i)}{z-i}$, the integral is $2\pi i\cdot\frac{1}{2i} = \pi$. Option (A) would be the answer for a large circle enclosing both poles.
 
-**Q6 — (C).** I: Cauchy's estimate on $|z| = R$ gives $|f^{(k)}(0)| \le k!\,MR^{n}/R^{k} \to 0$ for $k > n$ (generalised Liouville). II is false: $|\sin(iy)| = \sinh|y|$. III: if $|f - a| \ge r$, then $1/(f - a)$ is bounded and entire, hence constant (Liouville).
+**Q6 — (C).** I: Cauchy's estimate on $|z| = R$ gives $|f^{(k)}(0)| \le k!\thinspace MR^{n}/R^{k} \to 0$ for $k \gt  n$ (generalised Liouville). II is false: $|\sin(iy)| = \sinh|y|$. III: if $|f - a| \ge r$, then $1/(f - a)$ is bounded and entire, hence constant (Liouville).
 
-**Q7 — (C).** A is true because $1/z^2$ has the primitive $-1/z$ on $\mathbb{C}\setminus\{0\}$ (equivalently, its residue is $0$). R is false because $1/z^2$ has a pole at $0$, inside the circle.
+**Q7 — (C).** A is true because $1/z^2$ has the primitive $-1/z$ on $\mathbb{C}\setminus\lbrace 0\rbrace$ (equivalently, its residue is $0$). R is false because $1/z^2$ has a pole at $0$, inside the circle.
 
 **Q8 — (D).** Liouville goes with 3, maximum modulus with 4, Cauchy's estimate with 1 and Morera with 2.
 
 **Q9 — (A).** The annulus is not simply connected, and $\oint_{|z|=1} dz/z = 2\pi i \ne 0$. (B) is Cauchy's theorem, (C) is the fundamental theorem of algebra (via Liouville applied to $1/p$), and (D) follows from the integral formula for derivatives.
 
-**Q10 — (B).** $|f'''(0)| \le \frac{3!\,M}{R^{3}} = \frac{6\cdot5}{8} = \frac{15}{4}$. Option (A) forgets the $3!$, and (D) forgets $R^3$.
+**Q10 — (B).** $|f'''(0)| \le \frac{3!\thinspace M}{R^{3}} = \frac{6\cdot5}{8} = \frac{15}{4}$. Option (A) forgets the $3!$, and (D) forgets $R^3$.
 
 **Q11 — (B).** Apply the estimate on $|z| = R$: $|f''(0)| \le 2(R^{3/2} + 5)/R^{2} \to 0$, and similarly for every $f^{(k)}(0)$ with $k \ge 2$. So $f(z) = a + bz$. For example $f(z) = z$ satisfies $|z| \le |z|^{3/2} + 5$, so $f$ need not be constant and (A) is false. Degree 2 is impossible because $|z|^2$ outgrows $|z|^{3/2}$.
 

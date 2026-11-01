@@ -12,17 +12,17 @@
 
 (D) 36
 
-**Q2.** `[Numerical]` ★★ Let $\mathcal{B}=\{v_1=(1,0),\,v_2=(1,1)\}$ be a basis of $\mathbb{R}^2$ and $\{f_1,f_2\}$ its dual basis. Then
+**Q2.** `[Numerical]` ★★ Let $\mathcal{B}=\lbrace v_1=(1,0),\thinspace v_2=(1,1)\rbrace$ be a basis of $\mathbb R^2$ and $\lbrace f_1,f_2\rbrace$ its dual basis. Then
 
-(A) $f_1(x,y)=x-y,\;f_2(x,y)=y$
+(A) $f_1(x,y)=x-y,\ f_2(x,y)=y$
 
-(B) $f_1(x,y)=x,\;f_2(x,y)=y$
+(B) $f_1(x,y)=x,\ f_2(x,y)=y$
 
-(C) $f_1(x,y)=x,\;f_2(x,y)=x+y$
+(C) $f_1(x,y)=x,\ f_2(x,y)=x+y$
 
-(D) $f_1(x,y)=x+y,\;f_2(x,y)=-y$
+(D) $f_1(x,y)=x+y,\ f_2(x,y)=-y$
 
-**Q3.** `[Numerical]` ★★ Let $W=\operatorname{span}\{(1,2,0,0,1),\,(2,4,0,0,2),\,(0,0,1,1,0)\}\subseteq\mathbb{R}^5$. The dimension of the annihilator $W^0\subseteq(\mathbb{R}^5)^*$ is
+**Q3.** `[Numerical]` ★★ Let $W=\operatorname{span}\lbrace (1,2,0,0,1),\thinspace (2,4,0,0,2),\thinspace (0,0,1,1,0)\rbrace \subseteq\mathbb R^5$. The dimension of the annihilator $W^0\subseteq(\mathbb R^5)^\ast$ is
 
 (A) 1
 
@@ -51,8 +51,8 @@ Which is/are correct?
 (D) I and II only
 
 **Q5.** `[Assertion-Reason]` ★★★
-**Assertion (A):** For an infinite-dimensional vector space $V$, the natural map $V\to V^{**}$ need not be an isomorphism.
-**Reason (R):** The natural map $J:V\to V^{**}$, $J(v)(f)=f(v)$, is injective for every vector space $V$.
+**Assertion (A):** For an infinite-dimensional vector space $V$, the natural map $V\to V^{\ast \ast }$ need not be an isomorphism.
+**Reason (R):** The natural map $J:V\to V^{\ast \ast }$, $J(v)(f)=f(v)$, is injective for every vector space $V$.
 
 (A) Both A and R are true and R is the correct explanation of A
 
@@ -62,14 +62,14 @@ Which is/are correct?
 
 (D) A is false but R is true
 
-**Q6.** `[Match]` ★★ Let $T:V\to W$ be linear between finite-dimensional spaces, $T^t:W^*\to V^*$ its transpose ($T^t g=g\circ T$), and $U$ a subspace of $V$. Match:
+**Q6.** `[Match]` ★★ Let $T:V\to W$ be linear between finite-dimensional spaces, $T^t:W^\ast \to V^\ast$ its transpose ($T^t g=g\circ T$), and $U$ a subspace of $V$. Match:
 
 | List-I | List-II |
 |---|---|
 | (a) $\ker T^t$ | 1. $(\ker T)^0$ |
 | (b) $\operatorname{range}T^t$ | 2. $(\operatorname{range}T)^0$ |
 | (c) $\dim U^0$ | 3. transpose of $[T]_{\mathcal C,\mathcal B}$ |
-| (d) $[T^t]_{\mathcal B^*,\mathcal C^*}$ | 4. $\dim V-\dim U$ |
+| (d) $[T^t]_{\mathcal B^\ast ,\mathcal C^\ast }$ | 4. $\dim V-\dim U$ |
 
 (A) a-1, b-2, c-4, d-3
 
@@ -109,7 +109,7 @@ Which is/are correct?
 
 (D) $n$
 
-**Q10.** `[Numerical]` ★★ On $P_2$ (real polynomials of degree $\le2$) let $\{f_0,f_1,f_2\}$ be the basis dual to $\{1,x,x^2\}$. The functional $\varphi(p)=\int_0^1p(x)\,dx$ equals
+**Q10.** `[Numerical]` ★★ On $P_2$ (real polynomials of degree $\le2$) let $\lbrace f_0,f_1,f_2\rbrace$ be the basis dual to $\lbrace 1,x,x^2\rbrace$. The functional $\varphi(p)=\int_0^1p(x)\thinspace dx$ equals
 
 (A) $f_0+f_1+f_2$
 
@@ -119,7 +119,7 @@ Which is/are correct?
 
 (D) $\tfrac12f_1+\tfrac13f_2$
 
-**Q11.** `[Application]` ★★ Let $T:\mathbb{R}^4\to\mathbb{R}^3$ be linear of rank 2. Then $\dim\ker(T^t)$, where $T^t:(\mathbb{R}^3)^*\to(\mathbb{R}^4)^*$, is
+**Q11.** `[Application]` ★★ Let $T:\mathbb R^4\to\mathbb R^3$ be linear of rank 2. Then $\dim\ker(T^t)$, where $T^t:(\mathbb R^3)^\ast \to(\mathbb R^4)^\ast$, is
 
 (A) 0
 
@@ -129,13 +129,13 @@ Which is/are correct?
 
 (D) 1
 
-**Q12.** `[Concept]` ★ If $\{v_1,\dots,v_n\}$ is a basis of $V$ with dual basis $\{f_1,\dots,f_n\}$, then for every $v\in V$
+**Q12.** `[Concept]` ★ If $\lbrace v_1,\dots,v_n\rbrace$ is a basis of $V$ with dual basis $\lbrace f_1,\dots,f_n\rbrace$, then for every $v\in V$
 
-(A) $v=\sum_i f_i(v)\,v_i$
+(A) $v=\sum_i f_i(v)\thinspace v_i$
 
-(B) $v=\sum_i f_i(v_i)\,v$
+(B) $v=\sum_i f_i(v_i)\thinspace v$
 
-(C) $v=\sum_i f_1(v)\,v_i$
+(C) $v=\sum_i f_1(v)\thinspace v_i$
 
 (D) $v=\sum_i v_i$
 
@@ -157,15 +157,15 @@ Which is/are correct?
 | 12 | A | Concept |
 
 ## Solutions
-**Q1 — (B).** For finite-dimensional $V$, $\dim V^*=\dim V=2\cdot3=6$.
+**Q1 — (B).** For finite-dimensional $V$, $\dim V^\ast =\dim V=2\cdot3=6$.
 
-**Q2 — (A).** We need $f_i(v_j)=\delta_{ij}$. Check: $f_1(1,0)=1$, $f_1(1,1)=0$, $f_2(1,0)=0$, $f_2(1,1)=1$. Equivalently, the rows of $\begin{pmatrix}1&1\\0&1\end{pmatrix}^{-1}=\begin{pmatrix}1&-1\\0&1\end{pmatrix}$ give the dual basis. (B) is dual to the *standard* basis.
+**Q2 — (A).** We need $f_i(v_j)=\delta_{ij}$. Check: $f_1(1,0)=1$, $f_1(1,1)=0$, $f_2(1,0)=0$, $f_2(1,1)=1$. Equivalently, the rows of $`\begin{pmatrix}1&1\cr 0&1\end{pmatrix}^{-1}=\begin{pmatrix}1&-1\cr 0&1\end{pmatrix}`$ give the dual basis. (B) is dual to the *standard* basis.
 
 **Q3 — (C).** The second vector is twice the first, so $\dim W=2$ and $\dim W^0=5-2=3$.
 
-**Q4 — (D).** I and II follow straight from the definitions. III is false: the correct identity is $(W_1\cap W_2)^0=W_1^0+W_2^0$. For example, two distinct lines in $\mathbb{R}^2$ have intersection $\{0\}$ with annihilator $V^*$, while $W_1^0\cap W_2^0=\{0\}$.
+**Q4 — (D).** I and II follow straight from the definitions. III is false: the correct identity is $(W_1\cap W_2)^0=W_1^0+W_2^0$. For example, two distinct lines in $\mathbb R^2$ have intersection $\lbrace 0\rbrace$ with annihilator $V^\ast$, while $W_1^0\cap W_2^0=\lbrace 0\rbrace$.
 
-**Q5 — (B).** Both statements are true. A holds because for infinite-dimensional $V$, $\dim V^{**}>\dim V$, so $J$ is injective but not onto. R gives injectivity, but injectivity does not explain why $J$ fails to be onto. The explanation is the dimension jump.
+**Q5 — (B).** Both statements are true. A holds because for infinite-dimensional $V$, $\dim V^{\ast \ast }\gt \dim V$, so $J$ is injective but not onto. R gives injectivity, but injectivity does not explain why $J$ fails to be onto. The explanation is the dimension jump.
 
 **Q6 — (D).** $g\in\ker T^t\iff g\circ T=0\iff g$ vanishes on range $T$. Also $\operatorname{range}T^t=(\ker T)^0$, $\dim U^0=\dim V-\dim U$, and the matrix of $T^t$ in the dual bases is the transpose $A^T$.
 

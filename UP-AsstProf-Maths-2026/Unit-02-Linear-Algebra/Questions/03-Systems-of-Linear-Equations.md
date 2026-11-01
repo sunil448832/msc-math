@@ -10,7 +10,7 @@
 
 (C) $\operatorname{rank}A=m$
 
-(D) $\operatorname{rank}A=\operatorname{rank}[A\,|\,B]$
+(D) $\operatorname{rank}A=\operatorname{rank}[A\thinspace |\thinspace B]$
 
 **Q2.** `[Numerical]` ★★ The system
 $$x+y+z=6,\quad x+2y+3z=10,\quad x+2y+\lambda z=\mu$$
@@ -54,7 +54,7 @@ Which is/are correct?
 
 **Q5.** `[Assertion-Reason]` ★★
 **Assertion (A):** A homogeneous system of 3 equations in 5 unknowns always has a non-trivial solution.
-**Reason (R):** For the coefficient matrix $A$, $\operatorname{rank}A\le3<5$, so the solution space has dimension $5-\operatorname{rank}A\ge2$.
+**Reason (R):** For the coefficient matrix $A$, $\operatorname{rank}A\le3\lt 5$, so the solution space has dimension $5-\operatorname{rank}A\ge2$.
 
 (A) Both A and R are true and R is the correct explanation of A
 
@@ -68,9 +68,9 @@ Which is/are correct?
 
 | List-I | List-II |
 |---|---|
-| (a) $\operatorname{rank}A=\operatorname{rank}[A\,|\,B]=n$ | 1. no solution |
-| (b) $\operatorname{rank}A=\operatorname{rank}[A\,|\,B]<n$ | 2. only the trivial solution of $AX=0$ |
-| (c) $\operatorname{rank}A<\operatorname{rank}[A\,|\,B]$ | 3. infinitely many solutions (over $\mathbb{R}$) |
+| (a) $\operatorname{rank}A=\operatorname{rank}[A\thinspace \vert \thinspace B]=n$ | 1. no solution |
+| (b) $\operatorname{rank}A=\operatorname{rank}[A\thinspace \vert \thinspace B]\lt n$ | 2. only the trivial solution of $AX=0$ |
+| (c) $\operatorname{rank}A\lt \operatorname{rank}[A\thinspace \vert \thinspace B]$ | 3. infinitely many solutions (over $\mathbb{R}$) |
 | (d) $\det A\neq0$, $B=0$ | 4. unique solution |
 
 (A) a-4, b-3, c-1, d-2
@@ -163,17 +163,17 @@ is **inconsistent** for
 ## Solutions
 **Q1 — (D).** This is the Rouché–Capelli (Kronecker–Capelli) theorem. (A) and (B) are conditions for uniqueness or invertibility, not for consistency.
 
-**Q2 — (B).** Subtracting equation 2 from equation 3 gives $(\lambda-3)z=\mu-10$. If $\lambda=3$ and $\mu\ne10$, then $\operatorname{rank}A=2<\operatorname{rank}[A|B]=3$, so there is no solution. $\lambda=3,\mu=10$ gives infinitely many solutions, and $\lambda\ne3$ gives a unique one.
+**Q2 — (B).** Subtracting equation 2 from equation 3 gives $(\lambda-3)z=\mu-10$. If $\lambda=3$ and $\mu\ne10$, then $\operatorname{rank}A=2\lt \operatorname{rank}[A|B]=3$, so there is no solution. $\lambda=3,\mu=10$ gives infinitely many solutions, and $\lambda\ne3$ gives a unique one.
 
 **Q3 — (C).** The solution space has dimension $n-\operatorname{rank}A=6-3=3$. Here $n$ is the number of unknowns (columns), not the number of equations.
 
-**Q4 — (A).** I: $A^TAx=0\Rightarrow\|Ax\|^2=0$, so the null spaces agree. II is subadditivity. III is false: only $\operatorname{rank}(AB)\le\min$ holds. For example $A=\begin{pmatrix}1&0\\0&0\end{pmatrix}$, $B=\begin{pmatrix}0&0\\0&1\end{pmatrix}$ gives $AB=0$.
+**Q4 — (A).** I: $A^TAx=0\Rightarrow\Vert Ax\Vert ^2=0$, so the null spaces agree. II is subadditivity. III is false: only $\operatorname{rank}(AB)\le\min$ holds. For example $`A=\begin{pmatrix}1&0\cr 0&0\end{pmatrix}`$, $`B=\begin{pmatrix}0&0\cr 0&1\end{pmatrix}`$ gives $AB=0$.
 
 **Q5 — (A).** R is precisely the reason. More unknowns than equations forces a non-zero null space.
 
 **Q6 — (A).** These are the standard consistency cases. A homogeneous system with $\det A\ne0$ has only $X=0$.
 
-**Q7 — (C).** For the nilpotent $A=\begin{pmatrix}0&1\\0&0\end{pmatrix}$, $\operatorname{rank}A=1$ but $A^2=0$. (B) holds over $\mathbb{R}$ (it fails over $\mathbb{C}$ without conjugation).
+**Q7 — (C).** For the nilpotent $`A=\begin{pmatrix}0&1\cr 0&0\end{pmatrix}`$, $\operatorname{rank}A=1$ but $A^2=0$. (B) holds over $\mathbb{R}$ (it fails over $\mathbb{C}$ without conjugation).
 
 **Q8 — (B).** Sylvester's inequality gives $\operatorname{rank}(AB)\ge\operatorname{rank}A+\operatorname{rank}B-n=4+3-5=2$. The bound is attained when the 1-dimensional $\ker A$ lies inside the 3-dimensional range of $B$. (C) is the *maximum*.
 

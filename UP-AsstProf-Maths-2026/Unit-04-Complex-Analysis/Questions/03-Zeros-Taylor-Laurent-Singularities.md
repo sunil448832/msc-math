@@ -22,7 +22,7 @@
 
 (D) 7
 
-**Q3.** `[Concept]` ★ Suppose the Laurent series $\sum_{n=-\infty}^{\infty}a_n(z-a)^n$ of $f$ in $0 < |z - a| < r$ has $a_n \ne 0$ for infinitely many negative $n$. Then $z = a$ is
+**Q3.** `[Concept]` ★ Suppose the Laurent series $`\sum_{n=-\infty}^{\infty}a_n(z-a)^n`$ of $`f`$ in $`0 \lt  |z - a| \lt  r`$ has $`a_n \ne 0`$ for infinitely many negative $`n`$. Then $`z = a`$ is
 
 (A) a removable singularity
 
@@ -52,7 +52,7 @@
 
 (D) $e$
 
-**Q6.** `[Numerical]` ★★ For $f(z) = \dfrac{1}{(z-1)(z-2)}$, the coefficient of $z^{-1}$ in its Laurent series valid in $1 < |z| < 2$ is
+**Q6.** `[Numerical]` ★★ For $f(z) = \dfrac{1}{(z-1)(z-2)}$, the coefficient of $z^{-1}$ in its Laurent series valid in $1 \lt  |z| \lt  2$ is
 
 (A) $0$
 
@@ -79,13 +79,13 @@
 
 (D) a-3, b-4, c-1, d-2
 
-**Q8.** `[Multi-Statement]` ★★ Let $a$ be an isolated singularity of $f$. Consider the statements:
+**Q8.** `[Multi-Statement]` ★★ Let $`a`$ be an isolated singularity of $`f`$. Consider the statements:
 
-I. If $a$ is an essential singularity, then $f(\{0 < |z-a| < \delta\})$ is dense in $\mathbb{C}$ for every $\delta > 0$.
+I. If $a$ is an essential singularity, then $f(\lbrace 0 \lt  |z-a| \lt  \delta\rbrace )$ is dense in $\mathbb{C}$ for every $\delta \gt  0$.
 
-II. If $|f(z)| \to \infty$ as $z \to a$, then $a$ is a pole of $f$.
+II. If $`|f(z)| \to \infty`$ as $`z \to a`$, then $`a`$ is a pole of $`f`$.
 
-III. If $a$ is a pole of $f$, then $a$ is a pole of $e^{f(z)}$.
+III. If $`a`$ is a pole of $`f`$, then $`a`$ is a pole of $`e^{f(z)}`$.
 
 Which of the above is/are correct?
 
@@ -99,7 +99,7 @@ Which of the above is/are correct?
 
 **Q9.** `[Assertion-Reason]` ★★ 
 **Assertion (A):** $z = 0$ is an isolated singularity of $f(z) = \dfrac{1}{\sin(1/z)}$.
-**Reason (R):** The poles $z = \dfrac{1}{n\pi}$ ($n\in\mathbb{Z}\setminus\{0\}$) of $f$ accumulate at $0$.
+**Reason (R):** The poles $`z = \dfrac{1}{n\pi}`$ ($`n\in\mathbb{Z}\setminus\lbrace 0\rbrace`$) of $`f`$ accumulate at $`0`$.
 
 (A) Both A and R are true and R is the correct explanation of A
 
@@ -119,17 +119,17 @@ Which of the above is/are correct?
 
 (D) A power series either converges at every point of its circle of convergence or diverges at every point of it.
 
-**Q11.** `[Application]` ★★★ Which of the following can hold for some function $f$ analytic on the open unit disc?
+**Q11.** `[Application]` ★★★ Which of the following can hold for some function $`f`$ analytic on the open unit disc?
 
-(A) $f\!\left(\tfrac1n\right) = \dfrac{1}{n+1}$ for all $n \ge 2$
+(A) $f\negthinspace \left(\tfrac1n\right) = \dfrac{1}{n+1}$ for all $n \ge 2$
 
-(B) $f\!\left(\tfrac1n\right) = \dfrac{(-1)^n}{n}$ for all $n \ge 2$
+(B) $f\negthinspace \left(\tfrac1n\right) = \dfrac{(-1)^n}{n}$ for all $n \ge 2$
 
-(C) $f\!\left(\tfrac1n\right) = 0$ for all $n \ge 2$, and $f \not\equiv 0$
+(C) $f\negthinspace \left(\tfrac1n\right) = 0$ for all $n \ge 2$, and $f \not\equiv 0$
 
-(D) $f\!\left(\tfrac1n\right) = e^{-n}$ for all $n \ge 2$
+(D) $f\negthinspace \left(\tfrac1n\right) = e^{-n}$ for all $n \ge 2$
 
-**Q12.** `[Numerical]` ★★★ The number of zeros, counted with multiplicity, of $p(z) = z^{5} + 15z + 1$ in the annulus $1 < |z| < 2$ is
+**Q12.** `[Numerical]` ★★★ The number of zeros, counted with multiplicity, of $p(z) = z^{5} + 15z + 1$ in the annulus $1 \lt  |z| \lt  2$ is
 
 (A) 1
 
@@ -139,7 +139,7 @@ Which of the above is/are correct?
 
 (D) 5
 
-**Q13.** `[Application]` ★★★ The value of $\displaystyle\frac{1}{2\pi i}\oint_{|z|=2}\frac{f'(z)}{f(z)}\,dz$ for $f(z) = \tan z$ is
+**Q13.** `[Application]` ★★★ The value of $\displaystyle\frac{1}{2\pi i}\oint_{|z|=2}\frac{f'(z)}{f(z)}\thinspace dz$ for $f(z) = \tan z$ is
 
 (A) $1$
 
@@ -178,18 +178,18 @@ Which of the above is/are correct?
 
 **Q5 — (B).** Multiplying by $\frac{1}{1-z}$ gives partial sums: $c_n = \sum_{k=0}^{n}\frac{1}{k!}$. So $c_4 = 1 + 1 + \frac12 + \frac16 + \frac1{24} = \frac{65}{24}$. Option (A) is only the $e^z$ coefficient.
 
-**Q6 — (C).** $f = \frac{1}{z-2} - \frac{1}{z-1}$. In $|z| < 2$, $\frac{1}{z-2} = -\frac12\sum(z/2)^n$, which has no negative powers. In $|z| > 1$, $-\frac{1}{z-1} = -\sum_{n\ge0}z^{-n-1}$, which contributes $-1$ to the $z^{-1}$ coefficient. Option (A) is the trap "$f$ is analytic at $0$, so there is no $z^{-1}$ term", but the annulus encloses the pole at $1$.
+**Q6 — (C).** $`f = \frac{1}{z-2} - \frac{1}{z-1}`$. In $`|z| \lt  2`$, $`\frac{1}{z-2} = -\frac12\sum(z/2)^n`$, which has no negative powers. In $`|z| \gt  1`$, $`-\frac{1}{z-1} = -\sum_{n\ge0}z^{-n-1}`$, which contributes $`-1`$ to the $`z^{-1}`$ coefficient. Option (A) is the trap "$`f`$ is analytic at $`0`$, so there is no $`z^{-1}`$ term", but the annulus encloses the pole at $`1`$.
 
 **Q7 — (B).** $\frac{\sin z}{z} \to 1$, so it is removable. $\frac{1-\cos z}{z^4} = \frac{1}{2z^2} - \frac{1}{24} + \cdots$ has a pole of order 2. $e^{1/z} = \sum \frac{z^{-n}}{n!}$ is essential. $e^z - 1$ has a simple zero at $0$, so $\frac{1}{e^z-1}$ has a simple pole there.
 
-**Q8 — (B).** I is the Casorati–Weierstrass theorem. II: $f$ is non-zero near $a$, $1/f \to 0$ there, so $1/f$ has a removable zero at $a$ and $f$ has a pole. III is false: $f = 1/z$ gives $e^{1/z}$, which is essential, not a pole.
+**Q8 — (B).** I is the Casorati–Weierstrass theorem. II: $`f`$ is non-zero near $`a`$, $`1/f \to 0`$ there, so $`1/f`$ has a removable zero at $`a`$ and $`f`$ has a pole. III is false: $`f = 1/z`$ gives $`e^{1/z}`$, which is essential, not a pole.
 
 **Q9 — (D).** The poles $1/(n\pi) \to 0$, so every punctured disc around $0$ contains singularities. Hence $0$ is a *non-isolated* singularity, A is false and R is true.
 
 **Q10 — (D).** $\sum \frac{z^n}{n}$ has $R = 1$. It diverges at $z = 1$ but converges at $z = -1$, and in fact at every other point of $|z| = 1$ by Dirichlet's test. (C) is true: subtract the principal parts, including the polynomial part at $\infty$, and Liouville leaves a constant.
 
-**Q11 — (A).** $f(z) = \frac{z}{1+z}$ is analytic on $|z| < 1$ and gives $f(1/n) = \frac{1}{n+1}$. For (B), the identity theorem along even $n$ forces $f = z$, and along odd $n$ forces $f = -z$, a contradiction. (C) is impossible, because zeros accumulating at $0 \in D$ force $f \equiv 0$. For (D), $f(0) = 0$; if the zero had finite order $k$, then $|f(1/n)| \sim c\,n^{-k}$, which decays too slowly to equal $e^{-n}$. So $f \equiv 0$, which contradicts $e^{-n} \ne 0$.
+**Q11 — (A).** $f(z) = \frac{z}{1+z}$ is analytic on $|z| \lt  1$ and gives $f(1/n) = \frac{1}{n+1}$. For (B), the identity theorem along even $n$ forces $f = z$, and along odd $n$ forces $f = -z$, a contradiction. (C) is impossible, because zeros accumulating at $0 \in D$ force $f \equiv 0$. For (D), $f(0) = 0$; if the zero had finite order $k$, then $|f(1/n)| \sim c\thinspace n^{-k}$, which decays too slowly to equal $e^{-n}$. So $f \equiv 0$, which contradicts $e^{-n} \ne 0$.
 
-**Q12 — (C).** On $|z| = 2$: $|z^5| = 32 > |15z + 1| \le 31$, so there are 5 zeros in $|z| < 2$. On $|z| = 1$: $|15z| = 15 > |z^5 + 1| \le 2$, so there is 1 zero in $|z| < 1$. The annulus has $5 - 1 = 4$ zeros. Numerically, the moduli are about $0.067$, $1.956$ (twice) and $1.980$ (twice).
+**Q12 — (C).** On $|z| = 2$: $|z^5| = 32 \gt  |15z + 1| \le 31$, so there are 5 zeros in $|z| \lt  2$. On $|z| = 1$: $|15z| = 15 \gt  |z^5 + 1| \le 2$, so there is 1 zero in $|z| \lt  1$. The annulus has $5 - 1 = 4$ zeros. Numerically, the moduli are about $0.067$, $1.956$ (twice) and $1.980$ (twice).
 
-**Q13 — (B).** By the argument principle the integral equals $Z - P$ inside $|z| = 2$. The only zero of $\tan z$ there is $0$ ($\pm\pi$ lie outside since $\pi > 2$). The poles are $\pm\pi/2$ ($\pi/2 \approx 1.57 < 2$). So $Z - P = 1 - 2 = -1$. Option (A) counts zeros only.
+**Q13 — (B).** By the argument principle the integral equals $Z - P$ inside $|z| = 2$. The only zero of $\tan z$ there is $0$ ($\pm\pi$ lie outside since $\pi \gt  2$). The poles are $\pm\pi/2$ ($\pi/2 \approx 1.57 \lt  2$). So $Z - P = 1 - 2 = -1$. Option (A) counts zeros only.

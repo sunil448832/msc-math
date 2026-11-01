@@ -2,13 +2,13 @@
 > Questions: [../Questions/02-Subspace-Product-Quotient-Spaces.md](../Questions/02-Subspace-Product-Quotient-Spaces.md)
 
 ## 1. Subspace topology
-- $Y\subseteq X$: $\tau_Y=\{U\cap Y: U\in\tau_X\}$. A basis is $\{B\cap Y\}$.
+- $Y\subseteq X$: $\tau_Y=\lbrace U\cap Y: U\in\tau_X\rbrace$. A basis is $\lbrace B\cap Y\rbrace$.
 - **Closed sets:** $C$ is closed in $Y$ iff $C=F\cap Y$ with $F$ closed in $X$. Also $\mathrm{cl}_Y(A)=\mathrm{cl}_X(A)\cap Y$.
 - Open in $Y$ implies open in $X$ **iff** $Y$ is open in $X$. Similarly for closed sets.
 - Examples:
   - $[0,\tfrac12)$ is open in $[0,1)$.
   - $\mathbb Z\subset\mathbb R$ is discrete.
-  - $\{1/n\}\subset\mathbb R$ is discrete, but $\{0\}\cup\{1/n\}$ is not.
+  - $\lbrace 1/n\rbrace \subset\mathbb R$ is discrete, but $\lbrace 0\rbrace \cup\lbrace 1/n\rbrace$ is not.
   - $\mathbb Q$ is not discrete.
 - **Hereditary properties:** $T_0,T_1,T_2,T_3$, metrizability, first and second countability are hereditary. Normality, compactness, connectedness, separability and the Lindelöf property are **not**; they pass to closed subspaces (normal, compact, Lindelöf) or to open subspaces (separable).
 - The inclusion map is continuous. The restriction of a continuous map is continuous.
@@ -18,8 +18,8 @@
 |---|---|---|
 | Basis | $\prod U_\alpha$, with $U_\alpha=X_\alpha$ for all but finitely many $\alpha$ | $\prod U_\alpha$, all $U_\alpha$ open |
 | Characterisation | coarsest topology making all $\pi_\alpha$ continuous | finer than the product topology |
-| $f:Z\to\prod X_\alpha$ continuous $\iff$ all $\pi_\alpha f$ continuous | ✔ | ✘ ($t\mapsto(t,t,\dots)$) |
-| Product of compact spaces is compact | ✔ (Tychonoff) | ✘ ($\{0,1\}^{\mathbb N}$ box is discrete) |
+| $`f:Z\to\prod X_\alpha`$ continuous $`\iff`$ all $`\pi_\alpha f`$ continuous | ✔ | ✘ ($`t\mapsto(t,t,\dots)`$) |
+| Product of compact spaces is compact | ✔ (Tychonoff) | ✘ ($\lbrace 0,1\rbrace ^{\mathbb N}$ box is discrete) |
 | $\mathbb R^\omega$ connected | ✔ | ✘ (bounded/unbounded split) |
 | $\mathbb R^\omega$ metrizable | ✔ ($D(x,y)=\sup_n \bar d(x_n,y_n)/n$) | ✘ |
 | Finite products | equal | equal |
@@ -42,7 +42,7 @@
 
 | Identification on $I^2$ (edge word) | Space |
 |---|---|
-| $I/\{0\sim1\}$ | $S^1$ |
+| $I/\lbrace 0\sim1\rbrace$ | $S^1$ |
 | $aba^{-1}b^{-1}$: both pairs, same direction | torus $T^2$ |
 | $abab^{-1}$: one pair reversed | Klein bottle |
 | $abab$: both pairs reversed | $\mathbb{RP}^2$ |
@@ -64,14 +64,14 @@
 - The proof uses Zorn's lemma or ultrafilters (Alexander subbasis lemma). Over ZF the theorem is **equivalent to AC** (Kelley). The Hausdorff version is equivalent to the ultrafilter lemma (BPI).
 - Consequences:
   - $[0,1]^J$ (Tychonoff cube) and the Hilbert cube $[0,1]^{\mathbb N}$ are compact.
-  - The Cantor set $\cong\{0,1\}^{\mathbb N}$ is compact.
-  - Banach–Alaoglu: the closed unit ball of $X^*$ is weak-* compact.
+  - The Cantor set $\cong\lbrace 0,1\rbrace ^{\mathbb N}$ is compact.
+  - Banach–Alaoglu: the closed unit ball of $X^\ast$ is weak-* compact.
   - Every completely regular ($T_{3\frac12}$) space embeds in some $[0,1]^J$, hence has a compactification (Stone–Čech).
 - Converse: if $\prod X_\alpha\ne\emptyset$ is compact, then each $X_\alpha$ is compact (continuous image under $\pi_\alpha$).
 
 ## Exam traps
 - Tychonoff holds for **any** index set, but only in the **product** topology.
-- The diagonal map $t\mapsto(t,t,\dots)$ is continuous for the product topology but not the box topology.
+- The diagonal map $`t\mapsto(t,t,\dots)`$ is continuous for the product topology but not the box topology.
 - The box topology on $\mathbb R^\omega$ is disconnected and not metrizable.
 - Projections are open but **not** closed.
 - Quotients of Hausdorff spaces need not be Hausdorff; subspaces and products of Hausdorff spaces are Hausdorff.

@@ -60,7 +60,7 @@ Distribution: A – 8, B – 8, C – 7, D – 7.
 
 ### ICT (Q12–15)
 
-**12 — (A)** $(2F)_{16} = 2\times16 + 15 = 47$ (checked in Python). The distractors $31=(1F)_{16}$ and $63=(3F)_{16}$ come from misreading the first digit.
+**12 — (A)** $`(2F)_{16} = 2\times16 + 15 = 47`$ (checked in Python). The distractors $`31=(1F)_{16}`$ and $63=(3F)_{16}$ come from misreading the first digit.
 
 **13 — (C)** Bcc means Blind Carbon Copy. Bcc addresses are hidden from all other recipients, while To and Cc addresses are visible to everyone.
 
@@ -158,15 +158,15 @@ Distribution: A – 8, B – 8, C – 7, D – 7.
 
 **40 — (B)** Hermitian → real; skew-Hermitian → purely imaginary or 0; unitary → $|\lambda|=1$; idempotent ($A^2=A$) → $\lambda^2=\lambda$, so 0 or 1.
 
-**41 — (C)** The block $\begin{pmatrix}2&1\\0&2\end{pmatrix}$ is a Jordan block of size 2, so $(x-2)$ must appear squared; $(A-2I)(A-3I)\ne0$ but $(A-2I)^2(A-3I)=0$.
+**41 — (C)** The block $`\begin{pmatrix}2&1\cr 0&2\end{pmatrix}`$ is a Jordan block of size 2, so $(x-2)$ must appear squared; $(A-2I)(A-3I)\ne0$ but $(A-2I)^2(A-3I)=0$.
 
 **42 — (D)** $\det(\operatorname{adj}A)=(\det A)^{n-1}=(1\cdot2\cdot3)^2=36$.
 
 **43 — (B)** $R_2=2R_1$; $R_1,R_3$ are independent, so rank $=2$.
 
-**44 — (A)** $\det\begin{pmatrix}1&2&k\\2&1&1\\3&3&2\end{pmatrix}=-1-2+3k=0\Rightarrow k=1$ (indeed $v_1+v_2=v_3$).
+**44 — (A)** $`\det\begin{pmatrix}1&2&k\cr 2&1&1\cr 3&3&2\end{pmatrix}=-1-2+3k=0\Rightarrow k=1`$ (indeed $v_1+v_2=v_3$).
 
-**45 — (D)** $\begin{pmatrix}2&1\\0&2\end{pmatrix}$ has the repeated eigenvalue 2 with only a 1-dimensional eigenspace (a Jordan block). (B) has distinct eigenvalues 1, 2; (C) is symmetric.
+**45 — (D)** $`\begin{pmatrix}2&1\cr 0&2\end{pmatrix}`$ has the repeated eigenvalue 2 with only a 1-dimensional eigenspace (a Jordan block). (B) has distinct eigenvalues 1, 2; (C) is symmetric.
 
 **46 — (C)** Radius of convergence 1. At $x=1$: harmonic series diverges; at $x=-1$: alternating series converges (Leibniz). Interval $[-1,1)$.
 
@@ -188,15 +188,15 @@ Distribution: A – 8, B – 8, C – 7, D – 7.
 
 **55 — (C)** Both poles $\pm i$ lie inside $|z|=2$, with residues $\frac1{2i}$ and $-\frac1{2i}$; their sum is 0, so the integral is 0.
 
-**56 — (D)** For $\operatorname{Im}z>0$, $z$ is closer to $i$ than to $-i$, so $|z-i|<|z+i|$, i.e. $|w|<1$. The real axis maps to $|w|=1$.
+**56 — (D)** For $\operatorname{Im}z\gt 0$, $z$ is closer to $i$ than to $-i$, so $|z-i|\lt |z+i|$, i.e. $|w|\lt 1$. The real axis maps to $|w|=1$.
 
 **57 — (B)** (A) is Liouville's theorem (proved by Cauchy's estimates). (R) is true, but a power series converging everywhere does not by itself give boundedness ⟹ constancy (e.g. $e^z$).
 
 **58 — (B)** $1-\cos z=\frac{z^2}{2}-\frac{z^4}{24}+\dots$, so $f=\frac12-\frac{z^2}{24}+\dots$ has no negative powers: the singularity is removable ($f\to\tfrac12$).
 
-**59 — (D)** $\int_0^{2\pi}\frac{d\theta}{a+b\cos\theta}=\frac{2\pi}{\sqrt{a^2-b^2}}$ $(a>|b|)$; here it is $\frac{2\pi}{\sqrt{4-1}}=\frac{2\pi}{\sqrt3}$.
+**59 — (D)** $\int_0^{2\pi}\frac{d\theta}{a+b\cos\theta}=\frac{2\pi}{\sqrt{a^2-b^2}}$ $(a\gt |b|)$; here it is $\frac{2\pi}{\sqrt{4-1}}=\frac{2\pi}{\sqrt3}$.
 
-**60 — (A)** On $\{a,b\}$: indiscrete, discrete, $\{\emptyset,\{a\},X\}$ and $\{\emptyset,\{b\},X\}$, which makes 4.
+**60 — (A)** On $\lbrace a,b\rbrace$: indiscrete, discrete, $\lbrace \emptyset,\lbrace a\rbrace ,X\rbrace$ and $\lbrace \emptyset,\lbrace b\rbrace ,X\rbrace$, which makes 4.
 
 **61 — (C)** Compact sets need not be closed in a non-Hausdorff space (e.g. in the indiscrete topology every subset is compact). (D) is the true Hausdorff version.
 
@@ -214,11 +214,11 @@ Distribution: A – 8, B – 8, C – 7, D – 7.
 
 **68 — (C)** Clairaut $y=px+f(p)$; Bernoulli $y'+Py=Qy^n$; Bessel of order $n$; Legendre: a – II, b – IV, c – III, d – I.
 
-**69 — (B)** The integrating factor is $e^{\int P\,dx}=e^{\int dx/x}=x$.
+**69 — (B)** The integrating factor is $e^{\int P\thinspace dx}=e^{\int dx/x}=x$.
 
-**70 — (C)** $A=1,B=1,C=1$ give $B^2-AC=0$, so the equation is parabolic and (A) is true. (R) is false: $B^2-AC>0$ means hyperbolic, and parabolic needs $=0$.
+**70 — (C)** $A=1,B=1,C=1$ give $B^2-AC=0$, so the equation is parabolic and (A) is true. (R) is false: $B^2-AC\gt 0$ means hyperbolic, and parabolic needs $=0$.
 
-**71 — (D)** $W=\begin{vmatrix}e^x&e^{2x}\\e^x&2e^{2x}\end{vmatrix}=2e^{3x}-e^{3x}=e^{3x}$.
+**71 — (D)** $`W=\begin{vmatrix}e^x&e^{2x}\cr e^x&2e^{2x}\end{vmatrix}=2e^{3x}-e^{3x}=e^{3x}`$.
 
 **72 — (A)** Lagrange: $\frac{dx}{1}=\frac{dy}{1}=\frac{dz}{z}$ give $x-y=c_1$ and $ze^{-x}=c_2$, so $z=e^xf(x-y)$.
 
@@ -264,7 +264,7 @@ Distribution: A – 8, B – 8, C – 7, D – 7.
 
 **93 — (A)** Simpson's 1/3 rule has error $\propto f^{(4)}$, so it is exact for cubics (degree $\le3$).
 
-**94 — (B)** $\Delta^n(ax^n)=a\,n!\,h^n$, so $\Delta^3(2x^3)=2\cdot3!=12$.
+**94 — (B)** $\Delta^n(ax^n)=a\thinspace n!\thinspace h^n$, so $\Delta^3(2x^3)=2\cdot3!=12$.
 
 **95 — (C)** $360=2^3\cdot3^2\cdot5$, so $\tau=(3+1)(2+1)(1+1)=24$.
 

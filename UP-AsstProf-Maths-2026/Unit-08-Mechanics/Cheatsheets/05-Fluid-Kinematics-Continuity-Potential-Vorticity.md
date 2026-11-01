@@ -26,7 +26,7 @@
 | Vector (Euler) | $\dfrac{\partial\rho}{\partial t} + \nabla\cdot(\rho\vec q) = 0 \iff \dfrac{D\rho}{Dt} + \rho\nabla\cdot\vec q = 0$ |
 | Cartesian | $\rho_t + (\rho u)_x + (\rho v)_y + (\rho w)_z = 0$ |
 | Cylindrical $(r,\theta,z)$ | $\rho_t + \dfrac1r\dfrac{\partial(r\rho q_r)}{\partial r} + \dfrac1r\dfrac{\partial(\rho q_\theta)}{\partial\theta} + \dfrac{\partial(\rho q_z)}{\partial z} = 0$ |
-| Spherical $(r,\theta,\phi)$ | $\rho_t + \dfrac{1}{r^2}\dfrac{\partial(r^2\rho q_r)}{\partial r} + \dfrac{1}{r\sin\theta}\dfrac{\partial(\sin\theta\,\rho q_\theta)}{\partial\theta} + \dfrac{1}{r\sin\theta}\dfrac{\partial(\rho q_\phi)}{\partial\phi} = 0$ |
+| Spherical $(r,\theta,\phi)$ | $\rho_t + \dfrac{1}{r^2}\dfrac{\partial(r^2\rho q_r)}{\partial r} + \dfrac{1}{r\sin\theta}\dfrac{\partial(\sin\theta\thinspace \rho q_\theta)}{\partial\theta} + \dfrac{1}{r\sin\theta}\dfrac{\partial(\rho q_\phi)}{\partial\phi} = 0$ |
 | Lagrangian | $\rho J = \rho_0$, with $J = \dfrac{\partial(x,y,z)}{\partial(a,b,c)}$ |
 | Incompressible | $D\rho/Dt = 0 \iff \nabla\cdot\vec q = 0$ |
 | Steady | $\nabla\cdot(\rho\vec q) = 0$ |
@@ -40,13 +40,13 @@
 - Incompressible and irrotational gives **Laplace's equation** $\nabla^2\phi = 0$.
 - Irrotational does **not** imply incompressible: $\vec q = (x,y)$ is irrotational with divergence 2. Incompressible does not imply irrotational either: rigid rotation.
 - **Circulation:** $\Gamma = \oint_C\vec q\cdot d\vec r = \iint_S\vec\omega\cdot d\vec S$ (Stokes). Irrotational flow in a simply connected region gives $\Gamma = 0$.
-- A multiply connected region allows a **cyclic** (many-valued) potential. Example: the line vortex $\phi = -\tfrac{\Gamma}{2\pi}\theta$ has $\Gamma \ne 0$ although $\nabla\times\vec q = 0$ for $r > 0$.
-- **Equipotentials** $\phi = $ const are orthogonal to the streamlines.
+- A multiply connected region allows a **cyclic** (many-valued) potential. Example: the line vortex $\phi = -\tfrac{\Gamma}{2\pi}\theta$ has $\Gamma \ne 0$ although $\nabla\times\vec q = 0$ for $r \gt  0$.
+- **Equipotentials** $\phi =$ const are orthogonal to the streamlines.
 - **Classic 3-D example:** $u = -\dfrac{2xyz}{(x^2+y^2)^2}$, $v = \dfrac{(x^2-y^2)z}{(x^2+y^2)^2}$, $w = \dfrac{y}{x^2+y^2}$. It is a possible incompressible motion and it is irrotational, with $\phi = \pm\dfrac{yz}{x^2+y^2}$.
 
 ## 5. Stream function (2-D incompressible)
 - Convention 1: $u = -\partial\psi/\partial y$, $v = \partial\psi/\partial x$ (Milne-Thomson / Indian texts, paired with $\vec q = -\nabla\phi$). Convention 2: $u = \partial\psi/\partial y$, $v = -\partial\psi/\partial x$.
-- In either convention: continuity holds automatically; speed $= |\nabla\psi|$; $\psi = $ const are the streamlines; $\zeta = \pm\nabla^2\psi$.
+- In either convention: continuity holds automatically; speed $= |\nabla\psi|$; $\psi =$ const are the streamlines; $\zeta = \pm\nabla^2\psi$.
 - **Flux** between two streamlines $= \psi_2 - \psi_1$.
 - Irrotational flow gives $\nabla^2\psi = 0$, and $\phi$, $\psi$ are harmonic conjugates. With $w = \phi + i\psi$: $\phi_x = \psi_y$ and $\phi_y = -\psi_x$ (Cauchy–Riemann).
 - **Stokes stream function** (axisymmetric 3-D): $q_r = -\dfrac{1}{r^2\sin\theta}\dfrac{\partial\psi}{\partial\theta}$, $q_\theta = \dfrac{1}{r\sin\theta}\dfrac{\partial\psi}{\partial r}$ (sign convention varies).
@@ -54,7 +54,7 @@
 ## 6. Vortex kinematics
 - **Vortex line:** tangent to $\vec\omega$, $\dfrac{dx}{\omega_x} = \dfrac{dy}{\omega_y} = \dfrac{dz}{\omega_z}$. A vortex tube is formed from vortex lines.
 - **Strength** of a vortex tube $= \iint\vec\omega\cdot d\vec S$, which is the same along the tube because $\nabla\cdot\vec\omega = 0$. Vortex tubes cannot end inside the fluid.
-- **Forced vortex** (rigid rotation $q_\theta = \Omega r$) has vorticity $2\Omega$. **Free vortex** ($q_\theta = k/r$) is irrotational for $r > 0$ and has $\Gamma = 2\pi k$.
+- **Forced vortex** (rigid rotation $q_\theta = \Omega r$) has vorticity $2\Omega$. **Free vortex** ($q_\theta = k/r$) is irrotational for $r \gt  0$ and has $\Gamma = 2\pi k$.
 
 ## 7. Quick examples
 | Flow | Streamlines | Div | Curl |

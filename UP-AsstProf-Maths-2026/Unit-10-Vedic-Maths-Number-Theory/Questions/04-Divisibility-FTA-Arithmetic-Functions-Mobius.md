@@ -12,7 +12,7 @@
 
 (D) $(24,\ 1092,\ 96)$
 
-**Q2.** `[Concept]` ★ For every integer $n>1$, $\displaystyle\sum_{d\mid n}\mu(d)$ equals
+**Q2.** `[Concept]` ★ For every integer $n\gt 1$, $\displaystyle\sum_{d\mid n}\mu(d)$ equals
 
 (A) $1$
 
@@ -42,14 +42,14 @@
 
 (D) 8
 
-**Q5.** `[Match]` ★★ Here $\mathbf 1(n)=1$, $\mathrm{Id}(n)=n$, $\varepsilon(n)=[n=1]$, and $*$ is Dirichlet convolution. Match List-I with List-II.
+**Q5.** `[Match]` ★★ Here $\mathbf 1(n)=1$, $\mathrm{Id}(n)=n$, $\varepsilon(n)=[n=1]$, and $\ast$ is Dirichlet convolution. Match List-I with List-II.
 
 | List-I | List-II |
 |---|---|
-| (a) $\mu * \mathbf 1$ | 1. $\varphi$ |
-| (b) $\mathbf 1 * \mathbf 1$ | 2. $\sigma$ |
-| (c) $\mathrm{Id} * \mathbf 1$ | 3. $\varepsilon$ |
-| (d) $\mu * \mathrm{Id}$ | 4. $d$ |
+| (a) $\mu \ast  \mathbf 1$ | 1. $\varphi$ |
+| (b) $\mathbf 1 \ast  \mathbf 1$ | 2. $\sigma$ |
+| (c) $\mathrm{Id} \ast  \mathbf 1$ | 3. $\varepsilon$ |
+| (d) $\mu \ast  \mathrm{Id}$ | 4. $d$ |
 
 (A) a-3, b-4, c-2, d-1
 
@@ -129,7 +129,7 @@ Which of the above is/are correct?
 
 (D) 320
 
-**Q12.** `[Application]` ★★★ Using $\sum_{d^2\mid n}\mu(d) = \mu^2(n)$, the number of square-free integers in $\{1, 2, \dots, 100\}$ is
+**Q12.** `[Application]` ★★★ Using $\sum_{d^2\mid n}\mu(d) = \mu^2(n)$, the number of square-free integers in $\lbrace 1, 2, \dots, 100\rbrace$ is
 
 (A) 60
 
@@ -172,19 +172,19 @@ Which of the above is/are correct?
 - $d = 4\cdot3\cdot2 = 24$.
 - $\sigma = 15\cdot13\cdot6 = 1170$.
 - $\varphi = 360\cdot\frac12\cdot\frac23\cdot\frac45 = 96$.
-- (B) has the wrong $\varphi$ ($144 = 360\cdot\frac25$ is not $\varphi(360)$). (C) gets $d$ by multiplying the exponents plus one wrongly ($3\cdot3\cdot2$ instead of $4\cdot3\cdot2$). (D) has the wrong $\sigma$.
+- (B) has the wrong $\varphi$ ($144 = 360\cdot\frac25$ is not $`\varphi(360)`$). (C) gets $d$ by multiplying the exponents plus one wrongly ($3\cdot3\cdot2$ instead of $4\cdot3\cdot2$). (D) has the wrong $\sigma$.
 
-**Q2 — (D).** $\sum_{d\mid n}\mu(d) = \prod_{p\mid n}(1-1) = 0$ for $n>1$. It equals 1 only when $n=1$.
+**Q2 — (D).** $\sum_{d\mid n}\mu(d) = \prod_{p\mid n}(1-1) = 0$ for $n\gt 1$. It equals 1 only when $n=1$.
 
 **Q3 — (C).** $\lfloor1000/5\rfloor+\lfloor1000/25\rfloor+\lfloor1000/125\rfloor+\lfloor1000/625\rfloor = 200+40+8+1=249$. The factor 5 is the limiting one because there are more 2s than 5s.
 
 **Q4 — (C).** $\varphi(n)=12$ for $n = 13, 21, 26, 28, 36, 42$. (14, for comparison, is a non-totient: no $n$ has $\varphi(n)=14$.)
 
 **Q5 — (A).**
-- $\mu*\mathbf1=\varepsilon$ (this is Q2).
-- $\mathbf1*\mathbf1 = d$.
-- $\mathrm{Id}*\mathbf1=\sigma$.
-- $\mu*\mathrm{Id}=\varphi$, because $\varphi*\mathbf 1 = \mathrm{Id}$, followed by Möbius inversion.
+- $\mu\ast \mathbf1=\varepsilon$ (this is Q2).
+- $\mathbf1\ast \mathbf1 = d$.
+- $\mathrm{Id}\ast \mathbf1=\sigma$.
+- $\mu\ast \mathrm{Id}=\varphi$, because $\varphi\ast \mathbf 1 = \mathrm{Id}$, followed by Möbius inversion.
 
 **Q6 — (B).**
 - I is true: $n\ge3$ has an odd prime factor $p$, which contributes the even factor $p-1$, or $4\mid n$, which contributes $2^{k-1}$ with $k\ge2$.
@@ -197,9 +197,9 @@ Which of the above is/are correct?
 
 **Q9 — (C).** $2^{11}-1 = 2047 = 23\cdot89$ is composite even though 11 is prime. The converse is the true statement: if $2^p-1$ is prime then $p$ is prime. (A) is Euclid–Euler. (B) holds because $\sigma(n)/n=2$. (D) is true: $8128 = 2^6(2^7-1)$.
 
-**Q10 — (D).** Write $36=2^2 3^2$. For each prime $p^k\,\|\,n$, the pair of exponents $(\alpha,\beta)$ must satisfy $\max(\alpha,\beta) = k$, which gives $2k+1$ choices. So the count is $5\cdot5=25$, which equals $d(36^2)$. (A) counts divisors only.
+**Q10 — (D).** Write $36=2^2 3^2$. For each prime $p^k\thinspace \Vert \thinspace n$, the pair of exponents $(\alpha,\beta)$ must satisfy $\max(\alpha,\beta) = k$, which gives $2k+1$ choices. So the count is $5\cdot5=25$, which equals $d(36^2)$. (A) counts divisors only.
 
-**Q11 — (B).** $10! = 2^8\,3^4\,5^2\,7$ (Legendre's formula: $5+2+1=8$, $3+1=4$, $2$, $1$). So $d = 9\cdot5\cdot3\cdot2 = 270$.
+**Q11 — (B).** $10! = 2^8\thinspace 3^4\thinspace 5^2\thinspace 7$ (Legendre's formula: $5+2+1=8$, $3+1=4$, $2$, $1$). So $d = 9\cdot5\cdot3\cdot2 = 270$.
 
 **Q12 — (B).** The count is $\sum_{d\le10}\mu(d)\lfloor100/d^2\rfloor$:
 $$100-25-11-4-2+2+1 = 61,$$

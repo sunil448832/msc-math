@@ -51,7 +51,7 @@ Which of the above are correct?
 | List-I | List-II |
 |---|---|
 | A. Infinite set with the cofinite topology | 1. $T_0$ but not $T_1$ |
-| B. Sierpiński space $\{0,1\}$, $\tau=\{\emptyset,\{1\},\{0,1\}\}$ | 2. Regular but not normal |
+| B. Sierpiński space $\lbrace 0,1\rbrace$, $\tau=\lbrace \emptyset,\lbrace 1\rbrace ,\lbrace 0,1\rbrace \rbrace$ | 2. Regular but not normal |
 | C. $\mathbb R_K$ ($K$-topology) | 3. $T_1$ but not Hausdorff |
 | D. Sorgenfrey plane $\mathbb R_l\times\mathbb R_l$ | 4. Hausdorff but not regular |
 
@@ -182,11 +182,11 @@ Which of the above is/are correct?
 ## Solutions
 **Q1 — (B).** Urysohn: regular + $T_1$ + second countable $\Rightarrow$ metrizable. The proof embeds the space in $[0,1]^{\mathbb N}$. Compact Hausdorff spaces need not be metrizable (Q8 (C)), and neither do Hausdorff first countable spaces ($\mathbb R_l$).
 
-**Q2 — (B).** $\{[x,x+1/n)\}$ is a countable local base, so $\mathbb R_l$ is first countable. $\mathbb Q$ is dense, so it is separable. It is Lindelöf (standard). It is not second countable: each basis must contain a set with minimum $x$ for every $x$.
+**Q2 — (B).** $\lbrace [x,x+1/n)\rbrace$ is a countable local base, so $\mathbb R_l$ is first countable. $\mathbb Q$ is dense, so it is separable. It is Lindelöf (standard). It is not second countable: each basis must contain a set with minimum $x$ for every $x$.
 
 **Q3 — (A).** In a metric space, the balls of rational radius around the points of a countable dense set form a countable basis. Since $\mathbb R_l$ is separable but not second countable, it cannot be metrizable. R explains A.
 
-**Q4 — (A).** Cofinite: points are closed but there is no Hausdorff separation. Sierpiński: $T_0$, but $\{1\}$ is not closed. $\mathbb R_K$: Hausdorff, but $0$ and the closed set $K$ cannot be separated. Sorgenfrey plane: regular (a product of regular spaces) but not normal, since its anti-diagonal is closed and discrete.
+**Q4 — (A).** Cofinite: points are closed but there is no Hausdorff separation. Sierpiński: $T_0$, but $\lbrace 1\rbrace$ is not closed. $\mathbb R_K$: Hausdorff, but $0$ and the closed set $K$ cannot be separated. Sorgenfrey plane: regular (a product of regular spaces) but not normal, since its anti-diagonal is closed and discrete.
 
 **Q5 — (C).** Normality is not hereditary. $[0,\omega_1]\times[0,\omega]$ is compact Hausdorff, hence normal, but its subspace with the corner point removed (the deleted Tychonoff plank) is not normal. Another route: every Tychonoff space embeds in a compact Hausdorff cube $[0,1]^J$, and some Tychonoff spaces, such as the Sorgenfrey plane, are not normal. Normality is inherited only by **closed** subspaces. (A), (B) and (D) are standard theorems.
 
@@ -200,7 +200,7 @@ Which of the above is/are correct?
 
 **Q10 — (A).** The Sorgenfrey plane is regular and separable (products preserve regularity and countable products of separable spaces are separable), so (B) and (D) are false statements. Hausdorffness is always preserved by products, so (C) is false too.
 
-**Q11 — (A).** It is metrizable by the discrete metric, hence first countable and normal. It is not second countable, because every basis must contain every singleton $\{x\}$, and there are uncountably many.
+**Q11 — (A).** It is metrizable by the discrete metric, hence first countable and normal. It is not second countable, because every basis must contain every singleton $\lbrace x\rbrace$, and there are uncountably many.
 
 **Q12 — (C).** $\mathbb R_K$ is Hausdorff and second countable (use rational endpoints) but not regular, hence not metrizable. Each of (A), (B) and (D) implies regular + $T_1$ + second countable, so Urysohn applies.
 

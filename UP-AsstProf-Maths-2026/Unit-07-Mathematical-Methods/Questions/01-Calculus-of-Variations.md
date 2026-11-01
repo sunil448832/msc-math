@@ -2,7 +2,7 @@
 > Syllabus coverage: Calculus of variations – Linear functionals, Necessary and sufficient conditions for extrema, Euler–Lagrange equation
 > Cheatsheet: [../Cheatsheets/01-Calculus-of-Variations.md](../Cheatsheets/01-Calculus-of-Variations.md)
 
-**Q1.** `[Concept]` ★ A necessary condition for $y(x)$ to extremize $J[y]=\int_a^b F(x,y,y')\,dx$ with fixed end points is
+**Q1.** `[Concept]` ★ A necessary condition for $y(x)$ to extremize $J[y]=\int_a^b F(x,y,y')\thinspace dx$ with fixed end points is
 
 (A) $\dfrac{\partial F}{\partial y}+\dfrac{d}{dx}\left(\dfrac{\partial F}{\partial y'}\right)=0$
 
@@ -59,13 +59,13 @@
 
 (D) a-3, b-4, c-2, d-1
 
-**Q6.** `[Multi-Statement]` ★★ For $J[y]=\int_a^b F(x,y,y')\,dx$ with fixed ends, consider an extremal $y_0$.
+**Q6.** `[Multi-Statement]` ★★ For $J[y]=\int_a^b F(x,y,y')\thinspace dx$ with fixed ends, consider an extremal $y_0$.
 
 I. $F_{y'y'}\ge 0$ along $y_0$ is necessary for $y_0$ to give a weak minimum (Legendre).
 
-II. $F_{y'y'}>0$ along $y_0$ is, by itself, sufficient for a weak minimum.
+II. $F_{y'y'}\gt 0$ along $y_0$ is, by itself, sufficient for a weak minimum.
 
-III. If $F_{y'y'}>0$ along $y_0$ and the interval $(a,b]$ contains no point conjugate to $a$, then $y_0$ gives a weak minimum (Jacobi).
+III. If $F_{y'y'}\gt 0$ along $y_0$ and the interval $(a,b]$ contains no point conjugate to $a$, then $y_0$ gives a weak minimum (Jacobi).
 
 Which are correct?
 
@@ -78,7 +78,7 @@ Which are correct?
 (D) I and III only
 
 **Q7.** `[Assertion-Reason]` ★★
-**Assertion (A):** The extremal of $\int_0^1 y'^2\,dx$ with $y(0)=0$ and $y(1)$ free is $y\equiv 0$.
+**Assertion (A):** The extremal of $\int_0^1 y'^2\thinspace dx$ with $y(0)=0$ and $y(1)$ free is $y\equiv 0$.
 **Reason (R):** At a free end point the natural boundary condition $\partial F/\partial y'=0$ must hold.
 
 (A) Both A and R are true and R is the correct explanation of A
@@ -91,15 +91,15 @@ Which are correct?
 
 **Q8.** `[NOT-true / Counterexample]` ★ Which of the following is NOT a linear functional on $C^1[0,1]$?
 
-(A) $J[y]=\int_0^1 x\,y'(x)\,dx$
+(A) $J[y]=\int_0^1 x\thinspace y'(x)\thinspace dx$
 
 (B) $J[y]=y(0)+2y'(1)$
 
-(C) $J[y]=\int_0^1 y(x)^2\,dx$
+(C) $J[y]=\int_0^1 y(x)^2\thinspace dx$
 
-(D) $J[y]=\int_0^1 \left(e^x y+\sin x\,y'\right)dx$
+(D) $J[y]=\int_0^1 \left(e^x y+\sin x\thinspace y'\right)dx$
 
-**Q9.** `[Numerical]` ★★★ Among all $y\in C^2[0,1]$ with $y(0)=y(1)=0$ and $\int_0^1 y\,dx=1$, the minimum value of $\int_0^1 y'^2\,dx$ is
+**Q9.** `[Numerical]` ★★★ Among all $y\in C^2[0,1]$ with $y(0)=y(1)=0$ and $\int_0^1 y\thinspace dx=1$, the minimum value of $\int_0^1 y'^2\thinspace dx$ is
 
 (A) $6$
 
@@ -109,7 +109,7 @@ Which are correct?
 
 (D) $4$
 
-**Q10.** `[Concept]` ★ The Euler–Poisson equation for $J[y]=\int_a^b F(x,y,y',y'')\,dx$ is
+**Q10.** `[Concept]` ★ The Euler–Poisson equation for $J[y]=\int_a^b F(x,y,y',y'')\thinspace dx$ is
 
 (A) $F_y-\dfrac{d}{dx}F_{y'}-\dfrac{d^2}{dx^2}F_{y''}=0$
 
@@ -178,7 +178,7 @@ Which are correct?
 
 **Q5 — (A).** Brachistochrone → cycloid; minimal surface of revolution → catenary (catenoid); isoperimetric → circle; geodesics on a cylinder → helices (special cases: generators and circles).
 
-**Q6 — (D).** Legendre's condition is necessary only. Strengthened Legendre alone is not sufficient (e.g. $\int_0^a(y'^2-y^2)dx$ with $a>\pi$: $F_{y'y'}=2>0$ but $y\equiv0$ is not a minimum). Strengthened Legendre + Jacobi (no conjugate point in $(a,b]$) is sufficient for a weak minimum.
+**Q6 — (D).** Legendre's condition is necessary only. Strengthened Legendre alone is not sufficient (e.g. $\int_0^a(y'^2-y^2)dx$ with $a\gt \pi$: $F_{y'y'}=2\gt 0$ but $y\equiv0$ is not a minimum). Strengthened Legendre + Jacobi (no conjugate point in $(a,b]$) is sufficient for a weak minimum.
 
 **Q7 — (A).** EL: $y''=0$ ⇒ $y=cx$. Natural BC at $x=1$: $F_{y'}=2y'(1)=2c=0$ ⇒ $y\equiv0$. R is exactly the condition used.
 
@@ -192,4 +192,4 @@ Which are correct?
 
 **Q12 — (C).** $F_y=2z$, $F_{y'}=2y'$ ⇒ $y''=z$; similarly $z''=y$. Hence $y^{(4)}=z''=y$.
 
-**Q13 — (B).** Jacobi equation: $\frac{d}{dx}(Ph')-Qh=0$ with $P=\frac12F_{y'y'}=1$, $Q=\frac12(F_{yy}-\frac{d}{dx}F_{yy'})=-1$ ⇒ $h''+h=0$, $h(0)=0$ ⇒ $h=\sin x$, next zero at $\pi$. So $y\equiv0$ is a minimum iff $a<\pi$.
+**Q13 — (B).** Jacobi equation: $\frac{d}{dx}(Ph')-Qh=0$ with $P=\frac12F_{y'y'}=1$, $Q=\frac12(F_{yy}-\frac{d}{dx}F_{yy'})=-1$ ⇒ $h''+h=0$, $h(0)=0$ ⇒ $h=\sin x$, next zero at $\pi$. So $y\equiv0$ is a minimum iff $a\lt \pi$.

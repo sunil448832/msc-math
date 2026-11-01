@@ -26,7 +26,7 @@
   | $p(n)$ | 1 | 2 | 3 | 5 | 7 | 11 | 15 |
 
 - Given $\chi_A=\prod(x-\lambda_i)^{a_i}$: there are $\prod p(a_i)$ possible JCFs.
-- Given both $\chi_A$ and $m_A=\prod(x-\lambda_i)^{b_i}$: the count is $\prod\#\{\text{partitions of }a_i\text{ with largest part }b_i\}$.
+- Given both $\chi_A$ and $m_A=\prod(x-\lambda_i)^{b_i}$: the count is $\prod\sharp \lbrace \text{partitions of }a_i\text{ with largest part }b_i\rbrace$.
 - Matrices with $A^k=I$ (or with any $m_A$ having distinct roots) are diagonalizable. The classes are multisets of eigenvalues: choosing $n$ eigenvalues from $k$ roots gives $\binom{n+k-1}{n}$ classes.
 - $A^2=0$ in $M_n$: blocks of size $\le2$, giving $\lfloor n/2\rfloor+1$ classes.
 - **Characteristic and minimal polynomials determine the JCF iff $n\le3$.** The standard 4×4 counterexample is $J_2(0)\oplus J_2(0)$ versus $J_2(0)\oplus J_1(0)\oplus J_1(0)$.
@@ -34,7 +34,9 @@
 
 ## 3. Rational canonical form (RCF), valid over any field
 - **Companion matrix** of $f=x^n+a_{n-1}x^{n-1}+\dots+a_0$:
-$$C(f)=\begin{pmatrix}0&0&\cdots&-a_0\\1&0&\cdots&-a_1\\&\ddots&&\vdots\\0&\cdots&1&-a_{n-1}\end{pmatrix}$$
+```math
+C(f)=\begin{pmatrix}0&0&\cdots&-a_0\cr 1&0&\cdots&-a_1\cr &\ddots&&\vdots\cr 0&\cdots&1&-a_{n-1}\end{pmatrix}
+```
   Its characteristic and minimal polynomials both equal $f$. It is cyclic (non-derogatory) and has one Jordan block per eigenvalue.
 - **Invariant factors:** $d_1\mid d_2\mid\cdots\mid d_k$, with $d_k=m_A$ and $\prod d_i=\chi_A$. The RCF is $C(d_1)\oplus\dots\oplus C(d_k)$, and it is unique.
 - **Elementary divisors:** the prime-power factors of the $d_i$, which correspond to the Jordan blocks over $\mathbb C$.
@@ -48,8 +50,8 @@ $$C(f)=\begin{pmatrix}0&0&\cdots&-a_0\\1&0&\cdots&-a_1\\&\ddots&&\vdots\\0&\cdot
 - $A\sim A^T$ always.
 - $J_k(\lambda)^m$ for $\lambda\neq0$ is similar to $J_k(\lambda^m)$, a single block.
 - For a nilpotent $N$ of order $n$, $N^{n}=0$. If $N^{n-1}\ne0$, then $N\sim J_n(0)$.
-- $\dim\{X: AX=XA\}\ge n$, with equality iff $A$ is cyclic.
-- Real matrices: the real JCF uses $2\times2$ blocks $\begin{pmatrix}a&-b\\b&a\end{pmatrix}$ for the eigenvalues $a\pm ib$.
+- $\dim\lbrace X: AX=XA\rbrace \ge n$, with equality iff $A$ is cyclic.
+- Real matrices: the real JCF uses $2\times2$ blocks $`\begin{pmatrix}a&-b\cr b&a\end{pmatrix}`$ for the eigenvalues $a\pm ib$.
 
 ## Exam traps
 - **Number** of blocks = GM, and the **largest** block = exponent in $m_A$. Don't swap them.

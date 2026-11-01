@@ -22,7 +22,7 @@
 
 (D) of positive determinant
 
-**Q3.** `[Numerical]` ★ In the Doolittle factorisation $A=LU$ ($L$ unit lower triangular) of $A=\begin{pmatrix}2&3\\4&7\end{pmatrix}$, the entry $u_{22}$ is
+**Q3.** `[Numerical]` ★ In the Doolittle factorisation $A=LU$ ($L$ unit lower triangular) of $`A=\begin{pmatrix}2&3\cr 4&7\end{pmatrix}`$, the entry $u_{22}$ is
 
 (A) $-1$
 
@@ -56,7 +56,7 @@ the first Gauss–Seidel iterate from $(0,0,0)$ is
 
 (D) $(1.2,\ 1.08,\ 0.972)$
 
-**Q6.** `[Numerical]` ★★★ For $A=\begin{pmatrix}2&-1\\-1&2\end{pmatrix}$, the spectral radius of the Gauss–Seidel iteration matrix is
+**Q6.** `[Numerical]` ★★★ For $`A=\begin{pmatrix}2&-1\cr -1&2\end{pmatrix}`$, the spectral radius of the Gauss–Seidel iteration matrix is
 
 (A) $1/2$
 
@@ -70,7 +70,7 @@ the first Gauss–Seidel iterate from $(0,0,0)$ is
 
 I. If $A$ is strictly diagonally dominant, both the Jacobi and the Gauss–Seidel methods converge for every starting vector.
 
-II. The iteration $x^{(k+1)}=Bx^{(k)}+c$ converges for every $x^{(0)}$ if and only if $\rho(B)<1$.
+II. The iteration $x^{(k+1)}=Bx^{(k)}+c$ converges for every $x^{(0)}$ if and only if $\rho(B)\lt 1$.
 
 III. For every matrix $A$, convergence of the Jacobi method implies convergence of the Gauss–Seidel method.
 
@@ -133,7 +133,7 @@ Which are correct?
 
 (D) It converges in both orders.
 
-**Q12.** `[Application]` ★★★ Let $A=\begin{pmatrix}1&2&-2\\1&1&1\\2&2&1\end{pmatrix}$. For $Ax=b$ with an arbitrary starting vector,
+**Q12.** `[Application]` ★★★ Let $`A=\begin{pmatrix}1&2&-2\cr 1&1&1\cr 2&2&1\end{pmatrix}`$. For $Ax=b$ with an arbitrary starting vector,
 
 (A) both Jacobi and Gauss–Seidel converge
 
@@ -171,7 +171,7 @@ Which are correct?
 
 **Q5 — (D).** $x=12/10=1.2$, then $y=(12-1.2)/10=1.08$, then $z=(12-1.2-1.08)/10=0.972$. (A) is the Jacobi iterate, which does not use the new values.
 
-**Q6 — (D).** The Jacobi matrix $\begin{pmatrix}0&1/2\\1/2&0\end{pmatrix}$ has $\rho_J=1/2$. For this tridiagonal (consistently ordered) matrix $\rho_{GS}=\rho_J^2=1/4$. Directly, $B_{GS}=-(D+L)^{-1}U=\begin{pmatrix}0&1/2\\0&1/4\end{pmatrix}$. (A) is $\rho_J$.
+**Q6 — (D).** The Jacobi matrix $`\begin{pmatrix}0&1/2\cr 1/2&0\end{pmatrix}`$ has $\rho_J=1/2$. For this tridiagonal (consistently ordered) matrix $\rho_{GS}=\rho_J^2=1/4$. Directly, $`B_{GS}=-(D+L)^{-1}U=\begin{pmatrix}0&1/2\cr 0&1/4\end{pmatrix}`$. (A) is $\rho_J$.
 
 **Q7 — (B).** I is the standard sufficient condition. II is the fundamental theorem of stationary iterations. III is false: there are matrices for which Jacobi converges and GS diverges (Q12), and also the reverse.
 
@@ -179,8 +179,8 @@ Which are correct?
 
 **Q9 — (A).** Gauss elimination costs $n^3/3$, Gauss–Jordan $n^3/2$, back substitution $n^2/2$, and one sweep of an iterative method on a dense matrix about $n^2$.
 
-**Q10 — (C).** $\begin{pmatrix}0&1\\1&0\end{pmatrix}$ is nonsingular, but $a_{11}=l_{11}u_{11}=u_{11}=0$ would force $l_{21}u_{11}=1$, which is impossible. Only $PA=LU$ is guaranteed. A, B and D are standard facts.
+**Q10 — (C).** $`\begin{pmatrix}0&1\cr 1&0\end{pmatrix}`$ is nonsingular, but $a_{11}=l_{11}u_{11}=u_{11}=0$ would force $l_{21}u_{11}=1$, which is impossible. Only $PA=LU$ is guaranteed. A, B and D are standard facts.
 
-**Q11 — (C).** In the given order $B_J=\begin{pmatrix}0&-2\\-2&0\end{pmatrix}$ with $\rho=2>1$, so Jacobi diverges. After interchanging, $A=\begin{pmatrix}2&1\\1&2\end{pmatrix}$ is diagonally dominant and $\rho=1/2$, so it converges (solution $x=y=1$).
+**Q11 — (C).** In the given order $`B_J=\begin{pmatrix}0&-2\cr -2&0\end{pmatrix}`$ with $\rho=2\gt 1$, so Jacobi diverges. After interchanging, $`A=\begin{pmatrix}2&1\cr 1&2\end{pmatrix}`$ is diagonally dominant and $\rho=1/2$, so it converges (solution $x=y=1$).
 
 **Q12 — (B).** $B_J$ is nilpotent ($B_J^3=0$), so $\rho_J=0$ and Jacobi converges (in at most 3 steps). $B_{GS}$ has eigenvalues $0,2,2$, so $\rho_{GS}=2$ and Gauss–Seidel diverges. This is the classic counterexample to "GS is always better".

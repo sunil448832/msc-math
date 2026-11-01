@@ -89,7 +89,7 @@ Which is/are necessarily correct?
 
 (D) $\tfrac32$
 
-**Q8.** `[Numerical]` ★★ The number of connected components of $\{(x,y)\in\mathbb R^2: x^2-y^2\ne1\}$ is
+**Q8.** `[Numerical]` ★★ The number of connected components of $\lbrace (x,y)\in\mathbb R^2: x^2-y^2\ne1\rbrace$ is
 
 (A) $1$
 
@@ -127,7 +127,7 @@ Which is/are necessarily correct?
 
 (C) A continuous map from $[0,1]$ onto $\mathbb R$
 
-(D) A continuous map from $[0,1]$ onto $\{0,1\}$
+(D) A continuous map from $[0,1]$ onto $\lbrace 0,1\rbrace$
 
 **Q12.** `[Multi-Statement]` ★★★ Let $X$ be an infinite set with the discrete metric. Consider the following statements.
 
@@ -186,13 +186,13 @@ Which is/are correct?
 
 **Q5 — (C).** $\mathbb Q$: not complete (3). $[0,1]$: compact (1). $\mathbb R$: complete, connected and not compact (2). Discrete $\mathbb R$: complete (Cauchy sequences are eventually constant), but uncountable and discrete, so not separable (4). Each property in List-II belongs to only one space.
 
-**Q6 — (D).** In $\ell^2$, the sequence $e_n$ is bounded but $\|e_n-e_m\|=\sqrt2$ for $n\neq m$, so no subsequence converges. (A) and (B) are true for the same reason, and (C) is standard.
+**Q6 — (D).** In $\ell^2$, the sequence $e_n$ is bounded but $\Vert e_n-e_m\Vert =\sqrt2$ for $n\neq m$, so no subsequence converges. (A) and (B) are true for the same reason, and (C) is standard.
 
 **Q7 — (B).** $|T'(x)|=\left|\frac12-\frac1{x^2}\right|\le\frac12$ on $[1,\infty)$. Also $T(x)\ge\sqrt2\ge1$ by AM–GM, so $T$ maps $[1,\infty)$ into itself. The fixed point solves $x=\frac x2+\frac1x$, i.e. $x^2=2$, so $x=\sqrt2$. (This is Newton's iteration for $\sqrt2$.)
 
-**Q8 — (C).** The hyperbola $x^2-y^2=1$ has two branches, which cut the plane into three regions: $x^2-y^2<1$ (the middle, connected) and $x>\sqrt{1+y^2}$ and $x<-\sqrt{1+y^2}$. Answer (D) comes from wrongly counting quadrants, as for $x^2-y^2\ne0$.
+**Q8 — (C).** The hyperbola $x^2-y^2=1$ has two branches, which cut the plane into three regions: $x^2-y^2\lt 1$ (the middle, connected) and $x\gt \sqrt{1+y^2}$ and $x\lt -\sqrt{1+y^2}$. Answer (D) comes from wrongly counting quadrants, as for $x^2-y^2\ne0$.
 
-**Q9 — (A).** $\mathbb Q=\bigcup\{q\}$ is a countable union of closed sets, so it is $F_\sigma$. If $\mathbb Q=\bigcap U_n$ with $U_n$ open, each $U_n$ would be open and dense. Together with the dense open sets $\mathbb R\setminus\{q\}$, this gives countably many dense open sets with empty intersection, contradicting Baire. So $\mathbb Q$ is not $G_\delta$, and equivalently the irrationals are not $F_\sigma$. (D) also contradicts Baire.
+**Q9 — (A).** $\mathbb Q=\bigcup\lbrace q\rbrace$ is a countable union of closed sets, so it is $F_\sigma$. If $\mathbb Q=\bigcap U_n$ with $U_n$ open, each $U_n$ would be open and dense. Together with the dense open sets $\mathbb R\setminus\lbrace q\rbrace$, this gives countably many dense open sets with empty intersection, contradicting Baire. So $\mathbb Q$ is not $G_\delta$, and equivalently the irrationals are not $F_\sigma$. (D) also contradicts Baire.
 
 **Q10 — (A).** $\sqrt x$ is uniformly continuous, since $|\sqrt x-\sqrt y|\le\sqrt{|x-y|}$. $\sin(1/x)$ and $1/x$ do not extend continuously to $[0,1]$, so they are not uniformly continuous on $(0,1)$. $x\sin x$ is not uniformly continuous: take $x_n=2n\pi$ and $y_n=2n\pi+\frac1n$; then $|f(y_n)-f(x_n)|\approx 2\pi$.
 

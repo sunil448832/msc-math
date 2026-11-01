@@ -12,7 +12,7 @@
 
 (D) a linear functional may be discontinuous for some norm
 
-**Q2.** `[Numerical]` ★ The smallest constant $c$ such that $\|x\|_1\le c\,\|x\|_2$ for all $x\in\mathbb R^4$ is
+**Q2.** `[Numerical]` ★ The smallest constant $c$ such that $\Vert x\Vert _1\le c\thinspace \Vert x\Vert _2$ for all $x\in\mathbb R^4$ is
 
 (A) $1$
 
@@ -22,7 +22,7 @@
 
 (D) $4$
 
-**Q3.** `[Numerical]` ★★ The operator norm of $A=\begin{pmatrix}1&2\\3&4\end{pmatrix}$ acting on $(\mathbb R^2,\|\cdot\|_1)$ is
+**Q3.** `[Numerical]` ★★ The operator norm of $`A=\begin{pmatrix}1&2\cr 3&4\end{pmatrix}`$ acting on $(\mathbb R^2,\Vert \cdot\Vert _1)$ is
 
 (A) $5$
 
@@ -32,7 +32,7 @@
 
 (D) $10$
 
-**Q4.** `[Numerical]` ★★★ On $C[0,1]$ with the sup norm, let $\varphi(x)=\displaystyle\int_0^1x(t)\,dt-x\!\left(\tfrac12\right)$. Then $\|\varphi\|$ equals
+**Q4.** `[Numerical]` ★★★ On $C[0,1]$ with the sup norm, let $\varphi(x)=\displaystyle\int_0^1x(t)\thinspace dt-x\negthinspace \left(\tfrac12\right)$. Then $\Vert \varphi\Vert$ equals
 
 (A) $0$
 
@@ -97,27 +97,27 @@ Which is/are correct?
 
 (C) $\ell^1$ is reflexive.
 
-(D) $\ell^p$ is reflexive for $1<p<\infty$.
+(D) $\ell^p$ is reflexive for $1\lt p\lt \infty$.
 
-**Q9.** `[Concept]` ★★ For a normed space $X$ (not necessarily complete), its dual $X^*$ with the operator norm
+**Q9.** `[Concept]` ★★ For a normed space $X$ (not necessarily complete), its dual $X^\ast$ with the operator norm
 
 (A) is always a Banach space
 
 (B) is a Banach space if and only if $X$ is a Banach space
 
-(C) may be $\{0\}$ even when $X\ne\{0\}$
+(C) may be $\lbrace 0\rbrace$ even when $X\ne\lbrace 0\rbrace$
 
 (D) is always isometrically isomorphic to $X$
 
-**Q10.** `[Application]` ★★★ Let $D:(C^1[0,1],\|\cdot\|_\infty)\to(C[0,1],\|\cdot\|_\infty)$, $Df=f'$. Which of the following is true?
+**Q10.** `[Application]` ★★★ Let $D:(C^1[0,1],\Vert \cdot\Vert _\infty)\to(C[0,1],\Vert \cdot\Vert _\infty)$, $Df=f'$. Which of the following is true?
 
 (A) $D$ is bounded, by the closed graph theorem.
 
-(B) $D$ has a closed graph but is unbounded. This does not contradict the closed graph theorem, because $(C^1[0,1],\|\cdot\|_\infty)$ is not complete.
+(B) $D$ has a closed graph but is unbounded. This does not contradict the closed graph theorem, because $(C^1[0,1],\Vert \cdot\Vert _\infty)$ is not complete.
 
 (C) The graph of $D$ is not closed.
 
-(D) $D$ is bounded with $\|D\|=1$.
+(D) $D$ is bounded with $\Vert D\Vert =1$.
 
 **Q11.** `[Application]` ★★ The space $\mathbb R[x]$ of all real polynomials
 
@@ -127,7 +127,7 @@ Which is/are correct?
 
 (C) is a Banach space under every norm, since all norms on it are equivalent
 
-(D) is a Banach space under the norm $\|\sum a_kx^k\|=\sum|a_k|$
+(D) is a Banach space under the norm $\Vert \sum a_kx^k\Vert =\sum|a_k|$
 
 **Q12.** `[Concept]` ★ The closed unit ball of a normed space $X$ is compact if and only if
 
@@ -141,9 +141,9 @@ Which is/are correct?
 
 **Q13.** `[Multi-Statement]` ★★★ Let $X$ be a normed space. Consider the following statements.
 
-I. If $f(x)=0$ for every $f\in X^*$, then $x=0$.
+I. If $f(x)=0$ for every $f\in X^\ast$, then $x=0$.
 
-II. $\|x\|=\sup\{|f(x)|: f\in X^*,\ \|f\|\le1\}$ for every $x\in X$, and the supremum is attained.
+II. $\Vert x\Vert =\sup\lbrace |f(x)|: f\in X^\ast ,\ \Vert f\Vert \le1\rbrace$ for every $x\in X$, and the supremum is attained.
 
 III. A norm-preserving (Hahn–Banach) extension of a bounded linear functional from a subspace to $X$ is always unique.
 
@@ -157,11 +157,11 @@ Which is/are correct?
 
 (D) I, II and III
 
-**Q14.** `[Concept]` ★★ Let $X$ be a Banach space, $Y$ a normed space, and $\{T_\alpha\}$ a family of bounded linear operators $X\to Y$ with $\sup_\alpha\|T_\alpha x\|<\infty$ for every $x\in X$. Then necessarily
+**Q14.** `[Concept]` ★★ Let $X$ be a Banach space, $Y$ a normed space, and $\lbrace T_\alpha\rbrace$ a family of bounded linear operators $X\to Y$ with $\sup_\alpha\Vert T_\alpha x\Vert \lt \infty$ for every $x\in X$. Then necessarily
 
-(A) $\sup_\alpha\|T_\alpha\|<\infty$
+(A) $\sup_\alpha\Vert T_\alpha\Vert \lt \infty$
 
-(B) $\{T_\alpha\}$ has a norm-convergent subsequence
+(B) $\lbrace T_\alpha\rbrace$ has a norm-convergent subsequence
 
 (C) $T_\alpha x\to0$ for every $x$
 
@@ -191,26 +191,26 @@ Which is/are correct?
 
 **Q2 — (C).** By Cauchy–Schwarz, $\sum|x_i|\le\sqrt n\left(\sum x_i^2\right)^{1/2}$, with equality at $x=(1,1,1,1)$. So $c=\sqrt4=2$. Option (D) confuses $\sqrt n$ with $n$.
 
-**Q3 — (B).** $\|A\|_{1\to1}$ is the maximum absolute **column** sum: $\max(1+3,2+4)=6$. The maximum row sum, $7$, is $\|A\|_{\infty\to\infty}$, which is the trap.
+**Q3 — (B).** $\Vert A\Vert _{1\to1}$ is the maximum absolute **column** sum: $\max(1+3,2+4)=6$. The maximum row sum, $7$, is $\Vert A\Vert _{\infty\to\infty}$, which is the trap.
 
-**Q4 — (D).** $|\varphi(x)|\le\|x\|+\|x\|=2\|x\|$. Take $x$ equal to $1$ except for a narrow continuous dip to $-1$ at $t=\frac12$ (width $\to0$). Then $\varphi(x)\to1-(-1)=2$. So $\|\varphi\|=2$. It is not attained, since that would need $x=1$ a.e. and $x(\frac12)=-1$.
+**Q4 — (D).** $|\varphi(x)|\le\Vert x\Vert +\Vert x\Vert =2\Vert x\Vert$. Take $x$ equal to $1$ except for a narrow continuous dip to $-1$ at $t=\frac12$ (width $\to0$). Then $\varphi(x)\to1-(-1)=2$. So $\Vert \varphi\Vert =2$. It is not attained, since that would need $x=1$ a.e. and $x(\frac12)=-1$.
 
 **Q5 — (D).** I is the open mapping theorem and II is the bounded inverse theorem. III needs completeness of the spaces: see Q10, where a closed-graph unbounded operator is defined on an incomplete space.
 
 **Q6 — (A).** A finite-dimensional subspace $M$ is complete with the induced norm (R). A complete subspace of a metric space is closed. So R is exactly why A holds.
 
-**Q7 — (B).** $c_0^*=\ell^1$ and $(\ell^1)^*=\ell^\infty$. For $\ell^3$ the conjugate exponent is $q$ with $\frac13+\frac1q=1$, so $(\ell^3)^*=\ell^{3/2}$. $C[a,b]^*$ is $NBV[a,b]$ by the Riesz representation theorem. A common error is $(\ell^\infty)^*=\ell^1$; that is false, since $\ell^1$ is only the dual of $c_0$.
+**Q7 — (B).** $c_0^\ast =\ell^1$ and $(\ell^1)^\ast =\ell^\infty$. For $\ell^3$ the conjugate exponent is $q$ with $\frac13+\frac1q=1$, so $(\ell^3)^\ast =\ell^{3/2}$. $C[a,b]^\ast$ is $NBV[a,b]$ by the Riesz representation theorem. A common error is $(\ell^\infty)^\ast =\ell^1$; that is false, since $\ell^1$ is only the dual of $c_0$.
 
-**Q8 — (C).** If $X$ is reflexive and separable, then $X^*$ is separable. But $\ell^1$ is separable and $(\ell^1)^*=\ell^\infty$ is not, so $\ell^1$ is not reflexive. (Equivalently, $(\ell^\infty)^*\supsetneq\ell^1$.) (A), (B) and (D) are standard.
+**Q8 — (C).** If $X$ is reflexive and separable, then $X^\ast$ is separable. But $\ell^1$ is separable and $(\ell^1)^\ast =\ell^\infty$ is not, so $\ell^1$ is not reflexive. (Equivalently, $(\ell^\infty)^\ast \supsetneq\ell^1$.) (A), (B) and (D) are standard.
 
-**Q9 — (A).** $B(X,Y)$ is complete whenever $Y$ is, and $X^*=B(X,\mathbb R)$ with $\mathbb R$ complete. (C) is ruled out by Hahn–Banach. (B) is wrong: $c_{00}$ is incomplete but $c_{00}^*\cong\ell^1$ is Banach.
+**Q9 — (A).** $B(X,Y)$ is complete whenever $Y$ is, and $X^\ast =B(X,\mathbb R)$ with $\mathbb R$ complete. (C) is ruled out by Hahn–Banach. (B) is wrong: $c_{00}$ is incomplete but $c_{00}^\ast \cong\ell^1$ is Banach.
 
-**Q10 — (B).** Suppose $f_n\to f$ and $f_n'\to g$ uniformly. Then $f\in C^1$ and $f'=g$, so the graph is closed. But $\|t^n\|_\infty=1$ while $\|(t^n)'\|_\infty=n$, so $D$ is unbounded. The closed graph theorem needs **both** spaces complete, and the domain here is not.
+**Q10 — (B).** Suppose $f_n\to f$ and $f_n'\to g$ uniformly. Then $f\in C^1$ and $f'=g$, so the graph is closed. But $\Vert t^n\Vert _\infty=1$ while $\Vert (t^n)'\Vert _\infty=n$, so $D$ is unbounded. The closed graph theorem needs **both** spaces complete, and the domain here is not.
 
-**Q11 — (B).** $\mathbb R[x]$ has the countably infinite Hamel basis $\{1,x,x^2,\dots\}$. By Baire, an infinite-dimensional Banach space cannot have a countable Hamel basis: it would be a countable union of the closed, nowhere dense finite-dimensional subspaces. (A) and (D) describe incomplete normed spaces. (C) is false because "all norms equivalent" holds only in finite dimensions.
+**Q11 — (B).** $\mathbb R[x]$ has the countably infinite Hamel basis $\lbrace 1,x,x^2,\dots\rbrace$. By Baire, an infinite-dimensional Banach space cannot have a countable Hamel basis: it would be a countable union of the closed, nowhere dense finite-dimensional subspaces. (A) and (D) describe incomplete normed spaces. (C) is false because "all norms equivalent" holds only in finite dimensions.
 
-**Q12 — (D).** This is Riesz's lemma: in infinite dimensions, there is a sequence of unit vectors with $\|x_n-x_m\|\ge\frac12$ for $n\neq m$. $\ell^2$ is complete, separable and reflexive, yet its unit ball is not compact.
+**Q12 — (D).** This is Riesz's lemma: in infinite dimensions, there is a sequence of unit vectors with $\Vert x_n-x_m\Vert \ge\frac12$ for $n\neq m$. $\ell^2$ is complete, separable and reflexive, yet its unit ball is not compact.
 
-**Q13 — (B).** I and II are corollaries of Hahn–Banach: for $x\ne0$ there is $f$ with $\|f\|=1$ and $f(x)=\|x\|$, so the supremum is attained. III is false. In $(\mathbb R^2,\|\cdot\|_1)$, $f(x,0)=x$ on the $x$-axis has the norm-one extensions $x+cy$ for every $|c|\le1$. (Uniqueness holds, for instance, in Hilbert spaces.)
+**Q13 — (B).** I and II are corollaries of Hahn–Banach: for $x\ne0$ there is $f$ with $\Vert f\Vert =1$ and $f(x)=\Vert x\Vert$, so the supremum is attained. III is false. In $(\mathbb R^2,\Vert \cdot\Vert _1)$, $f(x,0)=x$ on the $x$-axis has the norm-one extensions $x+cy$ for every $|c|\le1$. (Uniqueness holds, for instance, in Hilbert spaces.)
 
-**Q14 — (A).** This is the uniform boundedness principle (Banach–Steinhaus). Completeness of $X$ is essential. On $c_{00}$ (finitely supported sequences, sup norm), $T_nx=nx_n$ is pointwise bounded, since $x_n$ is eventually $0$, but $\|T_n\|=n$. Nothing forces (B), (C) or (D).
+**Q14 — (A).** This is the uniform boundedness principle (Banach–Steinhaus). Completeness of $X$ is essential. On $c_{00}$ (finitely supported sequences, sup norm), $T_nx=nx_n$ is pointwise bounded, since $x_n$ is eventually $0$, but $\Vert T_n\Vert =n$. Nothing forces (B), (C) or (D).

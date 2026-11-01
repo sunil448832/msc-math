@@ -12,10 +12,10 @@ Standard form: Max $Z=c^Tx$, $Ax=b$, $x\ge0$, $b\ge0$, with $A$ of size $m\times
 2. **Optimality test:** if all $\Delta_j\ge0$, the current BFS is optimal.
 3. **Entering variable:** the most negative $\Delta_j$ (Dantzig). Its column is the **key column** $k$.
 4. **Unboundedness test:** if all $y_{ik}\le0$, the solution is unbounded. Stop.
-5. **Leaving variable (minimum ratio test):** $\displaystyle\theta=\min_{i:\,y_{ik}>0}\frac{x_{B_i}}{y_{ik}}$. That row $r$ is the **key row**, and $y_{rk}$ is the **pivot**.
+5. **Leaving variable (minimum ratio test):** $\displaystyle\theta=\min_{i:\thinspace y_{ik}\gt 0}\frac{x_{B_i}}{y_{ik}}$. That row $r$ is the **key row**, and $y_{rk}$ is the **pivot**.
 6. **Pivot:** divide the key row by the pivot, then make the other entries of column $k$ zero (Gauss–Jordan). Go to 2.
 
-- **Change in $Z$ per iteration:** $Z_{\text{new}} = Z_{\text{old}} - \theta\,\Delta_k = Z_{\text{old}}+\theta\lvert\Delta_k\rvert$.
+- **Change in $Z$ per iteration:** $Z_{\text{new}} = Z_{\text{old}} - \theta\thinspace \Delta_k = Z_{\text{old}}+\theta\lvert\Delta_k\rvert$.
 - **Min problem:** either maximise $-Z$, or use the reversed rules (enter the most positive $\Delta_j$; optimal when all $\Delta_j\le0$).
 - Each iteration moves to an **adjacent** extreme point (one basic variable is exchanged).
 
@@ -24,12 +24,12 @@ Standard form: Max $Z=c^Tx$, $Ax=b$, $x\ge0$, $b\ge0$, with $A$ of size $m\times
 | Observation (max, $\Delta = Z-C$) | Conclusion |
 |---|---|
 | All $\Delta_j\ge0$ | optimal |
-| $\Delta_j=0$ for some **non-basic** $x_j$ at the optimum | alternative optima (if a pivot with $\theta>0$ is possible) |
-| $\Delta_k<0$ and column $k\le0$ | unbounded solution |
+| $\Delta_j=0$ for some **non-basic** $x_j$ at the optimum | alternative optima (if a pivot with $\theta\gt 0$ is possible) |
+| $\Delta_k\lt 0$ and column $k\le0$ | unbounded solution |
 | Tie in the ratio test / a basic variable $=0$ | degeneracy (possible cycling) |
 | Optimal, but an artificial variable is basic at a **positive** level | infeasible |
 | Optimal, artificial basic at level **zero** | feasible; possible redundant constraint (degenerate) |
-| $\Delta_j$ of a slack $s_i$ at the optimum | shadow price $= y_i^*$ of resource $i$ (Topic 03) |
+| $\Delta_j$ of a slack $s_i$ at the optimum | shadow price $= y_i^\ast$ of resource $i$ (Topic 03) |
 
 ## 4. Degeneracy and cycling
 - **Degenerate BFS:** some basic variable $=0$. A pivot with $\theta = 0$ changes the basis but not the point or $Z$.
@@ -38,26 +38,26 @@ Standard form: Max $Z=c^Tx$, $Ax=b$, $x\ge0$, $b\ge0$, with $A$ of size $m\times
 - Without cycling, simplex terminates in at most $\binom{n}{m}$ iterations. The worst case is exponential (Klee–Minty), while ellipsoid and interior-point methods are polynomial.
 
 ## 5. Artificial variables
-They are needed for rows with "$\ge$" (after subtracting the surplus) and "$=$", where no identity column is available. First make every $b_i\ge0$ (a row with $b_i<0$ flips $\le \leftrightarrow \ge$).
+They are needed for rows with "$`\ge`$" (after subtracting the surplus) and "$`=`$", where no identity column is available. First make every $`b_i\ge0`$ (a row with $`b_i\lt 0`$ flips $`\le \leftrightarrow \ge`$).
 
 | Constraint (with $b\ge0$) | Add |
 |---|---|
 | $\le$ | $+s$ (slack), which is basic |
-| $\ge$ | $-s$ (surplus) $+R$ (artificial) |
-| $=$ | $+R$ |
+| $`\ge`$ | $-s$ (surplus) $+R$ (artificial) |
+| $`=`$ | $+R$ |
 
 ### Big-M (penalty) method
 - Max: objective $c^Tx - M\sum R_i$. Min: objective $c^Tx + M\sum R_i$, with $M\gg0$.
 - First make the $\Delta_j$ of the initial artificial basis consistent: subtract $M\times$ the rows from the $\Delta$ row, so that the basic $\Delta_j = 0$.
 - Once an artificial variable leaves the basis, its column can be dropped.
-- **Infeasible** if the optimum has some $R_i>0$ in the basis. **Unbounded** is detected as usual.
+- **Infeasible** if the optimum has some $R_i\gt 0$ in the basis. **Unbounded** is detected as usual.
 - Drawbacks: the size of $M$ is arbitrary, and a large $M$ causes round-off errors.
 
 ### Two-phase method
 - **Phase I:** Min $W=\sum R_i$ (equivalently Max $-\sum R_i$) subject to the same constraints.
-  - $W^*>0$ means the LPP is **infeasible**. Stop.
-  - $W^*=0$ with no artificial in the basis: go to Phase II.
-  - $W^*=0$ with an artificial basic at zero: pivot it out, or keep it (a redundant constraint).
+  - $W^\ast \gt 0$ means the LPP is **infeasible**. Stop.
+  - $W^\ast =0$ with no artificial in the basis: go to Phase II.
+  - $W^\ast =0$ with an artificial basic at zero: pivot it out, or keep it (a redundant constraint).
 - **Phase II:** take the final Phase I tableau, delete the artificial columns, restore the original objective, recompute the $\Delta_j$, and continue the simplex method.
 - Phase I never detects unboundedness of the original problem ($W\ge0$ is always bounded below).
 

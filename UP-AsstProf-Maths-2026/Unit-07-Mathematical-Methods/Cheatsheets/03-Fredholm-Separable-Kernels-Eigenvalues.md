@@ -2,21 +2,21 @@
 > Questions: [../Questions/03-Fredholm-Separable-Kernels-Eigenvalues.md](../Questions/03-Fredholm-Separable-Kernels-Eigenvalues.md)
 
 ## 1. Setting
-$$y(x)=f(x)+\lambda\int_a^b K(x,t)\,y(t)\,dt\qquad(\ast)$$
+$$y(x)=f(x)+\lambda\int_a^b K(x,t)\thinspace y(t)\thinspace dt\qquad(\ast)$$
 - **Characteristic value** (eigenvalue in many Indian texts): $\lambda$ for which the homogeneous equation $y=\lambda\int Ky$ has a nonzero solution (an **eigenfunction**). Operator eigenvalue $\mu=1/\lambda$.
 - $\lambda=0$ is never a characteristic value.
 - **Transposed (adjoint) kernel:** $K^T(x,t)=K(t,x)$; $K$ and $K^T$ have the same characteristic values (with same multiplicities).
 
 ## 2. Degenerate (separable) kernels — method
-$K(x,t)=\sum_{i=1}^n a_i(x)b_i(t)$, $\{a_i\},\{b_i\}$ linearly independent.
+$K(x,t)=\sum_{i=1}^n a_i(x)b_i(t)$, $\lbrace a_i\rbrace ,\lbrace b_i\rbrace$ linearly independent.
 1. Put $c_i=\int_a^b b_i(t)y(t)dt$ ⇒ $y=f+\lambda\sum c_ia_i(x)$.
 2. Multiply by $b_j$ and integrate: $c_j=f_j+\lambda\sum_i\alpha_{ji}c_i$, where
 $$\alpha_{ji}=\int_a^b b_j(t)a_i(t)dt,\qquad f_j=\int_a^b b_j(t)f(t)dt.$$
 3. Linear system $(I-\lambda A)c=F$.
 - **Characteristic values:** roots of $D(\lambda)=\det(I-\lambda A)=0$ — a polynomial of degree $\le n$ ⇒ **at most $n$** characteristic values (possibly none).
 - Eigenfunctions: $y=\sum c_ia_i(x)$ with $c$ in the null space of $I-\lambda A$.
-- **Rank-one kernel** $a(x)b(t)$: $\lambda=1/\int_a^b a\,b\,dt$ (none if $\int ab=0$); solution of $(\ast)$:
-$$y=f+\frac{\lambda\,a(x)\int_a^b b f\,dt}{1-\lambda\int_a^b ab\,dt}.$$
+- **Rank-one kernel** $a(x)b(t)$: $\lambda=1/\int_a^b a\thinspace b\thinspace dt$ (none if $\int ab=0$); solution of $(\ast)$:
+$$y=f+\frac{\lambda\thinspace a(x)\int_a^b b f\thinspace dt}{1-\lambda\int_a^b ab\thinspace dt}.$$
 
 ### Standard results
 | Kernel (interval) | Characteristic value(s) | Eigenfunction(s) |
@@ -36,12 +36,12 @@ $$y=f+\frac{\lambda\,a(x)\int_a^b b f\,dt}{1-\lambda\int_a^b ab\,dt}.$$
 
 ## 3. Fredholm alternative (continuous / $L^2$ kernel)
 1. If $\lambda$ is **not** a characteristic value: $(\ast)$ has a **unique** solution for every $f$; the homogeneous equation has only $y\equiv0$.
-2. If $\lambda$ **is** a characteristic value: homogeneous equations for $K$ and $K^T$ have the same finite number $r$ of independent solutions; $(\ast)$ is solvable **iff** $\int_a^b f(x)\,z(x)dx=0$ for every solution $z$ of $z=\lambda\int K(t,x)z(t)dt$; then the solution is $y_p+\sum c_k\phi_k$ (infinitely many).
+2. If $\lambda$ **is** a characteristic value: homogeneous equations for $K$ and $K^T$ have the same finite number $r$ of independent solutions; $(\ast)$ is solvable **iff** $\int_a^b f(x)\thinspace z(x)dx=0$ for every solution $z$ of $z=\lambda\int K(t,x)z(t)dt$; then the solution is $y_p+\sum c_k\phi_k$ (infinitely many).
 - Characteristic values have no finite accumulation point; each has finite multiplicity.
 
 ## 4. Neumann series & resolvent (Fredholm)
 $K_1=K$, $K_n(x,t)=\int_a^bK(x,s)K_{n-1}(s,t)ds$, $R=\sum_{n\ge1}\lambda^{n-1}K_n$, $y=f+\lambda\int Rf$.
-- Converges for $|\lambda|<\dfrac{1}{M(b-a)}$, $M=\max|K|$; better $|\lambda|<1/\|K\|_{L^2}$; exactly up to the smallest $|\lambda_1|$.
+- Converges for $|\lambda|\lt \dfrac{1}{M(b-a)}$, $M=\max|K|$; better $|\lambda|\lt 1/\Vert K\Vert _{L^2}$; exactly up to the smallest $|\lambda_1|$.
 - $xt$ on $[0,1]$: $K_n=xt/3^{n-1}$, $R=\dfrac{3xt}{3-\lambda}$, radius $3$.
 - Fredholm's theory: $R=D(x,t;\lambda)/D(\lambda)$, ratio of two entire functions; zeros of $D(\lambda)$ = characteristic values.
 

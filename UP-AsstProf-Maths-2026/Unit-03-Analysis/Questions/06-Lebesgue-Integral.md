@@ -12,7 +12,7 @@
 
 (D) non-negative and pointwise increasing
 
-**Q2.** `[Numerical]` ★ Let $f:[0,1]\to\mathbb R$ be $f(x)=1$ for rational $x$ and $f(x)=x^2$ for irrational $x$. Then $\displaystyle\int_{[0,1]} f\,dm$ (Lebesgue) equals
+**Q2.** `[Numerical]` ★ Let $f:[0,1]\to\mathbb R$ be $f(x)=1$ for rational $x$ and $f(x)=x^2$ for irrational $x$. Then $\displaystyle\int_{[0,1]} f\thinspace dm$ (Lebesgue) equals
 
 (A) $1$
 
@@ -66,7 +66,7 @@ Which is/are correct?
 
 | List-I | List-II |
 |---|---|
-| (a) $f_n=n\,\chi_{(0,1/n)}$ | 1. $f_n\to 0$ uniformly on $\mathbb R$, but $\int f_n=1$ for all $n$ |
+| (a) $f_n=n\thinspace \chi_{(0,1/n)}$ | 1. $f_n\to 0$ uniformly on $\mathbb R$, but $\int f_n=1$ for all $n$ |
 | (b) $f_n=\chi_{[n,n+1]}$ | 2. $f_n\to0$ pointwise, $\int f_n=1$; the mass concentrates near $0$ |
 | (c) $f_n=\tfrac1n\chi_{[0,n]}$ | 3. DCT applies and $\int f_n\to 0$ |
 | (d) $f_n=x^n$ on $[0,1]$ | 4. $f_n\to0$ pointwise, $\int f_n=1$; the mass "escapes to infinity" |
@@ -89,7 +89,7 @@ Which is/are correct?
 
 (D) The Dirichlet function $\chi_{\mathbb Q}$ is Lebesgue integrable on $[0,1]$ with integral $0$.
 
-**Q8.** `[Concept]` ★★ Which inclusion is correct for $1\le p<q<\infty$?
+**Q8.** `[Concept]` ★★ Which inclusion is correct for $1\le p\lt q\lt \infty$?
 
 (A) $L^p[0,1]\subseteq L^q[0,1]$
 
@@ -109,7 +109,7 @@ Which is/are correct?
 
 (D) infinitely many
 
-**Q10.** `[Application]` ★★★ $\displaystyle\lim_{n\to\infty}\int_0^\infty \frac{n\sin(x/n)}{x(1+x^2)}\,dx$ equals
+**Q10.** `[Application]` ★★★ $\displaystyle\lim_{n\to\infty}\int_0^\infty \frac{n\sin(x/n)}{x(1+x^2)}\thinspace dx$ equals
 
 (A) $0$
 
@@ -119,7 +119,7 @@ Which is/are correct?
 
 (D) $\pi$
 
-**Q11.** `[Application]` ★★ Let $f\in L^2[0,1]$ with $\int_0^1 f\,dx=1$. The minimum possible value of $\int_0^1 f^2\,dx$ is
+**Q11.** `[Application]` ★★ Let $f\in L^2[0,1]$ with $\int_0^1 f\thinspace dx=1$. The minimum possible value of $\int_0^1 f^2\thinspace dx$ is
 
 (A) $0$
 
@@ -147,9 +147,9 @@ Which is/are correct?
 
 (C) $f_n\to f$ uniformly outside a set of measure zero
 
-(D) $\|f_n\|_\infty\to\|f\|_\infty$
+(D) $\Vert f_n\Vert _\infty\to\Vert f\Vert _\infty$
 
-**Q14.** `[Numerical]` ★★★ $\displaystyle\lim_{n\to\infty}\int_0^1 \frac{n\,x^{n-1}}{1+x}\,dx$ equals
+**Q14.** `[Numerical]` ★★★ $\displaystyle\lim_{n\to\infty}\int_0^1 \frac{n\thinspace x^{n-1}}{1+x}\thinspace dx$ equals
 
 (A) $0$
 
@@ -185,17 +185,17 @@ Which is/are correct?
 
 **Q3 — (D).** Write $f_n=(1-x/n)^n\chi_{[0,n]}$. Then $0\le f_n\le e^{-x}$ and $f_n\uparrow e^{-x}$, so by MCT (or DCT) the limit is $\int_0^\infty e^{-x}dx=1$. Directly: $\int_0^n(1-x/n)^ndx=\frac{n}{n+1}\to1$.
 
-**Q4 — (B).** I is Fatou's lemma. II: $f_n=n\chi_{(0,1/n)}$ gives $0<1$. III is false: $f_n=-n\chi_{(0,1/n)}$ gives $\int\liminf f_n=0>-1=\liminf\int f_n$.
+**Q4 — (B).** I is Fatou's lemma. II: $f_n=n\chi_{(0,1/n)}$ gives $0\lt 1$. III is false: $f_n=-n\chi_{(0,1/n)}$ gives $\int\liminf f_n=0\gt -1=\liminf\int f_n$.
 
-**Q5 — (A).** $\int_0^\infty|\sin x|/x\,dx=\infty$ (compare with $\sum \frac{c}{k}$ over the intervals $[k\pi,(k+1)\pi]$). The Lebesgue integral is absolute, so $f\notin L^1$ exactly because $|f|\notin L^1$. R is the reason.
+**Q5 — (A).** $\int_0^\infty|\sin x|/x\thinspace dx=\infty$ (compare with $\sum \frac{c}{k}$ over the intervals $[k\pi,(k+1)\pi]$). The Lebesgue integral is absolute, so $f\notin L^1$ exactly because $|f|\notin L^1$. R is the reason.
 
 **Q6 — (A).** (a) is a tall thin spike at $0$, so 2. (b) is a bump sliding to infinity, so 4. (c) satisfies $\sup|f_n|=1/n\to0$ (uniform convergence) yet $\int f_n=1$, so 1; uniform convergence is not enough on a set of infinite measure. (d) is dominated by $1\in L^1[0,1]$, so DCT gives $\int x^n=\frac1{n+1}\to0$, which is 3.
 
 **Q7 — (C).** $\chi_{\mathbb Q}$ is bounded and Lebesgue integrable, but it is discontinuous everywhere, so it is not Riemann integrable. (A), (B) (Lebesgue's criterion) and (D) are true.
 
-**Q8 — (D).** On a finite measure space, Hölder gives $\|f\|_p\le \mu(X)^{1/p-1/q}\|f\|_q$, so $L^q\subseteq L^p$ for $p<q$. On $\mathbb R$ neither inclusion holds: $x^{-1/2}\chi_{(0,1)}\in L^1\setminus L^2$ and $\frac{1}{x}\chi_{(1,\infty)}\in L^2\setminus L^1$.
+**Q8 — (D).** On a finite measure space, Hölder gives $`\Vert f\Vert _p\le \mu(X)^{1/p-1/q}\Vert f\Vert _q`$, so $`L^q\subseteq L^p`$ for $`p\lt q`$. On $`\mathbb R`$ neither inclusion holds: $`x^{-1/2}\chi_{(0,1)}\in L^1\setminus L^2`$ and $`\frac{1}{x}\chi_{(1,\infty)}\in L^2\setminus L^1`$.
 
-**Q9 — (A).** $\int_0^1x^{-p/3}dx<\infty\iff p/3<1\iff p<3$, so $p=1,2$. The tempting answer $3$ fails because $\int_0^1x^{-1}dx$ diverges.
+**Q9 — (A).** $\int_0^1x^{-p/3}dx\lt \infty\iff p/3\lt 1\iff p\lt 3$, so $p=1,2$. The tempting answer $3$ fails because $\int_0^1x^{-1}dx$ diverges.
 
 **Q10 — (C).** $\left|\frac{n\sin(x/n)}{x}\right|\le1$, so the integrand is dominated by $\frac{1}{1+x^2}\in L^1$, and it tends to $\frac{1}{1+x^2}$ pointwise. By DCT the limit is $\int_0^\infty\frac{dx}{1+x^2}=\frac\pi2$.
 
@@ -205,4 +205,4 @@ Which is/are correct?
 
 **Q13 — (B).** The "typewriter" sequence (indicators of dyadic intervals sweeping $[0,1]$ repeatedly) tends to $0$ in $L^1$ but converges at no point, so (A) fails. Convergence in $L^1$ implies convergence in measure, and that yields an a.e. convergent subsequence (Riesz).
 
-**Q14 — (B).** Integrate by parts: $\int_0^1\frac{nx^{n-1}}{1+x}dx=\left[\frac{x^n}{1+x}\right]_0^1+\int_0^1\frac{x^n}{(1+x)^2}dx=\frac12+O\!\left(\frac1{n+1}\right)\to\frac12$. The measures $nx^{n-1}dx$ concentrate at $x=1$, so the limit is $g(1)=\frac12$ for $g(x)=\frac{1}{1+x}$. The answer is not $0$, even though the integrand $\to0$ pointwise on $[0,1)$, because there is no integrable dominating function.
+**Q14 — (B).** Integrate by parts: $\int_0^1\frac{nx^{n-1}}{1+x}dx=\left[\frac{x^n}{1+x}\right]_0^1+\int_0^1\frac{x^n}{(1+x)^2}dx=\frac12+O\negthinspace \left(\frac1{n+1}\right)\to\frac12$. The measures $nx^{n-1}dx$ concentrate at $x=1$, so the limit is $g(1)=\frac12$ for $g(x)=\frac{1}{1+x}$. The answer is not $0$, even though the integrand $\to0$ pointwise on $[0,1)$, because there is no integrable dominating function.

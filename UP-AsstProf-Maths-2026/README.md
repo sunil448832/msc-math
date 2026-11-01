@@ -9,7 +9,7 @@ These question banks and revision sheets follow the official syllabus, arranged 
 
 See [STYLE-GUIDE.md](STYLE-GUIDE.md) for the question-type tags (`[Concept]`, `[Numerical]`, `[Multi-Statement]`, `[Assertion-Reason]`, `[Match]`, `[NOT-true / Counterexample]`, `[Application]`) and the difficulty stars (★ / ★★ / ★★★).
 
-**Viewing:** open any `.md` file in VS Code and press `Ctrl+Shift+V` to render the math.
+**Viewing:** the math is written to render correctly on **GitHub**. Every formula has been checked through GitHub's own renderer and MathJax. Locally, VS Code's preview (`Ctrl+Shift+V`) renders almost all of it, except for about 3% of the formulas, which use GitHub's safe syntax `` $`…`$ `` and show as code there. See [STYLE-GUIDE.md](STYLE-GUIDE.md#notation).
 
 ## Modules
 | Unit | Folder | Topics |

@@ -427,7 +427,7 @@ In the light of the above statements, choose the correct answer from the options
 
 (D) $\mathbb Z[\sqrt{-5}]$ is a unique factorization domain
 
-**37.** The number of generators of the cyclic group $GF(25)^{*}$ (the multiplicative group of the field with 25 elements) is
+**37.** The number of generators of the cyclic group $GF(25)^{\ast }$ (the multiplicative group of the field with 25 elements) is
 
 (A) 8
 
@@ -486,7 +486,7 @@ Choose the correct answer from the code given below :
 
 (D) a – III, b – IV, c – I, d – II
 
-**42.** On the space of real polynomials with inner product $\langle f,g\rangle=\int_0^1 f(x)g(x)\,dx$, the angle between $f(x)=1$ and $g(x)=x$ is
+**42.** On the space of real polynomials with inner product $\langle f,g\rangle=\int_0^1 f(x)g(x)\thinspace dx$, the angle between $f(x)=1$ and $g(x)=x$ is
 
 (A) $\pi/2$
 
@@ -496,7 +496,7 @@ Choose the correct answer from the code given below :
 
 (D) $\pi/6$
 
-**43.** The distance of the point $(1,2,3)$ from the subspace $W=\{(x,y,z)\in\mathbb R^3 : x+y+z=0\}$ (standard inner product) is
+**43.** The distance of the point $(1,2,3)$ from the subspace $W=\lbrace (x,y,z)\in\mathbb R^3 : x+y+z=0\rbrace$ (standard inner product) is
 
 (A) $\sqrt3$
 
@@ -526,7 +526,7 @@ Choose the correct answer from the code given below :
 
 (D) II, IV, I, III
 
-**45.** If $A=\begin{pmatrix}1&2\\3&4\end{pmatrix}$, then by the Cayley–Hamilton theorem $A^2-5A$ equals
+**45.** If $`A=\begin{pmatrix}1&2\cr 3&4\end{pmatrix}`$, then by the Cayley–Hamilton theorem $A^2-5A$ equals
 
 (A) $2I$
 
@@ -546,7 +546,7 @@ Choose the correct answer from the code given below :
 
 (D) 50
 
-**47.** Let $C$ be the Cantor ternary set and define $f:[0,1]\to\mathbb R$ by $f(x)=5$ if $x\in C$ and $f(x)=x^3$ if $x\notin C$. Then the Lebesgue integral $\int_{[0,1]} f\,dm$ equals
+**47.** Let $C$ be the Cantor ternary set and define $f:[0,1]\to\mathbb R$ by $f(x)=5$ if $x\in C$ and $f(x)=x^3$ if $x\notin C$. Then the Lebesgue integral $\int_{[0,1]} f\thinspace dm$ equals
 
 (A) 0
 
@@ -578,7 +578,7 @@ Choose the correct answer from the code given below :
 
 **50.** Given below are two statements, one is labeled as Assertion (A) and other is labeled as Reason (R).
 
-Assertion (A) : $C[0,1]$ with the norm $\|f\|_1=\int_0^1|f(x)|\,dx$ is not a Banach space.
+Assertion (A) : $C[0,1]$ with the norm $\Vert f\Vert _1=\int_0^1|f(x)|\thinspace dx$ is not a Banach space.
 
 Reason (R) : Every finite dimensional normed linear space is complete.
 
@@ -592,7 +592,7 @@ In the light of the above statements, choose the correct answer from the options
 
 (D) (A) is not correct but (R) is correct
 
-**51.** The norm of the linear functional $\phi(f)=\int_0^1 t^2 f(t)\,dt$ on $\big(C[0,1],\|\cdot\|_\infty\big)$ is
+**51.** The norm of the linear functional $\phi(f)=\int_0^1 t^2 f(t)\thinspace dt$ on $\big(C[0,1],\Vert \cdot\Vert _\infty\big)$ is
 
 (A) $1/4$
 
@@ -672,7 +672,7 @@ Choose the correct answer from the options given below :
 
 (D) a, c, d only
 
-**57.** The number of zeros of $p(z)=z^5+7z^2+1$ in the annulus $1<|z|<2$ is
+**57.** The number of zeros of $p(z)=z^5+7z^2+1$ in the annulus $1\lt |z|\lt 2$ is
 
 (A) 1
 
@@ -708,15 +708,15 @@ In the light of the above statements, choose the correct answer from the options
 
 (D) $1\pm i$
 
-**60.** Let $X=\{a,b,c\}$ with topology $\tau=\{\emptyset, X, \{a\}, \{a,b\}\}$. The closure of $\{b\}$ is
+**60.** Let $X=\lbrace a,b,c\rbrace$ with topology $\tau=\lbrace \emptyset, X, \lbrace a\rbrace , \lbrace a,b\rbrace \rbrace$. The closure of $\lbrace b\rbrace$ is
 
-(A) $\{b\}$
+(A) $\lbrace b\rbrace$
 
 (B) $X$
 
-(C) $\{a,b\}$
+(C) $\lbrace a,b\rbrace$
 
-(D) $\{b,c\}$
+(D) $\lbrace b,c\rbrace$
 
 **61.** In $\mathbb R$ with the usual topology, the boundary of the set $\mathbb Q\cap[0,1]$ is
 
@@ -744,7 +744,7 @@ In the light of the above statements, choose the correct answer from the options
 
 (B) The torsion is $3/25$
 
-(C) $|\vec r\,'(t)|=5$
+(C) $|\vec r'(t)|=5$
 
 (D) The ratio curvature : torsion is $3:4$
 
@@ -778,17 +778,17 @@ In the light of the above statements, choose the correct answer from the options
 
 (D) $\kappa=1,\ \tau=1$
 
-**67.** The general solution of $x^2\dfrac{d^2y}{dx^2}-3x\dfrac{dy}{dx}+4y=0,\ x>0$, is
+**67.** The general solution of $x^2\dfrac{d^2y}{dx^2}-3x\dfrac{dy}{dx}+4y=0,\ x\gt 0$, is
 
 (A) $y=c_1x^2+c_2x^{-2}$
 
 (B) $y=c_1x+c_2x^3$
 
-(C) $y=(c_1+c_2\ln x)\,x^2$
+(C) $y=(c_1+c_2\ln x)\thinspace x^2$
 
-(D) $y=(c_1+c_2\ln x)\,x^{-2}$
+(D) $y=(c_1+c_2\ln x)\thinspace x^{-2}$
 
-**68.** If $P_2(x)$ is the Legendre polynomial of degree 2, then $\displaystyle\int_{-1}^{1}[P_2(x)]^2\,dx$ equals
+**68.** If $P_2(x)$ is the Legendre polynomial of degree 2, then $\displaystyle\int_{-1}^{1}[P_2(x)]^2\thinspace dx$ equals
 
 (A) $2/3$
 
@@ -805,7 +805,7 @@ In the light of the above statements, choose the correct answer from the options
 | a. $u_{xx}+4u_{xy}+4u_{yy}=0$ | I. Elliptic |
 | b. $u_{xx}+u_{xy}-2u_{yy}=0$ | II. Parabolic |
 | c. $u_{xx}+2u_{xy}+5u_{yy}=0$ | III. Hyperbolic |
-| d. $x\,u_{xx}+u_{yy}=0$ | IV. Elliptic for $x>0$, hyperbolic for $x<0$ |
+| d. $x\thinspace u_{xx}+u_{yy}=0$ | IV. Elliptic for $x\gt 0$, hyperbolic for $x\lt 0$ |
 
 Choose the correct answer from the code given below :
 
@@ -817,7 +817,7 @@ Choose the correct answer from the code given below :
 
 (D) a – IV, b – III, c – I, d – II
 
-**70.** The solution of $u_t=u_{xx}$, $0<x<\pi$, $t>0$, with $u(0,t)=u(\pi,t)=0$ and $u(x,0)=3\sin 2x$ is
+**70.** The solution of $u_t=u_{xx}$, $0\lt x\lt \pi$, $t\gt 0$, with $u(0,t)=u(\pi,t)=0$ and $u(x,0)=3\sin 2x$ is
 
 (A) $3e^{-2t}\sin 2x$
 
@@ -843,7 +843,7 @@ In the light of the above statements, choose the correct answer from the options
 
 (D) (A) is not correct but (R) is correct
 
-**72.** The solution of the wave equation $u_{tt}=4u_{xx}$, $-\infty<x<\infty$, with $u(x,0)=\sin x$ and $u_t(x,0)=0$ is
+**72.** The solution of the wave equation $u_{tt}=4u_{xx}$, $-\infty\lt x\lt \infty$, with $u(x,0)=\sin x$ and $u_t(x,0)=0$ is
 
 (A) $\sin x\cos t$
 
@@ -873,7 +873,7 @@ In the light of the above statements, choose the correct answer from the options
 
 (D) $y=\dfrac{x+x^3}{2}$
 
-**75.** The eigenvalue (characteristic number) of the homogeneous Fredholm integral equation $\displaystyle\phi(x)=\lambda\int_0^{\pi}\sin x\,\sin t\;\phi(t)\,dt$ is
+**75.** The eigenvalue (characteristic number) of the homogeneous Fredholm integral equation $\displaystyle\phi(x)=\lambda\int_0^{\pi}\sin x\thinspace \sin t\ \phi(t)\thinspace dt$ is
 
 (A) $\pi/2$
 
@@ -883,7 +883,7 @@ In the light of the above statements, choose the correct answer from the options
 
 (D) $1/\pi$
 
-**76.** $\mathcal L^{-1}\left\{\dfrac{1}{s(s^2+1)}\right\}$ is
+**76.** $\mathcal L^{-1}\left\lbrace \dfrac{1}{s(s^2+1)}\right\rbrace$ is
 
 (A) $t-\sin t$
 
@@ -895,7 +895,7 @@ In the light of the above statements, choose the correct answer from the options
 
 **77.** Match List-I with List-II.
 
-| List-I ($F(t)$) | List-II ($\mathcal L\{F(t)\}$) |
+| List-I ($`F(t)`$) | List-II ($\mathcal L\lbrace F(t)\rbrace$) |
 |---|---|
 | a. $\sinh 2t$ | I. $2/s^3$ |
 | b. $t^2$ | II. $s/(s^2+4)$ |
@@ -912,7 +912,7 @@ Choose the correct answer from the code given below :
 
 (D) a – II, b – I, c – IV, d – III
 
-**78.** Using the Laplace transform, the value of $\displaystyle\int_0^{\infty} t\,e^{-2t}\sin t\,dt$ is
+**78.** Using the Laplace transform, the value of $\displaystyle\int_0^{\infty} t\thinspace e^{-2t}\sin t\thinspace dt$ is
 
 (A) $1/5$
 
@@ -942,7 +942,7 @@ Choose the correct answer from the code given below :
 
 (D) $p^2/m$
 
-**81.** For the two-dimensional fluid motion with velocity $\vec q=(x,\,-y,\,0)$, which one of the following statements is NOT true ?
+**81.** For the two-dimensional fluid motion with velocity $\vec q=(x,\thinspace -y,\thinspace 0)$, which one of the following statements is NOT true ?
 
 (A) The fluid is incompressible
 
@@ -952,7 +952,7 @@ Choose the correct answer from the code given below :
 
 (D) A velocity potential of the motion is $\phi=\tfrac12(x^2+y^2)$
 
-**82.** The Hamiltonian corresponding to the Lagrangian $L=\dot q^{\,2}+2q\dot q-q^2$ is
+**82.** The Hamiltonian corresponding to the Lagrangian $L=\dot q^{\thinspace 2}+2q\dot q-q^2$ is
 
 (A) $\dfrac{p^2}{4}+q^2$
 
@@ -1038,7 +1038,7 @@ Choose the correct answer from the options given below :
 
 (D) a, b, c only
 
-**89.** The value of the two-person zero-sum game with payoff matrix (for player A) $\begin{pmatrix}3&-1\\-2&4\end{pmatrix}$ is
+**89.** The value of the two-person zero-sum game with payoff matrix (for player A) $`\begin{pmatrix}3&-1\cr -2&4\end{pmatrix}`$ is
 
 (A) $1/2$
 
@@ -1048,7 +1048,7 @@ Choose the correct answer from the options given below :
 
 (D) 2
 
-**90.** The minimum total cost of the assignment problem with cost matrix $\begin{pmatrix}9&2&7\\6&4&3\\5&8&1\end{pmatrix}$ (rows: jobs, columns: machines) is
+**90.** The minimum total cost of the assignment problem with cost matrix $`\begin{pmatrix}9&2&7\cr 6&4&3\cr 5&8&1\end{pmatrix}`$ (rows: jobs, columns: machines) is
 
 (A) 9
 
@@ -1058,7 +1058,7 @@ Choose the correct answer from the options given below :
 
 (D) 14
 
-**91.** Simpson's $\frac13$ rule with $h=1$ applied to $\displaystyle\int_0^2 x^4\,dx$ gives
+**91.** Simpson's $\frac13$ rule with $h=1$ applied to $\displaystyle\int_0^2 x^4\thinspace dx$ gives
 
 (A) $32/5$
 

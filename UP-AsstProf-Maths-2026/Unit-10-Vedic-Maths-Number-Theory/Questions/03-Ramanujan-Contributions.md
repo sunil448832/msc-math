@@ -89,7 +89,7 @@ Which of the above is/are correct?
 
 (D) A is false but R is true
 
-**Q8.** `[NOT-true / Counterexample]` ★★ A number $n$ is highly composite (Ramanujan, 1915) if $d(m) < d(n)$ for every $m < n$. Which of the following is NOT highly composite?
+**Q8.** `[NOT-true / Counterexample]` ★★ A number $n$ is highly composite (Ramanujan, 1915) if $d(m) \lt  d(n)$ for every $m \lt  n$. Which of the following is NOT highly composite?
 
 (A) 36
 
@@ -99,7 +99,7 @@ Which of the above is/are correct?
 
 (D) 72
 
-**Q9.** `[Numerical]` ★★ The Ramanujan sum is $c_q(n) = \sum_{\substack{1\le a\le q\\ \gcd(a,q)=1}} e^{2\pi i a n/q} = \sum_{d \mid \gcd(q,n)} \mu(q/d)\, d$. The value of $c_6(2)$ is
+**Q9.** `[Numerical]` ★★ The Ramanujan sum is $c_q(n) = \sum_{\substack{1\le a\le q\cr  \gcd(a,q)=1}} e^{2\pi i a n/q} = \sum_{d \mid \gcd(q,n)} \mu(q/d)\thinspace  d$. The value of $c_6(2)$ is
 
 (A) $1$
 
@@ -129,7 +129,7 @@ Which of the above is/are correct?
 
 (D) $\pm1 \pmod 6$
 
-**Q12.** `[Concept]` ★★ The Hardy–Ramanujan asymptotic formula for the partition function is $p(n) \sim \dfrac{1}{4n\sqrt3}\,e^{\,g(n)}$ as $n\to\infty$, where $g(n)$ equals
+**Q12.** `[Concept]` ★★ The Hardy–Ramanujan asymptotic formula for the partition function is $p(n) \sim \dfrac{1}{4n\sqrt3}\thinspace e^{\thinspace g(n)}$ as $n\to\infty$, where $g(n)$ equals
 
 (A) $\pi\sqrt{2n}$
 
@@ -182,13 +182,13 @@ Which of the above is/are correct?
 
 **Q7 — (A).** Multiplicativity of $\tau$ was conjectured by Ramanujan (1916) and proved by Mordell (1917). In modern language it follows because $\Delta$ spans the one-dimensional space $S_{12}(SL_2(\mathbb Z))$, so it is an eigenform of every Hecke operator $T_n$ with eigenvalue $\tau(n)$. R is the reason for A.
 
-**Q8 — (D).** $d(72)=12 = d(60)$ and $60<72$, so 72 does not beat every smaller number. The highly composite numbers begin 1, 2, 4, 6, 12, 24, 36, 48, 60, 120, 180, 240, 360, 720, 840, …
+**Q8 — (D).** $d(72)=12 = d(60)$ and $60\lt 72$, so 72 does not beat every smaller number. The highly composite numbers begin 1, 2, 4, 6, 12, 24, 36, 48, 60, 120, 180, 240, 360, 720, 840, …
 
 **Q9 — (D).** $\gcd(6,2) = 2$, so $c_6(2) = \mu(6)\cdot1 + \mu(3)\cdot2 = 1 - 2 = -1$. Useful special cases: $c_q(1)=\mu(q)$ and $c_q(0)=\varphi(q)$.
 
 **Q10 — (C).** $R_2 = 11$. For $x\ge11$ there are always at least 2 primes in $(x/2, x]$. For $x=10$, the interval $(5,10]$ contains only the prime 7. The sequence is $2, 11, 17, 29, 41, \dots$
 
-**Q11 — (A).** $\displaystyle\sum_{n\ge0}\frac{q^{n^2}}{(q;q)_n}=\prod_{n\ge0}\frac{1}{(1-q^{5n+1})(1-q^{5n+4})}$. The parts allowed on the right are $\equiv1,4\pmod5$. (B) is the second identity, which counts parts $\ge2$ differing by at least 2. (C) is Euler's odd parts = distinct parts.
+**Q11 — (A).** $`\displaystyle\sum_{n\ge0}\frac{q^{n^2}}{(q;q)_n}=\prod_{n\ge0}\frac{1}{(1-q^{5n+1})(1-q^{5n+4})}`$. The parts allowed on the right are $\equiv1,4\pmod5$. (B) is the second identity, which counts parts $\ge2$ differing by at least 2. (C) is Euler's odd parts = distinct parts.
 
 **Q12 — (C).** $p(n)\sim\frac{1}{4n\sqrt3}\exp\left(\pi\sqrt{2n/3}\right)$ (Hardy–Ramanujan, 1918). Their circle method gives this as the leading term.
 

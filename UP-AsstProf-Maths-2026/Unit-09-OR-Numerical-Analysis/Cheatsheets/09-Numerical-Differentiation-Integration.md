@@ -34,12 +34,12 @@ The error is written as (exact − approximation). Equivalently, the central dif
 - Simpson 1/3: $\frac h3[y_0+4(\text{odd})+2(\text{even interior})+y_n]$. $n$ must be **even**.
 - Simpson 3/8: $n$ must be a **multiple of 3**. Weddle: $n$ must be a **multiple of 6**.
 - **Degree of precision (DoP)** is the largest $m$ such that the rule is exact for $1,x,\dots,x^m$. A closed Newton–Cotes rule on $n+1$ points has DoP $n+1$ if $n$ is even and $n$ if $n$ is odd. This is why Simpson 1/3 (3 points) and 3/8 (4 points) have the same DoP of 3.
-- Convexity: $f''>0$ means the trapezoidal rule **overestimates** and the midpoint rule $h f(\text{mid})$ (error $+\frac{h^3}{24}f''$) **underestimates**.
+- Convexity: $f''\gt 0$ means the trapezoidal rule **overestimates** and the midpoint rule $h f(\text{mid})$ (error $+\frac{h^3}{24}f''$) **underestimates**.
 - Newton–Cotes rules of high order have negative weights and are unstable, so composite low-order rules are used instead.
 - **Romberg:** $R(k,j)=\dfrac{4^{j}R(k,j-1)-R(k-1,j-1)}{4^{j}-1}$. The first extrapolation of the trapezoidal rule gives Simpson's rule, and the second gives Boole's rule.
 
 ## 3. Gaussian quadrature
-$$\int_{-1}^1f(x)\,dx\approx\sum_{i=1}^nw_if(x_i),\qquad x_i=\text{zeros of }P_n,\qquad \text{DoP}=2n-1\ (\text{maximum possible}).$$
+$$\int_{-1}^1f(x)\thinspace dx\approx\sum_{i=1}^nw_if(x_i),\qquad x_i=\text{zeros of }P_n,\qquad \text{DoP}=2n-1\ (\text{maximum possible}).$$
 | $n$ | Nodes | Weights |
 |---|---|---|
 | 1 | $0$ | $2$ (midpoint rule) |

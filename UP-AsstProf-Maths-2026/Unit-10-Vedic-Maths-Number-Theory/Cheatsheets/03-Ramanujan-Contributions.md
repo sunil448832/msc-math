@@ -25,7 +25,7 @@
 - **Ramanujan's congruences** (1919):
 $$p(5n+4)\equiv0\ (\mathrm{mod}\ 5),\qquad p(7n+5)\equiv0\ (\mathrm{mod}\ 7),\qquad p(11n+6)\equiv0\ (\mathrm{mod}\ 11).$$
   Note the pattern $24\cdot r\equiv1\pmod\ell$: $24\cdot4\equiv1\ (5)$, $24\cdot5\equiv1\ (7)$, $24\cdot6\equiv1\ (11)$.
-- Identity behind the mod-5 case: $\sum p(5n+4)q^n = 5\dfrac{(q^5;q^5)_\infty^5}{(q;q)_\infty^6}$ ("the most beautiful", per Hardy).
+- Identity behind the mod-5 case: $`\sum p(5n+4)q^n = 5\dfrac{(q^5;q^5)_\infty^5}{(q;q)_\infty^6}`$ ("the most beautiful", per Hardy).
 - **Dyson's rank** (1944) explains the mod 5 and mod 7 congruences combinatorially. The **crank** (Andrews–Garvan, 1988) explains all three.
 - **Hardy–Ramanujan asymptotic** (1918):
 $$p(n)\sim\frac{1}{4n\sqrt3}\exp\left(\pi\sqrt{\tfrac{2n}{3}}\right).$$
@@ -51,16 +51,16 @@ $$\Delta(z)=q\prod_{n\ge1}(1-q^n)^{24}=\sum_{n\ge1}\tau(n)q^n,\quad q=e^{2\pi i 
 | Topic | Statement |
 |---|---|
 | **1729 (Hardy–Ramanujan / taxicab number)** | $1729=1^3+12^3=9^3+10^3$, the smallest number that is a sum of two positive cubes in two ways. (It is also $7\cdot13\cdot19$, a Carmichael number, but not the smallest Carmichael number, which is 561.) |
-| **Highly composite numbers** (1915) | $n$ with $d(m)<d(n)$ for all $m<n$: 1, 2, 4, 6, 12, 24, 36, 48, 60, 120, 180, 240, 360, 720, 840, … If $n=2^{a_2}3^{a_3}\cdots p^{a_p}$, then $a_2\ge a_3\ge\cdots$ and the last exponent is 1, except for $n=4, 36$. |
+| **Highly composite numbers** (1915) | $n$ with $d(m)\lt d(n)$ for all $m\lt n$: 1, 2, 4, 6, 12, 24, 36, 48, 60, 120, 180, 240, 360, 720, 840, … If $n=2^{a_2}3^{a_3}\cdots p^{a_p}$, then $a_2\ge a_3\ge\cdots$ and the last exponent is 1, except for $n=4, 36$. |
 | **Hardy–Ramanujan theorem** (1917) | The normal order of $\omega(n)$ is $\log\log n$: almost all $n$ have about $\log\log n$ distinct prime factors. Precursor of Erdős–Kac. |
 | **Ramanujan primes** (2009 name, from his 1919 proof of Bertrand's postulate) | $R_n$ is the least $x$ with $\pi(x)-\pi(x/2)\ge n$ for all $x\ge R_n$: $2, 11, 17, 29, 41, 47, \dots$ |
 | **Ramanujan sum** (1918) | $c_q(n)=\sum_{(a,q)=1}e^{2\pi i an/q}=\sum_{d\mid(q,n)}\mu(q/d)d$. $c_q(1)=\mu(q)$, $c_q(0)=\varphi(q)$. Multiplicative in $q$. Used for expansions such as $\sigma(n)/n=\frac{\pi^2}{6}\sum_q c_q(n)/q^2$. |
-| **Landau–Ramanujan constant** | The number of $n\le x$ that are sums of two squares is $\sim K\,\dfrac{x}{\sqrt{\ln x}}$ with $K\approx0.7642$. |
+| **Landau–Ramanujan constant** | The number of $n\le x$ that are sums of two squares is $\sim K\thinspace \dfrac{x}{\sqrt{\ln x}}$ with $K\approx0.7642$. |
 | **Ramanujan–Nagell equation** | $2^n-7=x^2$ has solutions only for $n=3,4,5,7,15$ (Nagell 1948). |
 | **Mock theta functions** | Introduced in his last letter to Hardy (January 1920). Understood via harmonic Maass forms (Zwegers 2002). |
-| **Series for $1/\pi$** (1914) | $\dfrac1\pi=\dfrac{2\sqrt2}{9801}\sum_{k\ge0}\dfrac{(4k)!\,(1103+26390k)}{(k!)^4\,396^{4k}}$, giving about 8 digits per term |
+| **Series for $1/\pi$** (1914) | $\dfrac1\pi=\dfrac{2\sqrt2}{9801}\sum_{k\ge0}\dfrac{(4k)!\thinspace (1103+26390k)}{(k!)^4\thinspace 396^{4k}}$, giving about 8 digits per term |
 | **Ramanujan's ternary form** | $x^2+y^2+10z^2$ |
-| **Ramanujan's master theorem**, **Ramanujan summation** | Regularised $1+2+3+\cdots \;\text{"="}\; -\tfrac1{12}$ (not a genuine sum) |
+| **Ramanujan's master theorem**, **Ramanujan summation** | Regularised $1+2+3+\cdots \ \text{"="}\  -\tfrac1{12}$ (not a genuine sum) |
 | **Ramanujan theta function** | $f(a,b)=\sum_{n\in\mathbb Z}a^{n(n+1)/2}b^{n(n-1)/2}$ |
 | **Ramanujan graphs** (later name) | Expanders that meet the Ramanujan bound $\lambda\le2\sqrt{k-1}$ |
 

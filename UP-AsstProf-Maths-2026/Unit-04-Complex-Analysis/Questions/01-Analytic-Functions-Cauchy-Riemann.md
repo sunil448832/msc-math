@@ -2,17 +2,17 @@
 > Syllabus coverage: Analytic functions, Cauchy-Riemann equations (Cartesian and polar), harmonic functions and conjugates, Milne-Thomson method, elementary functions, branches of $\log$ and powers
 > Cheatsheet: [../Cheatsheets/01-Analytic-Functions-Cauchy-Riemann.md](../Cheatsheets/01-Analytic-Functions-Cauchy-Riemann.md)
 
-**Q1.** `[Concept]` ★ For $f(re^{i\theta}) = u(r,\theta) + i\,v(r,\theta)$ with $r>0$, the Cauchy–Riemann equations in polar form are
+**Q1.** `[Concept]` ★ For $f(re^{i\theta}) = u(r,\theta) + i\thinspace v(r,\theta)$ with $r\gt 0$, the Cauchy–Riemann equations in polar form are
 
 (A) $u_\theta = \dfrac{1}{r}v_r,\quad v_\theta = -\dfrac{1}{r}u_r$
 
-(B) $u_r = r\,v_\theta,\quad v_r = -r\,u_\theta$
+(B) $u_r = r\thinspace v_\theta,\quad v_r = -r\thinspace u_\theta$
 
 (C) $u_r = -\dfrac{1}{r}v_\theta,\quad v_r = \dfrac{1}{r}u_\theta$
 
 (D) $u_r = \dfrac{1}{r}v_\theta,\quad v_r = -\dfrac{1}{r}u_\theta$
 
-**Q2.** `[Numerical]` ★ The real values of $a$ for which $u(x,y) = e^{ax}\cos 2y$ is harmonic on $\mathbb{R}^2$ are
+**Q2.** `[Numerical]` ★ The real values of $a$ for which $u(x,y) = e^{ax}\cos 2y$ is harmonic on $\mathbb R^2$ are
 
 (A) $a = 2$ only
 
@@ -87,7 +87,7 @@ Which of the above is/are correct?
 | List-I | List-II |
 |---|---|
 | (a) $\operatorname{Log}(i)$ | 1. $i\sinh 1$ |
-| (b) $i^{\,i}$ | 2. $e^{-\pi/2}$ |
+| (b) $i^{\thinspace i}$ | 2. $e^{-\pi/2}$ |
 | (c) $\sin(i)$ | 3. $i\pi/2$ |
 | (d) $\cos(i)$ | 4. $\cosh 1$ |
 
@@ -111,7 +111,7 @@ Which of the above is/are correct?
 
 **Q10.** `[Concept]` ★ The principal branch $\operatorname{Log} z = \ln|z| + i\operatorname{Arg} z$ is analytic on
 
-(A) $\mathbb{C}\setminus\{0\}$
+(A) $\mathbb{C}\setminus\lbrace 0\rbrace$
 
 (B) $\mathbb{C}\setminus[0,\infty)$
 
@@ -121,7 +121,7 @@ Which of the above is/are correct?
 
 **Q11.** `[Numerical]` ★★ The principal value of $(1+i)^{i}$ is
 
-(A) $\sqrt2\, e^{-\pi/4}$
+(A) $\sqrt2\thinspace  e^{-\pi/4}$
 
 (B) $e^{\pi/4}\left[\cos\left(\tfrac12\ln 2\right) + i\sin\left(\tfrac12\ln 2\right)\right]$
 
@@ -174,7 +174,7 @@ Which of the above is/are correct?
 
 **Q3 — (B).** If $f = u + iv$ is analytic, then so is $-if = v - iu$, which has real part $v$ and imaginary part $-u$. So the conjugate of $v$ is $-u$, not $u$.
 
-**Q4 — (C).** By Milne-Thomson, $f'(z) = u_x(z,0) - i\,u_y(z,0)$. Here $u_x = e^x(x\cos y - y\sin y + \cos y)$ gives $u_x(z,0) = (z+1)e^z$, and $u_y(z,0) = 0$. So $f' = (z+1)e^z$ and $f = ze^z + C$, with $C = 0$ because $f(0) = 0$. Option (B) is $f'$, not $f$.
+**Q4 — (C).** By Milne-Thomson, $f'(z) = u_x(z,0) - i\thinspace u_y(z,0)$. Here $u_x = e^x(x\cos y - y\sin y + \cos y)$ gives $u_x(z,0) = (z+1)e^z$, and $u_y(z,0) = 0$. So $f' = (z+1)e^z$ and $f = ze^z + C$, with $C = 0$ because $f(0) = 0$. Option (B) is $f'$, not $f$.
 
 **Q5 — (D).** $u_x = 3x^2$ and $v_y = -3(1-y)^2$, so $u_x = v_y$ forces $x = 0$ and $y = 1$. Also $u_y = 0 = -v_x$. The partial derivatives are continuous, so $f$ is differentiable exactly at $z = i$. A single point is not open, so $f$ is analytic nowhere.
 

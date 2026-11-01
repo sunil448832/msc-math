@@ -27,7 +27,7 @@
 | $\mathbb R^\omega$ (product) | ✔ | ✔ | ✔ | ✔ | ✔ |
 | uncountable cofinite | ✘ | ✘ | ✔ | ✔ | ✘ |
 | $\ell^\infty$ | ✔ | ✘ | ✘ | ✘ | ✔ |
-| $\ell^p$, $1\le p<\infty$; $C[0,1]$ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| $\ell^p$, $1\le p\lt \infty$; $C[0,1]$ | ✔ | ✔ | ✔ | ✔ | ✔ |
 
 ## 2. Separation axioms
 | Name | Condition |
@@ -67,7 +67,7 @@ Implications: $T_4\Rightarrow T_{3\frac12}\Rightarrow T_3\Rightarrow T_2\Rightar
 ## 3. Urysohn's lemma
 > $X$ is normal $\iff$ for all disjoint closed $A,B$ there is a continuous $f:X\to[0,1]$ with $f|_A\equiv0$ and $f|_B\equiv1$.
 
-- The proof uses dyadic rationals $r$ and open sets $U_r$ with $\overline{U_r}\subseteq U_s$ for $r<s$.
+- The proof uses dyadic rationals $r$ and open sets $U_r$ with $\overline{U_r}\subseteq U_s$ for $r\lt s$.
 - **Tietze extension theorem:** $X$ is normal $\iff$ every continuous $f:A\to[0,1]$ (or $\to\mathbb R$) on a closed set $A$ extends continuously to $X$.
 - In metric spaces Urysohn is easy: $f(x)=\dfrac{d(x,A)}{d(x,A)+d(x,B)}$.
 

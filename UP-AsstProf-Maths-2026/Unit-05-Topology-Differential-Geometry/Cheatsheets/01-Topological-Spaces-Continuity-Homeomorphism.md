@@ -11,13 +11,13 @@
 | Topology | Open sets / basis | Key facts |
 |---|---|---|
 | Discrete | all subsets | every function out of it is continuous; metrizable |
-| Indiscrete | $\{\emptyset,X\}$ | every function into it is continuous; not $T_0$ if $|X|\ge2$ |
+| Indiscrete | $\lbrace \emptyset,X\rbrace$ | every function into it is continuous; not $T_0$ if $\vert X\vert \ge2$ |
 | Cofinite | $\emptyset$ and complements of finite sets | $T_1$, not $T_2$ ($X$ infinite); compact; every subspace is compact; connected if $X$ infinite |
 | Cocountable | $\emptyset$ and complements of countable sets | $T_1$, not $T_2$ ($X$ uncountable); **not** compact; Lindelöf; convergent sequences are eventually constant |
-| Lower limit $\mathbb{R}_l$ | basis $[a,b)$ | strictly finer than usual; $[a,b)$ is clopen; totally disconnected; first countable, separable, Lindelöf, **not** second countable, not metrizable; normal |
-| $K$-topology $\mathbb{R}_K$ | $(a,b)$ and $(a,b)\setminus K$, with $K=\{1/n\}$ | Hausdorff, not regular |
+| Lower limit $\mathbb R_l$ | basis $[a,b)$ | strictly finer than usual; $[a,b)$ is clopen; totally disconnected; first countable, separable, Lindelöf, **not** second countable, not metrizable; normal |
+| $K$-topology $\mathbb R_K$ | $(a,b)$ and $(a,b)\setminus K$, with $K=\lbrace 1/n\rbrace$ | Hausdorff, not regular |
 
-Fineness on $\mathbb{R}$: cofinite $\subsetneq$ usual $\subsetneq$ $\mathbb{R}_l$, and usual $\subsetneq \mathbb{R}_K$. The topologies $\mathbb{R}_l$ and $\mathbb{R}_K$ are not comparable.
+Fineness on $\mathbb{R}$: cofinite $\subsetneq$ usual $\subsetneq$ $\mathbb R_l$, and usual $\subsetneq \mathbb R_K$. The topologies $\mathbb R_l$ and $\mathbb R_K$ are not comparable.
 
 ## 3. Closure, interior, boundary
 - $\overline A$ = smallest closed set containing $A$ = $A\cup A'$ ($A'$ = the set of limit points). $x\in\overline A$ iff every basic neighbourhood of $x$ meets $A$.
@@ -31,10 +31,10 @@ Fineness on $\mathbb{R}$: cofinite $\subsetneq$ usual $\subsetneq$ $\mathbb{R}_l
 | usual | $[0,1]$ | $(0,1)$ |
 | cofinite | $\mathbb{R}$ | $\emptyset$ |
 | cocountable | $\mathbb{R}$ | $\emptyset$ |
-| $\mathbb{R}_l$ | $[0,1)$ | $[0,1)$ |
+| $\mathbb R_l$ | $[0,1)$ | $[0,1)$ |
 | upper limit | $(0,1]$ | $(0,1]$ |
 
-In the cocountable topology: $\overline{\mathbb Q}=\mathbb Q$ and $\mathrm{int}\,\mathbb Q=\emptyset$. In the usual topology: $\overline{\mathbb Q}=\mathbb R$, $\partial\mathbb Q=\mathbb R$.
+In the cocountable topology: $\overline{\mathbb Q}=\mathbb Q$ and $\mathrm{int}\thinspace \mathbb Q=\emptyset$. In the usual topology: $\overline{\mathbb Q}=\mathbb R$, $\partial\mathbb Q=\mathbb R$.
 
 ## 4. Counting topologies on finite sets
 | $n$ | 1 | 2 | 3 | 4 | 5 |
@@ -69,15 +69,15 @@ Further facts:
 - **Not topological:** boundedness, completeness, Cauchy-ness, diameter, total boundedness. Example: $(0,1)\cong\mathbb{R}$.
 
 **Standard homeomorphisms and non-homeomorphisms**
-- $(a,b)\cong(0,1)\cong\mathbb{R}$; $S^n\setminus\{pt\}\cong\mathbb{R}^n$ (stereographic projection); open disc $\cong\mathbb{R}^2$.
+- $(a,b)\cong(0,1)\cong\mathbb{R}$; $S^n\setminus\lbrace pt\rbrace \cong\mathbb R^n$ (stereographic projection); open disc $\cong\mathbb R^2$.
 - $[0,1]\not\cong(0,1)$ (compactness).
 - $[0,1)\not\cong(0,1)$: removing $0$ from $[0,1)$ leaves it connected, but removing any point from $(0,1)$ disconnects it.
-- $\mathbb{R}\not\cong\mathbb{R}^2$ (removing a point); $S^1\not\cong[0,1]$; $\mathbb{R}^m\cong\mathbb{R}^n\iff m=n$ (invariance of domain).
+- $\mathbb{R}\not\cong\mathbb R^2$ (removing a point); $S^1\not\cong[0,1]$; $\mathbb R^m\cong\mathbb R^n\iff m=n$ (invariance of domain).
 
 ## Exam traps
 - Rays form a **subbasis**, not a basis.
 - The cofinite topology is $T_1$ but not $T_2$, and it is compact. The cocountable topology is $T_1$, not $T_2$, and **not** compact.
-- In $\mathbb{R}_l$, $[a,b)$ is clopen and $\overline{(0,1)}=[0,1)$, not $[0,1]$.
+- In $\mathbb R_l$, $[a,b)$ is clopen and $\overline{(0,1)}=[0,1)$, not $[0,1]$.
 - The identity map is continuous when the domain topology is **finer**.
 - 29 labelled topologies on 3 points, but only 9 up to homeomorphism, and 19 of them are $T_0$.
 - Boundedness and completeness are **not** topological properties.

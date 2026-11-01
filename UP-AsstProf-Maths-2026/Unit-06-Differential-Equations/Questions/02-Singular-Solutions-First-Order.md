@@ -24,7 +24,7 @@ Notation: $p=dy/dx$.
 
 (D) $y=0$
 
-**Q3.** `[Numerical]` ★ The singular solution of $y=px+a\sqrt{1+p^2}$ ($a>0$) is
+**Q3.** `[Numerical]` ★ The singular solution of $y=px+a\sqrt{1+p^2}$ ($a\gt 0$) is
 
 (A) $y^2=4ax$
 
@@ -76,7 +76,7 @@ Which of the above is/are correct?
 
 (D) The general solution of Clairaut's equation is a one-parameter family of straight lines.
 
-**Q7.** `[Match]` ★★ Match each Clairaut equation in List-I with its singular solution in List-II ($a,b>0$).
+**Q7.** `[Match]` ★★ Match each Clairaut equation in List-I with its singular solution in List-II ($a,b\gt 0$).
 
 | List-I | List-II |
 |---|---|
@@ -123,7 +123,7 @@ Which of the above is/are correct?
 
 (D) $(1+p^2)=y^2$; singular solutions $x=\pm1$
 
-**Q11.** `[Numerical]` ★★ An integrating factor of $(x^2+y^2+x)\,dx+xy\,dy=0$ is
+**Q11.** `[Numerical]` ★★ An integrating factor of $(x^2+y^2+x)\thinspace dx+xy\thinspace dy=0$ is
 
 (A) $x$
 
@@ -161,13 +161,13 @@ Which of the above is/are correct?
 | 12 | D | Application |
 
 ## Solutions
-**Q1 — (B).** Differentiating $y=px+f(p)$ gives $p=p+(x+f'(p))\,p'$, so $(x+f'(p))\,p'=0$. The factor $p'=0$ gives the lines $y=cx+f(c)$. The factor $x+f'(p)=0$ gives the singular solution, which is the envelope of those lines. In (A), the condition should be $\partial/\partial c$ of the family, not $f(c)=0$.
+**Q1 — (B).** Differentiating $y=px+f(p)$ gives $p=p+(x+f'(p))\thinspace p'$, so $(x+f'(p))\thinspace p'=0$. The factor $p'=0$ gives the lines $y=cx+f(c)$. The factor $x+f'(p)=0$ gives the singular solution, which is the envelope of those lines. In (A), the condition should be $\partial/\partial c$ of the family, not $f(c)=0$.
 
 **Q2 — (A).** From $x+2p=0$ we get $p=-x/2$, so $y=-\frac{x^2}{2}+\frac{x^2}{4}=-\frac{x^2}{4}$, i.e. $x^2+4y=0$. Option (B) has the sign error.
 
 **Q3 — (D).** The lines $y=cx+a\sqrt{1+c^2}$ are at distance $a$ from the origin (all tangent to the circle of radius $a$). Their envelope is $x^2+y^2=a^2$.
 
-**Q4 — (C).** The $p$-discriminant contains $E\,T^2\,C$, and the $c$-discriminant contains $E\,N^2\,C^3$. The tac-locus does **not** appear in the $c$-discriminant, so II is false.
+**Q4 — (C).** The $p$-discriminant contains $E\thinspace T^2\thinspace C$, and the $c$-discriminant contains $E\thinspace N^2\thinspace C^3$. The tac-locus does **not** appear in the $c$-discriminant, so II is false.
 
 **Q5 — (C).** The $c$-discriminant of $c^2+2xc+x^2-y=0$ is $4x^2-4(x^2-y)=4y$, so $y=0$. This curve also satisfies the ODE and is not of the form $(x+c)^2$. It is the envelope, so A is true. R is false: the $p$-discriminant can also contain tac-loci and cusp-loci, which are generally not solutions.
 

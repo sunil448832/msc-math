@@ -3,17 +3,17 @@
 
 ## 1. Quadratic residues
 - Let $\gcd(a,m)=1$. Then $a$ is a **quadratic residue (QR)** mod $m$ if $x^2\equiv a\pmod m$ is solvable. Otherwise it is a **non-residue (QNR)**.
-- For an odd prime $p$ there are exactly $\frac{p-1}2$ QRs and $\frac{p-1}2$ QNRs in $\{1,\dots,p-1\}$. The QRs are $1^2,2^2,\dots,\left(\frac{p-1}2\right)^2$, all distinct mod $p$.
+- For an odd prime $p$ there are exactly $\frac{p-1}2$ QRs and $\frac{p-1}2$ QNRs in $\lbrace 1,\dots,p-1\rbrace$. The QRs are $1^2,2^2,\dots,\left(\frac{p-1}2\right)^2$, all distinct mod $p$.
 - QR·QR = QR, QR·QNR = QNR, and **QNR·QNR = QR** (mod $p$).
 - If $g$ is a primitive root, the QRs are exactly the even powers of $g$. In particular, a primitive root is always a QNR.
 - **Examples.**
-  - mod 7: QRs $\{1,2,4\}$.
-  - mod 11: QRs $\{1,3,4,5,9\}$, sum 22.
-  - mod 13: QRs $\{1,3,4,9,10,12\}$, sum 39.
+  - mod 7: QRs $\lbrace 1,2,4\rbrace$.
+  - mod 11: QRs $\lbrace 1,3,4,5,9\rbrace$, sum 22.
+  - mod 13: QRs $\lbrace 1,3,4,9,10,12\rbrace$, sum 39.
 - **Sum of QRs** in $[1,p-1]$ for $p\equiv1\pmod 4$ is $p(p-1)/4$ (the pairing $r\leftrightarrow p-r$).
 
 ## 2. Legendre symbol
-$$\left(\frac ap\right)=\begin{cases}1 & a \text{ is a QR mod } p\\ -1 & a\text{ is a QNR mod } p\\ 0 & p\mid a\end{cases}\qquad(p \text{ odd prime}).$$
+$$\left(\frac ap\right)=\begin{cases}1 & a \text{ is a QR mod } p\cr  -1 & a\text{ is a QNR mod } p\cr  0 & p\mid a\end{cases}\qquad(p \text{ odd prime}).$$
 - **Euler's criterion:** $\left(\frac ap\right)\equiv a^{(p-1)/2}\pmod p$.
 - **Properties:**
   - completely multiplicative in $a$: $\left(\frac{ab}p\right)=\left(\frac ap\right)\left(\frac bp\right)$;
@@ -74,12 +74,12 @@ For odd $n=p_1p_2\cdots p_k$ (primes, possibly repeated): $\left(\frac an\right)
   - Example: $x^2\equiv11\pmod{35}$ has $2\cdot2=4$ solutions.
   - Example: $x^2\equiv2\pmod{77}$ has none, since $\left(\frac2{11}\right)=-1$.
 - **Quadratic $ax^2+bx+c\equiv0\pmod p$** ($p$ odd, $p\nmid a$): it reduces to $(2ax+b)^2\equiv b^2-4ac$. So it is solvable iff $\left(\frac{b^2-4ac}p\right)\ne-1$.
-  - Example: $x^2+x+1\equiv0$ is solvable iff $p\equiv1\pmod3$ (for $p>3$).
+  - Example: $x^2+x+1\equiv0$ is solvable iff $p\equiv1\pmod3$ (for $p\gt 3$).
 - **If $p\equiv3\pmod 4$** and $a$ is a QR, then $x\equiv\pm a^{(p+1)/4}$ are the solutions.
 
 ## 8. Applications
 - **Fermat's two-squares theorem:** an odd prime $p$ is $x^2+y^2$ iff $p\equiv1\pmod4$. The key step is $\left(\frac{-1}p\right)=1$. More generally, $n$ is a sum of two squares iff every prime $\equiv3\pmod4$ appears to an even power.
-- **Infinitely many primes $\equiv1\pmod4$:** any prime divisor $p$ of $(2\,N!)^2+1$ satisfies $\left(\frac{-1}{p}\right)=1$.
+- **Infinitely many primes $\equiv1\pmod4$:** any prime divisor $p$ of $(2\thinspace N!)^2+1$ satisfies $\left(\frac{-1}{p}\right)=1$.
 - Similarly there are infinitely many primes $\equiv1\pmod 3$ (via $x^2+x+1$) and $\equiv\pm1\pmod 8$.
 - **Prime divisors of Fermat numbers:** $p\mid F_n=2^{2^n}+1$ with $n\ge2$ implies $p\equiv1\pmod{2^{n+2}}$ (uses $\left(\frac2p\right)=1$).
 - **Pépin's test:** $F_n$ ($n\ge1$) is prime iff $3^{(F_n-1)/2}\equiv-1\pmod{F_n}$.

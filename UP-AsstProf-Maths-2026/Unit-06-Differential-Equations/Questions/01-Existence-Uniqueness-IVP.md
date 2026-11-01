@@ -2,17 +2,17 @@
 > Syllabus coverage: Existence and uniqueness of solutions of initial value problems for first order ordinary differential equations
 > Cheatsheet: [../Cheatsheets/01-Existence-Uniqueness-IVP.md](../Cheatsheets/01-Existence-Uniqueness-IVP.md)
 
-**Q1.** `[Concept]` ★ Let $f$ be continuous on $R=\{|x-x_0|\le a,\ |y-y_0|\le b\}$, $|f|\le M$ on $R$, and let $f$ satisfy a Lipschitz condition in $y$ on $R$. By Picard's theorem, the IVP $y'=f(x,y)$, $y(x_0)=y_0$ has a unique solution on $|x-x_0|\le h$, where
+**Q1.** `[Concept]` ★ Let $f$ be continuous on $R=\lbrace |x-x_0|\le a,\ |y-y_0|\le b\rbrace$, $|f|\le M$ on $R$, and let $f$ satisfy a Lipschitz condition in $y$ on $R$. By Picard's theorem, the IVP $y'=f(x,y)$, $y(x_0)=y_0$ has a unique solution on $|x-x_0|\le h$, where
 
-(A) $h=\max\{a,\ b/M\}$
+(A) $h=\max\lbrace a,\ b/M\rbrace$
 
-(B) $h=\min\{a,\ b/M\}$
+(B) $h=\min\lbrace a,\ b/M\rbrace$
 
-(C) $h=\min\{a,\ M/b\}$
+(C) $h=\min\lbrace a,\ M/b\rbrace$
 
 (D) $h=ab/M$
 
-**Q2.** `[Numerical]` ★★ For the IVP $y'=x^2+y^2$, $y(0)=0$ on the rectangle $R=\{|x|\le 1,\ |y|\le 1\}$, the interval of existence guaranteed by Picard's theorem is
+**Q2.** `[Numerical]` ★★ For the IVP $y'=x^2+y^2$, $y(0)=0$ on the rectangle $R=\lbrace |x|\le 1,\ |y|\le 1\rbrace$, the interval of existence guaranteed by Picard's theorem is
 
 (A) $|x|\le 1$
 
@@ -44,11 +44,11 @@
 
 **Q5.** `[Multi-Statement]` ★★ Consider the following statements.
 
-I. $f(x,y)=|y|$ satisfies a Lipschitz condition in $y$ on $\mathbb{R}^2$.
+I. $f(x,y)=|y|$ satisfies a Lipschitz condition in $y$ on $\mathbb R^2$.
 
-II. $f(x,y)=y^{2/3}$ satisfies a Lipschitz condition in $y$ on $\{|x|\le 1,\ |y|\le 1\}$.
+II. $f(x,y)=y^{2/3}$ satisfies a Lipschitz condition in $y$ on $\lbrace |x|\le 1,\ |y|\le 1\rbrace$.
 
-III. $f(x,y)=x^2y$ satisfies a Lipschitz condition in $y$ on $\{|x|\le 1,\ y\in\mathbb{R}\}$.
+III. $f(x,y)=x^2y$ satisfies a Lipschitz condition in $y$ on $\lbrace |x|\le 1,\ y\in\mathbb{R}\rbrace$.
 
 Which of the above is/are correct?
 
@@ -89,7 +89,7 @@ Which of the above is/are correct?
 
 (D) a-1, b-2, c-4, d-3
 
-**Q8.** `[NOT-true / Counterexample]` ★★ On the rectangle $\{|x|\le 1,\ |y|\le 1\}$, which of the following functions does **NOT** satisfy a Lipschitz condition in $y$?
+**Q8.** `[NOT-true / Counterexample]` ★★ On the rectangle $\lbrace |x|\le 1,\ |y|\le 1\rbrace$, which of the following functions does **NOT** satisfy a Lipschitz condition in $y$?
 
 (A) $f(x,y)=y^2$
 
@@ -105,11 +105,11 @@ Which of the above is/are correct?
 
 (B) $x_0\ne 0$
 
-(C) $y_0>0$
+(C) $y_0\gt 0$
 
 (D) $y_0\ne 0$
 
-**Q10.** `[Numerical]` ★★★ For $y'=y^2$, $y(0)=1$, apply Picard's theorem on rectangles $\{|x|\le a,\ |y-1|\le b\}$ with $a$ large. The largest $h$ obtainable by optimising over $b>0$ is
+**Q10.** `[Numerical]` ★★★ For $y'=y^2$, $y(0)=1$, apply Picard's theorem on rectangles $\lbrace |x|\le a,\ |y-1|\le b\rbrace$ with $a$ large. The largest $h$ obtainable by optimising over $b\gt 0$ is
 
 (A) $1$
 
@@ -129,7 +129,7 @@ Which of the above is/are correct?
 
 (D) neither necessary nor sufficient
 
-**Q12.** `[Application]` ★ The largest open interval on which the IVP $(x^2-4)\,y'+y=x$, $y(0)=1$ is guaranteed to have a unique solution is
+**Q12.** `[Application]` ★ The largest open interval on which the IVP $(x^2-4)\thinspace y'+y=x$, $y(0)=1$ is guaranteed to have a unique solution is
 
 (A) $(-2,2)$
 
@@ -161,9 +161,9 @@ Which of the above is/are correct?
 
 **Q2 — (B).** $M=\max_R(x^2+y^2)=2$, so $h=\min(1,1/2)=1/2$. A common slip is to take $M=1$, which gives (A).
 
-**Q3 — (A).** $y_1=1+\int_0^x(t+1)\,dt=1+x+\tfrac{x^2}{2}$. Then $y_2=1+\int_0^x\big(t+1+t+\tfrac{t^2}{2}\big)dt=1+x+x^2+\tfrac{x^3}{6}$. Option (C) is $y_1$. Option (D) is the Taylor series of $e^x$, which is the wrong guess here; the exact solution is $2e^x-x-1$.
+**Q3 — (A).** $y_1=1+\int_0^x(t+1)\thinspace dt=1+x+\tfrac{x^2}{2}$. Then $y_2=1+\int_0^x\big(t+1+t+\tfrac{t^2}{2}\big)dt=1+x+x^2+\tfrac{x^3}{6}$. Option (C) is $y_1$. Option (D) is the Taylor series of $e^x$, which is the wrong guess here; the exact solution is $2e^x-x-1$.
 
-**Q4 — (D).** $y\equiv 0$ is a solution, and so is $y=(x-c)^3$ for $x\ge c$ (with $y=0$ for $x<c$), for every $c\ge 0$. Shifting on the left as well gives still more solutions. Uniqueness fails because $y^{2/3}$ is not Lipschitz near $y=0$.
+**Q4 — (D).** $y\equiv 0$ is a solution, and so is $y=(x-c)^3$ for $x\ge c$ (with $y=0$ for $x\lt c$), for every $c\ge 0$. Shifting on the left as well gives still more solutions. Uniqueness fails because $y^{2/3}$ is not Lipschitz near $y=0$.
 
 **Q5 — (B).** I: $\big||y_1|-|y_2|\big|\le|y_1-y_2|$, so it is Lipschitz (it need not be differentiable). II: $|f(y)-f(0)|/|y|=|y|^{-1/3}\to\infty$, so it is not Lipschitz. III: $|x^2(y_1-y_2)|\le|y_1-y_2|$ for $|x|\le1$, so it is Lipschitz with $L=1$.
 
@@ -173,9 +173,9 @@ Which of the above is/are correct?
 
 **Q8 — (C).** For (A), (B) and (D), $\partial f/\partial y$ is bounded on the rectangle ($|2y|\le2$, $|x\cos y|\le1$, $e^x\le e$), and a bounded partial derivative on a convex set implies Lipschitz. For (C), $\sqrt{|y|}/|y|\to\infty$ as $y\to0$.
 
-**Q9 — (D).** If $y_0\ne0$, then near $y_0$ the function $\sqrt{|y|}$ has bounded derivative, hence is locally Lipschitz, so the solution is unique. If $y_0=0$, both $y\equiv0$ and $y=(x-x_0)^2/4$ for $x\ge x_0$ are solutions. Option (C) omits $y_0<0$, where uniqueness also holds.
+**Q9 — (D).** If $y_0\ne0$, then near $y_0$ the function $\sqrt{|y|}$ has bounded derivative, hence is locally Lipschitz, so the solution is unique. If $y_0=0$, both $y\equiv0$ and $y=(x-x_0)^2/4$ for $x\ge x_0$ are solutions. Option (C) omits $y_0\lt 0$, where uniqueness also holds.
 
-**Q10 — (C).** $M=\max(1+b)^2$, so $h=\min\!\big(a,\ b/(1+b)^2\big)$. The function $b/(1+b)^2$ is maximised at $b=1$, giving $h=1/4$. Note that the true solution $1/(1-x)$ exists on $(-\infty,1)$, so Picard's $h$ is only a guaranteed lower bound.
+**Q10 — (C).** $M=\max(1+b)^2$, so $h=\min\negthinspace \big(a,\ b/(1+b)^2\big)$. The function $b/(1+b)^2$ is maximised at $b=1$, giving $h=1/4$. Note that the true solution $1/(1-x)$ exists on $(-\infty,1)$, so Picard's $h$ is only a guaranteed lower bound.
 
 **Q11 — (C).** Lipschitz implies uniqueness. It is not necessary: for example, $f(y)=-y\ln|y|$ (with $f(0)=0$) is not Lipschitz at $0$, yet uniqueness holds by Osgood's criterion.
 

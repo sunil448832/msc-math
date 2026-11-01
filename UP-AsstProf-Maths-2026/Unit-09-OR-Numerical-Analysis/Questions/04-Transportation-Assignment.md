@@ -2,7 +2,7 @@
 > Syllabus coverage: Balanced and unbalanced transportation problems; Hungarian method for solving assignment problems
 > Cheatsheet: [../Cheatsheets/04-Transportation-Assignment.md](../Cheatsheets/04-Transportation-Assignment.md)
 
-*Data used in Q3–Q5 (unit costs, supplies $a_i$, demands $b_j$):*
+*Data used in Q3–Q5 (unit costs, supplies $`a_i`$, demands $`b_j`$):*
 
 | | $D_1$ | $D_2$ | $D_3$ | $D_4$ | Supply |
 |---|---|---|---|---|---|
@@ -97,7 +97,7 @@ Which is/are correct?
 | List-I | List-II |
 |---|---|
 | A. Degeneracy in a transportation problem | 1. Assign a very large cost $M$ to that cell |
-| B. Unbalanced transportation problem | 2. Number of occupied cells $< m+n-1$ |
+| B. Unbalanced transportation problem | 2. Number of occupied cells $\lt  m+n-1$ |
 | C. Maximisation assignment problem | 3. Add a dummy row/column with zero costs |
 | D. Prohibited (infeasible) assignment | 4. Subtract every entry from the largest entry |
 
@@ -110,7 +110,9 @@ Which is/are correct?
 (D) A-2, B-4, C-3, D-1
 
 **Q9.** `[Numerical]` ★★ The minimum total cost of the assignment problem with cost matrix (rows = jobs, columns = machines)
-$$\begin{pmatrix} 10 & 12 & 19 & 11\\ 5 & 10 & 7 & 8\\ 12 & 14 & 13 & 11\\ 8 & 15 & 11 & 9\end{pmatrix}$$
+```math
+\begin{pmatrix} 10 & 12 & 19 & 11\cr  5 & 10 & 7 & 8\cr  12 & 14 & 13 & 11\cr  8 & 15 & 11 & 9\end{pmatrix}
+```
 is
 
 (A) 36
@@ -122,7 +124,9 @@ is
 (D) 41
 
 **Q10.** `[Application]` ★★★ Four salesmen are to be assigned to four territories, one each. The expected **profits** are
-$$\begin{pmatrix} 16 & 10 & 14 & 11\\ 14 & 11 & 15 & 15\\ 15 & 15 & 13 & 12\\ 13 & 12 & 14 & 15\end{pmatrix}.$$
+```math
+\begin{pmatrix} 16 & 10 & 14 & 11\cr  14 & 11 & 15 & 15\cr  15 & 15 & 13 & 12\cr  13 & 12 & 14 & 15\end{pmatrix}.
+```
 The maximum total profit is
 
 (A) 58
@@ -188,9 +192,9 @@ The maximum total profit is
 
 **Q3 — (C).** NWCR: $x_{11}=5,\ x_{12}=2,\ x_{22}=6,\ x_{23}=3,\ x_{33}=4,\ x_{34}=14$. The cost is $95+60+180+120+280+280 = 1015$. (B) is the Least Cost Method value, (A) is VAM.
 
-**Q4 — (B).** VAM penalties pick column $D_2$ (penalty 22), so $x_{32}=8$. Then $D_1$ (21) gives $x_{11}=5$. Then row $O_3$ (50) gives $x_{34}=10$. Then $D_4$ gives $x_{14}=2$, and finally $x_{23}=7,\ x_{24}=2$. The cost is $95\,(x_{11})+20\,(x_{14})+280\,(x_{23})+120\,(x_{24})+64\,(x_{32})+200\,(x_{34}) = 779$. The true optimum is $743$ (A), so VAM is close to it but not optimal here.
+**Q4 — (B).** VAM penalties pick column $D_2$ (penalty 22), so $x_{32}=8$. Then $D_1$ (21) gives $x_{11}=5$. Then row $O_3$ (50) gives $x_{34}=10$. Then $D_4$ gives $x_{14}=2$, and finally $x_{23}=7,\ x_{24}=2$. The cost is $95\thinspace (x_{11})+20\thinspace (x_{14})+280\thinspace (x_{23})+120\thinspace (x_{24})+64\thinspace (x_{32})+200\thinspace (x_{34}) = 779$. The true optimum is $743$ (A), so VAM is close to it but not optimal here.
 
-**Q5 — (C).** Using $u_i+v_j=c_{ij}$ on the basic cells: $u_1=0$ gives $v_1=19, v_2=30$; then $u_2 = 0$, $v_3=40$, $u_3 = 70-40 = 30$, $v_4 = 20-30=-10$. So $d_{32} = 8-(30+30) = -52<0$, and bringing cell $(3,2)$ in reduces the cost. (A) forgets $u_3$, and (B) has the wrong sign.
+**Q5 — (C).** Using $u_i+v_j=c_{ij}$ on the basic cells: $u_1=0$ gives $v_1=19, v_2=30$; then $u_2 = 0$, $v_3=40$, $u_3 = 70-40 = 30$, $v_4 = 20-30=-10$. So $d_{32} = 8-(30+30) = -52\lt 0$, and bringing cell $(3,2)$ in reduces the cost. (A) forgets $u_3$, and (B) has the wrong sign.
 
 **Q6 — (B).** I: $x_{ij} = a_ib_j/\sum a_i$ is feasible. II: the constraint matrix is totally unimodular, so every BFS is integral. III is false: the sum of the row constraints equals the sum of the column constraints, so the rank is $m+n-1$.
 
@@ -206,4 +210,4 @@ The maximum total profit is
 
 **Q12 — (A).** Demand exceeds supply, so add a dummy factory (supply 30). The problem becomes $4\times4$, with $m+n-1 = 4+4-1 = 7$ basic variables. (B) uses the unbalanced size $3+4-1$.
 
-**Q13 — (A).** $d_{ij} = c_{ij}-(u_i+v_j)$ is the net change in cost per unit shipped through the empty cell $(i,j)$. If no $d_{ij}$ is negative, no improvement is possible. If all $d_{ij}>0$ the optimum is unique; a zero $d_{ij}$ signals an alternative optimum. (C) holds only on **basic** cells.
+**Q13 — (A).** $d_{ij} = c_{ij}-(u_i+v_j)$ is the net change in cost per unit shipped through the empty cell $(i,j)$. If no $d_{ij}$ is negative, no improvement is possible. If all $d_{ij}\gt 0$ the optimum is unique; a zero $d_{ij}$ signals an alternative optimum. (C) holds only on **basic** cells.

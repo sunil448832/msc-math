@@ -33,4 +33,29 @@ Standard Assertion–Reason options:
 These are compact revision sheets: definitions, key theorems (stated precisely, with their hypotheses), formulas, standard results and examples or counterexamples, and the common exam traps. They are meant to be read in about 10 minutes before the exam.
 
 ## Notation
-Math is written in LaTeX (`$...$` and `$$...$$`). It renders in the VS Code Markdown preview (Ctrl+Shift+V), on GitHub and in Obsidian.
+Math is written in LaTeX and is made safe for GitHub.
+
+GitHub runs Markdown *before* MathJax. Because of that, some ordinary LaTeX gets damaged: backslash-punctuation such as `\{` and `\,` loses its backslash, `*` and `_` can turn into italics, `|` splits table cells, and `<` can be read as an HTML tag. These files therefore follow a few rules.
+
+**Inside math, use the escape-free form:**
+
+| Instead of | Write |
+|---|---|
+| `\{` `\}` | `\lbrace` `\rbrace` |
+| `\,` | `\thinspace` |
+| `\;` | `\ ` (backslash-space) |
+| `\!` | `\negthinspace` |
+| `\\|` | `\Vert` |
+| `\|` inside a table row | `\vert` |
+| `\\` | `\cr` |
+| `<` `>` | `\lt` `\gt` |
+| `*` | `\ast` |
+| `\mathbb{Z}_n` | `\mathbb Z_n` (braces dropped when the argument is a single character) |
+
+**Delimiters:**
+- Use `$...$` for normal inline math.
+- Use `` $`...`$ `` for inline math that GitHub would otherwise break: environments with `&`, maths directly after `"`, `-` or `**`, and spans caught in `_`/`*` emphasis.
+- Use a ` ```math ` fenced block for display math containing `&`.
+- Use `$$...$$` on its own lines for other display math.
+
+All formulas are checked with GitHub's renderer, MathJax 3 and KaTeX. In the VS Code preview, the `` $`...`$ `` and ` ```math ` forms appear as code. Everything else renders there too.

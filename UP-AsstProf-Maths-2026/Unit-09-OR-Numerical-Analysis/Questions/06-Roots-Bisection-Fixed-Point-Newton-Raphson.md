@@ -12,7 +12,7 @@
 
 (D) 3
 
-**Q2.** `[Numerical]` ★ A root of $f(x)=0$ lies in $[1,2]$ with $f(1)f(2)<0$. The least number of bisection steps $n$ that guarantees $\dfrac{b-a}{2^n}<10^{-3}$ is
+**Q2.** `[Numerical]` ★ A root of $f(x)=0$ lies in $[1,2]$ with $f(1)f(2)\lt 0$. The least number of bisection steps $n$ that guarantees $\dfrac{b-a}{2^n}\lt 10^{-3}$ is
 
 (A) 9
 
@@ -66,9 +66,9 @@
 
 I. If $g$ is continuous and $g([a,b])\subseteq[a,b]$, then $g$ has a fixed point in $[a,b]$.
 
-II. If, in addition, $|g'(x)|\le k<1$ on $[a,b]$, the fixed point is unique and the iteration converges to it for every $x_0\in[a,b]$.
+II. If, in addition, $|g'(x)|\le k\lt 1$ on $[a,b]$, the fixed point is unique and the iteration converges to it for every $x_0\in[a,b]$.
 
-III. If $\alpha$ is a fixed point with $0<|g'(\alpha)|<1$, the convergence is quadratic.
+III. If $\alpha$ is a fixed point with $0\lt |g'(\alpha)|\lt 1$, the convergence is quadratic.
 
 Which are correct?
 
@@ -111,13 +111,13 @@ Which are correct?
 
 **Q10.** `[NOT-true / Counterexample]` ★★ Which of the following is NOT true?
 
-(A) Bisection always converges if $f$ is continuous on $[a,b]$ and $f(a)f(b)<0$.
+(A) Bisection always converges if $f$ is continuous on $[a,b]$ and $f(a)f(b)\lt 0$.
 
 (B) Regula falsi keeps the root bracketed at every step.
 
 (C) After the start, the secant method needs only one new function evaluation per iteration.
 
-(D) Newton–Raphson needs a bracketing interval with $f(a)f(b)<0$ in order to converge.
+(D) Newton–Raphson needs a bracketing interval with $f(a)f(b)\lt 0$ in order to converge.
 
 **Q11.** `[Application]` ★★ The equation $x^2-3x+2=0$ (roots $1$ and $2$) is rewritten as $x=g(x)=\dfrac{x^2+2}{3}$. The iteration $x_{n+1}=g(x_n)$ is locally convergent
 
@@ -129,7 +129,7 @@ Which are correct?
 
 (D) at neither root
 
-**Q12.** `[Application]` ★★★ The iteration $x_{n+1}=x_n+\lambda\,(x_n^2-3)$ converges to $\sqrt3$ at least quadratically when $\lambda$ equals
+**Q12.** `[Application]` ★★★ The iteration $x_{n+1}=x_n+\lambda\thinspace (x_n^2-3)$ converges to $\sqrt3$ at least quadratically when $\lambda$ equals
 
 (A) $-\dfrac{1}{\sqrt3}$
 
@@ -170,7 +170,7 @@ Which are correct?
 ## Solutions
 **Q1 — (C).** For a simple root $e_{n+1}\approx \dfrac{f''(\alpha)}{2f'(\alpha)}e_n^2$, so the order is 2. 1.618 is the secant order; 3 is Chebyshev/Halley.
 
-**Q2 — (B).** We need $2^n>1000$. Since $2^9=512$ and $2^{10}=1024$, $n=10$.
+**Q2 — (B).** We need $2^n\gt 1000$. Since $2^9=512$ and $2^{10}=1024$, $n=10$.
 
 **Q3 — (A).** $f(2)=8-4-5=-1$ and $f'(2)=3\cdot4-2=10$, so $x_1=2-(-1)/10=2.1$.
 
@@ -188,7 +188,7 @@ Which are correct?
 
 **Q10 — (D).** Newton is an open method: it needs a good starting point, not a sign-change bracket. A, B and C are true. Regula falsi always keeps a sign change, although one endpoint may stay fixed, which makes it linear.
 
-**Q11 — (B).** $g'(x)=2x/3$, so $|g'(1)|=2/3<1$ (attracting) and $|g'(2)|=4/3>1$ (repelling). Starting from $x_0=1.5$, the iterates decrease to 1.
+**Q11 — (B).** $g'(x)=2x/3$, so $|g'(1)|=2/3\lt 1$ (attracting) and $|g'(2)|=4/3\gt 1$ (repelling). Starting from $x_0=1.5$, the iterates decrease to 1.
 
 **Q12 — (C).** $g(x)=x+\lambda(x^2-3)$ gives $g'(\sqrt3)=1+2\sqrt3\lambda$. Setting this to 0 gives $\lambda=-\frac1{2\sqrt3}=-\frac{\sqrt3}{6}$, which is exactly Newton's step $-1/f'(\sqrt3)$. (B) has the wrong sign.
 

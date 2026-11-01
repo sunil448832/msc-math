@@ -34,13 +34,13 @@
 
 **Q4.** `[Numerical]` ★★ The Möbius transformation that maps $1,\ i,\ -1$ to $0,\ 1,\ \infty$ respectively is
 
-(A) $w = i\,\dfrac{1-z}{1+z}$
+(A) $w = i\thinspace \dfrac{1-z}{1+z}$
 
 (B) $w = \dfrac{z-1}{z+1}$
 
-(C) $w = i\,\dfrac{z-1}{z+1}$
+(C) $w = i\thinspace \dfrac{z-1}{z+1}$
 
-(D) $w = -i\,\dfrac{1+z}{1-z}$
+(D) $w = -i\thinspace \dfrac{1+z}{1-z}$
 
 **Q5.** `[Numerical]` ★★ The image of the circle $|z| = 1$ under $w = \dfrac{z+1}{z-1}$ is
 
@@ -52,7 +52,7 @@
 
 (D) the line $\operatorname{Re} w = 1$
 
-**Q6.** `[Numerical]` ★★ With the cross ratio defined as $(z_1,z_2,z_3,z_4) = \dfrac{(z_1-z_3)(z_2-z_4)}{(z_1-z_4)(z_2-z_3)}$, the value of $(0,\,1,\,-1,\,i)$ is
+**Q6.** `[Numerical]` ★★ With the cross ratio defined as $(z_1,z_2,z_3,z_4) = \dfrac{(z_1-z_3)(z_2-z_4)}{(z_1-z_4)(z_2-z_3)}$, the value of $(0,\thinspace 1,\thinspace -1,\thinspace i)$ is
 
 (A) $\dfrac{1+i}{2}$
 
@@ -96,10 +96,10 @@ Which of the above is/are correct?
 
 | List-I | List-II |
 |---|---|
-| (a) $w = e^{z}$ on $\{0 < \operatorname{Im} z < \pi/2\}$ | 1. unit disc $\lvert w\rvert < 1$ |
-| (b) $w = \operatorname{Log} z$ on $\{\operatorname{Im} z > 0\}$ | 2. right half-plane $\operatorname{Re} w > 0$ |
-| (c) $w = \dfrac{z-i}{z+i}$ on $\{\operatorname{Im} z > 0\}$ | 3. first quadrant |
-| (d) $w = \dfrac{1+z}{1-z}$ on $\{\lvert z\rvert < 1\}$ | 4. strip $0 < \operatorname{Im} w < \pi$ |
+| (a) $w = e^{z}$ on $\lbrace 0 \lt  \operatorname{Im} z \lt  \pi/2\rbrace$ | 1. unit disc $\lvert w\rvert \lt  1$ |
+| (b) $w = \operatorname{Log} z$ on $\lbrace \operatorname{Im} z \gt  0\rbrace$ | 2. right half-plane $\operatorname{Re} w \gt  0$ |
+| (c) $w = \dfrac{z-i}{z+i}$ on $\lbrace \operatorname{Im} z \gt  0\rbrace$ | 3. first quadrant |
+| (d) $w = \dfrac{1+z}{1-z}$ on $\lbrace \lvert z\rvert \lt  1\rbrace$ | 4. strip $0 \lt  \operatorname{Im} w \lt  \pi$ |
 
 (A) a-3, b-4, c-2, d-1
 
@@ -115,7 +115,7 @@ Which of the above is/are correct?
 
 (B) The cross ratio of four distinct points is invariant under Möbius transformations.
 
-(C) Every conformal bijection of the unit disc onto itself has the form $e^{i\theta}\dfrac{z-a}{1-\bar a z}$ with $|a| < 1$.
+(C) Every conformal bijection of the unit disc onto itself has the form $e^{i\theta}\dfrac{z-a}{1-\bar a z}$ with $|a| \lt  1$.
 
 (D) A Möbius transformation maps every circle onto a circle.
 
@@ -178,17 +178,17 @@ Which of the above is/are correct?
 
 **Q5 — (C).** $z = 1$ goes to $\infty$, so the image is a line. For $z = e^{i\theta}$, $\frac{e^{i\theta}+1}{e^{i\theta}-1} = -i\cot\frac\theta2$, which is purely imaginary. As $\theta$ varies the image is the whole imaginary axis.
 
-**Q6 — (A).** $\frac{(0+1)(1-i)}{(0-i)(1+1)} = \frac{1-i}{-2i} = \frac{(1-i)\,i}{2} = \frac{1+i}{2}$. The value is non-real, so the four points are not concyclic. Option (B) is the conjugate, which comes from a slip in sign.
+**Q6 — (A).** $\frac{(0+1)(1-i)}{(0-i)(1+1)} = \frac{1-i}{-2i} = \frac{(1-i)\thinspace i}{2} = \frac{1+i}{2}$. The value is non-real, so the four points are not concyclic. Option (B) is the conjugate, which comes from a slip in sign.
 
 **Q7 — (B).** Möbius maps form a group under composition, isomorphic to $PSL(2,\mathbb{C})$, and they preserve generalised circles. For III, $T(z) = z$ gives a quadratic $cz^2 + (d-a)z - b = 0$, which has at most 2 roots unless $T$ is the identity.
 
 **Q8 — (C).** $(e^z)' = e^z \ne 0$ everywhere, so $e^z$ is conformal everywhere. But $e^z$ has period $2\pi i$, so it is not injective. Conformality is a local property and does not need injectivity.
 
-**Q9 — (C).** (a) $e^{x+iy}$ with $0 < y < \pi/2$ covers all arguments in $(0,\pi/2)$ and all moduli, giving the first quadrant. (b) $\operatorname{Arg} \in (0,\pi)$ gives the strip. (c) is the Cayley map: points of the UHP are closer to $i$ than to $-i$. (d) $0 \mapsto 1$ and $|z| = 1 \mapsto i\mathbb{R}$, so the image is the right half-plane.
+**Q9 — (C).** (a) $e^{x+iy}$ with $0 \lt  y \lt  \pi/2$ covers all arguments in $(0,\pi/2)$ and all moduli, giving the first quadrant. (b) $\operatorname{Arg} \in (0,\pi)$ gives the strip. (c) is the Cayley map: points of the UHP are closer to $i$ than to $-i$. (d) $0 \mapsto 1$ and $|z| = 1 \mapsto i\mathbb{R}$, so the image is the right half-plane.
 
 **Q10 — (D).** A circle through the pole $-d/c$ goes onto a straight line. Q5 is an example. The correct statement is that circles go to circles *or lines*.
 
-**Q11 — (C).** $ad - bc = -3 + 4 = 1$ and the trace is $a + d = 3 - 1 = 2$, so $(a+d)^2 = 4$, which is parabolic. The fixed points satisfy $z^2 - 4z + 4 = 0$, giving the double root $z = 2$. For a normalised map, elliptic means $(a+d)^2 \in [0,4)$, hyperbolic means $(a+d)^2 > 4$, and loxodromic means $(a+d)^2 \notin [0,\infty)$.
+**Q11 — (C).** $ad - bc = -3 + 4 = 1$ and the trace is $a + d = 3 - 1 = 2$, so $(a+d)^2 = 4$, which is parabolic. The fixed points satisfy $z^2 - 4z + 4 = 0$, giving the double root $z = 2$. For a normalised map, elliptic means $(a+d)^2 \in [0,4)$, hyperbolic means $(a+d)^2 \gt  4$, and loxodromic means $(a+d)^2 \notin [0,\infty)$.
 
 **Q12 — (D).** $f = e^{i\theta}\frac{z-a}{1-\bar az}$ with $a = 1/2$, so $|f'(a)| = \frac{1}{1-|a|^2} = \frac{1}{1-1/4} = \frac43$. Option (A) is $|(f^{-1})'(0)| = 1 - |a|^2$.
 

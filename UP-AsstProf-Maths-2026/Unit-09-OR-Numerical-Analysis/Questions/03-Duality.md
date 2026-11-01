@@ -12,15 +12,15 @@
 
 (D) not defined in general
 
-**Q2.** `[Numerical]` ★ The dual of Max $Z = 2x_1 + 3x_2$ subject to $x_1 + 2x_2 \le 4,\; 3x_1 + x_2 \le 6,\; x_1,x_2\ge0$ is
+**Q2.** `[Numerical]` ★ The dual of Max $Z = 2x_1 + 3x_2$ subject to $x_1 + 2x_2 \le 4,\  3x_1 + x_2 \le 6,\  x_1,x_2\ge0$ is
 
-(A) Min $W = 4y_1 + 6y_2$ s.t. $y_1 + 3y_2 \ge 2,\; 2y_1 + y_2 \ge 3,\; y_1,y_2\ge0$
+(A) Min $W = 4y_1 + 6y_2$ s.t. $y_1 + 3y_2 \ge 2,\  2y_1 + y_2 \ge 3,\  y_1,y_2\ge0$
 
-(B) Min $W = 4y_1 + 6y_2$ s.t. $y_1 + 2y_2 \ge 2,\; 3y_1 + y_2 \ge 3,\; y_1,y_2\ge0$
+(B) Min $W = 4y_1 + 6y_2$ s.t. $y_1 + 2y_2 \ge 2,\  3y_1 + y_2 \ge 3,\  y_1,y_2\ge0$
 
-(C) Min $W = 2y_1 + 3y_2$ s.t. $y_1 + 3y_2 \ge 4,\; 2y_1 + y_2 \ge 6,\; y_1,y_2\ge0$
+(C) Min $W = 2y_1 + 3y_2$ s.t. $y_1 + 3y_2 \ge 4,\  2y_1 + y_2 \ge 6,\  y_1,y_2\ge0$
 
-(D) Min $W = 4y_1 + 6y_2$ s.t. $y_1 + 3y_2 \le 2,\; 2y_1 + y_2 \le 3,\; y_1,y_2\ge0$
+(D) Min $W = 4y_1 + 6y_2$ s.t. $y_1 + 3y_2 \le 2,\  2y_1 + y_2 \le 3,\  y_1,y_2\ge0$
 
 **Q3.** `[Concept]` ★ If the $i$-th constraint of the primal is an **equation**, then the $i$-th dual variable is
 
@@ -72,7 +72,7 @@ Which is/are correct?
 
 (D) A is false but R is true
 
-**Q7.** `[Numerical]` ★★★ The LPP Max $Z = 3x_1 + 5x_2$ s.t. $x_1 \le 4,\; 2x_2\le12,\; 3x_1 + 2x_2 \le 18,\; x_1,x_2\ge0$ has the optimal solution $x_1 = 2,\; x_2 = 6$. Using complementary slackness, the optimal dual solution $(y_1, y_2, y_3)$ is
+**Q7.** `[Numerical]` ★★★ The LPP Max $Z = 3x_1 + 5x_2$ s.t. $x_1 \le 4,\  2x_2\le12,\  3x_1 + 2x_2 \le 18,\  x_1,x_2\ge0$ has the optimal solution $x_1 = 2,\  x_2 = 6$. Using complementary slackness, the optimal dual solution $(y_1, y_2, y_3)$ is
 
 (A) $(0, \tfrac32, 1)$
 
@@ -86,8 +86,8 @@ Which is/are correct?
 
 | List-I (Primal, Max) | List-II (Dual, Min) |
 |---|---|
-| A. $i$-th constraint is "$\le$" | 1. $j$-th dual constraint is an equation |
-| B. $i$-th constraint is "$=$" | 2. $i$-th dual variable $y_i\ge0$ |
+| A. $`i`$-th constraint is "$`\le`$" | 1. $`j`$-th dual constraint is an equation |
+| B. $`i`$-th constraint is "$`=`$" | 2. $`i`$-th dual variable $`y_i\ge0`$ |
 | C. $j$-th variable $x_j$ unrestricted | 3. Number of dual variables |
 | D. Number of primal constraints | 4. $i$-th dual variable unrestricted |
 
@@ -117,28 +117,28 @@ If the availability of resource 2 is increased from 6 to 7, the new optimal valu
 
 (D) 25
 
-**Q10.** `[NOT-true / Counterexample]` ★★ At a pair of optimal solutions $x^*$ (primal, max) and $y^*$ (dual), which of the following is NOT necessarily true?
+**Q10.** `[NOT-true / Counterexample]` ★★ At a pair of optimal solutions $x^\ast$ (primal, max) and $y^\ast$ (dual), which of the following is NOT necessarily true?
 
 (A) If the primal has $m$ constraints and $n$ variables, the dual has $n$ constraints and $m$ variables.
 
-(B) If the $i$-th primal constraint is satisfied with strict inequality, then $y_i^* = 0$.
+(B) If the $i$-th primal constraint is satisfied with strict inequality, then $y_i^\ast  = 0$.
 
-(C) If $y_i^*>0$, then the $i$-th primal constraint holds with equality.
+(C) If $y_i^\ast \gt 0$, then the $i$-th primal constraint holds with equality.
 
-(D) If $x_j^* = 0$, then the $j$-th dual constraint holds with strict inequality.
+(D) If $x_j^\ast  = 0$, then the $j$-th dual constraint holds with strict inequality.
 
-**Q11.** `[Application]` ★★ The dual of: Min $Z = 2x_1 + 3x_2$ s.t. $x_1 + x_2 \ge 5,\; x_1 - x_2 = 1,\; x_1\ge0,\; x_2$ unrestricted, is
+**Q11.** `[Application]` ★★ The dual of: Min $Z = 2x_1 + 3x_2$ s.t. $x_1 + x_2 \ge 5,\  x_1 - x_2 = 1,\  x_1\ge0,\  x_2$ unrestricted, is
 
-(A) Min $W = 5y_1 + y_2$ s.t. $y_1 + y_2 \ge 2,\; y_1 - y_2 = 3,\; y_1\ge0,\; y_2$ unrestricted
+(A) Min $W = 5y_1 + y_2$ s.t. $y_1 + y_2 \ge 2,\  y_1 - y_2 = 3,\  y_1\ge0,\  y_2$ unrestricted
 
-(B) Max $W = 5y_1 + y_2$ s.t. $y_1 + y_2 \le 2,\; y_1 - y_2 \le 3,\; y_1\ge0,\; y_2$ unrestricted
+(B) Max $W = 5y_1 + y_2$ s.t. $y_1 + y_2 \le 2,\  y_1 - y_2 \le 3,\  y_1\ge0,\  y_2$ unrestricted
 
-(C) Max $W = 5y_1 + y_2$ s.t. $y_1 + y_2 \le 2,\; y_1 - y_2 = 3,\; y_1,y_2\ge0$
+(C) Max $W = 5y_1 + y_2$ s.t. $y_1 + y_2 \le 2,\  y_1 - y_2 = 3,\  y_1,y_2\ge0$
 
-(D) Max $W = 5y_1 + y_2$ s.t. $y_1 + y_2 \le 2,\; y_1 - y_2 = 3,\; y_1\ge0,\; y_2$ unrestricted
+(D) Max $W = 5y_1 + y_2$ s.t. $y_1 + y_2 \le 2,\  y_1 - y_2 = 3,\  y_1\ge0,\  y_2$ unrestricted
 
 **Q12.** `[Numerical]` ★★ The optimal value of
-$$\text{Min } W = 2y_1 + 3y_2 + 4y_3 \ \text{ s.t. }\ y_1 + y_3 \ge 1,\;\; y_2 + y_3\ge1,\;\; y_1,y_2,y_3\ge0$$
+$$\text{Min } W = 2y_1 + 3y_2 + 4y_3 \ \text{ s.t. }\ y_1 + y_3 \ge 1,\ \  y_2 + y_3\ge1,\ \  y_1,y_2,y_3\ge0$$
 is
 
 (A) 2
@@ -167,26 +167,26 @@ is
 | 12 | D | Numerical |
 
 ## Solutions
-**Q1 — (B).** Duality is involutive: $(P^*)^* = P$.
+**Q1 — (B).** Duality is involutive: $(P^\ast )^\ast  = P$.
 
 **Q2 — (A).** The dual variables match the constraints, and the RHS $(4,6)$ becomes the cost vector. The constraint matrix is transposed: column of $x_1$ is $(1,3)$, giving $y_1+3y_2\ge2$; column of $x_2$ is $(2,1)$, giving $2y_1+y_2\ge3$. (B) forgets to transpose. (C) swaps $b$ and $c$ without transposing. (D) has the wrong inequality direction.
 
 **Q3 — (C).** An equality constraint corresponds to an unrestricted dual variable, and an unrestricted primal variable corresponds to an equality dual constraint.
 
-**Q4 — (B).** By weak duality every primal value is $\le$ every dual value, so $10\le Z^* = W^*\le12$. Only $11$ lies in $[10,12]$.
+**Q4 — (B).** By weak duality every primal value is $`\le`$ every dual value, so $`10\le Z^\ast  = W^\ast \le12`$. Only $`11`$ lies in $`[10,12]`$.
 
 **Q5 — (C).** I follows from weak duality: a feasible $y$ would bound $Z$. II is false: if the primal is infeasible, the dual is either unbounded **or** infeasible. III is true, e.g. Max $x_1 + x_2$ s.t. $x_1 - x_2\le -1,\ -x_1 + x_2 \le -1$ (adding them gives $0\le-2$), and its dual has the same (infeasible) structure.
 
 **Q6 — (B).** A is the strong duality theorem and R is weak duality; both are true. Weak duality alone gives only $\max Z\le\min W$. It does not show that the dual has an optimum or that the gap is zero; that needs, e.g., the simplex argument $y^T = c_B^TB^{-1}$ or Farkas' lemma.
 
-**Q7 — (A).** Constraint 1: $x_1 = 2 < 4$ is slack, so $y_1 = 0$. Since $x_1,x_2>0$, both dual constraints are tight: $y_1 + 3y_3 = 3 \Rightarrow y_3 = 1$, and $2y_2 + 2y_3 = 5 \Rightarrow y_2 = \tfrac32$. Check: $W = 4(0) + 12(\tfrac32) + 18(1) = 36 = Z^*$ ✓. (C) swaps $y_2,y_3$; (B) and (D) violate $y_1=0$.
+**Q7 — (A).** Constraint 1: $x_1 = 2 \lt  4$ is slack, so $y_1 = 0$. Since $x_1,x_2\gt 0$, both dual constraints are tight: $y_1 + 3y_3 = 3 \Rightarrow y_3 = 1$, and $2y_2 + 2y_3 = 5 \Rightarrow y_2 = \tfrac32$. Check: $W = 4(0) + 12(\tfrac32) + 18(1) = 36 = Z^\ast$ ✓. (C) swaps $y_2,y_3$; (B) and (D) violate $y_1=0$.
 
-**Q8 — (C).** For a max primal: $\le$ gives $y_i\ge0$; $=$ gives $y_i$ unrestricted; $x_j$ unrestricted gives the $j$-th dual constraint as an equation; and #primal constraints = #dual variables.
+**Q8 — (C).** For a max primal: $`\le`$ gives $y_i\ge0$; $`=`$ gives $y_i$ unrestricted; $x_j$ unrestricted gives the $j$-th dual constraint as an equation; and #primal constraints = #dual variables.
 
-**Q9 — (A).** The $\Delta$ entry under $s_2$, $\tfrac12$, is the shadow price $y_2^*$. The new basic solution is $x_B = B^{-1}b' = (3,\,\tfrac32) + 1\cdot(-\tfrac12,\ \tfrac34) = (2.5, 2.25)\ge0$, so the basis stays optimal and $Z = 21 + \tfrac12(1) = 21.5$. Check: $5(2.5)+4(2.25) = 21.5$ ✓. (B) uses $3/4$, the price of resource 1.
+**Q9 — (A).** The $\Delta$ entry under $s_2$, $\tfrac12$, is the shadow price $y_2^\ast$. The new basic solution is $x_B = B^{-1}b' = (3,\thinspace \tfrac32) + 1\cdot(-\tfrac12,\ \tfrac34) = (2.5, 2.25)\ge0$, so the basis stays optimal and $Z = 21 + \tfrac12(1) = 21.5$. Check: $5(2.5)+4(2.25) = 21.5$ ✓. (B) uses $3/4$, the price of resource 1.
 
-**Q10 — (D).** Complementary slackness gives $x_j^*\,(\text{surplus of dual constraint } j) = 0$. It does **not** force strict inequality when $x_j^* = 0$, because both can be zero (degeneracy, or alternative optima). (B) and (C) are complementary slackness, and (A) is the definition.
+**Q10 — (D).** Complementary slackness gives $x_j^\ast \thinspace (\text{surplus of dual constraint } j) = 0$. It does **not** force strict inequality when $x_j^\ast  = 0$, because both can be zero (degeneracy, or alternative optima). (B) and (C) are complementary slackness, and (A) is the definition.
 
-**Q11 — (D).** For a min primal: a "$\ge$" constraint gives $y_1\ge0$, and an "$=$" constraint gives $y_2$ unrestricted. $x_1\ge0$ gives the dual constraint $y_1 + y_2 \le 2$, and $x_2$ unrestricted gives the **equation** $y_1 - y_2 = 3$. Both optima equal $12$ (primal $(3,2)$, dual $(2.5,-0.5)$). Note that $y_2^* < 0$, so (C) would even change the answer.
+**Q11 — (D).** For a min primal: a "$`\ge`$" constraint gives $y_1\ge0$, and an "$`=`$" constraint gives $y_2$ unrestricted. $x_1\ge0$ gives the dual constraint $y_1 + y_2 \le 2$, and $x_2$ unrestricted gives the **equation** $y_1 - y_2 = 3$. Both optima equal $12$ (primal $(3,2)$, dual $`(2.5,-0.5)`$). Note that $y_2^\ast  \lt  0$, so (C) would even change the answer.
 
-**Q12 — (D).** This is the dual of Max $x_1 + x_2$ s.t. $x_1\le2,\ x_2\le3,\ x_1+x_2\le4$, whose optimum is clearly $4$. By strong duality $W^* = 4$, attained at $y = (0,0,1)$. (C) $=2+3$ comes from $y=(1,1,0)$, which is feasible but not optimal.
+**Q12 — (D).** This is the dual of Max $x_1 + x_2$ s.t. $x_1\le2,\ x_2\le3,\ x_1+x_2\le4$, whose optimum is clearly $4$. By strong duality $W^\ast  = 4$, attained at $y = (0,0,1)$. (C) $=2+3$ comes from $y=(1,1,0)$, which is feasible but not optimal.

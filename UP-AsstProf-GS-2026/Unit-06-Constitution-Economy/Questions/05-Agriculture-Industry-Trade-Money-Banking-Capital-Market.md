@@ -180,4 +180,4 @@ Which of the statements given above is/are correct?
 
 **Q11 — (C).** A higher repo rate makes borrowing costlier, and selling securities in OMO absorbs liquidity from the market; both tighten money supply. Buying securities (B) injects liquidity, and the other options are easing measures. *Also remember:* the inflation target is CPI 4% with a band of 2–6%, retained by the Government for April 2026–March 2031.
 
-**Q12 — (D).** The India–UK CETA was signed on 24 July 2025 and entered into force on **15 July 2026**. *Also remember (as of October 2026):* the India–EFTA TEPA came into force on 1 October 2025 (with a US$100 billion investment commitment over 15 years); India–EU FTA negotiations were concluded on 27 January 2026, but the agreement is not yet in force.
+**Q12 — (D).** The India–UK CETA was signed on 24 July 2025 and entered into force on **15 July 2026**. *Also remember (as of October 2026):* the India–EFTA TEPA came into force on 1 October 2025 (with a US\$100 billion investment commitment over 15 years); India–EU FTA negotiations were concluded on 27 January 2026, but the agreement is not yet in force.

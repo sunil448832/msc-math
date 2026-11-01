@@ -22,13 +22,13 @@
 
 (D) $T_1$ but not Hausdorff
 
-**Q3.** `[Multi-Statement]` ★★ Let $\mathbb{R}_l$ denote $\mathbb{R}$ with the lower limit topology (basis $\{[a,b): a<b\}$). Consider:
+**Q3.** `[Multi-Statement]` ★★ Let $\mathbb R_l$ denote $\mathbb{R}$ with the lower limit topology (basis $\lbrace [a,b): a\lt b\rbrace$). Consider:
 
-I. Every set $[a,b)$ is both open and closed in $\mathbb{R}_l$.
+I. Every set $`[a,b)`$ is both open and closed in $`\mathbb R_l`$.
 
-II. The topology of $\mathbb{R}_l$ is strictly finer than the usual topology of $\mathbb{R}$.
+II. The topology of $\mathbb R_l$ is strictly finer than the usual topology of $\mathbb{R}$.
 
-III. $\mathbb{R}_l$ is second countable.
+III. $\mathbb R_l$ is second countable.
 
 Which of the above is/are correct?
 
@@ -52,7 +52,7 @@ Which of the above is/are correct?
 
 **Q5.** `[Assertion-Reason]` ★★
 
-**Assertion (A):** The open interval $(0,1)$ is homeomorphic to $\mathbb{R}$.
+**Assertion (A):** The open interval $`(0,1)`$ is homeomorphic to $`\mathbb{R}`$.
 
 **Reason (R):** Boundedness is a topological property.
 
@@ -74,13 +74,13 @@ Which of the above is/are correct?
 
 (D) Hausdorffness
 
-**Q7.** `[Match]` ★★ Match the topology on $\mathbb{R}$ (List-I) with the closure of the set $(0,1)$ in it (List-II).
+**Q7.** `[Match]` ★★ Match the topology on $`\mathbb{R}`$ (List-I) with the closure of the set $`(0,1)`$ in it (List-II).
 
-| List-I (topology on $\mathbb{R}$) | List-II (closure of $(0,1)$) |
+| List-I (topology on $`\mathbb{R}`$) | List-II (closure of $`(0,1)`$) |
 |---|---|
 | A. Usual topology | 1. $(0,1]$ |
 | B. Cofinite topology | 2. $\mathbb{R}$ |
-| C. Lower limit topology (basis $[a,b)$) | 3. $[0,1]$ |
+| C. Lower limit topology (basis $`[a,b)`$) | 3. $`[0,1]`$ |
 | D. Upper limit topology (basis $(a,b]$) | 4. $[0,1)$ |
 
 (A) A-3, B-2, C-1, D-4
@@ -95,7 +95,7 @@ Which of the above is/are correct?
 
 (A) $\tau_1\subseteq\tau_2$
 
-(B) $\tau_1\cap\tau_2=\{\emptyset,X\}$
+(B) $\tau_1\cap\tau_2=\lbrace \emptyset,X\rbrace$
 
 (C) $\tau_1=\tau_2$
 
@@ -113,11 +113,11 @@ Which of the above is/are correct?
 
 **Q10.** `[Multi-Statement]` ★★ Which of the following collections is/are a **basis** for some topology on $\mathbb{R}$?
 
-I. $\{(a,b): a<b,\ a,b\in\mathbb{Q}\}$
+I. $\lbrace (a,b): a\lt b,\ a,b\in\mathbb{Q}\rbrace$
 
-II. $\{[a,b): a<b,\ a,b\in\mathbb{Q}\}$
+II. $\lbrace [a,b): a\lt b,\ a,b\in\mathbb{Q}\rbrace$
 
-III. $\{(a,\infty): a\in\mathbb{R}\}\cup\{(-\infty,b): b\in\mathbb{R}\}$
+III. $\lbrace (a,\infty): a\in\mathbb{R}\rbrace \cup\lbrace (-\infty,b): b\in\mathbb{R}\rbrace$
 
 (A) I only
 
@@ -169,21 +169,21 @@ III. $\{(a,\infty): a\in\mathbb{R}\}\cup\{(-\infty,b): b\in\mathbb{R}\}$
 
 **Q2 — (D).** Singletons are closed (finite), so $T_1$. Two non-empty open sets in an infinite cofinite space always intersect (their complements are finite), so it cannot be Hausdorff.
 
-**Q3 — (B).** $[a,b)$ is a basic open set; its complement $(-\infty,a)\cup[b,\infty)$ is a union of basic sets, so it is also open. $(a,b)=\bigcup[a+1/n,b)$, so $\mathbb{R}_l$ is finer, and $[0,1)$ is not usual-open, so strictly finer. III is false: any basis must contain for each $x$ a set $B_x$ with $x=\min B_x$, giving uncountably many distinct sets.
+**Q3 — (B).** $`[a,b)`$ is a basic open set; its complement $(-\infty,a)\cup[b,\infty)$ is a union of basic sets, so it is also open. $(a,b)=\bigcup[a+1/n,b)$, so $\mathbb R_l$ is finer, and $[0,1)$ is not usual-open, so strictly finer. III is false: any basis must contain for each $x$ a set $B_x$ with $x=\min B_x$, giving uncountably many distinct sets.
 
-**Q4 — (B).** $\mathbb{Q}$ is countable, hence closed, so $\overline{\mathbb{Q}}=\mathbb{Q}$. Every non-empty open set is co-countable, hence uncountable, so it cannot lie inside $\mathbb{Q}$: $\mathrm{int}\,\mathbb{Q}=\emptyset$. The trap (A) is the answer for the usual topology.
+**Q4 — (B).** $\mathbb{Q}$ is countable, hence closed, so $\overline{\mathbb{Q}}=\mathbb{Q}$. Every non-empty open set is co-countable, hence uncountable, so it cannot lie inside $\mathbb{Q}$: $\mathrm{int}\thinspace \mathbb{Q}=\emptyset$. The trap (A) is the answer for the usual topology.
 
 **Q5 — (C).** $x\mapsto\tan(\pi(x-\tfrac12))$ is a homeomorphism $(0,1)\to\mathbb{R}$. This very example shows that boundedness is **not** topological, so R is false.
 
-**Q6 — (C).** $(0,1)$ (not complete) is homeomorphic to $\mathbb{R}$ (complete). Completeness depends on the metric, not only on the topology.
+**Q6 — (C).** $`(0,1)`$ (not complete) is homeomorphic to $`\mathbb{R}`$ (complete). Completeness depends on the metric, not only on the topology.
 
-**Q7 — (D).** Usual: $[0,1]$. Cofinite: the closed sets are finite sets and $\mathbb{R}$, and $(0,1)$ is infinite, so the closure is $\mathbb{R}$. Lower limit: $[1,1+\varepsilon)$ misses $(0,1)$, but every $[0,\varepsilon)$ meets it, so the closure is $[0,1)$. Upper limit: by symmetry $(0,1]$.
+**Q7 — (D).** Usual: $`[0,1]`$. Cofinite: the closed sets are finite sets and $`\mathbb{R}`$, and $`(0,1)`$ is infinite, so the closure is $`\mathbb{R}`$. Lower limit: $`[1,1+\varepsilon)`$ misses $`(0,1)`$, but every $`[0,\varepsilon)`$ meets it, so the closure is $`[0,1)`$. Upper limit: by symmetry $`(0,1]`$.
 
 **Q8 — (D).** $\mathrm{id}^{-1}(U)=U$ must be $\tau_1$-open for every $U\in\tau_2$, i.e. $\tau_2\subseteq\tau_1$ (the domain is finer). A common slip is to reverse the inclusion.
 
-**Q9 — (A).** If $f(p)\ne f(q)$, take disjoint usual-open $U\ni f(p)$, $V\ni f(q)$. Then $f^{-1}(U),f^{-1}(V)$ are disjoint non-empty cofinite-open sets, which is impossible in an infinite cofinite space. Constants are clearly continuous. Option (D) fails because, for example, the indicator function of $\{0\}$ is not continuous: $f^{-1}(\{1\})=\{0\}$ is not open.
+**Q9 — (A).** If $f(p)\ne f(q)$, take disjoint usual-open $U\ni f(p)$, $V\ni f(q)$. Then $f^{-1}(U),f^{-1}(V)$ are disjoint non-empty cofinite-open sets, which is impossible in an infinite cofinite space. Constants are clearly continuous. Option (D) fails because, for example, the indicator function of $\lbrace 0\rbrace$ is not continuous: $f^{-1}(\lbrace 1\rbrace )=\lbrace 0\rbrace$ is not open.
 
-**Q10 — (B).** I and II cover $\mathbb{R}$, and the intersection of two members is again a member or empty, so both are bases (II gives a topology different from $\mathbb{R}_l$, but it is still a basis). III is only a **subbasis**: $(0,\infty)\cap(-\infty,1)=(0,1)$ contains no ray around $\tfrac12$.
+**Q10 — (B).** I and II cover $\mathbb{R}$, and the intersection of two members is again a member or empty, so both are bases (II gives a topology different from $\mathbb R_l$, but it is still a basis). III is only a **subbasis**: $(0,\infty)\cap(-\infty,1)=(0,1)$ contains no ray around $\tfrac12$.
 
 **Q11 — (A).** The 29 labelled topologies fall into 9 homeomorphism classes (verified by brute force). 29 is the labelled count.
 

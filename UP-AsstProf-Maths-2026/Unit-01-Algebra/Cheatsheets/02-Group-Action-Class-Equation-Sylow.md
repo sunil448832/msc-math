@@ -3,11 +3,11 @@
 
 ## 1. Group actions
 A (left) action of $G$ on a set $X$ is a map $G\times X\to X$ with $e\cdot x=x$ and $g\cdot(h\cdot x)=(gh)\cdot x$. Equivalently, it is a homomorphism $G\to\operatorname{Sym}(X)$.
-- **Orbit** $Gx=\{gx\}$ and **stabilizer** $G_x=\{g:gx=x\}\le G$. The orbits partition $X$.
+- **Orbit** $Gx=\lbrace gx\rbrace$ and **stabilizer** $G_x=\lbrace g:gx=x\rbrace \le G$. The orbits partition $X$.
 - **Orbit–Stabilizer:** $|Gx|=[G:G_x]$, so orbit sizes divide $|G|$.
 - Stabilizers of points in the same orbit are conjugate: $G_{gx}=gG_xg^{-1}$.
 - **Faithful** means the kernel $\bigcap_x G_x$ is trivial. **Transitive** means there is one orbit.
-- **Burnside's (Cauchy–Frobenius) lemma:** $\#\text{orbits}=\dfrac1{|G|}\sum_{g\in G}|\operatorname{Fix}(g)|$.
+- **Burnside's (Cauchy–Frobenius) lemma:** $\sharp \text{orbits}=\dfrac1{|G|}\sum_{g\in G}|\operatorname{Fix}(g)|$.
 - **$p$-group fixed points:** if $|G|=p^n$ acts on a finite $X$, then $|X|\equiv|X^G|\pmod p$.
 - Standard actions:
 
@@ -20,7 +20,7 @@ A (left) action of $G$ on a set $X$ is a map $G\times X\to X$ with $e\cdot x=x$ 
 
 ## 2. Class equation
 $$|G|=|Z(G)|+\sum_{a\in\text{reps of non-central classes}}[G:C(a)]$$
-Each $[G:C(a)]>1$ is a divisor of $|G|$.
+Each $[G:C(a)]\gt 1$ is a divisor of $|G|$.
 - **$p$-groups:** $|G|=p^n$ with $n\ge1$ implies $Z(G)\ne1$. Groups of order $p^2$ are abelian. A non-abelian group of order $p^3$ has $|Z|=p$.
 - **Classes in $S_n$** correspond to cycle types, i.e. partitions of $n$: $p(3)=3,\ p(4)=5,\ p(5)=7,\ p(6)=11$.
 - Class size in $S_n$ for cycle type $1^{m_1}2^{m_2}\cdots$ is $\dfrac{n!}{\prod k^{m_k}m_k!}$.
@@ -52,18 +52,18 @@ Let $|G|=p^a m$ with $p\nmid m$.
 ## 4. Standard applications
 | Order | Conclusion | Reason |
 |---|---|---|
-| $pq$, $p<q$, $p\nmid q-1$ | cyclic | $n_p=n_q=1$ (e.g. 15, 33, 35, 51, 65, 77, 85, 91) |
-| $pq$, $p\mid q-1$ | $\mathbb{Z}_{pq}$ or one non-abelian group | e.g. 6, 10, 21, 39, 55 |
+| $pq$, $p\lt q$, $p\nmid q-1$ | cyclic | $n_p=n_q=1$ (e.g. 15, 33, 35, 51, 65, 77, 85, 91) |
+| $pq$, $p\mid q-1$ | $\mathbb Z_{pq}$ or one non-abelian group | e.g. 6, 10, 21, 39, 55 |
 | $p^2q$ | not simple | counting |
 | 12 | not simple. $n_3=1$ or $n_2=1$ | $A_4$ has $n_3=4$, $n_2=1$ |
-| 30 | not simple, and has a normal (cyclic) subgroup of order 15 | $20+24>30$ |
+| 30 | not simple, and has a normal (cyclic) subgroup of order 15 | $20+24\gt 30$ |
 | 56 | not simple | $n_7=8$ uses 48 elements, which leaves room for only one Sylow 2-subgroup |
-| 36 | not simple | $n_3\in\{1,4\}$. $G\to S_4$ is not injective since $36\nmid24$ |
+| 36 | not simple | $n_3\in\lbrace 1,4\rbrace$. $G\to S_4$ is not injective since $36\nmid24$ |
 | 60 | $A_5$ is the unique simple group of this order | |
 | 168 | simple group $PSL(2,7)$, $n_7=8$ | |
 
 - **Burnside's $p^aq^b$ theorem:** such groups are solvable, hence not simple unless of prime order.
-- Smallest non-abelian simple group is $A_5$ (order 60). There are no non-abelian simple groups of order $<60$, and the next one has order 168.
+- Smallest non-abelian simple group is $A_5$ (order 60). There are no non-abelian simple groups of order $\lt 60$, and the next one has order 168.
 - **Index trick:** if $[G:H]=n$ and $|G|\nmid n!$, then $G$ is not simple. If $p$ is the smallest prime divisor of $|G|$, then any subgroup of index $p$ is normal.
 - Sylow numbers to know: $S_3$: $n_2=3,n_3=1$. $A_4$: $n_2=1,n_3=4$. $S_4$: $n_2=3,n_3=4$. $A_5$: $n_2=5,n_3=10,n_5=6$. $S_5$: $n_2=15,n_3=10,n_5=6$.
 

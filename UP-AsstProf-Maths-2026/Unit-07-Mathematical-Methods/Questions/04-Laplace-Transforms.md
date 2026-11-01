@@ -2,7 +2,7 @@
 > Syllabus coverage: Laplace transforms (existence, shifting theorems, derivatives/integrals of transforms, convolution, inverse transforms, initial/final value theorems, unit step and impulse, solution of ODEs and integral equations)
 > Cheatsheet: [../Cheatsheets/04-Laplace-Transforms.md](../Cheatsheets/04-Laplace-Transforms.md)
 
-**Q1.** `[Concept]` ★ $\mathcal{L}\{\sqrt t\}$ equals
+**Q1.** `[Concept]` ★ $\mathcal{L}\lbrace \sqrt t\rbrace$ equals
 
 (A) $\dfrac{\sqrt\pi}{2s^{3/2}}$
 
@@ -12,7 +12,7 @@
 
 (D) $\dfrac{\sqrt\pi}{s^{3/2}}$
 
-**Q2.** `[Numerical]` ★ $\mathcal{L}\{e^{2t}\sin 3t\}$ equals
+**Q2.** `[Numerical]` ★ $\mathcal{L}\lbrace e^{2t}\sin 3t\rbrace$ equals
 
 (A) $\dfrac{3}{(s+2)^2+9}$
 
@@ -22,7 +22,7 @@
 
 (D) $\dfrac{3}{(s-2)^2-9}$
 
-**Q3.** `[Numerical]` ★★ $\mathcal{L}\{t\sin t\}$ equals
+**Q3.** `[Numerical]` ★★ $\mathcal{L}\lbrace t\sin t\rbrace$ equals
 
 (A) $\dfrac{2s}{(s^2+1)^2}$
 
@@ -32,7 +32,7 @@
 
 (D) $\dfrac{1}{(s^2+1)^2}$
 
-**Q4.** `[Numerical]` ★★ $\mathcal{L}^{-1}\left\{\dfrac{1}{s(s^2+1)}\right\}$ equals
+**Q4.** `[Numerical]` ★★ $\mathcal L^{-1}\left\lbrace \dfrac{1}{s(s^2+1)}\right\rbrace$ equals
 
 (A) $1+\cos t$
 
@@ -42,7 +42,7 @@
 
 (D) $t-\sin t$
 
-**Q5.** `[Numerical]` ★★★ The value of $\displaystyle\int_0^\infty \frac{e^{-t}\sin t}{t}\,dt$ is
+**Q5.** `[Numerical]` ★★★ The value of $\displaystyle\int_0^\infty \frac{e^{-t}\sin t}{t}\thinspace dt$ is
 
 (A) $\dfrac{\pi}{2}$
 
@@ -52,17 +52,17 @@
 
 (D) $\ln 2$
 
-**Q6.** `[Concept]` ★★ $\mathcal{L}^{-1}\left\{\dfrac{e^{-2s}}{s^2}\right\}$ equals ($u$ = unit step)
+**Q6.** `[Concept]` ★★ $\mathcal L^{-1}\left\lbrace \dfrac{e^{-2s}}{s^2}\right\rbrace$ equals ($u$ = unit step)
 
-(A) $t\,u(t-2)$
+(A) $t\thinspace u(t-2)$
 
-(B) $(t-2)\,u(t)$
+(B) $(t-2)\thinspace u(t)$
 
-(C) $(t+2)\,u(t+2)$
+(C) $(t+2)\thinspace u(t+2)$
 
-(D) $(t-2)\,u(t-2)$
+(D) $(t-2)\thinspace u(t-2)$
 
-**Q7.** `[Application]` ★★★ The solution of the integral equation $y(t)=t+\displaystyle\int_0^t \sin(t-u)\,y(u)\,du$ is
+**Q7.** `[Application]` ★★★ The solution of the integral equation $y(t)=t+\displaystyle\int_0^t \sin(t-u)\thinspace y(u)\thinspace du$ is
 
 (A) $t+\dfrac{t^3}{6}$
 
@@ -76,11 +76,11 @@
 
 I. Every piecewise continuous function of exponential order on $[0,\infty)$ has a Laplace transform for all sufficiently large $s$.
 
-II. $\mathcal{L}\{t^{-1/2}\}$ exists, although $t^{-1/2}$ is not piecewise continuous on $[0,\infty)$.
+II. $\mathcal{L}\lbrace t^{-1/2}\rbrace$ exists, although $t^{-1/2}$ is not piecewise continuous on $[0,\infty)$.
 
-III. $\mathcal{L}\{e^{t^2}\}$ exists for $s>0$.
+III. $\mathcal{L}\lbrace e^{t^2}\rbrace$ exists for $s\gt 0$.
 
-IV. If $f$ is piecewise continuous and of exponential order, then $\mathcal{L}\{f\}(s)\to0$ as $s\to\infty$.
+IV. If $f$ is piecewise continuous and of exponential order, then $\mathcal{L}\lbrace f\rbrace (s)\to0$ as $s\to\infty$.
 
 Which are correct?
 
@@ -104,11 +104,11 @@ Which are correct?
 
 (D) A is false but R is true
 
-**Q10.** `[Match]` ★★ Match $F(s)$ (List-I) with $f(t)=\mathcal{L}^{-1}\{F\}$ (List-II).
+**Q10.** `[Match]` ★★ Match $F(s)$ (List-I) with $f(t)=\mathcal L^{-1}\lbrace F\rbrace$ (List-II).
 
 | List-I | List-II |
 |---|---|
-| (a) $\dfrac{s}{s^2+a^2}$ | 1. $t\,e^{at}$ |
+| (a) $\dfrac{s}{s^2+a^2}$ | 1. $t\thinspace e^{at}$ |
 | (b) $\dfrac{a}{s^2-a^2}$ | 2. $\delta(t)$ |
 | (c) $\dfrac{1}{(s-a)^2}$ | 3. $\cos at$ |
 | (d) $1$ | 4. $\sinh at$ |
@@ -121,15 +121,15 @@ Which are correct?
 
 (D) a-3, b-4, c-2, d-1
 
-**Q11.** `[NOT-true / Counterexample]` ★ With $F=\mathcal{L}\{f\}$, $G=\mathcal{L}\{g\}$, which is NOT true in general?
+**Q11.** `[NOT-true / Counterexample]` ★ With $F=\mathcal{L}\lbrace f\rbrace$, $G=\mathcal{L}\lbrace g\rbrace$, which is NOT true in general?
 
-(A) $\mathcal{L}\left\{\int_0^t f(u)g(t-u)\,du\right\}=F(s)G(s)$
+(A) $\mathcal{L}\left\lbrace \int_0^t f(u)g(t-u)\thinspace du\right\rbrace =F(s)G(s)$
 
-(B) $\mathcal{L}\{f'(t)\}=sF(s)-f(0)$
+(B) $\mathcal{L}\lbrace f'(t)\rbrace =sF(s)-f(0)$
 
-(C) $\mathcal{L}\{f(t)g(t)\}=F(s)G(s)$
+(C) $\mathcal{L}\lbrace f(t)g(t)\rbrace =F(s)G(s)$
 
-(D) $\mathcal{L}\left\{\dfrac{f(t)}{t}\right\}=\displaystyle\int_s^\infty F(u)\,du$ (when $\lim_{t\to0^+}f(t)/t$ exists)
+(D) $\mathcal{L}\left\lbrace \dfrac{f(t)}{t}\right\rbrace =\displaystyle\int_s^\infty F(u)\thinspace du$ (when $\lim_{t\to0^+}f(t)/t$ exists)
 
 **Q12.** `[Numerical]` ★★ If $F(s)=\dfrac{s+3}{s(s+1)(s+2)}$, then $\displaystyle\lim_{t\to\infty}f(t)$ equals
 
@@ -170,27 +170,27 @@ Which are correct?
 | 13 | D | Numerical |
 
 ## Solutions
-**Q1 — (A).** $\mathcal{L}\{t^\nu\}=\frac{\Gamma(\nu+1)}{s^{\nu+1}}$; $\Gamma(3/2)=\frac{\sqrt\pi}{2}$. (B) is $\mathcal{L}\{t^{-1/2}\}$.
+**Q1 — (A).** $\mathcal{L}\lbrace t^\nu\rbrace =\frac{\Gamma(\nu+1)}{s^{\nu+1}}$; $\Gamma(3/2)=\frac{\sqrt\pi}{2}$. (B) is $\mathcal{L}\lbrace t^{-1/2}\rbrace$.
 
-**Q2 — (C).** First shifting: $\mathcal{L}\{e^{at}f\}=F(s-a)$ with $F=\frac{3}{s^2+9}$. (A) shifts the wrong way.
+**Q2 — (C).** First shifting: $\mathcal{L}\lbrace e^{at}f\rbrace =F(s-a)$ with $F=\frac{3}{s^2+9}$. (A) shifts the wrong way.
 
-**Q3 — (A).** $\mathcal{L}\{tf\}=-F'(s)=-\frac{d}{ds}\frac1{s^2+1}=\frac{2s}{(s^2+1)^2}$. (B) is $\mathcal{L}\{t\cos t\}$; (C) forgets the minus sign.
+**Q3 — (A).** $\mathcal{L}\lbrace tf\rbrace =-F'(s)=-\frac{d}{ds}\frac1{s^2+1}=\frac{2s}{(s^2+1)^2}$. (B) is $\mathcal{L}\lbrace t\cos t\rbrace$; (C) forgets the minus sign.
 
-**Q4 — (C).** $\frac{1}{s(s^2+1)}=\frac1s-\frac{s}{s^2+1}$ ⇒ $1-\cos t$ (or $\int_0^t\sin u\,du$). (D) is $\mathcal{L}^{-1}\{\frac{1}{s^2(s^2+1)}\}$.
+**Q4 — (C).** $\frac{1}{s(s^2+1)}=\frac1s-\frac{s}{s^2+1}$ ⇒ $1-\cos t$ (or $\int_0^t\sin u\thinspace du$). (D) is $\mathcal L^{-1}\lbrace \frac{1}{s^2(s^2+1)}\rbrace$.
 
-**Q5 — (B).** $\mathcal{L}\{\frac{\sin t}{t}\}=\int_s^\infty\frac{du}{u^2+1}=\tan^{-1}\frac1s$; at $s=1$: $\pi/4$. (A) is the value at $s=0$.
+**Q5 — (B).** $\mathcal{L}\lbrace \frac{\sin t}{t}\rbrace =\int_s^\infty\frac{du}{u^2+1}=\tan^{-1}\frac1s$; at $s=1$: $\pi/4$. (A) is the value at $s=0$.
 
-**Q6 — (D).** Second shifting: $\mathcal{L}\{f(t-a)u(t-a)\}=e^{-as}F(s)$ with $f=t$, $a=2$. (A) shifts the step but not the function.
+**Q6 — (D).** Second shifting: $\mathcal{L}\lbrace f(t-a)u(t-a)\rbrace =e^{-as}F(s)$ with $f=t$, $a=2$. (A) shifts the step but not the function.
 
 **Q7 — (A).** $Y=\frac1{s^2}+\frac{Y}{s^2+1}$ ⇒ $Y\frac{s^2}{s^2+1}=\frac1{s^2}$ ⇒ $Y=\frac{s^2+1}{s^4}=\frac1{s^2}+\frac1{s^4}$ ⇒ $y=t+\frac{t^3}{6}$. (D) comes from a sign error.
 
-**Q8 — (B).** I: standard existence theorem (sufficient). II: $\mathcal{L}\{t^{-1/2}\}=\sqrt{\pi/s}$, so the condition in I is not necessary. III: $e^{t^2-st}\to\infty$, no transform. IV: true for such $f$ (so e.g. $F(s)=1$ or $s$ is not the transform of an ordinary function).
+**Q8 — (B).** I: standard existence theorem (sufficient). II: $\mathcal{L}\lbrace t^{-1/2}\rbrace =\sqrt{\pi/s}$, so the condition in I is not necessary. III: $e^{t^2-st}\to\infty$, no transform. IV: true for such $f$ (so e.g. $F(s)=1$ or $s$ is not the transform of an ordinary function).
 
 **Q9 — (D).** $\lim_{t\to\infty}\sin t$ does not exist; $sF(s)=\frac{s}{s^2+1}$ has poles $\pm i$ on the imaginary axis, so the FVT does not apply. A is false, R is true.
 
-**Q10 — (B).** $\cos at$; $\sinh at$; first shift of $\mathcal{L}\{t\}=1/s^2$ gives $te^{at}$; $\mathcal{L}\{\delta\}=1$.
+**Q10 — (B).** $\cos at$; $\sinh at$; first shift of $\mathcal{L}\lbrace t\rbrace =1/s^2$ gives $te^{at}$; $\mathcal{L}\lbrace \delta\rbrace =1$.
 
-**Q11 — (C).** The transform of a product is not the product of transforms (that is the convolution theorem, A). E.g. $f=g=1$: $\mathcal{L}\{1\}=\frac1s\ne\frac1{s^2}$.
+**Q11 — (C).** The transform of a product is not the product of transforms (that is the convolution theorem, A). E.g. $f=g=1$: $\mathcal{L}\lbrace 1\rbrace =\frac1s\ne\frac1{s^2}$.
 
 **Q12 — (C).** $sF=\frac{s+3}{(s+1)(s+2)}$ has poles $-1,-2$ (left half-plane), so FVT applies: $\frac{3}{2}$. (B) forgets the factor $(s+1)(s+2)=2$ at $s=0$; (A) wrongly assumes $f$ must decay (the pole of $F$ at $s=0$ gives a constant term $\frac32$ in $f$).
 

@@ -68,7 +68,7 @@ Which of the above is/are correct?
 (D) I, II and III
 
 **Q6.** `[Assertion-Reason]` ★★
-**Assertion (A):** $47 \times 43 = 2021$ can be written down at once as $(4\times 5)\,|\,(7\times 3)$.
+**Assertion (A):** $47 \times 43 = 2021$ can be written down at once as $(4\times 5)\thinspace |\thinspace (7\times 3)$.
 **Reason (R):** The sub-sutra *Antyayordashake'pi* applies when the last digits add up to 10 and the remaining (leading) parts are equal.
 
 (A) Both A and R are true and R is the correct explanation of A
@@ -119,7 +119,7 @@ Which of the above is/are correct?
 
 (D) Shunyam Samyasamuccaye
 
-**Q11.** `[Application]` ★★★ $1234$ is divided by $112$ using *Paravartya Yojayet* (the transposed digits of the divisor are $\bar{1}\,\bar{2}$). The quotient and remainder are
+**Q11.** `[Application]` ★★★ $1234$ is divided by $112$ using *Paravartya Yojayet* (the transposed digits of the divisor are $\bar{1}\thinspace \bar{2}$). The quotient and remainder are
 
 (A) 11 and 12
 
@@ -190,7 +190,7 @@ is
 
 **Q10 — (B).** Urdhva-Tiryagbhyam ("vertically and crosswise") is the general method. In modern terms it is the convolution of the digit sequences. Nikhilam works best near a base, Ekanyunena only for multipliers made of 9s, and Shunyam Samyasamuccaye is for solving equations.
 
-**Q11 — (C).** With the flag digits $\bar1\bar2$: the dividend splits as $12\,|\,34$. Bring down 1. Then $2+(1)(\bar1)=1$. In the remainder columns: $3+(1)(\bar2)+(1)(\bar1)=0$ and $4+(1)(\bar2)=2$. Quotient $11$, remainder $02$. Check: $112\times11+2=1234$. (D) is the result of an unreduced negative remainder.
+**Q11 — (C).** With the flag digits $\bar1\bar2$: the dividend splits as $12\thinspace |\thinspace 34$. Bring down 1. Then $2+(1)(\bar1)=1$. In the remainder columns: $3+(1)(\bar2)+(1)(\bar1)=0$ and $4+(1)(\bar2)=2$. Quotient $11$, remainder $02$. Check: $112\times11+2=1234$. (D) is the result of an unreduced negative remainder.
 
 **Q12 — (D).** $N_1+N_2=4x+5$ and $D_1+D_2=8x+10=2(4x+5)$. The sutra (when the sums are the same, apart from a numerical factor) gives $4x+5=0$, so $x=-5/4$. Cross-multiplying confirms it: $6x^2+17x+12=6x^2+13x+7\Rightarrow x=-5/4$.
 

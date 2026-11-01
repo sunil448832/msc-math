@@ -84,7 +84,7 @@ Which are correct?
 
 (D) A is false but R is true
 
-**Q8.** `[Match]` ★★★ Applied to the test equation $y'=\lambda y$ with $z=h\lambda$, each method gives $y_{n+1}=R(z)\,y_n$. Match the method with $R(z)$.
+**Q8.** `[Match]` ★★★ Applied to the test equation $y'=\lambda y$ with $z=h\lambda$, each method gives $y_{n+1}=R(z)\thinspace y_n$. Match the method with $R(z)$.
 
 | List-I | List-II |
 |---|---|
@@ -163,9 +163,9 @@ Which are correct?
 
 **Q2 — (B).** $y_1=1+0.1(0+1)=1.1$ and $y_2=1.1+0.1(0.1+1.1)=1.22$. (D) is the exact value $2e^{0.2}-1.2$.
 
-**Q3 — (C).** $k_1=f(0,1)=1$. The predictor is $y^*=1.2$, so $k_2=f(0.2,1.2)=1.4$. Then $y_1=1+0.1(1+1.4)=1.24$, which is close to the exact $1.2428$. (A) is the Euler step alone.
+**Q3 — (C).** $k_1=f(0,1)=1$. The predictor is $y^\ast =1.2$, so $k_2=f(0.2,1.2)=1.4$. Then $y_1=1+0.1(1+1.4)=1.24$, which is close to the exact $1.2428$. (A) is the Euler step alone.
 
-**Q4 — (D).** $y_1=1+\int_0^x(t+1)\,dt=1+x+\frac{x^2}{2}$. Then $y_2=1+\int_0^x\left(t+1+t+\frac{t^2}{2}\right)dt=1+x+x^2+\frac{x^3}{6}$. (A) is $y_1$. (B) is the $e^x$ partial sum, which comes from Picard iteration for $y'=y$ and ignores the $x$ term in $f$.
+**Q4 — (D).** $y_1=1+\int_0^x(t+1)\thinspace dt=1+x+\frac{x^2}{2}$. Then $y_2=1+\int_0^x\left(t+1+t+\frac{t^2}{2}\right)dt=1+x+x^2+\frac{x^3}{6}$. (A) is $y_1$. (B) is the $e^x$ partial sum, which comes from Picard iteration for $y'=y$ and ignores the $x$ term in $f$.
 
 **Q5 — (C).** $k_1=1$, $k_2=1.5$, $k_3=1.75$, $k_4=2.75$, so $y_1=1+\frac16(1+3+3.5+2.75)=\frac{65}{24}\approx2.7083$. This equals the Taylor polynomial $1+1+\frac12+\frac16+\frac1{24}$, because RK4 reproduces the Taylor series up to $h^4$.
 

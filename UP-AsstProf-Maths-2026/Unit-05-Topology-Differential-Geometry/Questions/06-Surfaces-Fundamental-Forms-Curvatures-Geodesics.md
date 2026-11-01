@@ -2,7 +2,7 @@
 > Syllabus coverage: First and Second fundamental forms, Gaussian curvatures, Principal directions and principal curvatures, Geodesics
 > Cheatsheet: [../Cheatsheets/06-Surfaces-Fundamental-Forms-Curvatures-Geodesics.md](../Cheatsheets/06-Surfaces-Fundamental-Forms-Curvatures-Geodesics.md)
 
-*Notation: $I=E\,du^2+2F\,du\,dv+G\,dv^2$, $II=L\,du^2+2M\,du\,dv+N\,dv^2$, $K$ = Gaussian curvature, $H$ = mean curvature, $\kappa_1,\kappa_2$ = principal curvatures.*
+*Notation: $`I=E\thinspace du^2+2F\thinspace du\thinspace dv+G\thinspace dv^2`$, $`II=L\thinspace du^2+2M\thinspace du\thinspace dv+N\thinspace dv^2`$, $`K`$ = Gaussian curvature, $`H`$ = mean curvature, $`\kappa_1,\kappa_2`$ = principal curvatures.*
 
 **Q1.** `[Numerical]` ★ The Gaussian curvature of a sphere of radius $a$ is
 
@@ -39,8 +39,8 @@
 | List-I | List-II |
 |---|---|
 | A. Sphere | 1. $K=0,\ H=0$ |
-| B. Circular cylinder | 2. $K<0,\ H=0$ |
-| C. Plane | 3. $K>0$, every point umbilic |
+| B. Circular cylinder | 2. $K\lt 0,\ H=0$ |
+| C. Plane | 3. $K\gt 0$, every point umbilic |
 | D. Catenoid | 4. $K=0,\ H\ne0$ |
 
 (A) A-3, B-1, C-4, D-2
@@ -187,15 +187,15 @@ Which of the above is/are correct?
 
 **Q2 — (A).** For a Monge patch $z=f(x,y)$, $K=\dfrac{f_{xx}f_{yy}-f_{xy}^2}{(1+f_x^2+f_y^2)^2}$. At the origin $f_x=f_y=0$, so $K=2\cdot10-3^2=11$ (checked with sympy). Option (B) forgets the $f_{xy}^2$ term.
 
-**Q3 — (B).** If $\kappa_1=\kappa_2$ everywhere, then $dN=-\kappa\,d\mathbf r$ with $\kappa$ constant. If $\kappa=0$ the surface is a plane; otherwise it is a sphere of radius $1/|\kappa|$. A cylinder is not umbilic: its principal curvatures are $0$ and $1/a$.
+**Q3 — (B).** If $\kappa_1=\kappa_2$ everywhere, then $dN=-\kappa\thinspace d\mathbf r$ with $\kappa$ constant. If $\kappa=0$ the surface is a plane; otherwise it is a sphere of radius $1/|\kappa|$. A cylinder is not umbilic: its principal curvatures are $0$ and $1/a$.
 
-**Q4 — (B).** Sphere: $\kappa_1=\kappa_2=1/a$. Cylinder: $\kappa_1=1/a$, $\kappa_2=0$, so $K=0$ and $H\ne0$. Plane: both principal curvatures are $0$. Catenoid: minimal ($H=0$) with $K=-\operatorname{sech}^4u<0$.
+**Q4 — (B).** Sphere: $\kappa_1=\kappa_2=1/a$. Cylinder: $\kappa_1=1/a$, $\kappa_2=0$, so $K=0$ and $H\ne0$. Plane: both principal curvatures are $0$. Catenoid: minimal ($H=0$) with $K=-\operatorname{sech}^4u\lt 0$.
 
 **Q5 — (A).** For the torus with radii $R,r$: $K=\dfrac{\cos u}{r(R+r\cos u)}$. With $R=3$, $r=1$, $u=\pi$: $K=\dfrac{-1}{1\cdot2}=-\tfrac12$ (saddle-like inner side). The outer equator gives $\tfrac14$, which is option (B).
 
 **Q6 — (D).** I and II are standard. III is missing the factor 2: $H=\dfrac{EN-2FM+GL}{2(EG-F^2)}$.
 
-**Q7 — (A).** An isometry preserves $E,F,G$, and $K$ depends only on these (Gauss). Since the two curvatures differ, no local isometry exists. This is exactly the reason why every flat map of the Earth distorts distances.
+**Q7 — (A).** An isometry preserves $E,F,G$, and $`K`$ depends only on these (Gauss). Since the two curvatures differ, no local isometry exists. This is exactly the reason why every flat map of the Earth distorts distances.
 
 **Q8 — (D).** On the cylinder (locally isometric to the plane by unrolling), geodesics are the images of straight lines: rulings, parallels and helices. The ellipse $z=x$ unrolls to a sinusoid, not a line. Equivalently, its principal normal is not along the surface normal except at isolated points.
 
@@ -205,7 +205,7 @@ Which of the above is/are correct?
 
 **Q11 — (D).** A minimal surface has $H=0$, so $\kappa_2=-\kappa_1$ and $K=-\kappa_1^2\le0$. (C) holds because the shape operator is self-adjoint.
 
-**Q12 — (C).** For the helicoid $(u\cos v,u\sin v,cv)$, $K=-\dfrac{c^2}{(c^2+u^2)^2}$. With $c=1$, $u=1$: $K=-\tfrac14$ (sympy). The helicoid is a minimal surface, so $K<0$ everywhere, with $K=-1/c^2$ on the axis $u=0$. Option (B) forgets to square $c^2+u^2$.
+**Q12 — (C).** For the helicoid $(u\cos v,u\sin v,cv)$, $K=-\dfrac{c^2}{(c^2+u^2)^2}$. With $c=1$, $u=1$: $K=-\tfrac14$ (sympy). The helicoid is a minimal surface, so $K\lt 0$ everywhere, with $K=-1/c^2$ on the axis $u=0$. Option (B) forgets to square $c^2+u^2$.
 
 **Q13 — (A).** Euler's theorem: $\kappa_n=\kappa_1\cos^2\theta+\kappa_2\sin^2\theta=3\cdot\tfrac14+1\cdot\tfrac34=\tfrac32$. Option (B) swaps $\cos^2$ and $\sin^2$.
 

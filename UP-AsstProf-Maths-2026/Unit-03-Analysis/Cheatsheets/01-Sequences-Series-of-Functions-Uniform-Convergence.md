@@ -4,7 +4,7 @@
 ## 1. Real sequences — essentials
 - **limsup / liminf:** $\limsup a_n=\inf_n\sup_{k\ge n}a_k$ = largest subsequential limit; $\liminf$ = smallest. $(a_n)$ converges $\iff \limsup=\liminf$ (finite).
 - $\limsup(a_n+b_n)\le\limsup a_n+\limsup b_n$ (inequality can be strict). $\liminf(-a_n)=-\limsup a_n$.
-- **Bolzano–Weierstrass:** every bounded sequence in $\mathbb{R}^n$ has a convergent subsequence.
+- **Bolzano–Weierstrass:** every bounded sequence in $\mathbb R^n$ has a convergent subsequence.
 - **Monotone convergence:** a monotone sequence converges $\iff$ it is bounded.
 - **Cauchy:** in $\mathbb{R}$, Cauchy $\iff$ convergent (completeness). Fails in $\mathbb{Q}$.
 - Standard limits: $n^{1/n}\to1$, $(1+1/n)^n\to e$, $(n!)^{1/n}/n\to 1/e$, $\frac{a_{n+1}}{a_n}\to L\Rightarrow a_n^{1/n}\to L$ (the converse fails).
@@ -13,26 +13,26 @@
 ## 2. Series of reals — tests
 | Test | Statement |
 |---|---|
-| $n$th term | $\sum a_n$ converges $\Rightarrow a_n\to0$ (not conversely: $\sum 1/n$) |
-| $p$-series | $\sum 1/n^p$ converges $\iff p>1$; $\sum \frac{1}{n(\log n)^p}$ converges $\iff p>1$ |
-| Comparison / limit comparison | $a_n,b_n>0$, $a_n/b_n\to c\in(0,\infty)$ ⇒ same behaviour |
-| Ratio (d'Alembert) | $\limsup\frac{a_{n+1}}{a_n}<1$ conv.; $\liminf>1$ div.; $=1$ inconclusive |
-| Root (Cauchy) | $\limsup a_n^{1/n}<1$ conv.; $>1$ div. (stronger than ratio) |
+| $`n`$-th term | $`\sum a_n`$ converges $`\Rightarrow a_n\to0`$ (not conversely: $`\sum 1/n`$) |
+| $p$-series | $\sum 1/n^p$ converges $\iff p\gt 1$; $\sum \frac{1}{n(\log n)^p}$ converges $\iff p\gt 1$ |
+| Comparison / limit comparison | $a_n,b_n\gt 0$, $a_n/b_n\to c\in(0,\infty)$ ⇒ same behaviour |
+| Ratio (d'Alembert) | $\limsup\frac{a_{n+1}}{a_n}\lt 1$ conv.; $\liminf\gt 1$ div.; $=1$ inconclusive |
+| Root (Cauchy) | $\limsup a_n^{1/n}\lt 1$ conv.; $\gt 1$ div. (stronger than ratio) |
 | Cauchy condensation | $a_n\downarrow0$: $\sum a_n$ and $\sum 2^ka_{2^k}$ converge together |
 | Integral | $f\ge0$ decreasing: $\sum f(n)$ and $\int_1^\infty f$ converge together |
-| Raabe | $n\left(\frac{a_n}{a_{n+1}}-1\right)\to L$: $L>1$ conv., $L<1$ div. |
+| Raabe | $n\left(\frac{a_n}{a_{n+1}}-1\right)\to L$: $L\gt 1$ conv., $L\lt 1$ div. |
 | Leibniz | $a_n\downarrow0\Rightarrow\sum(-1)^na_n$ converges; error $\le a_{n+1}$ |
 | Dirichlet / Abel | $\sum a_n$ has bounded partial sums and $b_n\downarrow0$ ⇒ $\sum a_nb_n$ conv.; $\sum a_n$ conv. and $b_n$ monotone bounded ⇒ conv. |
 - Absolute convergence ⇒ convergence. **Riemann rearrangement:** a conditionally convergent series can be rearranged to any sum in $[-\infty,\infty]$. An absolutely convergent series has the same sum under every rearrangement.
 
 ## 3. Pointwise vs uniform convergence
 - $f_n\to f$ **uniformly** on $E$ $\iff M_n:=\sup_{E}|f_n-f|\to0$.
-- **Cauchy criterion:** uniform $\iff \forall\varepsilon\,\exists N:\ |f_n(x)-f_m(x)|<\varepsilon$ for all $m,n\ge N$ and all $x\in E$.
+- **Cauchy criterion:** uniform $\iff \forall\varepsilon\thinspace \exists N:\ |f_n(x)-f_m(x)|\lt \varepsilon$ for all $m,n\ge N$ and all $x\in E$.
 - **Recipe:** find the pointwise limit $f$ → maximize $|f_n-f|$ (calculus) → check whether that max tends to $0$. Or show non-uniformity by finding $x_n$ with $|f_n(x_n)-f(x_n)|\not\to0$.
 
-| $f_n$ on $[0,1]$ | pointwise limit | $\sup|f_n-f|$ | uniform? |
+| $f_n$ on $[0,1]$ | pointwise limit | $\sup\vert f_n-f\vert$ | uniform? |
 |---|---|---|---|
-| $x^n$ | $0$ ($x<1$), $1$ ($x=1$) | $1$ | No (on $[0,a]$, $a<1$: yes) |
+| $x^n$ | $0$ ($x\lt 1$), $1$ ($x=1$) | $1$ | No (on $[0,a]$, $a\lt 1$: yes) |
 | $\frac{nx}{1+n^2x^2}$ | $0$ | $1/2$ at $x=1/n$ | No |
 | $\frac{x}{1+nx^2}$ | $0$ | $\frac1{2\sqrt n}$ | Yes |
 | $nx(1-x)^n$, $nx^n(1-x)$ | $0$ | $\to 1/e$ | No |
@@ -51,17 +51,17 @@
 - **Weierstrass approximation:** every continuous $f$ on $[a,b]$ is a uniform limit of polynomials.
 
 ## 5. Series of functions
-- **Weierstrass M-test:** $|u_n(x)|\le M_n$ on $E$ and $\sum M_n<\infty$ ⇒ $\sum u_n$ converges uniformly and absolutely on $E$. E.g. $\sum\frac{\sin nx}{n^p}$, $p>1$, on $\mathbb{R}$.
+- **Weierstrass M-test:** $|u_n(x)|\le M_n$ on $E$ and $\sum M_n\lt \infty$ ⇒ $\sum u_n$ converges uniformly and absolutely on $E$. E.g. $\sum\frac{\sin nx}{n^p}$, $p\gt 1$, on $\mathbb{R}$.
 - **Dirichlet/Abel tests (uniform versions):** e.g. $\sum\frac{\sin nx}{n}$ converges uniformly on $[\delta,2\pi-\delta]$ but **not** on $[0,2\pi]$.
-- **Dini's theorem:** $K$ **compact**, $f_n\in C(K)$, $f_n(x)$ **monotone** in $n$ for each $x$, and the limit $f$ **continuous** ⇒ uniform convergence. Each hypothesis is needed: $x^n$ on $[0,1)$ (non-compact); $x^n$ on $[0,1]$ (discontinuous limit); $\frac{nx}{1+n^2x^2}$ (not monotone).
+- **Dini's theorem:** $K$ **compact**, $f_n\in C(K)$, $f_n(x)$ **monotone** in $`n`$ for each $x$, and the limit $f$ **continuous** ⇒ uniform convergence. Each hypothesis is needed: $x^n$ on $[0,1)$ (non-compact); $x^n$ on $[0,1]$ (discontinuous limit); $\frac{nx}{1+n^2x^2}$ (not monotone).
 - Example: $\sum_{n\ge0}\frac{x^2}{(1+x^2)^n}=1+x^2$ ($x\ne0$), $=0$ at $x=0$. The sum is discontinuous, so the convergence is not uniform near $0$.
 
 ## 6. Power series $\sum a_n(x-c)^n$
 - **Cauchy–Hadamard:** $\dfrac1R=\limsup|a_n|^{1/n}$. If $\left|\frac{a_{n+1}}{a_n}\right|\to L$, then $R=1/L$.
-- Converges absolutely for $|x-c|<R$, diverges for $|x-c|>R$, and converges **uniformly on every $[c-r,c+r]$ with $r<R$**. At the endpoints anything can happen; check them separately.
+- Converges absolutely for $|x-c|\lt R$, diverges for $|x-c|\gt R$, and converges **uniformly on every $[c-r,c+r]$ with $r\lt R$**. At the endpoints anything can happen; check them separately.
 - **Abel's theorem:** if the series converges at $x=R$, it converges uniformly on $[0,R]$ and the sum is left-continuous at $R$. (Used to get $\log2=1-\frac12+\frac13-\cdots$ and $\frac\pi4=1-\frac13+\cdots$.)
 - Term-by-term differentiation and integration keep the same $R$, but endpoint behaviour may change.
-- Standard radii: $\sum\frac{n!}{n^n}z^n$: $R=e$; $\sum n!z^n$: $R=0$; $\sum\frac{z^n}{n!}$: $R=\infty$; $\sum z^{n!}$, $\sum z^{2^n}$: $R=1$ (lacunary); $\sum a_nz^n$ with $a_n\in\{2^n,3^n\}$ alternately: $R=1/3$; $\sum n^kz^n$: $R=1$.
+- Standard radii: $\sum\frac{n!}{n^n}z^n$: $R=e$; $\sum n!z^n$: $R=0$; $\sum\frac{z^n}{n!}$: $R=\infty$; $\sum z^{n!}$, $\sum z^{2^n}$: $R=1$ (lacunary); $\sum a_nz^n$ with $a_n\in\lbrace 2^n,3^n\rbrace$ alternately: $R=1/3$; $\sum n^kz^n$: $R=1$.
 - Radius of $\sum a_nz^{2n}$ is $\sqrt{R}$, where $R$ is the radius of $\sum a_nz^n$.
 
 ## 7. Exam traps

@@ -131,13 +131,13 @@ Which is/are correct?
 
 **Q12.** `[Concept]` ★ The Jordan canonical form of a non-zero $2\times2$ nilpotent matrix is
 
-(A) $\begin{pmatrix}0&0\\0&0\end{pmatrix}$
+(A) $`\begin{pmatrix}0&0\cr 0&0\end{pmatrix}`$
 
-(B) $\begin{pmatrix}0&1\\0&0\end{pmatrix}$
+(B) $`\begin{pmatrix}0&1\cr 0&0\end{pmatrix}`$
 
-(C) $\begin{pmatrix}1&1\\0&0\end{pmatrix}$
+(C) $`\begin{pmatrix}1&1\cr 0&0\end{pmatrix}`$
 
-(D) $\begin{pmatrix}0&1\\1&0\end{pmatrix}$
+(D) $`\begin{pmatrix}0&1\cr 1&0\end{pmatrix}`$
 
 ---
 ## Answer Key
@@ -173,7 +173,7 @@ Which is/are correct?
 
 **Q8 — (A).** $\operatorname{rank}J_4(0)=3$. The minimal polynomial of $J_4(2)$ is $(x-2)^4$. A single block has a 1-dimensional eigenspace. $J_4(0)^2$ has rank 2, so its nullity is 2.
 
-**Q9 — (C).** $C(x^2)=\begin{pmatrix}0&0\\1&0\end{pmatrix}$ is non-zero nilpotent, so it is not diagonalizable. $C(f)$ is diagonalizable over $\mathbb C$ iff $f$ has distinct roots. (A), (B) and (D) always hold: $C(f)$ is cyclic, so each eigenvalue has a single Jordan block.
+**Q9 — (C).** $`C(x^2)=\begin{pmatrix}0&0\cr 1&0\end{pmatrix}`$ is non-zero nilpotent, so it is not diagonalizable. $C(f)$ is diagonalizable over $\mathbb C$ iff $f$ has distinct roots. (A), (B) and (D) always hold: $C(f)$ is cyclic, so each eigenvalue has a single Jordan block.
 
 **Q10 — (B).** Group the highest powers first: $d_2=(x-1)^2(x-2)$ (the minimal polynomial), then $d_1=(x-1)$. Each divides the next, $d_1\mid d_2$, and the product is the characteristic polynomial $(x-1)^3(x-2)$. (C) fails the divisibility $d_1\mid d_2$.
 

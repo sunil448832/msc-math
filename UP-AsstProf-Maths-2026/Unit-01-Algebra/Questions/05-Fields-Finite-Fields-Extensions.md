@@ -32,7 +32,7 @@
 
 (D) 6
 
-**Q4.** `[Numerical]` ★★★ The number of monic irreducible polynomials of degree 4 over $\mathbb{Z}_2$ is
+**Q4.** `[Numerical]` ★★★ The number of monic irreducible polynomials of degree 4 over $\mathbb Z_2$ is
 
 (A) 3
 
@@ -99,7 +99,7 @@ Which of the above is/are correct?
 
 (D) $\mathbb{C}$ is an algebraic extension of $\mathbb{R}$.
 
-**Q9.** `[Numerical]` ★★ The number of generators of the cyclic group $GF(16)^{\times}$ (i.e. the number of primitive elements of $GF(16)$) is
+**Q9.** `[Numerical]` ★★ The number of generators of the cyclic group $GF(16)^{\times}$ (i.e. the number of primitive elements of $`GF(16)`$) is
 
 (A) 15
 
@@ -149,7 +149,7 @@ Which of the above is/are correct?
 
 (D) 1
 
-**Q14.** `[Application]` ★★★ Let $K$ be the smallest extension of $\mathbb{Z}_2$ that contains a root of $x^2+x+1$ and a root of $x^3+x+1$. The number of elements of $K$ is
+**Q14.** `[Application]` ★★★ Let $K$ be the smallest extension of $\mathbb Z_2$ that contains a root of $x^2+x+1$ and a root of $x^3+x+1$. The number of elements of $K$ is
 
 (A) 32
 
@@ -179,11 +179,11 @@ Which of the above is/are correct?
 | 14 | C | Application |
 
 ## Solutions
-**Q1 — (B).** $\sqrt3\notin\mathbb{Q}(\sqrt2)$, so the degree is $2\cdot2=4$ by the tower law. A basis is $\{1,\sqrt2,\sqrt3,\sqrt6\}$.
+**Q1 — (B).** $\sqrt3\notin\mathbb{Q}(\sqrt2)$, so the degree is $2\cdot2=4$ by the tower law. A basis is $\lbrace 1,\sqrt2,\sqrt3,\sqrt6\rbrace$.
 
 **Q2 — (C).** The splitting field is $\mathbb{Q}(\sqrt[3]2,\omega)$. Here $[\mathbb{Q}(\sqrt[3]2):\mathbb{Q}]=3$, and $\omega\notin\mathbb{R}\supset\mathbb{Q}(\sqrt[3]2)$ adds degree 2, so the total is $6$ (Galois group $S_3$). Option (A) forgets the complex roots.
 
-**Q3 — (D).** Subfields of $GF(p^n)$ correspond one-to-one with the divisors of $n$, and $d(12)=|\{1,2,3,4,6,12\}|=6$.
+**Q3 — (D).** Subfields of $GF(p^n)$ correspond one-to-one with the divisors of $n$, and $d(12)=|\lbrace 1,2,3,4,6,12\rbrace |=6$.
 
 **Q4 — (A).** By Gauss's formula, $N_q(n)=\frac1n\sum_{d\mid n}\mu(d)q^{n/d}$. So $N_2(4)=\frac14(16-4)=3$: these are $x^4+x+1$, $x^4+x^3+1$, $x^4+x^3+x^2+x+1$. (Verified by enumeration.) $x^4+x^2+1=(x^2+x+1)^2$ is a trap.
 
@@ -205,4 +205,4 @@ Which of the above is/are correct?
 
 **Q13 — (A).** $\sqrt8=2\sqrt2\in\mathbb{Q}(\sqrt2)$, so the field is just $\mathbb{Q}(\sqrt2)$, of degree 2. Option (B) blindly multiplies the degrees.
 
-**Q14 — (C).** Both polynomials are irreducible over $\mathbb{Z}_2$, since neither has a root. Their roots generate $GF(2^2)$ and $GF(2^3)$. The smallest field containing both is $GF(2^{\operatorname{lcm}(2,3)})=GF(2^6)$, which has $64$ elements. Option (A), 32, adds the exponents ($2+3=5$), and option (B) is $GF(8)$, which does not contain $GF(4)$ because $2\nmid3$.
+**Q14 — (C).** Both polynomials are irreducible over $\mathbb Z_2$, since neither has a root. Their roots generate $GF(2^2)$ and $GF(2^3)$. The smallest field containing both is $GF(2^{\operatorname{lcm}(2,3)})=GF(2^6)$, which has $64$ elements. Option (A), 32, adds the exponents ($2+3=5$), and option (B) is $GF(8)$, which does not contain $GF(4)$ because $2\nmid3$.

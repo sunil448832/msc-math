@@ -176,19 +176,19 @@ Which of the above is/are correct?
 
 **Q4 — (C).** $q = |dw/dz| = |2z| = 2|1+i| = 2\sqrt2$. The complex velocity is $u - iv = dw/dz$ (up to the sign convention), and its modulus is the speed.
 
-**Q5 — (A).** $w = \mu\dfrac{x - iy}{x^2+y^2}$, so $\psi = -\dfrac{\mu y}{x^2+y^2}$. Setting $\psi = $ const gives $x^2 + y^2 + \lambda y = 0$: circles through $O$ with centres on the $y$-axis, tangent to the $x$-axis (the doublet axis). Option (B) describes the equipotentials ($\phi = $ const).
+**Q5 — (A).** $w = \mu\dfrac{x - iy}{x^2+y^2}$, so $\psi = -\dfrac{\mu y}{x^2+y^2}$. Setting $\psi =$ const gives $x^2 + y^2 + \lambda y = 0$: circles through $O$ with centres on the $y$-axis, tangent to the $x$-axis (the doublet axis). Option (B) describes the equipotentials ($\phi =$ const).
 
 **Q6 — (D).** On the axis $u = U + \dfrac{Q}{2\pi x}$. Setting $u = 0$ gives $x = -Q/(2\pi U)$, which is upstream. Option (A) is on the wrong side: downstream both velocities point the same way. This is the Rankine half-body.
 
 **Q7 — (A).** I: for irrotational flow, Bernoulli holds between **any** two points. II is true by symmetry, because the wall is a streamline. III is false: by the Milne-Thomson circle theorem the image is a source at the inverse point **plus an equal sink at the centre**, so that no net flux leaves the cylinder.
 
-**Q8 — (C).** $w = ik\log z = ik(\ln r + i\theta)$ gives $\phi = -k\theta$ and $\psi = k\ln r$. The streamlines $\psi = $ const are **circles**, and the circulation is $\mp2\pi k$, so this is a vortex and A is true. R is false: radial streamlines belong to a source.
+**Q8 — (C).** $w = ik\log z = ik(\ln r + i\theta)$ gives $\phi = -k\theta$ and $\psi = k\ln r$. The streamlines $\psi =$ const are **circles**, and the circulation is $\mp2\pi k$, so this is a vortex and A is true. R is false: radial streamlines belong to a source.
 
 **Q9 — (A).** These are the standard elementary complex potentials. The signs depend on convention, but the types are fixed.
 
 **Q10 — (D).** By d'Alembert's paradox, uniform motion through a perfect fluid gives **no** drag. The kinetic energy is $\tfrac12 M'U^2$ with $M' = \tfrac12\cdot\tfrac43\pi a^3\rho$, which gives (B) and (C). (A) is the standard potential, which satisfies $-\partial\phi/\partial r = U\cos\theta$ at $r = a$.
 
-**Q11 — (B).** For a sphere of density $\sigma$, $\left(\sigma + \tfrac12\rho\right)V\dot U = (\rho - \sigma)Vg$, so the upward acceleration is $\dfrac{\rho - \sigma}{\sigma + \rho/2}\,g$. With $\sigma \to 0$ this is $2g$. Answering $g$ or "infinite" ignores the added mass.
+**Q11 — (B).** For a sphere of density $\sigma$, $\left(\sigma + \tfrac12\rho\right)V\dot U = (\rho - \sigma)Vg$, so the upward acceleration is $\dfrac{\rho - \sigma}{\sigma + \rho/2}\thinspace g$. With $\sigma \to 0$ this is $2g$. Answering $g$ or "infinite" ignores the added mass.
 
 **Q12 — (C).** On $r = a$ the speed is $q = 2U|\sin\theta|$. Bernoulli gives $p = p_\infty + \tfrac12\rho U^2(1 - 4\sin^2\theta)$, which equals $p_\infty$ when $\sin^2\theta = \tfrac14$, i.e. at $\theta = 30^\circ$ (and $150^\circ$, $210^\circ$, $330^\circ$). At $90^\circ$ the pressure is minimum, $p_\infty - \tfrac32\rho U^2$.
 

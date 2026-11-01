@@ -417,7 +417,7 @@ In the light of the above statements, choose the correct answer from the options
 
 (D) $1$
 
-**36.** Let $S_5$ act on itself by conjugation. The order of the stabiliser (centraliser) of the cycle $(1\,2\,3)$ is
+**36.** Let $S_5$ act on itself by conjugation. The order of the stabiliser (centraliser) of the cycle $(1\thinspace 2\thinspace 3)$ is
 
 (A) $3$
 
@@ -433,7 +433,7 @@ a. $A_5$
 
 b. A group of order $30$
 
-c. $\mathbb{Z}_p$, $p$ prime
+c. $\mathbb Z_p$, $p$ prime
 
 d. A group of order $56$
 
@@ -447,7 +447,7 @@ Choose the correct answer from the options given below :
 
 (D) a, c only
 
-**38.** If $A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$, then $A^3 - 4A^2 + 3A + 2I$ equals
+**38.** If $`A = \begin{pmatrix} 2 & 1 \cr  1 & 2 \end{pmatrix}`$, then $A^3 - 4A^2 + 3A + 2I$ equals
 
 (A) $2I$
 
@@ -459,13 +459,13 @@ Choose the correct answer from the options given below :
 
 **39.** Which one of the following matrices is NOT diagonalisable over $\mathbb{C}$?
 
-(A) $\begin{pmatrix} 1 & 1 \\ 0 & 2 \end{pmatrix}$
+(A) $`\begin{pmatrix} 1 & 1 \cr  0 & 2 \end{pmatrix}`$
 
-(B) $\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$
+(B) $`\begin{pmatrix} 0 & 1 \cr  -1 & 0 \end{pmatrix}`$
 
-(C) $\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}$
+(C) $`\begin{pmatrix} 1 & 0 \cr  0 & 1 \end{pmatrix}`$
 
-(D) $\begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$
+(D) $`\begin{pmatrix} 1 & 1 \cr  0 & 1 \end{pmatrix}`$
 
 **40.** Given below are two statements, one is labeled as Assertion (A) and other is labeled as Reason (R).
 
@@ -528,9 +528,9 @@ Choose the correct answer from the code given below :
 | List-I | List-II |
 |---|---|
 | a. $A^2 = A$ | I. $\operatorname{Re}\lambda = 0$ |
-| b. $A^2 = I$ | II. $\lambda \in \{0, 1\}$ |
-| c. $A^{*}A = I$ | III. $\lvert\lambda\rvert = 1$ |
-| d. $A^{*} = -A$ | IV. $\lambda \in \{1, -1\}$ |
+| b. $A^2 = I$ | II. $\lambda \in \lbrace 0, 1\rbrace$ |
+| c. $A^{\ast }A = I$ | III. $\lvert\lambda\rvert = 1$ |
+| d. $A^{\ast } = -A$ | IV. $\lambda \in \lbrace 1, -1\rbrace$ |
 
 Choose the correct answer from the options given below :
 
@@ -572,15 +572,15 @@ Choose the correct answer from the options given below :
 
 (D) Every compact metric space is separable
 
-**48.** Which one of the following subsets of $\mathbb{R}^2$ is connected but NOT path-connected?
+**48.** Which one of the following subsets of $\mathbb R^2$ is connected but NOT path-connected?
 
-(A) $\{(x, y) : xy = 0\}$
+(A) $\lbrace (x, y) : xy = 0\rbrace$
 
-(B) $\mathbb{R}^2 \setminus \{(0, 0)\}$
+(B) $\mathbb R^2 \setminus \lbrace (0, 0)\rbrace$
 
-(C) $\{(x, y) : x^2 + y^2 = 1\}$
+(C) $\lbrace (x, y) : x^2 + y^2 = 1\rbrace$
 
-(D) $\{(x, \sin(1/x)) : 0 < x \le 1\} \cup \{(0, y) : -1 \le y \le 1\}$
+(D) $\lbrace (x, \sin(1/x)) : 0 \lt  x \le 1\rbrace  \cup \lbrace (0, y) : -1 \le y \le 1\rbrace$
 
 **49.** Given below are two statements, one is labeled as Assertion (A) and other is labeled as Reason (R).
 
@@ -628,7 +628,7 @@ Choose the correct answer from the code given below :
 
 (D) converges uniformly to a discontinuous function
 
-**52.** On $C[0, 1]$ with the supremum norm, consider the linear functional $\phi(x) = \displaystyle\int_0^1 t\,x(t)\,dt$. Then $\lVert \phi \rVert$ equals
+**52.** On $C[0, 1]$ with the supremum norm, consider the linear functional $\phi(x) = \displaystyle\int_0^1 t\thinspace x(t)\thinspace dt$. Then $\lVert \phi \rVert$ equals
 
 (A) $1$
 
@@ -642,7 +642,7 @@ Choose the correct answer from the code given below :
 
 a. $C[0, 1]$ with $\lVert f \rVert_\infty = \sup |f(x)|$
 
-b. $C[0, 1]$ with $\lVert f \rVert_1 = \int_0^1 |f(x)|\,dx$
+b. $C[0, 1]$ with $\lVert f \rVert_1 = \int_0^1 |f(x)|\thinspace dx$
 
 c. The space of all polynomials on $[0, 1]$ with $\lVert \cdot \rVert_\infty$
 
@@ -678,7 +678,7 @@ Choose the correct answer from the options given below :
 
 (D) $\pi/\sqrt{2}$
 
-**56.** The number of zeros of $p(z) = z^5 + 3z^3 + 7$ in the annulus $1 < |z| < 2$ is
+**56.** The number of zeros of $p(z) = z^5 + 3z^3 + 7$ in the annulus $1 \lt  |z| \lt  2$ is
 
 (A) $2$
 
@@ -810,7 +810,7 @@ Choose the correct answer from the options given below :
 
 (D) a, b, c, d
 
-**67.** Let $y_1, y_2$ be solutions of $y'' + \dfrac{2}{x}y' + y = 0$ on $x > 0$ with Wronskian $W(1) = 3$. Then $W(3)$ equals
+**67.** Let $y_1, y_2$ be solutions of $y'' + \dfrac{2}{x}y' + y = 0$ on $x \gt  0$ with Wronskian $W(1) = 3$. Then $W(3)$ equals
 
 (A) $1/9$
 
@@ -820,13 +820,13 @@ Choose the correct answer from the options given below :
 
 (D) $3$
 
-**68.** The partial differential equation $u_{xx} + x\,u_{yy} = 0$ is
+**68.** The partial differential equation $u_{xx} + x\thinspace u_{yy} = 0$ is
 
 (A) elliptic everywhere
 
-(B) hyperbolic for $x > 0$ and elliptic for $x < 0$
+(B) hyperbolic for $x \gt  0$ and elliptic for $x \lt  0$
 
-(C) elliptic for $x > 0$ and hyperbolic for $x < 0$
+(C) elliptic for $x \gt  0$ and hyperbolic for $x \lt  0$
 
 (D) parabolic everywhere
 
@@ -856,7 +856,7 @@ In the light of the above statements, choose the correct answer from the options
 
 (D) (A) is not correct but (R) is correct
 
-**71.** The general solution of $(y - z)\,p + (z - x)\,q = x - y$, where $p = \partial z/\partial x$, $q = \partial z/\partial y$, is
+**71.** The general solution of $(y - z)\thinspace p + (z - x)\thinspace q = x - y$, where $p = \partial z/\partial x$, $q = \partial z/\partial y$, is
 
 (A) $\phi(x + y + z,\ x^2 + y^2 + z^2) = 0$
 
@@ -885,7 +885,7 @@ Choose the correct answer from the options given below :
 
 (D) a – II, b – IV, c – III, d – I
 
-**73.** If $u(x, t)$ satisfies $u_{tt} = 4u_{xx}$, $-\infty < x < \infty$, with $u(x, 0) = x^2$ and $u_t(x, 0) = 0$, then $u(1, 1)$ equals
+**73.** If $u(x, t)$ satisfies $u_{tt} = 4u_{xx}$, $-\infty \lt  x \lt  \infty$, with $u(x, 0) = x^2$ and $u_t(x, 0) = 0$, then $u(1, 1)$ equals
 
 (A) $1$
 
@@ -913,9 +913,9 @@ Choose the correct answer from the options given below :
 
 (C) $\dfrac{1}{s(s + 1)}$
 
-(D) $\log\, s(s + 1)$
+(D) $\log\thinspace  s(s + 1)$
 
-**76.** The value of $\displaystyle\int_0^\infty t\, e^{-2t} \sin t \, dt$ is
+**76.** The value of $\displaystyle\int_0^\infty t\thinspace  e^{-2t} \sin t \thinspace  dt$ is
 
 (A) $2/25$
 
@@ -925,7 +925,7 @@ Choose the correct answer from the options given below :
 
 (D) $4/25$
 
-**77.** The resolvent kernel of the Volterra integral equation $\phi(x) = f(x) + \lambda \displaystyle\int_0^x e^{x - t}\phi(t)\,dt$ is
+**77.** The resolvent kernel of the Volterra integral equation $\phi(x) = f(x) + \lambda \displaystyle\int_0^x e^{x - t}\phi(t)\thinspace dt$ is
 
 (A) $e^{(1+\lambda)(x - t)}$
 
@@ -937,13 +937,13 @@ Choose the correct answer from the options given below :
 
 **78.** Arrange the following in increasing order of value.
 
-I. $\mathcal{L}\{t^2\}$ at $s = 1$
+I. $\mathcal{L}\lbrace t^2\rbrace$ at $s = 1$
 
-II. $\mathcal{L}\{\sin t\}$ at $s = 1$
+II. $\mathcal{L}\lbrace \sin t\rbrace$ at $s = 1$
 
-III. $\mathcal{L}\{e^{t}\}$ at $s = 2$
+III. $\mathcal{L}\lbrace e^{t}\rbrace$ at $s = 2$
 
-IV. $\mathcal{L}\{\cosh t\}$ at $s = 2$
+IV. $\mathcal{L}\lbrace \cosh t\rbrace$ at $s = 2$
 
 Choose the correct answer from the code given below :
 
@@ -1054,7 +1054,7 @@ Choose the correct answer from the options given below :
 
 (D) degenerate
 
-**88.** The value of the two-person zero-sum game with payoff matrix (to player A) $\begin{pmatrix} 3 & 5 \\ 4 & 1 \end{pmatrix}$ is
+**88.** The value of the two-person zero-sum game with payoff matrix (to player A) $`\begin{pmatrix} 3 & 5 \cr  4 & 1 \end{pmatrix}`$ is
 
 (A) $3$
 
@@ -1084,7 +1084,7 @@ Choose the correct answer from the options given below :
 
 (D) $1.22$
 
-**91.** Simpson's $1/3$ rule with two subintervals, applied to $\displaystyle\int_0^2 x^4\,dx$, gives
+**91.** Simpson's $1/3$ rule with two subintervals, applied to $\displaystyle\int_0^2 x^4\thinspace dx$, gives
 
 (A) $32/5$
 
@@ -1143,7 +1143,7 @@ Choose the correct answer from the options given below :
 
 (D) $01$
 
-**96.** The number of solutions of the congruence $x^2 \equiv 1 \pmod{120}$ in $\{0, 1, \dots, 119\}$ is
+**96.** The number of solutions of the congruence $x^2 \equiv 1 \pmod{120}$ in $\lbrace 0, 1, \dots, 119\rbrace$ is
 
 (A) $4$
 

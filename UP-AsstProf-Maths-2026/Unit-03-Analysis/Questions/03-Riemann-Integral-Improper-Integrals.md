@@ -22,7 +22,7 @@
 
 (D) $f$ is continuous at the irrationals, but not Riemann integrable since it is discontinuous on a dense set.
 
-**Q3.** `[Numerical]` ★★ $\displaystyle\lim_{x\to0}\frac{1}{x^3}\int_0^x\sin(t^2)\,dt=$
+**Q3.** `[Numerical]` ★★ $\displaystyle\lim_{x\to0}\frac{1}{x^3}\int_0^x\sin(t^2)\thinspace dt=$
 
 (A) $0$
 
@@ -44,7 +44,7 @@
 
 **Q5.** `[Multi-Statement]` ★★ Consider the improper integrals
 
-I. $\displaystyle\int_0^\infty\frac{\sin x}{x}\,dx$  II. $\displaystyle\int_0^\infty\left|\frac{\sin x}{x}\right|dx$  III. $\displaystyle\int_0^\infty\sin(x^2)\,dx$
+I. $\displaystyle\int_0^\infty\frac{\sin x}{x}\thinspace dx$  II. $\displaystyle\int_0^\infty\left|\frac{\sin x}{x}\right|dx$  III. $\displaystyle\int_0^\infty\sin(x^2)\thinspace dx$
 
 Which of them converge?
 
@@ -75,7 +75,7 @@ Which of them converge?
 | a. $\Gamma(1/2)$ | 1. $\dfrac{3\pi}{16}$ |
 | b. $B(1/2,1/2)$ | 2. $\dfrac{\sqrt\pi}{2}$ |
 | c. $\displaystyle\int_0^\infty e^{-x^2}dx$ | 3. $\sqrt\pi$ |
-| d. $\displaystyle\int_0^{\pi/2}\sin^4x\,dx$ | 4. $\pi$ |
+| d. $\displaystyle\int_0^{\pi/2}\sin^4x\thinspace dx$ | 4. $\pi$ |
 
 (A) a-3, b-4, c-2, d-1
 
@@ -85,7 +85,7 @@ Which of them converge?
 
 (D) a-2, b-4, c-3, d-1
 
-**Q8.** `[Numerical]` ★★ $\displaystyle\int_0^1x^4(1-x)^3\,dx=$
+**Q8.** `[Numerical]` ★★ $\displaystyle\int_0^1x^4(1-x)^3\thinspace dx=$
 
 (A) $\dfrac1{140}$
 
@@ -95,15 +95,15 @@ Which of them converge?
 
 (D) $\dfrac1{252}$
 
-**Q9.** `[Application]` ★★★ The improper integral $\displaystyle\int_0^\infty\frac{x^{p-1}}{1+x}\,dx$ converges if and only if
+**Q9.** `[Application]` ★★★ The improper integral $\displaystyle\int_0^\infty\frac{x^{p-1}}{1+x}\thinspace dx$ converges if and only if
 
-(A) $p>0$
+(A) $p\gt 0$
 
-(B) $p<1$
+(B) $p\lt 1$
 
-(C) $0<p<1$
+(C) $0\lt p\lt 1$
 
-(D) $0<p\le1$
+(D) $0\lt p\le1$
 
 **Q10.** `[NOT-true / Counterexample]` ★★★ Let $f,g:[a,b]\to\mathbb{R}$ be bounded. Which of the following is **NOT** true in general?
 
@@ -115,7 +115,7 @@ Which of them converge?
 
 (D) If $f$ is Riemann integrable and $\phi$ is continuous on $\mathbb{R}$, then $\phi\circ f$ is Riemann integrable.
 
-**Q11.** `[Application]` ★★ Let $f:[0,1]\to\mathbb{R}$ be continuous with $\displaystyle\int_0^xf(t)\,dt=\int_x^1f(t)\,dt$ for all $x\in[0,1]$. Then
+**Q11.** `[Application]` ★★ Let $f:[0,1]\to\mathbb{R}$ be continuous with $\displaystyle\int_0^xf(t)\thinspace dt=\int_x^1f(t)\thinspace dt$ for all $x\in[0,1]$. Then
 
 (A) $f\equiv0$
 
@@ -125,7 +125,7 @@ Which of them converge?
 
 (D) $f(x)=x-\tfrac12$
 
-**Q12.** `[Numerical]` ★★ $\displaystyle\int_0^\infty x^2e^{-x^2}\,dx=$
+**Q12.** `[Numerical]` ★★ $\displaystyle\int_0^\infty x^2e^{-x^2}\thinspace dx=$
 
 (A) $\dfrac{\sqrt\pi}{2}$
 
@@ -135,7 +135,7 @@ Which of them converge?
 
 (D) $\dfrac{1}{2}$
 
-**Q13.** `[Multi-Statement]` ★★ Let $f$ be Riemann integrable on $[a,b]$ and $F(x)=\int_a^xf(t)\,dt$.
+**Q13.** `[Multi-Statement]` ★★ Let $f$ be Riemann integrable on $[a,b]$ and $F(x)=\int_a^xf(t)\thinspace dt$.
 
 I. $F$ is (uniformly) continuous on $[a,b]$.
 
@@ -174,21 +174,21 @@ Which of the above is/are correct?
 ## Solutions
 **Q1 — (C).** This is Lebesgue's criterion. (A) and (B) are sufficient but not necessary (Thomae's function). (D) is neither: the indicator of the Cantor set has uncountably many discontinuities but is integrable, because they form a null set.
 
-**Q2 — (B).** At an irrational $x$, only finitely many $p/q$ with $q\le N$ lie near $x$, so $f(y)\to0=f(x)$. At a rational, $f>0$ but irrationals arbitrarily close give $0$. The discontinuity set $\mathbb{Q}\cap[0,1]$ is countable, hence null, so $f$ is integrable. Every lower sum is $0$, so $\int f=0$. (D) confuses "dense" with "positive measure".
+**Q2 — (B).** At an irrational $x$, only finitely many $p/q$ with $q\le N$ lie near $x$, so $f(y)\to0=f(x)$. At a rational, $f\gt 0$ but irrationals arbitrarily close give $0$. The discontinuity set $\mathbb{Q}\cap[0,1]$ is countable, hence null, so $f$ is integrable. Every lower sum is $0$, so $\int f=0$. (D) confuses "dense" with "positive measure".
 
-**Q3 — (B).** By L'Hôpital and the FTC, the limit is $\lim\frac{\sin x^2}{3x^2}=\frac13$. Alternatively, $\int_0^x\sin t^2\,dt\approx\frac{x^3}{3}$.
+**Q3 — (B).** By L'Hôpital and the FTC, the limit is $\lim\frac{\sin x^2}{3x^2}=\frac13$. Alternatively, $\int_0^x\sin t^2\thinspace dt\approx\frac{x^3}{3}$.
 
 **Q4 — (D).** $\sum\frac{n}{n^2+k^2}=\frac1n\sum\frac{1}{1+(k/n)^2}\to\int_0^1\frac{dx}{1+x^2}=\frac\pi4$.
 
 **Q5 — (D).** I converges (Dirichlet test), with value $\pi/2$. II diverges: $\int_{k\pi}^{(k+1)\pi}\frac{|\sin x|}{x}dx\ge\frac{2}{(k+1)\pi}$, and the harmonic series diverges. So I converges only conditionally. III converges (substitute $x^2=u$ to get $\int\frac{\sin u}{2\sqrt u}du$; Fresnel value $\frac12\sqrt{\pi/2}$). The integrand of III does not tend to $0$, but the integral still converges.
 
-**Q6 — (A).** Uniform continuity makes the oscillation on every sub-interval smaller than $\varepsilon$ once the mesh is small, so $U(P,f)-L(P,f)<\varepsilon(b-a)$. This is the standard proof, so R explains A.
+**Q6 — (A).** Uniform continuity makes the oscillation on every sub-interval smaller than $\varepsilon$ once the mesh is small, so $U(P,f)-L(P,f)\lt \varepsilon(b-a)$. This is the standard proof, so R explains A.
 
-**Q7 — (A).** $\Gamma(\frac12)=\sqrt\pi$; $B(\frac12,\frac12)=\Gamma(\frac12)^2/\Gamma(1)=\pi$; $\int_0^\infty e^{-x^2}dx=\frac12\Gamma(\frac12)=\frac{\sqrt\pi}2$; by Wallis, $\int_0^{\pi/2}\sin^4x\,dx=\frac34\cdot\frac12\cdot\frac\pi2=\frac{3\pi}{16}$.
+**Q7 — (A).** $\Gamma(\frac12)=\sqrt\pi$; $B(\frac12,\frac12)=\Gamma(\frac12)^2/\Gamma(1)=\pi$; $\int_0^\infty e^{-x^2}dx=\frac12\Gamma(\frac12)=\frac{\sqrt\pi}2$; by Wallis, $\int_0^{\pi/2}\sin^4x\thinspace dx=\frac34\cdot\frac12\cdot\frac\pi2=\frac{3\pi}{16}$.
 
 **Q8 — (C).** $B(5,4)=\frac{\Gamma(5)\Gamma(4)}{\Gamma(9)}=\frac{24\cdot6}{40320}=\frac{1}{280}$. A common slip is to use $B(4,3)$, which gives $\frac{1}{60}$, or to mix up the factorials.
 
-**Q9 — (C).** Near $0$ the integrand is $\sim x^{p-1}$, which needs $p-1>-1$, i.e. $p>0$. Near $\infty$ it is $\sim x^{p-2}$, which needs $p-2<-1$, i.e. $p<1$. So $0<p<1$, where the value is $B(p,1-p)=\frac{\pi}{\sin p\pi}$. At $p=1$, $\int^\infty\frac{dx}{1+x}$ diverges.
+**Q9 — (C).** Near $0$ the integrand is $\sim x^{p-1}$, which needs $p-1\gt -1$, i.e. $p\gt 0$. Near $\infty$ it is $\sim x^{p-2}$, which needs $p-2\lt -1$, i.e. $p\lt 1$. So $0\lt p\lt 1$, where the value is $B(p,1-p)=\frac{\pi}{\sin p\pi}$. At $p=1$, $\int^\infty\frac{dx}{1+x}$ diverges.
 
 **Q10 — (B).** Let $f=1$ on $\mathbb{Q}$ and $f=-1$ off $\mathbb{Q}$. Then $|f|\equiv1$ is integrable but $f$ is discontinuous everywhere. (A), (C) and (D) all follow from Lebesgue's criterion, because the discontinuity sets stay inside null sets. Note that $f\circ\phi$ (in the reverse order) can fail.
 

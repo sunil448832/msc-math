@@ -6,7 +6,7 @@
 
 (A) $\det(\mathbf T - \omega^2\mathbf V) = 0$
 
-(B) $\det(\mathbf V - \omega\,\mathbf T) = 0$
+(B) $\det(\mathbf V - \omega\thinspace \mathbf T) = 0$
 
 (C) $\det(\mathbf V - \omega^2\mathbf T) = 0$
 
@@ -71,7 +71,7 @@ Which of the above is/are correct?
 (D) I, II and III
 
 **Q7.** `[Assertion-Reason]` ★★
-**Assertion (A):** A free linear symmetric triatomic molecule (e.g. CO$_2$ modelled by masses on springs along a line) has a normal mode of zero frequency.
+**Assertion (A):** A free linear symmetric triatomic molecule (e.g. CO$`_2`$ modelled by masses on springs along a line) has a normal mode of zero frequency.
 **Reason (R):** Its potential energy is unchanged when the whole molecule is translated rigidly along the line.
 
 (A) Both A and R are true and R is the correct explanation of A
@@ -111,13 +111,13 @@ Which of the above is/are correct?
 
 **Q10.** `[Numerical]` ★★★ For a double pendulum with two equal masses $m$ and two equal lengths $l$, the normal-mode angular frequencies are
 
-(A) $\sqrt{(2 \pm \sqrt2)\,g/l}$
+(A) $\sqrt{(2 \pm \sqrt2)\thinspace g/l}$
 
-(B) $\sqrt{(1 \pm 1/\sqrt2)\,g/l}$
+(B) $\sqrt{(1 \pm 1/\sqrt2)\thinspace g/l}$
 
 (C) $\sqrt{g/l}$ and $\sqrt{3g/l}$
 
-(D) $\sqrt{(3 \pm \sqrt2)\,g/l}$
+(D) $\sqrt{(3 \pm \sqrt2)\thinspace g/l}$
 
 **Q11.** `[Application]` ★★★ Two weakly coupled identical pendula have normal-mode frequencies $\omega_1 = 10$ rad/s and $\omega_2 = 10.5$ rad/s. Pendulum 1 is displaced and released while pendulum 2 is at rest at equilibrium. The energy has transferred completely to pendulum 2 for the first time after
 
@@ -161,13 +161,13 @@ Which of the above is/are correct?
 
 **Q2 — (A).** The relative coordinate obeys $\mu\ddot x = -kx$ with $\mu = m_1m_2/(m_1 + m_2)$, so $\omega = \sqrt{k/\mu}$. The other mode is the zero-frequency translation of the centre of mass.
 
-**Q3 — (D).** $V' = 4x^3 - 4x = 0$ gives $x = 0, \pm1$. Then $V''(\pm1) = 12 - 4 = 8 > 0$, so these are stable, and $\omega = \sqrt{V''/m} = \sqrt8 = 2\sqrt2$. The origin is unstable ($V''(0) = -4$).
+**Q3 — (D).** $V' = 4x^3 - 4x = 0$ gives $x = 0, \pm1$. Then $V''(\pm1) = 12 - 4 = 8 \gt  0$, so these are stable, and $\omega = \sqrt{V''/m} = \sqrt8 = 2\sqrt2$. The origin is unstable ($V''(0) = -4$).
 
 **Q4 — (B).** The in-phase mode leaves the spring unstretched, so $\omega_1 = \sqrt{g/l}$. In the antiphase mode each bob feels an extra force $2kx$, so $\omega_2^2 = g/l + 2k/m$. The spring stretches by $2x$, which is why (A) is wrong.
 
-**Q5 — (C).** $\mathbf V = \begin{pmatrix}5&4\\4&5\end{pmatrix}$ has eigenvalue $9$ with eigenvector $(1,1)$ and eigenvalue $1$ with eigenvector $(1,-1)$. So $\omega = 3$ belongs to $Q \propto q_1 + q_2$, and $\omega = 1$ belongs to $q_1 - q_2$ (checked with sympy).
+**Q5 — (C).** $`\mathbf V = \begin{pmatrix}5&4\cr 4&5\end{pmatrix}`$ has eigenvalue $9$ with eigenvector $(1,1)$ and eigenvalue $1$ with eigenvector $(1,-1)$. So $\omega = 3$ belongs to $Q \propto q_1 + q_2$, and $\omega = 1$ belongs to $q_1 - q_2$ (checked with sympy).
 
-**Q6 — (B).** Simultaneous diagonalisation with $\mathbf T$ as the metric gives I and II. III is false: degeneracies occur, for example the isotropic 2-D oscillator, or the two bending modes of CO$_2$.
+**Q6 — (B).** Simultaneous diagonalisation with $\mathbf T$ as the metric gives I and II. III is false: degeneracies occur, for example the isotropic 2-D oscillator, or the two bending modes of CO$`_2`$.
 
 **Q7 — (A).** Translation invariance gives a neutral direction $\mathbf V\mathbf a = 0$ with $\mathbf a = (1,1,1)$. This is a root $\omega = 0$, the uniform translation. R is exactly the cause.
 
@@ -175,7 +175,7 @@ Which of the above is/are correct?
 
 **Q9 — (D).** Normal coordinates diagonalise both forms: $L = \tfrac12\sum(\dot Q_i^2 - \omega_i^2Q_i^2)$, with no cross terms. (A), (B) and (C) are true.
 
-**Q10 — (A).** With $\mathbf T = ml^2\begin{pmatrix}2&1\\1&1\end{pmatrix}$ and $\mathbf V = mgl\begin{pmatrix}2&0\\0&1\end{pmatrix}$, the equation $\det(\mathbf V - \omega^2\mathbf T) = 0$ gives $\omega^2 = (2 \pm \sqrt2)\,g/l$ (verified with sympy). Option (B) comes from forgetting the cross term in $\mathbf T$ or mis-scaling.
+**Q10 — (A).** With $`\mathbf T = ml^2\begin{pmatrix}2&1\cr 1&1\end{pmatrix}`$ and $`\mathbf V = mgl\begin{pmatrix}2&0\cr 0&1\end{pmatrix}`$, the equation $\det(\mathbf V - \omega^2\mathbf T) = 0$ gives $\omega^2 = (2 \pm \sqrt2)\thinspace g/l$ (verified with sympy). Option (B) comes from forgetting the cross term in $\mathbf T$ or mis-scaling.
 
 **Q11 — (C).** $x_1 = a\cos\dfrac{(\omega_2-\omega_1)t}{2}\cos\dfrac{(\omega_1+\omega_2)t}{2}$, so the amplitude of pendulum 1 first vanishes when $\dfrac{(\omega_2 - \omega_1)t}{2} = \dfrac{\pi}{2}$. That gives $t = \pi/\Delta\omega = \pi/0.5 = 2\pi$ s. The answer $4\pi$ s ($= 2\pi/\Delta\omega$) is the time for the energy to come back to pendulum 1.
 

@@ -130,9 +130,9 @@ Distribution: A = 7, B = 7, C = 8, D = 8.
 
 ## Solutions
 
-**31 — (D)** Sylow: $n_7 \mid 24$ and $n_7 \equiv 1 \pmod 7$, so $n_7 \in \{1, 8\}$. Simplicity rules out $1$, so $n_7 = 8$. Distinct subgroups of prime order meet trivially, giving $8 \times 6 = 48$ elements of order 7.
+**31 — (D)** Sylow: $n_7 \mid 24$ and $n_7 \equiv 1 \pmod 7$, so $n_7 \in \lbrace 1, 8\rbrace$. Simplicity rules out $1$, so $n_7 = 8$. Distinct subgroups of prime order meet trivially, giving $8 \times 6 = 48$ elements of order 7.
 
-**32 — (C)** The dihedral group $D_5$ has classes $\{e\}$, $\{r, r^4\}$, $\{r^2, r^3\}$ and 5 reflections. (A): $|Z| = 2$ would make $G/Z$ cyclic, so $G$ would be abelian. That is a contradiction. (B): a class of size 4 means $C(x)$ has order $2 = |Z|$, so $C(x) = Z \ni x$, again a contradiction. (D): every group of order 15 is cyclic.
+**32 — (C)** The dihedral group $D_5$ has classes $\lbrace e\rbrace$, $\lbrace r, r^4\rbrace$, $\lbrace r^2, r^3\rbrace$ and 5 reflections. (A): $|Z| = 2$ would make $G/Z$ cyclic, so $G$ would be abelian. That is a contradiction. (B): a class of size 4 means $C(x)$ has order $2 = |Z|$, so $C(x) = Z \ni x$, again a contradiction. (D): every group of order 15 is cyclic.
 
 **33 — (B)** $\langle 2, x\rangle$ is not principal, so (A) is true. By Gauss's lemma $\mathbb Z$ UFD ⟹ $\mathbb Z[x]$ UFD, so (R) is true. Being a UFD does not explain why it fails to be a PID.
 
@@ -146,11 +146,11 @@ Distribution: A = 7, B = 7, C = 8, D = 8.
 
 **38 — (A)** Cayley–Hamilton gives $A^2 - 4A + 3I = O$. So $A^3 - 4A^2 + 3A = A \cdot O = O$, and the expression equals $2I$.
 
-**39 — (D)** $\begin{pmatrix}1&1\\0&1\end{pmatrix}$ has the repeated eigenvalue 1 with a 1-dimensional eigenspace (it is a Jordan block). (A) has distinct eigenvalues and (B) has eigenvalues $\pm i$ (distinct), so both are diagonalisable.
+**39 — (D)** $`\begin{pmatrix}1&1\cr 0&1\end{pmatrix}`$ has the repeated eigenvalue 1 with a 1-dimensional eigenspace (it is a Jordan block). (A) has distinct eigenvalues and (B) has eigenvalues $\pm i$ (distinct), so both are diagonalisable.
 
 **40 — (C)** Unitary matrices are normal, so the spectral theorem makes them unitarily diagonalisable. Their eigenvalues have $|\lambda| = 1$ but need not be $\pm1$, e.g. $\operatorname{diag}(i, 1)$.
 
-**41 — (B)** This is the Cayley transform. $I + iH$ is invertible because the eigenvalues of $iH$ are purely imaginary. The factors commute, and $U^*U = (I-iH)^{-1}(I+iH)(I-iH)(I+iH)^{-1} = I$.
+**41 — (B)** This is the Cayley transform. $I + iH$ is invertible because the eigenvalues of $iH$ are purely imaginary. The factors commute, and $U^\ast U = (I-iH)^{-1}(I+iH)(I-iH)(I+iH)^{-1} = I$.
 
 **42 — (C)** The minimal polynomial gives the largest block for each eigenvalue. Eigenvalue 1 (mult. 2, largest block 1) gives two $1\times1$ blocks. Eigenvalue 2 (mult. 2, largest block 2) gives one $2\times2$ block. Total: 3 blocks.
 
@@ -160,7 +160,7 @@ Distribution: A = 7, B = 7, C = 8, D = 8.
 
 **45 — (A)** $f(x, 0) = f(0, y) = 0$, so $f_x = f_y = 0$ at the origin. Along $y = x^2$, $f = 1/2$, so $f$ is discontinuous. The directional derivative along $(a, b)$ with $b \ne 0$ is $a^2/b$, which exists.
 
-**46 — (C)** The critical points are $(0,0)$ and $(1,1)$. At $(1,1)$: $f_{xx} = 6 > 0$ and $f_{xx}f_{yy} - f_{xy}^2 = 36 - 9 = 27 > 0$, so it is a minimum with value $1 + 1 - 3 = -1$. $(0,0)$ is a saddle.
+**46 — (C)** The critical points are $(0,0)$ and $(1,1)$. At $(1,1)$: $f_{xx} = 6 \gt  0$ and $f_{xx}f_{yy} - f_{xy}^2 = 36 - 9 = 27 \gt  0$, so it is a minimum with value $1 + 1 - 3 = -1$. $(0,0)$ is a saddle.
 
 **47 — (B)** The closed unit ball of $\ell^2$ is not compact: $\lVert e_m - e_n\rVert = \sqrt2$, so $(e_n)$ has no convergent subsequence. Heine–Borel fails in infinite dimensions (Riesz).
 
@@ -170,9 +170,9 @@ Distribution: A = 7, B = 7, C = 8, D = 8.
 
 **50 — (C)** $\ell^1 \subsetneq \ell^2 \subsetneq c_0 \subsetneq \ell^\infty$, e.g. $1/n \in \ell^2\setminus\ell^1$, $1/\sqrt n \in c_0\setminus\ell^2$, and $(1,1,\dots) \in \ell^\infty \setminus c_0$.
 
-**51 — (B)** $\sup_{[0,1]} f_n = f_n\!\left(\tfrac{n}{n+1}\right) = \tfrac{1}{n+1}\left(\tfrac{n}{n+1}\right)^n \to 0$. So the convergence is uniform, unlike $x^n$ itself. The factor $(1-x)$ kills the trouble at $x = 1$.
+**51 — (B)** $\sup_{[0,1]} f_n = f_n\negthinspace \left(\tfrac{n}{n+1}\right) = \tfrac{1}{n+1}\left(\tfrac{n}{n+1}\right)^n \to 0$. So the convergence is uniform, unlike $x^n$ itself. The factor $(1-x)$ kills the trouble at $x = 1$.
 
-**52 — (D)** $|\phi(x)| \le \lVert x\rVert_\infty \int_0^1 t\,dt = \tfrac12\lVert x\rVert_\infty$, with equality for $x \equiv 1$. The trap is $1/\sqrt3 = \lVert t\rVert_2$, which is the norm for the $L^2$ structure.
+**52 — (D)** $|\phi(x)| \le \lVert x\rVert_\infty \int_0^1 t\thinspace dt = \tfrac12\lVert x\rVert_\infty$, with equality for $x \equiv 1$. The trap is $1/\sqrt3 = \lVert t\rVert_2$, which is the norm for the $L^2$ structure.
 
 **53 — (A)** $C[0,1]$ with $\lVert\cdot\rVert_1$ is incomplete (continuous functions can approximate a step function). Polynomials are not closed in $(C[0,1], \lVert\cdot\rVert_\infty)$ by Weierstrass, since their closure is all of $C[0,1]$. $C[0,1]$ with the sup norm and $\ell^1$ are complete.
 
@@ -180,7 +180,7 @@ Distribution: A = 7, B = 7, C = 8, D = 8.
 
 **55 — (C)** $\int_0^\infty \frac{dx}{1 + x^n} = \frac{\pi/n}{\sin(\pi/n)}$. With $n = 4$: $\frac{\pi/4}{1/\sqrt2} = \frac{\pi}{2\sqrt2}$.
 
-**56 — (D)** Rouché. On $|z| = 2$: $|z^5| = 32 > 3\cdot 8 + 7 = 31$, so there are 5 zeros in $|z| < 2$. On $|z| = 1$: $|7| > 1 + 3$, so there are 0 zeros in $|z| < 1$. All 5 lie in the annulus (moduli ≈ 1.17, 1.30, 1.30, 1.88, 1.88).
+**56 — (D)** Rouché. On $|z| = 2$: $|z^5| = 32 \gt  3\cdot 8 + 7 = 31$, so there are 5 zeros in $|z| \lt  2$. On $|z| = 1$: $|7| \gt  1 + 3$, so there are 0 zeros in $|z| \lt  1$. All 5 lie in the annulus (moduli ≈ 1.17, 1.30, 1.30, 1.88, 1.88).
 
 **57 — (A)** $g = e^{f}$ is entire with $|g| = e^{\operatorname{Re} f} \le e^3$. Liouville makes $g$ constant, so $f$ is constant. (R) is exactly the tool used.
 
@@ -202,15 +202,15 @@ Distribution: A = 7, B = 7, C = 8, D = 8.
 
 **66 — (C)** Theorema Egregium makes $K$ intrinsic. Geodesic curvature depends only on $E, F, G$. Mean and normal curvature need the second fundamental form, so they are not intrinsic.
 
-**67 — (B)** Abel's formula: $W = C e^{-\int 2/x\,dx} = C/x^2$. $W(1) = 3$ gives $C = 3$, so $W(3) = 3/9 = 1/3$.
+**67 — (B)** Abel's formula: $W = C e^{-\int 2/x\thinspace dx} = C/x^2$. $W(1) = 3$ gives $C = 3$, so $W(3) = 3/9 = 1/3$.
 
-**68 — (C)** $A = 1$, $B = 0$, $C = x$, so $B^2 - 4AC = -4x$. This is negative (elliptic) for $x > 0$ and positive (hyperbolic) for $x < 0$. It is a Tricomi-type equation.
+**68 — (C)** $A = 1$, $B = 0$, $C = x$, so $B^2 - 4AC = -4x$. This is negative (elliptic) for $x \gt  0$ and positive (hyperbolic) for $x \lt  0$. It is a Tricomi-type equation.
 
 **69 — (D)** In standard form $p = 1/x^2$ and $q = 1/x^3$. Then $x p = 1/x$ is not analytic at 0, so the point is an irregular singular point.
 
 **70 — (D)** The solution is $y = 1/(1-x)$, which blows up at $x = 1$. So (A) is false. $|y_1^2 - y_2^2| \le 2M|y_1 - y_2|$ on bounded rectangles, so (R) is true. A local Lipschitz condition gives only local existence.
 
-**71 — (A)** Lagrange's method. Multipliers $1,1,1$ give $dx + dy + dz = 0$. Multipliers $x,y,z$ give $x\,dx + y\,dy + z\,dz = 0$. So $u = x + y + z$ and $v = x^2 + y^2 + z^2$.
+**71 — (A)** Lagrange's method. Multipliers $1,1,1$ give $dx + dy + dz = 0$. Multipliers $x,y,z$ give $x\thinspace dx + y\thinspace dy + z\thinspace dz = 0$. So $u = x + y + z$ and $v = x^2 + y^2 + z^2$.
 
 **72 — (B)** These are the standard orthogonality weights: Legendre has weight 1 on $[-1,1]$, Hermite $e^{-x^2}$ on $\mathbb R$, Laguerre $e^{-x}$ on $[0,\infty)$, and Chebyshev $(1-x^2)^{-1/2}$.
 
@@ -218,15 +218,15 @@ Distribution: A = 7, B = 7, C = 8, D = 8.
 
 **74 — (A)** Euler–Lagrange: $12x - 2y'' = 0$, so $y'' = 6x$ and $y = x^3 + c_1 x + c_2$. The boundary conditions give $c_1 = c_2 = 0$.
 
-**75 — (B)** Use $\mathcal L\{f(t)/t\} = \int_s^\infty F(u)\,du$. Here $\int_s^\infty\left(\frac1u - \frac1{u+1}\right)du = \log\frac{s+1}{s}$ (checked numerically).
+**75 — (B)** Use $\mathcal L\lbrace f(t)/t\rbrace  = \int_s^\infty F(u)\thinspace du$. Here $\int_s^\infty\left(\frac1u - \frac1{u+1}\right)du = \log\frac{s+1}{s}$ (checked numerically).
 
-**76 — (D)** The integral is $\mathcal L\{t\sin t\}$ at $s = 2$, where $\mathcal L\{t\sin t\} = \dfrac{2s}{(s^2+1)^2}$. At $s = 2$ this is $\dfrac{4}{25}$.
+**76 — (D)** The integral is $\mathcal L\lbrace t\sin t\rbrace$ at $s = 2$, where $\mathcal L\lbrace t\sin t\rbrace  = \dfrac{2s}{(s^2+1)^2}$. At $s = 2$ this is $\dfrac{4}{25}$.
 
 **77 — (A)** The iterated kernels are $K_n = e^{x-t}\dfrac{(x-t)^{n-1}}{(n-1)!}$. Then $R = \sum \lambda^{n-1}K_n = e^{x-t}e^{\lambda(x-t)} = e^{(1+\lambda)(x-t)}$.
 
 **78 — (C)** The values are $2/s^3 = 2$, $1/(s^2+1) = 1/2$, $1/(s-1) = 1$ and $s/(s^2-1) = 2/3$. Increasing order: II (0.5), IV (0.667), III (1), I (2).
 
-**79 — (B)** Integrate $\sigma\iint d^2\,dA$, where $d = \dfrac{|bx - ay|}{\sqrt{a^2+b^2}}$ is the distance from the diagonal. Equivalently, use $I = I_{xx}\cos^2\theta + I_{yy}\sin^2\theta$ with the product of inertia zero. Either way the result is $\dfrac{Ma^2b^2}{6(a^2+b^2)}$.
+**79 — (B)** Integrate $\sigma\iint d^2\thinspace dA$, where $d = \dfrac{|bx - ay|}{\sqrt{a^2+b^2}}$ is the distance from the diagonal. Equivalently, use $I = I_{xx}\cos^2\theta + I_{yy}\sin^2\theta$ with the product of inertia zero. Either way the result is $\dfrac{Ma^2b^2}{6(a^2+b^2)}$.
 
 **80 — (D)** $p = \dot q + q$, so $\dot q = p - q$. $H = p\dot q - L = \tfrac12\dot q^2 + \tfrac12 q^2 = \tfrac12(p-q)^2 + \tfrac12 q^2$. The trap is (A): $q\dot q$ is a total derivative, but it still shifts the canonical momentum.
 
@@ -236,7 +236,7 @@ Distribution: A = 7, B = 7, C = 8, D = 8.
 
 **83 — (D)** For $u = -y$, $v = x$: $\nabla\cdot\vec q = 0$ and $\partial v/\partial x - \partial u/\partial y = 2 \ne 0$, so the flow is rotational. (A) and (C) are irrotational and incompressible. (B) is not incompressible.
 
-**84 — (B)** $w = (x + iy)^2 = (x^2 - y^2) + 2ixy$, so $\psi = 2xy$. The streamlines are $xy = $ const. The trap is (A), which gives the equipotentials $\phi = $ const.
+**84 — (B)** $w = (x + iy)^2 = (x^2 - y^2) + 2ixy$, so $\psi = 2xy$. The streamlines are $xy =$ const. The trap is (A), which gives the equipotentials $\phi =$ const.
 
 **85 — (C)** $F = h^2u^2\left(\dfrac{d^2u}{d\theta^2} + u\right)$ with $u = \dfrac{1}{a(1+\cos\theta)}$ gives $F = 3ah^2u^4$. So $F \propto r^{-4}$.
 
@@ -254,9 +254,9 @@ Distribution: A = 7, B = 7, C = 8, D = 8.
 
 **92 — (B)** The orders are: bisection linear (1), Newton–Raphson quadratic (2), secant $(1 + \sqrt5)/2 \approx 1.618$, and Chebyshev cubic (3).
 
-**93 — (C)** For a polynomial of degree $n$, $\Delta^n x^n = n!\,h^n$. So $\Delta^3 x^3 = 3! \cdot 2^3 = 48$. The trap is 6, the value for $h = 1$.
+**93 — (C)** For a polynomial of degree $n$, $\Delta^n x^n = n!\thinspace h^n$. So $\Delta^3 x^3 = 3! \cdot 2^3 = 48$. The trap is 6, the value for $h = 1$.
 
-**94 — (D)** The trapezoidal rule is exact only for linear polynomials. For example, $\int_0^1 x^2\,dx = 1/3$, but the rule gives $1/2$. (A), (B) and (C) are standard facts.
+**94 — (D)** The trapezoidal rule is exact only for linear polynomials. For example, $\int_0^1 x^2\thinspace dx = 1/3$, but the rule gives $1/2$. (A), (B) and (C) are standard facts.
 
 **95 — (A)** $7^4 = 2401 \equiv 1 \pmod{100}$. Since $2026 \equiv 2 \pmod 4$, $7^{2026} \equiv 7^2 = 49$.
 

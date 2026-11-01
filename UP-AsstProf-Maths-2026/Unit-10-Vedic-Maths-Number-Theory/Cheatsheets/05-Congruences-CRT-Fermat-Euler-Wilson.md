@@ -31,13 +31,13 @@ $$x\equiv\sum a_iM_iy_i,\qquad M_i=M/m_i,\quad y_i\equiv M_i^{-1}\pmod{m_i}.$$
 |---|---|---|
 | **Fermat's little theorem** | $a^{p-1}\equiv1\pmod p$, and $a^p\equiv a$ for all $a$ | $p$ prime, $p\nmid a$ (for the first form) |
 | **Euler** | $a^{\varphi(m)}\equiv1\pmod m$ | $\gcd(a,m)=1$ |
-| **Wilson** | $(p-1)!\equiv-1\pmod p$ | $p$ prime. **Converse true**: for $n>1$, $(n-1)!\equiv-1\ (n)\iff n$ prime |
+| **Wilson** | $(p-1)!\equiv-1\pmod p$ | $p$ prime. **Converse true**: for $n\gt 1$, $(n-1)!\equiv-1\ (n)\iff n$ prime |
 | Corollary | $(p-2)!\equiv1$; $\left(\left(\frac{p-1}2\right)!\right)^2\equiv(-1)^{(p+1)/2}\pmod p$ | $p$ odd prime |
 | **Lagrange** | A polynomial of degree $n$ has at most $n$ roots mod $p$ | $p$ prime and leading coefficient $\not\equiv0$. Fails for composite moduli: $x^2-1$ has 4 roots mod 8 |
 | **Carmichael function** | $a^{\lambda(m)}\equiv1$ with $\lambda(m)$ the exponent of $U(\mathbb Z_m)$ | $\gcd(a,m)=1$ |
 
 - **Composite $n$:** $(n-1)!\equiv0\pmod n$ for every composite $n\ne4$ ($3!\equiv2\pmod 4$).
-- **Power sums:** $\sum_{k=1}^{p-1}k^m\equiv\begin{cases}-1 & (p-1)\mid m\\ 0&\text{otherwise}\end{cases}\pmod p$.
+- **Power sums:** $`\sum_{k=1}^{p-1}k^m\equiv\begin{cases}-1 & (p-1)\mid m\cr  0&\text{otherwise}\end{cases}\pmod p`$.
 - **Freshman's dream:** $(a+b)^p\equiv a^p+b^p\pmod p$.
 
 **Pseudoprimes and Carmichael numbers**

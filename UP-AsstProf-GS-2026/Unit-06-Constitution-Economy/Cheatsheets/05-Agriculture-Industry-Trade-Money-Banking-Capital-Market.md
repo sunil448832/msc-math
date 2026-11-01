@@ -42,7 +42,7 @@ Eight core industries: coal, crude oil, natural gas, refinery products (highest 
 | WTO | 1 Jan 1995; India a founding member (and GATT 1947 original member) |
 | India–UAE CEPA | In force 1 May 2022 |
 | India–Australia ECTA | In force 29 Dec 2022 |
-| India–EFTA TEPA | In force **1 Oct 2025**; US$100 bn investment commitment over 15 years |
+| India–EFTA TEPA | In force **1 Oct 2025**; US\$100 bn investment commitment over 15 years |
 | India–UK CETA | Signed 24 Jul 2025; in force **15 Jul 2026** |
 | India–EU FTA | Negotiations concluded **27 Jan 2026**; ratification pending |
 | Foreign Trade Policy 2023 | From 1 Apr 2023, no end date |

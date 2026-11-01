@@ -52,7 +52,7 @@
 
 (D) $\dfrac{2\pi}{\sqrt{41}}$
 
-**Q6.** `[Numerical]` ★★ $\displaystyle\int_{-\infty}^{\infty}\frac{\cos x}{x^{2}+1}\,dx$ equals
+**Q6.** `[Numerical]` ★★ $\displaystyle\int_{-\infty}^{\infty}\frac{\cos x}{x^{2}+1}\thinspace dx$ equals
 
 (A) $\pi e$
 
@@ -64,7 +64,7 @@
 
 **Q7.** `[Multi-Statement]` ★★ Consider the statements:
 
-I. $\operatorname{Res}_{z=0}\, z\cos(1/z) = -\tfrac12$.
+I. $\operatorname{Res}_{z=0}\thinspace  z\cos(1/z) = -\tfrac12$.
 
 II. $\operatorname{Res}_{z=0}\dfrac{\sin z}{z^{2}} = 1$.
 
@@ -81,8 +81,8 @@ Which of the above is/are correct?
 (D) I and II only
 
 **Q8.** `[Assertion-Reason]` ★★ Let $C_R$ be the upper semicircle $|z| = R$, $\operatorname{Im} z \ge 0$.
-**Assertion (A):** $\displaystyle\lim_{R\to\infty}\int_{C_R}\frac{e^{iz}}{z}\,dz = 0$.
-**Reason (R):** If $f(z) \to 0$ uniformly on $C_R$ as $R\to\infty$ and $m > 0$, then $\displaystyle\int_{C_R}e^{imz}f(z)\,dz \to 0$.
+**Assertion (A):** $\displaystyle\lim_{R\to\infty}\int_{C_R}\frac{e^{iz}}{z}\thinspace dz = 0$.
+**Reason (R):** If $f(z) \to 0$ uniformly on $C_R$ as $R\to\infty$ and $m \gt  0$, then $\displaystyle\int_{C_R}e^{imz}f(z)\thinspace dz \to 0$.
 
 (A) Both A and R are true and R is the correct explanation of A
 
@@ -97,9 +97,9 @@ Which of the above is/are correct?
 | List-I | List-II |
 |---|---|
 | (a) $\displaystyle\int_0^{2\pi}\frac{d\theta}{2+\cos\theta}$ | 1. $\pi/4$ |
-| (b) $\displaystyle\int_0^{\infty}\frac{\sin x}{x}\,dx$ | 2. $0$ |
+| (b) $\displaystyle\int_0^{\infty}\frac{\sin x}{x}\thinspace dx$ | 2. $0$ |
 | (c) $\displaystyle\int_0^{\infty}\frac{dx}{(1+x^2)^2}$ | 3. $2\pi/\sqrt3$ |
-| (d) $\displaystyle\int_0^{\infty}\frac{\ln x}{1+x^2}\,dx$ | 4. $\pi/2$ |
+| (d) $\displaystyle\int_0^{\infty}\frac{\ln x}{1+x^2}\thinspace dx$ | 4. $\pi/2$ |
 
 (A) a-3, b-4, c-1, d-2
 
@@ -113,13 +113,13 @@ Which of the above is/are correct?
 
 (A) The residue of $f$ at a removable singularity is $0$.
 
-(B) If $f$ has a pole of order $m$ at $a$, then $\operatorname{Res}_a f = \dfrac{1}{(m-1)!}\lim_{z\to a}\dfrac{d^{m-1}}{dz^{m-1}}\big[(z-a)^m f(z)\big]$.
+(B) If $f$ has a pole of order $m$ at $a$, then $`\operatorname{Res}_a f = \dfrac{1}{(m-1)!}\lim_{z\to a}\dfrac{d^{m-1}}{dz^{m-1}}\big[(z-a)^m f(z)\big]`$.
 
 (C) If $f$ is analytic at $\infty$, then $\operatorname{Res}_{z=\infty}f = 0$.
 
 (D) If $f$ is even and has an isolated singularity at $0$, then $\operatorname{Res}_{z=0}f = 0$.
 
-**Q11.** `[Application]` ★★★ $\displaystyle\oint_{|z|=2}\frac{z^{15}}{(z^{2}+1)^{2}(z^{4}+2)^{3}}\,dz$ equals
+**Q11.** `[Application]` ★★★ $\displaystyle\oint_{|z|=2}\frac{z^{15}}{(z^{2}+1)^{2}(z^{4}+2)^{3}}\thinspace dz$ equals
 
 (A) $0$
 
@@ -165,7 +165,7 @@ Which of the above is/are correct?
 
 **Q4 — (B).** At a simple pole, $\operatorname{Res} = \frac{p(a)}{q'(a)} = \frac{1}{4a^3} = \frac{a}{4a^4} = -\frac{a}{4}$, because $a^4 = -1$. Option (A) misses the sign.
 
-**Q5 — (B).** $\int_0^{2\pi}\frac{d\theta}{a + b\cos\theta} = \frac{2\pi}{\sqrt{a^2-b^2}}$ for $a > |b|$. Here this is $\frac{2\pi}{\sqrt{25-16}} = \frac{2\pi}{3}$. Option (D) adds instead of subtracting.
+**Q5 — (B).** $\int_0^{2\pi}\frac{d\theta}{a + b\cos\theta} = \frac{2\pi}{\sqrt{a^2-b^2}}$ for $a \gt  |b|$. Here this is $\frac{2\pi}{\sqrt{25-16}} = \frac{2\pi}{3}$. Option (D) adds instead of subtracting.
 
 **Q6 — (D).** Integrate $\frac{e^{iz}}{z^2+1}$ over the upper half-plane. The residue at $i$ is $\frac{e^{-1}}{2i}$, so the integral is $2\pi i\cdot\frac{e^{-1}}{2i} = \frac{\pi}{e}$; take the real part. Option (A) comes from closing in the wrong half-plane, and (C) is the value of $\int_0^\infty$.
 
@@ -175,14 +175,16 @@ Which of the above is/are correct?
 
 **Q9 — (A).** (a) $\frac{2\pi}{\sqrt{4-1}} = \frac{2\pi}{\sqrt3}$. (b) is the Dirichlet integral, $\frac\pi2$. (c) is half of $\int_{\mathbb{R}} = \frac\pi2$, so $\frac\pi4$. (d) The substitution $x \mapsto 1/x$ maps the integral to its negative, so it is $0$.
 
-**Q10 — (C).** $f = \frac1z$ is analytic at $\infty$ (it vanishes there), yet $\operatorname{Res}_\infty f = -1$. The residue at $\infty$ is $-c_{-1}$ from the expansion at $\infty$, and that coefficient can be non-zero even when $f$ is analytic at $\infty$. (D) is true: an even Laurent series has no $z^{-1}$ term.
+**Q10 — (C).** $f = \frac1z$ is analytic at $`\infty`$ (it vanishes there), yet $`\operatorname{Res}_\infty f = -1`$. The residue at $\infty$ is $`-c_{-1}`$ from the expansion at $\infty$, and that coefficient can be non-zero even when $f$ is analytic at $\infty$. (D) is true: an even Laurent series has no $z^{-1}$ term.
 
-**Q11 — (C).** All poles ($\pm i$ and the fourth roots of $-2$, with modulus $2^{1/4} \approx 1.19$) lie inside $|z| = 2$, so the integral is $-2\pi i\operatorname{Res}_\infty$. The degrees are 15 over 16, so $f = \frac1z + O(z^{-2})$ at $\infty$ and $\operatorname{Res}_\infty = -1$. The integral is $2\pi i$. Computing 7 separate residues would be far too slow; checked numerically.
+**Q11 — (C).** All poles ($\pm i$ and the fourth roots of $-2$, with modulus $2^{1/4} \approx 1.19$) lie inside $|z| = 2$, so the integral is $`-2\pi i\operatorname{Res}_\infty`$. The degrees are 15 over 16, so $`f = \frac1z + O(z^{-2})`$ at $`\infty`$ and $`\operatorname{Res}_\infty = -1`$. The integral is $2\pi i$. Computing 7 separate residues would be far too slow; checked numerically.
 
 **Q12 — (B).** Indent around $x = 1$:
-$$\mathrm{P.V.} = 2\pi i\operatorname{Res}_{i} + \pi i\operatorname{Res}_{1}.$$
+```math
+\mathrm{P.V.} = 2\pi i\operatorname{Res}_{i} + \pi i\operatorname{Res}_{1}.
+```
 - $\operatorname{Res}_1 = \frac12$.
-- $\operatorname{Res}_i = \frac{1}{(i-1)\,2i} = -\frac{1-i}{4}$.
+- $\operatorname{Res}_i = \frac{1}{(i-1)\thinspace 2i} = -\frac{1-i}{4}$.
 
 So
 $$\mathrm{P.V.} = -\frac{\pi i(1-i)}{2} + \frac{\pi i}{2} = -\frac{\pi}{2}$$

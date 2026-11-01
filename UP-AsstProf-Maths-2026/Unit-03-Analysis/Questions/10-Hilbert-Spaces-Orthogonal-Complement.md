@@ -8,11 +8,11 @@
 
 (B) the Cauchy–Schwarz inequality
 
-(C) the parallelogram law $\|x+y\|^2+\|x-y\|^2=2\|x\|^2+2\|y\|^2$
+(C) the parallelogram law $\Vert x+y\Vert ^2+\Vert x-y\Vert ^2=2\Vert x\Vert ^2+2\Vert y\Vert ^2$
 
 (D) completeness
 
-**Q2.** `[Numerical]` ★ In an inner product space, $\|x\|=3$, $\|y\|=4$ and $\|x+y\|=5$. Then $\|x-y\|$ equals
+**Q2.** `[Numerical]` ★ In an inner product space, $\Vert x\Vert =3$, $\Vert y\Vert =4$ and $\Vert x+y\Vert =5$. Then $\Vert x-y\Vert$ equals
 
 (A) $1$
 
@@ -22,7 +22,7 @@
 
 (D) $7$
 
-**Q3.** `[Numerical]` ★★ In $L^2[0,1]$ (real), the distance from $f(t)=t^2$ to the subspace $\operatorname{span}\{1,t\}$ is
+**Q3.** `[Numerical]` ★★ In $L^2[0,1]$ (real), the distance from $f(t)=t^2$ to the subspace $\operatorname{span}\lbrace 1,t\rbrace$ is
 
 (A) $\dfrac{1}{6\sqrt5}$
 
@@ -62,14 +62,14 @@ Which is/are correct?
 
 (D) A is false but R is true
 
-**Q6.** `[Match]` ★★ Here $\{e_n\}$ is an orthonormal set in a Hilbert space $H$. Match each result with its statement.
+**Q6.** `[Match]` ★★ Here $\lbrace e_n\rbrace$ is an orthonormal set in a Hilbert space $H$. Match each result with its statement.
 
 | List-I | List-II |
 |---|---|
-| (a) Bessel's inequality | 1. Every $f\in H^*$ is $f(x)=\langle x,y\rangle$ for a unique $y$, with $\|f\|=\|y\|$ |
+| (a) Bessel's inequality | 1. Every $f\in H^\ast$ is $f(x)=\langle x,y\rangle$ for a unique $y$, with $\Vert f\Vert =\Vert y\Vert$ |
 | (b) Parseval's identity | 2. A non-empty closed convex set has a unique element of minimum distance from any point |
-| (c) Riesz representation theorem | 3. $\sum|\langle x,e_n\rangle|^2\le\|x\|^2$ |
-| (d) Projection (best approximation) theorem | 4. $\sum|\langle x,e_n\rangle|^2=\|x\|^2$ for all $x$, if and only if $\{e_n\}$ is complete |
+| (c) Riesz representation theorem | 3. $\sum\vert \langle x,e_n\rangle\vert ^2\le\Vert x\Vert ^2$ |
+| (d) Projection (best approximation) theorem | 4. $\sum\vert \langle x,e_n\rangle\vert ^2=\Vert x\Vert ^2$ for all $x$, if and only if $\lbrace e_n\rbrace$ is complete |
 
 (A) a-3, b-4, c-1, d-2
 
@@ -89,7 +89,7 @@ Which is/are correct?
 
 (D) Every infinite-dimensional Hilbert space has a countable orthonormal basis.
 
-**Q8.** `[Numerical]` ★★★ On $\ell^2$, let $f(x)=\displaystyle\sum_{n=1}^\infty\frac{x_n}{2^{\,n-1}}=x_1+\frac{x_2}{2}+\frac{x_3}{4}+\cdots$. Then $\|f\|$ equals
+**Q8.** `[Numerical]` ★★★ On $\ell^2$, let $f(x)=\displaystyle\sum_{n=1}^\infty\frac{x_n}{2^{\thinspace n-1}}=x_1+\frac{x_2}{2}+\frac{x_3}{4}+\cdots$. Then $\Vert f\Vert$ equals
 
 (A) $2$
 
@@ -101,15 +101,15 @@ Which is/are correct?
 
 **Q9.** `[Concept]` ★★ Let $S$ be the right shift on $\ell^2$, $S(x_1,x_2,\dots)=(0,x_1,x_2,\dots)$. Then
 
-(A) $S^*=S$
+(A) $S^\ast =S$
 
-(B) $S^*S=I$ but $SS^*\ne I$
+(B) $S^\ast S=I$ but $SS^\ast \ne I$
 
-(C) $SS^*=I$ but $S^*S\ne I$
+(C) $SS^\ast =I$ but $S^\ast S\ne I$
 
-(D) $S^*S=SS^*=I$
+(D) $S^\ast S=SS^\ast =I$
 
-**Q10.** `[Application]` ★★★ The number of points on the $x$-axis nearest to $(0,1)$ is $m$ in $(\mathbb R^2,\|\cdot\|_2)$ and $k$ in $(\mathbb R^2,\|\cdot\|_\infty)$. Then
+**Q10.** `[Application]` ★★★ The number of points on the $x$-axis nearest to $(0,1)$ is $m$ in $(\mathbb R^2,\Vert \cdot\Vert _2)$ and $k$ in $(\mathbb R^2,\Vert \cdot\Vert _\infty)$. Then
 
 (A) $m=1,\ k=1$
 
@@ -119,27 +119,27 @@ Which is/are correct?
 
 (D) $m=2$ and $k$ is infinite
 
-**Q11.** `[Concept]` ★ In an inner product space, equality $|\langle x,y\rangle|=\|x\|\,\|y\|$ holds if and only if
+**Q11.** `[Concept]` ★ In an inner product space, equality $|\langle x,y\rangle|=\Vert x\Vert \thinspace \Vert y\Vert$ holds if and only if
 
 (A) $x\perp y$
 
 (B) $x$ and $y$ are linearly dependent
 
-(C) $\|x\|=\|y\|$
+(C) $\Vert x\Vert =\Vert y\Vert$
 
 (D) $x=y$
 
-**Q12.** `[Application]` ★★ In $\ell^2$, let $M=\{x\in\ell^2: x_1=x_2\}$. Then $M^\perp$ is
+**Q12.** `[Application]` ★★ In $\ell^2$, let $M=\lbrace x\in\ell^2: x_1=x_2\rbrace$. Then $M^\perp$ is
 
-(A) $\{0\}$
+(A) $\lbrace 0\rbrace$
 
-(B) $\operatorname{span}\{(1,1,0,0,\dots)\}$
+(B) $\operatorname{span}\lbrace (1,1,0,0,\dots)\rbrace$
 
-(C) $\{x: x_1=-x_2\}$
+(C) $\lbrace x: x_1=-x_2\rbrace$
 
-(D) $\operatorname{span}\{(1,-1,0,0,\dots)\}$
+(D) $\operatorname{span}\lbrace (1,-1,0,0,\dots)\rbrace$
 
-**Q13.** `[Numerical]` ★★★ Let $P:\mathbb R^2\to\mathbb R^2$, $P(x,y)=(x+y,0)$, with the Euclidean norm. Then $P^2=P$ and $\|P\|$ equals
+**Q13.** `[Numerical]` ★★★ Let $P:\mathbb R^2\to\mathbb R^2$, $P(x,y)=(x+y,0)$, with the Euclidean norm. Then $P^2=P$ and $\Vert P\Vert$ equals
 
 (A) $1$
 
@@ -170,26 +170,26 @@ Which is/are correct?
 ## Solutions
 **Q1 — (C).** This is the Jordan–von Neumann theorem. If the parallelogram law holds, the polarization identity defines an inner product. Every norm satisfies (A), and (D) concerns completeness, not the inner product.
 
-**Q2 — (C).** By the parallelogram law, $\|x-y\|^2=2(9+16)-25=25$, so $\|x-y\|=5$. (Here $x\perp y$.)
+**Q2 — (C).** By the parallelogram law, $\Vert x-y\Vert ^2=2(9+16)-25=25$, so $\Vert x-y\Vert =5$. (Here $x\perp y$.)
 
 **Q3 — (A).** The best approximation is the orthogonal projection $t-\frac16$. The squared distance is $\int_0^1\left(t^2-t+\frac16\right)^2dt=\frac1{180}$, so the distance is $\frac1{\sqrt{180}}=\frac1{6\sqrt5}$. Option (B) forgets the square root.
 
 **Q4 — (D).** $M^\perp=\bigcap_{y\in M}\ker\langle\cdot,y\rangle$ is closed for **any** subset $M$. In general $(M^\perp)^\perp=\overline M$, which differs from $M$ for a non-closed subspace, e.g. $c_{00}\subset\ell^2$, where $(c_{00}^\perp)^\perp=\ell^2$. So II fails. III is the projection theorem.
 
-**Q5 — (A).** $\ell^p$ is complete for all $p\ge1$. With $x=e_1$ and $y=e_2$: $\|x\pm y\|_p^2=2^{2/p}$, so the left side of the parallelogram law is $2\cdot2^{2/p}$, while the right side is $4$. These are equal only when $p=2$. So no inner product induces the norm, and R explains A.
+**Q5 — (A).** $\ell^p$ is complete for all $p\ge1$. With $x=e_1$ and $y=e_2$: $\Vert x\pm y\Vert _p^2=2^{2/p}$, so the left side of the parallelogram law is $2\cdot2^{2/p}$, while the right side is $4$. These are equal only when $p=2$. So no inner product induces the norm, and R explains A.
 
 **Q6 — (A).** Bessel (3) holds for every orthonormal set. Parseval (4) characterises complete orthonormal sets. Riesz representation is (1). The projection or best-approximation theorem in a Hilbert space is (2).
 
 **Q7 — (D).** A non-separable Hilbert space, such as $\ell^2(\mathbb R)$, has an uncountable orthonormal basis. (A) holds by Riesz–Fischer and Parseval. (B) holds because distinct orthonormal vectors are $\sqrt2$ apart. (C) follows from the Riesz representation theorem.
 
-**Q8 — (B).** By Riesz, $f=\langle\cdot,y\rangle$ with $y=(1,\frac12,\frac14,\dots)$. So $\|f\|=\|y\|_2=\left(\sum_{n\ge0}4^{-n}\right)^{1/2}=\sqrt{4/3}=\frac{2}{\sqrt3}$. Option (A) is $\|y\|_1$, the norm of $f$ on $\ell^\infty$, not on $\ell^2$.
+**Q8 — (B).** By Riesz, $f=\langle\cdot,y\rangle$ with $y=(1,\frac12,\frac14,\dots)$. So $`\Vert f\Vert =\Vert y\Vert _2=\left(\sum_{n\ge0}4^{-n}\right)^{1/2}=\sqrt{4/3}=\frac{2}{\sqrt3}`$. Option (A) is $\Vert y\Vert _1$, the norm of $f$ on $\ell^\infty$, not on $\ell^2$.
 
-**Q9 — (B).** $S^*$ is the left shift $(x_1,x_2,\dots)\mapsto(x_2,x_3,\dots)$. Then $S^*Sx=x$, but $SS^*x=(0,x_2,x_3,\dots)\ne x$. $S$ is an isometry that is not unitary, and it is not self-adjoint.
+**Q9 — (B).** $S^\ast$ is the left shift $(x_1,x_2,\dots)\mapsto(x_2,x_3,\dots)$. Then $S^\ast Sx=x$, but $SS^\ast x=(0,x_2,x_3,\dots)\ne x$. $S$ is an isometry that is not unitary, and it is not self-adjoint.
 
-**Q10 — (C).** In the Euclidean norm, closed convex sets in a Hilbert space have unique nearest points, so the unique point is $(0,0)$ and $m=1$. In the sup norm, $\|(0,1)-(t,0)\|_\infty=\max(|t|,1)=1$ for every $|t|\le1$, so there are infinitely many nearest points. Uniqueness needs the Hilbert (uniformly convex) structure.
+**Q10 — (C).** In the Euclidean norm, closed convex sets in a Hilbert space have unique nearest points, so the unique point is $(0,0)$ and $m=1$. In the sup norm, $\Vert (0,1)-(t,0)\Vert _\infty=\max(|t|,1)=1$ for every $|t|\le1$, so there are infinitely many nearest points. Uniqueness needs the Hilbert (uniformly convex) structure.
 
 **Q11 — (B).** The Cauchy–Schwarz inequality is an equality exactly when one vector is a scalar multiple of the other. (A) gives $\langle x,y\rangle=0$, which is the opposite extreme.
 
-**Q12 — (D).** $M=\{x: \langle x,u\rangle=0\}$ for $u=(1,-1,0,\dots)$, i.e. $M=\{u\}^\perp$, which is closed. So $M^\perp=\{u\}^{\perp\perp}=\operatorname{span}\{u\}$. Option (B) is the common sign slip.
+**Q12 — (D).** $M=\lbrace x: \langle x,u\rangle=0\rbrace$ for $u=(1,-1,0,\dots)$, i.e. $M=\lbrace u\rbrace ^\perp$, which is closed. So $M^\perp=\lbrace u\rbrace ^{\perp\perp}=\operatorname{span}\lbrace u\rbrace$. Option (B) is the common sign slip.
 
-**Q13 — (B).** The matrix is $\begin{pmatrix}1&1\\0&0\end{pmatrix}$, and $A^TA=\begin{pmatrix}1&1\\1&1\end{pmatrix}$ has largest eigenvalue $2$, so $\|P\|=\sqrt2$. $P$ is idempotent but not self-adjoint, i.e. an oblique projection. Only **orthogonal** projections ($P^2=P=P^*$, $P\neq0$) have norm exactly $1$. That makes (A) the trap.
+**Q13 — (B).** The matrix is $`\begin{pmatrix}1&1\cr 0&0\end{pmatrix}`$, and $`A^TA=\begin{pmatrix}1&1\cr 1&1\end{pmatrix}`$ has largest eigenvalue $2$, so $\Vert P\Vert =\sqrt2$. $P$ is idempotent but not self-adjoint, i.e. an oblique projection. Only **orthogonal** projections ($P^2=P=P^\ast$, $P\neq0$) have norm exactly $1$. That makes (A) the trap.

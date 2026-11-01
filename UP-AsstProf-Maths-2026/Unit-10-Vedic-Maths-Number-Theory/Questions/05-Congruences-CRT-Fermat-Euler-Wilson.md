@@ -42,7 +42,7 @@
 
 (D) 128
 
-**Q5.** `[Concept]` ★ For an integer $n > 1$, the congruence $(n-1)! \equiv -1 \pmod n$ holds if and only if
+**Q5.** `[Concept]` ★ For an integer $n \gt  1$, the congruence $(n-1)! \equiv -1 \pmod n$ holds if and only if
 
 (A) $n$ is odd
 
@@ -129,7 +129,7 @@ Which of the above is/are correct?
 
 (D) 30
 
-**Q12.** `[Numerical]` ★★★ The number of solutions of $x^2 \equiv 1 \pmod{120}$ in $\{0, 1, \dots, 119\}$ is
+**Q12.** `[Numerical]` ★★★ The number of solutions of $x^2 \equiv 1 \pmod{120}$ in $\lbrace 0, 1, \dots, 119\rbrace$ is
 
 (A) 4
 
@@ -176,7 +176,7 @@ Which of the above is/are correct?
 
 **Q4 — (A).** $x\equiv2\pmod{21}$ (from the mod 3 and mod 7 conditions) and $x\equiv3\pmod5$ give $x = 23$, unique mod 105. $128 = 23+105$ is also a solution but not the least. $53$ and $68$ fail the mod 7 condition.
 
-**Q5 — (B).** This is Wilson's theorem together with its converse. If $n$ is composite, then $\gcd((n-1)!, n) > 1$, so $(n-1)!\not\equiv -1$. For $n=4$: $3!=6\equiv2\pmod 4$. In fact $(n-1)!\equiv0\pmod n$ for every composite $n\ne4$.
+**Q5 — (B).** This is Wilson's theorem together with its converse. If $n$ is composite, then $\gcd((n-1)!, n) \gt  1$, so $(n-1)!\not\equiv -1$. For $n=4$: $3!=6\equiv2\pmod 4$. In fact $(n-1)!\equiv0\pmod n$ for every composite $n\ne4$.
 
 **Q6 — (A).** Wilson: $100!\equiv-1\pmod{101}$. Since $100\equiv-1$, we get $99!\cdot(-1)\equiv-1$, so $99!\equiv1$. In general $(p-2)!\equiv1\pmod p$. (D) is the value of $100!$ mod 101.
 
@@ -193,7 +193,7 @@ Which of the above is/are correct?
 
 **Q9 — (A).** $\varphi(8)=4$, but every unit mod 8 has order at most 2 because $x^2\equiv1$. So no unit has order 4. R gives exactly this reason.
 
-**Q10 — (D).** $2^3=8\equiv1\pmod7$, so $\operatorname{ord}_7 2=3\ne6$. The others are true: $\operatorname{ord}_{11}2=10$; $\operatorname{ord}_{13}2=12$; and 10 is a primitive root mod 7, which is why $1/7$ has period 6.
+**Q10 — (D).** $2^3=8\equiv1\pmod7$, so $`\operatorname{ord}_7 2=3\ne6`$. The others are true: $`\operatorname{ord}_{11}2=10`$; $\operatorname{ord}_{13}2=12$; and 10 is a primitive root mod 7, which is why $1/7$ has period 6.
 
 **Q11 — (B).** $17\cdot38=646=15\cdot43+1$. The Euclidean algorithm gives this directly: $43=2\cdot17+9$, $17=9+8$, $9=8+1$.
 

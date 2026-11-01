@@ -2,9 +2,9 @@
 > Syllabus coverage: Space curves - their curvature and torsion, Serret-Frenet formulae
 > Cheatsheet: [../Cheatsheets/05-Space-Curves-Serret-Frenet.md](../Cheatsheets/05-Space-Curves-Serret-Frenet.md)
 
-*Convention: $s$ = arc length, $(T,N,B)$ = Frenet frame, $B'=-\tau N$.*
+*Convention: $`s`$ = arc length, $`(T,N,B)`$ = Frenet frame, $`B'=-\tau N`$.*
 
-**Q1.** `[Numerical]` ★ For the circular helix $\mathbf r(t)=(a\cos t,\ a\sin t,\ bt)$ with $a>0$, the curvature $\kappa$ and torsion $\tau$ are
+**Q1.** `[Numerical]` ★ For the circular helix $\mathbf r(t)=(a\cos t,\ a\sin t,\ bt)$ with $a\gt 0$, the curvature $\kappa$ and torsion $\tau$ are
 
 (A) $\kappa=\dfrac1a,\ \tau=\dfrac1b$
 
@@ -34,7 +34,7 @@
 
 (D) its binormal is perpendicular to a fixed direction
 
-**Q4.** `[Multi-Statement]` ★★ For a unit-speed curve with Frenet frame $(T,N,B)$, consider:
+**Q4.** `[Multi-Statement]` ★★ For a unit-speed curve with Frenet frame $`(T,N,B)`$, consider:
 
 I. $T'=\kappa N$
 
@@ -54,9 +54,9 @@ Which of the above is/are correct?
 
 **Q5.** `[Assertion-Reason]` ★★
 
-**Assertion (A):** A space curve with constant curvature $\kappa>0$ and torsion $\tau\equiv0$ is (part of) a circle of radius $1/\kappa$.
+**Assertion (A):** A space curve with constant curvature $\kappa\gt 0$ and torsion $\tau\equiv0$ is (part of) a circle of radius $1/\kappa$.
 
-**Reason (R):** The curvature and torsion functions (with $\kappa>0$) determine a curve uniquely up to a rigid motion.
+**Reason (R):** The curvature and torsion functions (with $\kappa\gt 0$) determine a curve uniquely up to a rigid motion.
 
 (A) Both A and R are true and R is the correct explanation of A
 
@@ -97,11 +97,11 @@ Which of the above is/are correct?
 
 (A) $2\pi$
 
-(B) $2\sqrt2\,\pi$
+(B) $2\sqrt2\thinspace \pi$
 
 (C) $4\pi$
 
-(D) $\sqrt2\,\pi$
+(D) $\sqrt2\thinspace \pi$
 
 **Q9.** `[Application]` ★★★ A unit-speed curve has constant curvature $\kappa=1$ and constant torsion $\tau=1$. Then it is a circular helix lying on a cylinder of radius
 
@@ -123,7 +123,7 @@ Which of the above is/are correct?
 
 (D) $\kappa=\tfrac12,\ \tau=\tfrac12$
 
-**Q11.** `[Concept]` ★ The Serret–Frenet formulae can be written as $X'=\boldsymbol\omega\times X$ for $X\in\{T,N,B\}$. The Darboux vector is $\boldsymbol\omega=$
+**Q11.** `[Concept]` ★ The Serret–Frenet formulae can be written as $X'=\boldsymbol\omega\times X$ for $X\in\lbrace T,N,B\rbrace$. The Darboux vector is $\boldsymbol\omega=$
 
 (A) $\kappa T+\tau B$
 
@@ -133,7 +133,7 @@ Which of the above is/are correct?
 
 (D) $\tau T+\kappa B$
 
-**Q12.** `[Application]` ★★★ For a unit-speed curve with curvature $\kappa>0$ and torsion $\tau$, the curvature of its **tangent indicatrix** (the curve $s\mapsto T(s)$ on the unit sphere) is
+**Q12.** `[Application]` ★★★ For a unit-speed curve with curvature $\kappa\gt 0$ and torsion $\tau$, the curvature of its **tangent indicatrix** (the curve $s\mapsto T(s)$ on the unit sphere) is
 
 (A) $\dfrac{\sqrt{\kappa^2+\tau^2}}{\kappa}$
 
@@ -167,11 +167,11 @@ Which of the above is/are correct?
 
 **Q3 — (B).** $\tau=0\iff B'=0\iff B$ is constant, and then $(\mathbf r-\mathbf r_0)\cdot B$ is constant, so the curve lies in a plane. Option (D) is wrong because a planar curve has $B$ *constant*, i.e. *parallel* to a fixed direction. (C) characterises generalized helices.
 
-**Q4 — (B).** The correct third formula is $B'=-\tau N$. You can derive it by differentiating $B\cdot B=1$ and $B\cdot T=0$.
+**Q4 — (B).** The correct third formula is $`B'=-\tau N`$. You can derive it by differentiating $`B\cdot B=1`$ and $`B\cdot T=0`$.
 
 **Q5 — (A).** A circle of radius $1/\kappa$ has curvature $\kappa$ and torsion $0$. By the fundamental theorem of curves (R), any curve with the same $\kappa,\tau$ is congruent to it, so R explains A.
 
-**Q6 — (C).** Osculating plane $=\langle T,N\rangle$, normal plane $=\langle N,B\rangle$, rectifying plane $=\langle T,B\rangle$, and $B'=-\tau N$.
+**Q6 — (C).** Osculating plane $`=\langle T,N\rangle`$, normal plane $`=\langle N,B\rangle`$, rectifying plane $`=\langle T,B\rangle`$, and $`B'=-\tau N`$.
 
 **Q7 — (D).** Lancret's theorem: $\kappa/\tau$ is constant $\iff$ generalized helix (the tangent makes a constant angle with a fixed direction). A generalized helix need not lie on a circular cylinder. Only when $\kappa$ and $\tau$ are **both** constant is it a circular helix.
 
@@ -181,6 +181,6 @@ Which of the above is/are correct?
 
 **Q10 — (D).** $\mathbf r'=(\sinh t,\cosh t,1)$, $\mathbf r''=(\cosh t,\sinh t,0)$, $\mathbf r'''=(\sinh t,\cosh t,0)$, and $\mathbf r'\times\mathbf r''=(-\sinh t,\cosh t,-1)$. This gives $\kappa=\tau=\dfrac1{2\cosh^2t}$ for all $t$ (checked with sympy). At $t=0$ both equal $\tfrac12$. Since $\kappa/\tau\equiv1$, the curve is a generalized helix.
 
-**Q11 — (D).** Check: $\boldsymbol\omega\times T=\kappa B\times T=\kappa N$ and $\boldsymbol\omega\times B=\tau T\times B=-\tau N$, which match $T'=\kappa N$ and $B'=-\tau N$. Also $|\boldsymbol\omega|=\sqrt{\kappa^2+\tau^2}$ (the total curvature).
+**Q11 — (D).** Check: $\boldsymbol\omega\times T=\kappa B\times T=\kappa N$ and $\boldsymbol\omega\times B=\tau T\times B=-\tau N$, which match $T'=\kappa N$ and $`B'=-\tau N`$. Also $|\boldsymbol\omega|=\sqrt{\kappa^2+\tau^2}$ (the total curvature).
 
 **Q12 — (A).** Let $\sigma$ be the arc length of $T(s)$. Then $d\sigma/ds=\kappa$, and $dT/d\sigma=N$, so $d^2T/d\sigma^2=N'/\kappa=(-\kappa T+\tau B)/\kappa$. Its length is $\sqrt{\kappa^2+\tau^2}/\kappa$. Check with the helix: $T$ traces a circle of radius $a/c$ on $S^2$, whose curvature is $c/a=\sqrt{\kappa^2+\tau^2}/\kappa$.

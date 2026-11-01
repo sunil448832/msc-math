@@ -15,7 +15,7 @@
 $$T(z) = \frac{az+b}{cz+d},\qquad ad - bc \ne 0.$$
 - $T$ is a bijection of $\hat{\mathbb{C}}$, with $T(-d/c) = \infty$ and $T(\infty) = a/c$. Its inverse is $\frac{dz-b}{-cz+a}$.
 - $T'(z) = \frac{ad-bc}{(cz+d)^2} \ne 0$, so $T$ is conformal on $\hat{\mathbb{C}}$.
-- The Möbius maps form a group, isomorphic to $PSL(2,\mathbb{C}) = SL(2,\mathbb{C})/\{\pm I\}$. Composition corresponds to matrix multiplication.
+- The Möbius maps form a group, isomorphic to $PSL(2,\mathbb{C}) = SL(2,\mathbb{C})/\lbrace \pm I\rbrace$. Composition corresponds to matrix multiplication.
 - Every $T$ is a composition of a translation, a rotation and dilation, and an inversion $1/z$.
 - $T$ maps generalised circles (circles and lines) to generalised circles. A circle through the pole $-d/c$ goes to a **line**.
 - $T$ preserves **symmetric points** (inverse points) with respect to circles.
@@ -34,7 +34,7 @@ Normalise to $ad - bc = 1$ and let $\tau = a + d$.
 |---|---|---|---|
 | Parabolic | $\tau^2 = 4$, $T \ne I$ | (1 fixed point) | $z + 1$ |
 | Elliptic | $\tau^2 \in [0,4)$ | $\lvert k\rvert = 1$, $k \ne 1$ | $e^{i\theta}z$ |
-| Hyperbolic | $\tau^2 \in (4,\infty)$ | $k > 0$ real, $k \ne 1$ | $kz$ |
+| Hyperbolic | $\tau^2 \in (4,\infty)$ | $k \gt  0$ real, $k \ne 1$ | $kz$ |
 | Loxodromic (strict) | $\tau^2 \notin [0,\infty)$ | otherwise | $\lambda z$, $\lambda \notin \mathbb{R}\cup S^1$ |
 
 Example: $\frac{3z-4}{z-1}$ has $\tau = 2$, so it is parabolic with fixed point $2$.
@@ -49,9 +49,9 @@ Convention: $(z_1,z_2,z_3,z_4) = \dfrac{(z_1-z_3)(z_2-z_4)}{(z_1-z_4)(z_2-z_3)}$
 ## 6. Disc and half-plane maps
 | Map | Form |
 |---|---|
-| Automorphisms of $\mathbb{D}$ | $e^{i\theta}\dfrac{z-a}{1-\bar az}$, $\lvert a\rvert < 1$ |
-| Automorphisms of the UHP | $\dfrac{az+b}{cz+d}$, $a,b,c,d \in \mathbb{R}$, $ad - bc > 0$ |
-| UHP $\to \mathbb{D}$ | $e^{i\theta}\dfrac{z-a}{z-\bar a}$, $\operatorname{Im} a > 0$ |
+| Automorphisms of $\mathbb{D}$ | $e^{i\theta}\dfrac{z-a}{1-\bar az}$, $\lvert a\rvert \lt  1$ |
+| Automorphisms of the UHP | $\dfrac{az+b}{cz+d}$, $a,b,c,d \in \mathbb{R}$, $ad - bc \gt  0$ |
+| UHP $\to \mathbb{D}$ | $e^{i\theta}\dfrac{z-a}{z-\bar a}$, $\operatorname{Im} a \gt  0$ |
 | Cayley map | $\dfrac{z-i}{z+i}$ |
 | $\mathbb{D} \to$ right half-plane | $\dfrac{1+z}{1-z}$ |
 | $\mathbb{D} \to$ UHP | $i\dfrac{1+z}{1-z}$, or $i\dfrac{1-z}{1+z}$ |
@@ -65,10 +65,10 @@ Convention: $(z_1,z_2,z_3,z_4) = \dfrac{(z_1-z_3)(z_2-z_4)}{(z_1-z_4)(z_2-z_3)}$
 |---|---|
 | $z^2$ | first quadrant $\to$ UHP; UHP $\to \mathbb{C}\setminus[0,\infty)$; hyperbolas $\leftrightarrow$ lines |
 | $z^n$ | sector of angle $\pi/n$ $\to$ UHP; angles at $0$ multiplied by $n$ |
-| $e^z$ | strip $0 < \operatorname{Im} z < \pi$ $\to$ UHP; $0 < \operatorname{Im} z < \pi/2$ $\to$ first quadrant; vertical lines $\to$ circles; horizontal lines $\to$ rays |
-| $\operatorname{Log} z$ | UHP $\to$ strip $0 < \operatorname{Im} w < \pi$ |
-| $\sin z$ | half-strip $-\frac\pi2 < x < \frac\pi2$, $y > 0$ $\to$ UHP |
-| $\frac1z$ | circles through $0$ $\to$ lines; $\lvert z\rvert < 1 \to \lvert w\rvert > 1$ |
+| $e^z$ | strip $0 \lt  \operatorname{Im} z \lt  \pi$ $\to$ UHP; $0 \lt  \operatorname{Im} z \lt  \pi/2$ $\to$ first quadrant; vertical lines $\to$ circles; horizontal lines $\to$ rays |
+| $\operatorname{Log} z$ | UHP $\to$ strip $0 \lt  \operatorname{Im} w \lt  \pi$ |
+| $\sin z$ | half-strip $-\frac\pi2 \lt  x \lt  \frac\pi2$, $y \gt  0$ $\to$ UHP |
+| $\frac1z$ | circles through $0$ $\to$ lines; $\lvert z\rvert \lt  1 \to \lvert w\rvert \gt  1$ |
 | $z + \frac1z$ (Joukowski) | $\lvert z\rvert = r \ne 1$ $\to$ ellipse; $\lvert z\rvert = 1$ $\to$ $[-2,2]$; exterior of $\mathbb{D}$ $\to$ $\mathbb{C}\setminus[-2,2]$ |
 
 ## Exam traps

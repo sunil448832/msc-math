@@ -17,26 +17,26 @@
 ## 2. Convergence and continuity
 - Limits are unique (metric spaces are Hausdorff). A convergent sequence is Cauchy, and a Cauchy sequence is bounded.
 - A Cauchy sequence with a convergent subsequence converges.
-- **Equivalent definitions of continuity:** $\varepsilon$–$\delta$; sequential ($x_n\to x\Rightarrow f(x_n)\to f(x)$); preimage of open is open; preimage of closed is closed.
-- **Uniformly continuous:** $\delta$ depends only on $\varepsilon$. Lipschitz $\Rightarrow$ uniformly continuous $\Rightarrow$ continuous.
-- A uniformly continuous map sends Cauchy sequences to Cauchy sequences (a merely continuous map need not: $1/x$ on $(0,1)$).
+- **Equivalent definitions of continuity:** $`\varepsilon`$–$`\delta`$; sequential ($`x_n\to x\Rightarrow f(x_n)\to f(x)`$); preimage of open is open; preimage of closed is closed.
+- **Uniformly continuous:** $`\delta`$ depends only on $\varepsilon$. Lipschitz $\Rightarrow$ uniformly continuous $\Rightarrow$ continuous.
+- A uniformly continuous map sends Cauchy sequences to Cauchy sequences (a merely continuous map need not: $`1/x`$ on $`(0,1)`$).
 - $f$ uniformly continuous on a dense $A\subseteq X$, with values in a complete $Y$ $\Rightarrow$ $f$ has a unique continuous extension to $X$.
 - **On a bounded interval $(a,b)$:** $f$ is uniformly continuous $\iff$ $f$ extends continuously to $[a,b]$.
 
 | Function | Uniformly continuous? |
 |---|---|
-| $\sqrt x$ on $[0,\infty)$ | Yes (Hölder-$\frac12$) |
+| $\sqrt x$ on $[0,\infty)$ | Yes (Hölder-$`\frac12`$) |
 | $\sin x$, $\tan^{-1}x$, $\lvert x\rvert$ on $\mathbb R$ | Yes (Lipschitz) |
-| $x\sin(1/x)$ on $(0,1)$ | Yes (extends) |
+| $`x\sin(1/x)`$ on $`(0,1)`$ | Yes (extends) |
 | $x^2$, $x\sin x$, $e^x$, $\sin(x^2)$ on $\mathbb R$ | No |
-| $1/x$, $\sin(1/x)$ on $(0,1)$ | No |
+| $`1/x`$, $`\sin(1/x)`$ on $`(0,1)`$ | No |
 | $1/x$ on $[1,\infty)$ | Yes |
 | $f$ with bounded derivative | Yes |
 
 ## 3. Completeness
 - **Complete:** every Cauchy sequence converges.
-  - Complete: $\mathbb R^n$, $\ell^p$, $C[a,b]$ with $\|\cdot\|_\infty$, $L^p$.
-  - Not complete: $\mathbb Q$, $(0,1)$, $(C[0,1],\|\cdot\|_1)$, polynomials with sup norm.
+  - Complete: $\mathbb R^n$, $\ell^p$, $C[a,b]$ with $\Vert \cdot\Vert _\infty$, $L^p$.
+  - Not complete: $\mathbb Q$, $`(0,1)`$, $(C[0,1],\Vert \cdot\Vert _1)$, polynomials with sup norm.
 - A closed subset of a complete space is complete, and a complete subspace of any metric space is closed.
 - **Cantor intersection theorem:** $X$ is complete $\iff$ every nested sequence of non-empty closed sets with $\operatorname{diam}\to0$ has intersection **exactly one point**.
 - **Baire category theorem:** in a complete metric space, a countable intersection of dense open sets is dense. Equivalently, a non-empty complete space is not a countable union of nowhere dense sets (it is of second category).
@@ -44,10 +44,10 @@
   - A complete metric space without isolated points is uncountable.
   - An infinite-dimensional Banach space has no countable Hamel basis.
   - There is no function continuous exactly on $\mathbb Q$.
-- **Banach contraction principle:** if $X$ is complete (and non-empty) and $d(Tx,Ty)\le\alpha d(x,y)$ with $0\le\alpha<1$, then $T$ has a **unique** fixed point $x^*$, and $T^nx_0\to x^*$ for every $x_0$, with error
-  $$d(x_n,x^*)\le\frac{\alpha^n}{1-\alpha}d(x_1,x_0).$$
-  - Strict "$<$" without a uniform $\alpha<1$ is **not** enough: $x+\frac1x$ on $[1,\infty)$ has $|Tx-Ty|<|x-y|$ but no fixed point.
-  - On a compact space, $d(Tx,Ty)<d(x,y)$ does suffice.
+- **Banach contraction principle:** if $X$ is complete (and non-empty) and $d(Tx,Ty)\le\alpha d(x,y)$ with $0\le\alpha\lt 1$, then $T$ has a **unique** fixed point $x^\ast$, and $T^nx_0\to x^\ast$ for every $x_0$, with error
+  $$d(x_n,x^\ast )\le\frac{\alpha^n}{1-\alpha}d(x_1,x_0).$$
+  - Strict "$`\lt`$" without a uniform $\alpha\lt 1$ is **not** enough: $x+\frac1x$ on $[1,\infty)$ has $|Tx-Ty|\lt |x-y|$ but no fixed point.
+  - On a compact space, $d(Tx,Ty)\lt d(x,y)$ does suffice.
 - Every metric space has a **completion**, unique up to isometry.
 
 ## 4. Compactness
@@ -58,14 +58,14 @@
   - A continuous $f:K\to\mathbb R$ attains its max and min.
   - A continuous function on a compact set is uniformly continuous (Heine–Cantor).
   - A continuous bijection from a compact space onto a Hausdorff space is a homeomorphism.
-- **Lebesgue number lemma:** every open cover of a compact metric space has a Lebesgue number $\delta>0$.
+- **Lebesgue number lemma:** every open cover of a compact metric space has a Lebesgue number $\delta\gt 0$.
 - A finite product of compact spaces is compact. **Riesz:** the closed unit ball of a normed space is compact $\iff$ the dimension is finite.
 
 ## 5. Connectedness
-- **Connected:** not a union of two disjoint non-empty open sets. Equivalently, every continuous $f:X\to\{0,1\}$ is constant.
+- **Connected:** not a union of two disjoint non-empty open sets. Equivalently, every continuous $f:X\to\lbrace 0,1\rbrace$ is constant.
 - **Subsets of $\mathbb R$:** connected $\iff$ interval.
 - Continuous image of connected is connected (this gives the IVT). Closure of connected is connected. A union of connected sets with a common point is connected.
-- **Path-connected $\Rightarrow$ connected.** The converse fails: the topologist's sine curve $\{(x,\sin\frac1x)\}\cup(\{0\}\times[-1,1])$. For open subsets of $\mathbb R^n$ the two notions agree.
+- **Path-connected $\Rightarrow$ connected.** The converse fails: the topologist's sine curve $\lbrace (x,\sin\frac1x)\rbrace \cup(\lbrace 0\rbrace \times[-1,1])$. For open subsets of $\mathbb R^n$ the two notions agree.
 - **Totally disconnected:** $\mathbb Q$, the irrationals, the Cantor set.
 - **Standard component counts:**
 
@@ -75,11 +75,11 @@
 | $GL_n(\mathbb C)$ | 1 |
 | $O(n)$ | 2 |
 | $SO(n)$ | 1 |
-| $\mathbb R^2\setminus\{xy=0\}$ | 4 |
-| $\{x^2-y^2\ne1\}$ | 3 |
-| $\{x^2-y^2\ne0\}$ | 4 |
-| $\mathbb R^n\setminus\{\text{countable set}\}$, $n\ge2$ | 1 (path-connected) |
-| $\mathbb R\setminus\{\text{point}\}$ | 2 |
+| $\mathbb R^2\setminus\lbrace xy=0\rbrace$ | 4 |
+| $\lbrace x^2-y^2\ne1\rbrace$ | 3 |
+| $\lbrace x^2-y^2\ne0\rbrace$ | 4 |
+| $\mathbb R^n\setminus\lbrace \text{countable set}\rbrace$, $n\ge2$ | 1 (path-connected) |
+| $\mathbb R\setminus\lbrace \text{point}\rbrace$ | 2 |
 
 - **Homeomorphism invariants:**
   - $\mathbb R$ is not homeomorphic to $\mathbb R^2$ (remove a point).
@@ -98,7 +98,7 @@
 ## Exam traps
 - Completeness and boundedness are **not topological**: $\mathbb R\cong(0,1)$.
 - "Closed and bounded $\Rightarrow$ compact" holds only in finite dimensions.
-- Cantor intersection needs $\operatorname{diam}\to0$ (or compactness). Contraction needs a uniform $\alpha<1$ **and** completeness.
+- Cantor intersection needs $\operatorname{diam}\to0$ (or compactness). Contraction needs a uniform $\alpha\lt 1$ **and** completeness.
 - Uniform continuity on $(a,b)$ is the same as continuous extendability to $[a,b]$. That test only works on **bounded** intervals.
 - Connected does not imply path-connected (topologist's sine curve).
 - Continuous onto maps $(0,1)\to[0,1]$ exist, but $[0,1]\to(0,1)$ onto maps do not.

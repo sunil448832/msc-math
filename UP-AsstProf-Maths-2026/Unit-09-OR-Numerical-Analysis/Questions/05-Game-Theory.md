@@ -2,20 +2,22 @@
 > Syllabus coverage: Game theory
 > Cheatsheet: [../Cheatsheets/05-Game-Theory.md](../Cheatsheets/05-Game-Theory.md)
 
-*Convention: the payoff matrix gives the gains of the row player $A$ (the maximiser). The column player $B$ is the minimiser.*
+*Convention: the payoff matrix gives the gains of the row player $`A`$ (the maximiser). The column player $`B`$ is the minimiser.*
 
 **Q1.** `[Concept]` ★ A two-person zero-sum game has a saddle point (in pure strategies) if and only if
 
 (A) maximin value $=$ minimax value
 
-(B) maximin value $<$ minimax value
+(B) maximin value $\lt$ minimax value
 
 (C) the payoff matrix is square
 
 (D) the value of the game is zero
 
 **Q2.** `[Numerical]` ★ The value of the game with payoff matrix
-$$\begin{pmatrix} -5 & 3 & 1 & 20\\ 5 & 5 & 4 & 6\\ -4 & -2 & 0 & -5\end{pmatrix}$$
+```math
+\begin{pmatrix} -5 & 3 & 1 & 20\cr  5 & 5 & 4 & 6\cr  -4 & -2 & 0 & -5\end{pmatrix}
+```
 is
 
 (A) 5
@@ -26,7 +28,7 @@ is
 
 (D) $-2$
 
-**Q3.** `[Numerical]` ★★ The value of the game with payoff matrix $\begin{pmatrix} 3 & -1\\ -2 & 4\end{pmatrix}$ is
+**Q3.** `[Numerical]` ★★ The value of the game with payoff matrix $`\begin{pmatrix} 3 & -1\cr  -2 & 4\end{pmatrix}`$ is
 
 (A) $-1$
 
@@ -37,7 +39,9 @@ is
 (D) $\tfrac{1}{2}$
 
 **Q4.** `[Application]` ★★★ For the game with payoff matrix
-$$\begin{pmatrix} \lambda & 6 & 2\\ -1 & \lambda & -7\\ -2 & 4 & \lambda\end{pmatrix},$$
+```math
+\begin{pmatrix} \lambda & 6 & 2\cr  -1 & \lambda & -7\cr  -2 & 4 & \lambda\end{pmatrix},
+```
 the entry $(1,1)$ is a saddle point if and only if
 
 (A) $\lambda \ge 2$
@@ -96,7 +100,9 @@ Which is/are correct?
 (D) A-3, B-4, C-2, D-1
 
 **Q8.** `[Application]` ★★★ Using dominance, the value of the game with payoff matrix
-$$\begin{pmatrix} 1 & 7 & 2\\ 6 & 2 & 7\\ 5 & 1 & 6\end{pmatrix}$$
+```math
+\begin{pmatrix} 1 & 7 & 2\cr  6 & 2 & 7\cr  5 & 1 & 6\end{pmatrix}
+```
 is
 
 (A) 2
@@ -108,7 +114,9 @@ is
 (D) $\tfrac{9}{2}$
 
 **Q9.** `[Numerical]` ★★★ Using the graphical method, the value of the $2\times3$ game
-$$\begin{pmatrix} 1 & -3 & 7\\ 2 & 4 & -6\end{pmatrix}$$
+```math
+\begin{pmatrix} 1 & -3 & 7\cr  2 & 4 & -6\end{pmatrix}
+```
 is
 
 (A) $\tfrac{1}{2}$
@@ -123,7 +131,7 @@ is
 
 (A) A strictly dominated pure strategy is played with probability zero in every optimal strategy.
 
-(B) If $\max\min < \min\max$ for a payoff matrix, the game has no value.
+(B) If $\max\min \lt  \min\max$ for a payoff matrix, the game has no value.
 
 (C) In a $2\times2$ game with no saddle point, each player uses both pure strategies with positive probability.
 
@@ -135,11 +143,11 @@ is
 
 (B) 1
 
-(C) the largest entry of $A$
+(C) the largest entry of $`A`$
 
 (D) undefined
 
-**Q12.** `[Application]` ★★ To solve a game with a positive payoff matrix by LP, player $A$'s problem is written as: minimise $x_1 + x_2 + \dots + x_m$ subject to $\sum_i a_{ij}x_i\ge 1$ for all $j$, $x_i\ge0$, where $x_i = p_i/v$. If the optimal value of this LP is $\tfrac14$, then the value of the game is
+**Q12.** `[Application]` ★★ To solve a game with a positive payoff matrix by LP, player $`A`$'s problem is written as: minimise $`x_1 + x_2 + \dots + x_m`$ subject to $`\sum_i a_{ij}x_i\ge 1`$ for all $`j`$, $`x_i\ge0`$, where $`x_i = p_i/v`$. If the optimal value of this LP is $`\tfrac14`$, then the value of the game is
 
 (A) $\tfrac14$
 
@@ -149,7 +157,7 @@ is
 
 (D) $4$
 
-**Q13.** `[Numerical]` ★★ In the game with payoff matrix $\begin{pmatrix} 5 & 1\\ 3 & 4\end{pmatrix}$, the optimal mixed strategy of the column player $B$ is
+**Q13.** `[Numerical]` ★★ In the game with payoff matrix $`\begin{pmatrix} 5 & 1\cr  3 & 4\end{pmatrix}`$, the optimal mixed strategy of the column player $`B`$ is
 
 (A) $\left(\tfrac15, \tfrac45\right)$
 
@@ -192,9 +200,9 @@ is
 
 **Q7 — (D).** A saddle point gives pure strategies (3). A $2\times2$ game uses the formula (4). A $2\times n$ or $m\times2$ game uses the graphical method (2). A general game uses LP (1).
 
-**Q8 — (C).** Row 3 $(5,1,6)$ is dominated by row 2 $(6,2,7)$, so delete it. For the minimiser $B$, column 3 $(2,7)$ is dominated by column 1 $(1,6)$ (B prefers smaller payoffs), so delete it. The remaining game is $\begin{pmatrix}1&7\\6&2\end{pmatrix}$ with no saddle point, so $v = \dfrac{2-42}{1+2-7-6} = 4$, with $p=(0.4,0.6,0)$. (D) $=\tfrac92$ comes from wrongly deleting column 1 instead, which leaves $\begin{pmatrix}7&2\\2&7\end{pmatrix}$ with value $45/10$.
+**Q8 — (C).** Row 3 $(5,1,6)$ is dominated by row 2 $(6,2,7)$, so delete it. For the minimiser $`B`$, column 3 $(2,7)$ is dominated by column 1 $(1,6)$ (B prefers smaller payoffs), so delete it. The remaining game is $`\begin{pmatrix}1&7\cr 6&2\end{pmatrix}`$ with no saddle point, so $v = \dfrac{2-42}{1+2-7-6} = 4$, with $p=(0.4,0.6,0)$. (D) $=\tfrac92$ comes from wrongly deleting column 1 instead, which leaves $`\begin{pmatrix}7&2\cr 2&7\end{pmatrix}`$ with value $45/10$.
 
-**Q9 — (A).** The maximin is $-3$ and the minimax is $2$, so there is no saddle point. If $A$ plays row 1 with probability $p$, the expected payoffs against the columns are $2-p$, $4-7p$ and $13p-6$. The highest point of the lower envelope is where $4-7p = 13p-6$, i.e. $p=\tfrac12$, giving $v = \tfrac12$ (the line $2-p = 1.5$ lies above it there). B mixes columns 2 and 3 in the ratio $13:7$. (C) is just the maximin.
+**Q9 — (A).** The maximin is $`-3`$ and the minimax is $`2`$, so there is no saddle point. If $`A`$ plays row 1 with probability $`p`$, the expected payoffs against the columns are $`2-p`$, $`4-7p`$ and $`13p-6`$. The highest point of the lower envelope is where $`4-7p = 13p-6`$, i.e. $`p=\tfrac12`$, giving $`v = \tfrac12`$ (the line $`2-p = 1.5`$ lies above it there). B mixes columns 2 and 3 in the ratio $`13:7`$. (C) is just the maximin.
 
 **Q10 — (B).** If maximin < minimax, there is no saddle point, but the game still has a value in **mixed** strategies (minimax theorem). (A), (C) and (D) are standard.
 
@@ -202,4 +210,4 @@ is
 
 **Q12 — (D).** $\sum x_i = \sum p_i/v = 1/v$. Minimising $\sum x_i$ maximises $v$, so $1/v = 1/4$ and $v = 4$.
 
-**Q13 — (D).** There is no saddle point (maximin $3$, minimax $4$). The denominator is $5+4-1-3 = 5$. Then $q_1 = \dfrac{a_{22}-a_{12}}{5} = \dfrac{4-1}{5} = \dfrac35$, so $q=(\tfrac35, \tfrac25)$. Check: against row 1, $5\cdot\tfrac35 + 1\cdot\tfrac25 = \tfrac{17}{5}$; against row 2, $3\cdot\tfrac35+4\cdot\tfrac25 = \tfrac{17}{5}$ ✓. (A) is player $A$'s strategy $p = (\tfrac15,\tfrac45)$.
+**Q13 — (D).** There is no saddle point (maximin $3$, minimax $4$). The denominator is $5+4-1-3 = 5$. Then $q_1 = \dfrac{a_{22}-a_{12}}{5} = \dfrac{4-1}{5} = \dfrac35$, so $q=(\tfrac35, \tfrac25)$. Check: against row 1, $5\cdot\tfrac35 + 1\cdot\tfrac25 = \tfrac{17}{5}$; against row 2, $3\cdot\tfrac35+4\cdot\tfrac25 = \tfrac{17}{5}$ ✓. (A) is player $`A`$'s strategy $p = (\tfrac15,\tfrac45)$.

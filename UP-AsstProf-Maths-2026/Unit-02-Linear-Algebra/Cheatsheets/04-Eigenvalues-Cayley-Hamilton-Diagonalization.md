@@ -28,8 +28,8 @@
 ## 2. Cayley–Hamilton theorem
 Every square matrix satisfies its own characteristic equation: $\chi_A(A)=0$.
 - **Inverse:** if $\chi_A(x)=x^n+c_{n-1}x^{n-1}+\dots+c_0$ with $c_0\ne0$, then $A^{-1}=-\frac1{c_0}(A^{n-1}+c_{n-1}A^{n-2}+\dots+c_1I)$.
-- **Powers:** reduce $A^m$ modulo $\chi_A$, so $A^m=r(A)$ with $\deg r<n$. Find $r$ by evaluating at the eigenvalues, using derivatives at repeated roots.
-- **Classic:** $A=\begin{pmatrix}1&0&0\\1&0&1\\0&1&0\end{pmatrix}$ satisfies $A^n=A^{n-2}+A^2-I$, so $A^{2m}=mA^2-(m-1)I$.
+- **Powers:** reduce $A^m$ modulo $\chi_A$, so $A^m=r(A)$ with $\deg r\lt n$. Find $r$ by evaluating at the eigenvalues, using derivatives at repeated roots.
+- **Classic:** $`A=\begin{pmatrix}1&0&0\cr 1&0&1\cr 0&1&0\end{pmatrix}`$ satisfies $A^n=A^{n-2}+A^2-I$, so $A^{2m}=mA^2-(m-1)I$.
 
 ## 3. Minimal polynomial $m_A$
 - $m_A$ is the monic polynomial of least degree with $m_A(A)=0$. It divides every $p$ with $p(A)=0$, in particular $\chi_A$.

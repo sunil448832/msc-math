@@ -3,11 +3,11 @@
 
 ## 1. Moments and products of inertia
 - **Moments of inertia:**
-  - $I_{xx} = A = \int(y^2+z^2)\,dm$
-  - $I_{yy} = B = \int(z^2+x^2)\,dm$
-  - $I_{zz} = C = \int(x^2+y^2)\,dm$
-- **Products of inertia:** $D = \int yz\,dm$, $E = \int zx\,dm$, $F = \int xy\,dm$. They can be of either sign.
-- **Inertia tensor:** $\mathbf I = \begin{pmatrix}A & -F & -E\\ -F & B & -D\\ -E & -D & C\end{pmatrix}$, which is real, symmetric and positive semi-definite.
+  - $I_{xx} = A = \int(y^2+z^2)\thinspace dm$
+  - $I_{yy} = B = \int(z^2+x^2)\thinspace dm$
+  - $I_{zz} = C = \int(x^2+y^2)\thinspace dm$
+- **Products of inertia:** $D = \int yz\thinspace dm$, $E = \int zx\thinspace dm$, $F = \int xy\thinspace dm$. They can be of either sign.
+- **Inertia tensor:** $`\mathbf I = \begin{pmatrix}A & -F & -E\cr  -F & B & -D\cr  -E & -D & C\end{pmatrix}`$, which is real, symmetric and positive semi-definite.
 - **Moment about a line** with direction cosines $(l,m,n)$ through $O$:
 $$I = Al^2 + Bm^2 + Cn^2 - 2Dmn - 2Enl - 2Flm .$$
 - **Momental ellipsoid:** $Ax^2 + By^2 + Cz^2 - 2Dyz - 2Ezx - 2Fxy = 1$. The moment about a line through $O$ is $1/r^2$, where $r$ is the radius vector of the ellipsoid along that line.
@@ -38,7 +38,7 @@ $$I = Al^2 + Bm^2 + Cn^2 - 2Dmn - 2Enl - 2Flm .$$
   - an axis of symmetry is principal;
   - a normal to a plane of symmetry is principal at every point of that plane;
   - isotropic bodies (sphere, cube) about their centre have every axis principal.
-- **Lamina in the $xy$-plane:** the principal axes in the plane are at angle $\theta$ with $\tan 2\theta = \dfrac{2F}{B - A}$, where $F = \int xy\,dm$ and $A = \int y^2\,dm$, $B = \int x^2\,dm$. Check the sign convention used in your textbook.
+- **Lamina in the $xy$-plane:** the principal axes in the plane are at angle $\theta$ with $\tan 2\theta = \dfrac{2F}{B - A}$, where $F = \int xy\thinspace dm$ and $A = \int y^2\thinspace dm$, $B = \int x^2\thinspace dm$. Check the sign convention used in your textbook.
 - **Equimomental bodies** have the same mass, centre of mass and principal moments and axes. Example: a uniform triangle is equimomental with masses $M/3$ at the midpoints of its sides.
 
 ## 3. Angular momentum and kinetic energy
@@ -48,7 +48,7 @@ $$I = Al^2 + Bm^2 + Cn^2 - 2Dmn - 2Enl - 2Flm .$$
 
 ## 4. Euler's dynamical equations
 For body-fixed principal axes, with the origin at a fixed point or at **G**, $\left(\dfrac{d\vec L}{dt}\right)_{\text{body}} + \vec\omega\times\vec L = \vec N$:
-$$A\dot\omega_1 - (B - C)\,\omega_2\omega_3 = N_1,\quad B\dot\omega_2 - (C - A)\,\omega_3\omega_1 = N_2,\quad C\dot\omega_3 - (A - B)\,\omega_1\omega_2 = N_3 .$$
+$$A\dot\omega_1 - (B - C)\thinspace \omega_2\omega_3 = N_1,\quad B\dot\omega_2 - (C - A)\thinspace \omega_3\omega_1 = N_2,\quad C\dot\omega_3 - (A - B)\thinspace \omega_1\omega_2 = N_3 .$$
 (The indices are cyclic: $1\to2\to3$ together with $A\to B\to C$.)
 
 ### Torque-free motion ($\vec N = 0$)
@@ -59,14 +59,14 @@ $$A\dot\omega_1 - (B - C)\,\omega_2\omega_3 = N_1,\quad B\dot\omega_2 - (C - A)\
   - so $\vec\omega$ precesses about the symmetry axis (relative to the body) with period $2\pi/|\Omega|$;
   - for Earth $(C - A)/A \approx 1/305$, giving the Euler period of about 305 days (observed as the Chandler wobble, about 430 days).
 - **Poinsot construction:** the inertia ellipsoid rolls without slipping on the **invariable plane** (normal to $\vec L$). The curve traced on the ellipsoid is the polhode; the curve traced on the plane is the herpolhode.
-- **Stability:** rotation about the axis of **largest or smallest** moment is stable, and about the **intermediate** axis it is unstable (tennis-racket theorem). The reason is that $\ddot\omega_2 \propto (C - A)(A - B)\,\omega_2$.
+- **Stability:** rotation about the axis of **largest or smallest** moment is stable, and about the **intermediate** axis it is unstable (tennis-racket theorem). The reason is that $\ddot\omega_2 \propto (C - A)(A - B)\thinspace \omega_2$.
 
 ### Euler angles $(\phi, \theta, \psi)$
 - $\omega_1 = \dot\phi\sin\theta\sin\psi + \dot\theta\cos\psi$
 - $\omega_2 = \dot\phi\sin\theta\cos\psi - \dot\theta\sin\psi$
 - $\omega_3 = \dot\phi\cos\theta + \dot\psi$
 - **Heavy symmetric top:** $L = \tfrac12 A(\dot\theta^2 + \dot\phi^2\sin^2\theta) + \tfrac12 C(\dot\psi + \dot\phi\cos\theta)^2 - Mgl\cos\theta$. Here $\phi$ and $\psi$ are cyclic, so $p_\phi$ and $p_\psi$ are conserved.
-- **Sleeping top** is stable if $C^2\omega_3^2 > 4AMgl$.
+- **Sleeping top** is stable if $C^2\omega_3^2 \gt  4AMgl$.
 
 ## Exam traps
 - In Euler's equations, the coefficient of $\omega_2\omega_3$ is $(B - C)$ with a **minus** sign on the left.

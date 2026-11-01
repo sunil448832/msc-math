@@ -2,7 +2,7 @@
 > Syllabus coverage: Linear integral equations of Fredholm type, solution of integral equations with separable kernels (characteristic values, eigenfunctions, Fredholm alternative, symmetric kernels, resolvent by Neumann series)
 > Cheatsheet: [../Cheatsheets/03-Fredholm-Separable-Kernels-Eigenvalues.md](../Cheatsheets/03-Fredholm-Separable-Kernels-Eigenvalues.md)
 
-**Q1.** `[Concept]` ★ A kernel of the form $K(x,t)=\sum_{i=1}^{n}a_i(x)\,b_i(t)$ (finite sum) is called
+**Q1.** `[Concept]` ★ A kernel of the form $K(x,t)=\sum_{i=1}^{n}a_i(x)\thinspace b_i(t)$ (finite sum) is called
 
 (A) a symmetric kernel
 
@@ -12,7 +12,7 @@
 
 (D) a difference (convolution) kernel
 
-**Q2.** `[Numerical]` ★ The characteristic value of $y(x)=\lambda\displaystyle\int_0^1 x t\,y(t)\,dt$ and a corresponding eigenfunction are
+**Q2.** `[Numerical]` ★ The characteristic value of $y(x)=\lambda\displaystyle\int_0^1 x t\thinspace y(t)\thinspace dt$ and a corresponding eigenfunction are
 
 (A) $\lambda=3,\ y=x$
 
@@ -22,7 +22,7 @@
 
 (D) $\lambda=3,\ y=x^2$
 
-**Q3.** `[Numerical]` ★★ The solution of $y(x)=x^2+\displaystyle\int_0^1 x t\,y(t)\,dt$ is
+**Q3.** `[Numerical]` ★★ The solution of $y(x)=x^2+\displaystyle\int_0^1 x t\thinspace y(t)\thinspace dt$ is
 
 (A) $x^2+\dfrac{x}{4}$
 
@@ -73,8 +73,8 @@ Which are correct?
 (D) I, II, III and IV
 
 **Q7.** `[Assertion-Reason]` ★★
-**Assertion (A):** The homogeneous equation $y(x)=\lambda\displaystyle\int_0^\pi \sin x\cos t\,y(t)\,dt$ has only the trivial solution for every $\lambda$.
-**Reason (R):** $\displaystyle\int_0^\pi \sin t\cos t\,dt=0$.
+**Assertion (A):** The homogeneous equation $y(x)=\lambda\displaystyle\int_0^\pi \sin x\cos t\thinspace y(t)\thinspace dt$ has only the trivial solution for every $\lambda$.
+**Reason (R):** $\displaystyle\int_0^\pi \sin t\cos t\thinspace dt=0$.
 
 (A) Both A and R are true and R is the correct explanation of A
 
@@ -101,17 +101,17 @@ Which are correct?
 
 (D) a-1, b-4, c-3, d-2
 
-**Q9.** `[NOT-true / Counterexample]` ★★ For $y(x)=f(x)+\lambda\int_a^b K(x,t)y(t)\,dt$ with continuous $K$, which statement is NOT true?
+**Q9.** `[NOT-true / Counterexample]` ★★ For $y(x)=f(x)+\lambda\int_a^b K(x,t)y(t)\thinspace dt$ with continuous $K$, which statement is NOT true?
 
 (A) If $\lambda$ is not a characteristic value, the equation has a unique solution for every continuous $f$.
 
-(B) If $\lambda$ is a characteristic value, the equation is solvable iff $f$ is orthogonal to every solution of the transposed homogeneous equation $z(x)=\lambda\int_a^b K(t,x)z(t)\,dt$.
+(B) If $\lambda$ is a characteristic value, the equation is solvable iff $f$ is orthogonal to every solution of the transposed homogeneous equation $z(x)=\lambda\int_a^b K(t,x)z(t)\thinspace dt$.
 
 (C) If $\lambda$ is a characteristic value and a solution exists, then infinitely many solutions exist.
 
 (D) If $\lambda$ is a characteristic value, the equation has no solution for any $f\not\equiv0$.
 
-**Q10.** `[Application]` ★★★ For which $f$ does $y(x)=f(x)+3\displaystyle\int_0^1 x t\,y(t)\,dt$ have a solution?
+**Q10.** `[Application]` ★★★ For which $f$ does $y(x)=f(x)+3\displaystyle\int_0^1 x t\thinspace y(t)\thinspace dt$ have a solution?
 
 (A) $f(x)=x$
 
@@ -121,7 +121,7 @@ Which are correct?
 
 (D) $f(x)=x^2$
 
-**Q11.** `[Concept]` ★ A degenerate kernel $K(x,t)=\sum_{i=1}^{n}a_i(x)b_i(t)$ with $\{a_i\}$ and $\{b_i\}$ each linearly independent has
+**Q11.** `[Concept]` ★ A degenerate kernel $K(x,t)=\sum_{i=1}^{n}a_i(x)b_i(t)$ with $\lbrace a_i\rbrace$ and $\lbrace b_i\rbrace$ each linearly independent has
 
 (A) exactly $n$ characteristic values
 
@@ -131,13 +131,13 @@ Which are correct?
 
 (D) at most $n$ characteristic values
 
-**Q12.** `[Numerical]` ★★ For $y(x)=f(x)+\lambda\displaystyle\int_0^1 x t\,y(t)\,dt$ $(\lambda\ne3)$, the resolvent kernel $R(x,t;\lambda)$ is
+**Q12.** `[Numerical]` ★★ For $y(x)=f(x)+\lambda\displaystyle\int_0^1 x t\thinspace y(t)\thinspace dt$ $(\lambda\ne3)$, the resolvent kernel $R(x,t;\lambda)$ is
 
 (A) $\dfrac{3xt}{3+\lambda}$
 
 (B) $\dfrac{xt}{3-\lambda}$
 
-(C) $xt\,e^{\lambda/3}$
+(C) $xt\thinspace e^{\lambda/3}$
 
 (D) $\dfrac{3xt}{3-\lambda}$
 
@@ -161,17 +161,17 @@ Which are correct?
 ## Solutions
 **Q1 — (B).** Finite sum of products ⇒ degenerate/separable (Pincherle–Goursat). It need not be symmetric.
 
-**Q2 — (A).** $y=\lambda c\,x$ with $c=\int_0^1 t\,y\,dt=\lambda c/3$ ⇒ $c\ne0$ requires $\lambda=3$; eigenfunction $x$. (B) confuses the characteristic value $\lambda$ with the eigenvalue $\mu=1/\lambda$ of the operator.
+**Q2 — (A).** $y=\lambda c\thinspace x$ with $c=\int_0^1 t\thinspace y\thinspace dt=\lambda c/3$ ⇒ $c\ne0$ requires $\lambda=3$; eigenfunction $x$. (B) confuses the characteristic value $\lambda$ with the eigenvalue $\mu=1/\lambda$ of the operator.
 
 **Q3 — (B).** $y=x^2+cx$, $c=\int_0^1 t(t^2+ct)dt=\frac14+\frac c3$ ⇒ $c=\frac38$. (A) forgets the $c/3$ feedback term.
 
-**Q4 — (A).** $y=\lambda(c_1x+c_2)$, $c_1=\int y$, $c_2=\int t y$ ⇒ $c_1=\lambda(\frac{c_1}{2}+c_2)$, $c_2=\lambda(\frac{c_1}{3}+\frac{c_2}{2})$. $\det\begin{pmatrix}1-\lambda/2&-\lambda\\-\lambda/3&1-\lambda/2\end{pmatrix}=0$ ⇒ $\lambda^2+12\lambda-12=0$ ⇒ $\lambda=-6\pm4\sqrt3$.
+**Q4 — (A).** $y=\lambda(c_1x+c_2)$, $c_1=\int y$, $c_2=\int t y$ ⇒ $c_1=\lambda(\frac{c_1}{2}+c_2)$, $c_2=\lambda(\frac{c_1}{3}+\frac{c_2}{2})$. $`\det\begin{pmatrix}1-\lambda/2&-\lambda\cr -\lambda/3&1-\lambda/2\end{pmatrix}=0`$ ⇒ $\lambda^2+12\lambda-12=0$ ⇒ $\lambda=-6\pm4\sqrt3$.
 
 **Q5 — (C).** $\cos(x+t)=\cos x\cos t-\sin x\sin t$; $\int_0^{2\pi}\cos^2=\int_0^{2\pi}\sin^2=\pi$, cross term $0$. Eigenfunction $\cos x$: $\lambda\pi=1$; $\sin x$: $-\lambda\pi=1$. So $\lambda=\pm1/\pi$.
 
 **Q6 — (B).** I, II, III are the Hilbert–Schmidt facts for nonzero symmetric $L^2$ kernels. IV is false: a degenerate kernel has at most $n$ characteristic values (e.g. $xt$ has only $\lambda=3$).
 
-**Q7 — (A).** $y=\lambda c\sin x$, $c=\int_0^\pi\cos t\,y\,dt=\lambda c\int_0^\pi\sin t\cos t\,dt=0$ ⇒ $y\equiv0$. R is precisely the reason. (Such kernels, $\int K(t,t)dt=0$ with rank 1, are the standard "no characteristic value" example.)
+**Q7 — (A).** $y=\lambda c\sin x$, $c=\int_0^\pi\cos t\thinspace y\thinspace dt=\lambda c\int_0^\pi\sin t\cos t\thinspace dt=0$ ⇒ $y\equiv0$. R is precisely the reason. (Such kernels, $\int K(t,t)dt=0$ with rank 1, are the standard "no characteristic value" example.)
 
 **Q8 — (C).** $K=1$: $c=\lambda c$ ⇒ 1. $K=xt$: $\int t^2=\frac13$ ⇒ 3. $K=x$: $y=\lambda cx$, $c=\int y=\lambda c/2$ ⇒ 2. $K=e^{x+t}$: $\int_0^1e^{2t}=\frac{e^2-1}{2}$ ⇒ $\frac{2}{e^2-1}$. Rule for rank one $a(x)b(t)$: $\lambda=1/\int_a^b a(t)b(t)dt$.
 
@@ -181,4 +181,4 @@ Which are correct?
 
 **Q11 — (D).** The characteristic values are roots of $\det(I-\lambda A)=0$, $A_{ij}=\int b_ia_j$, a polynomial of degree $\le n$; it may have fewer roots (even none, as in Q7).
 
-**Q12 — (D).** $K_n=\frac{xt}{3^{n-1}}$ ⇒ $R=\sum\lambda^{n-1}\frac{xt}{3^{n-1}}=\frac{xt}{1-\lambda/3}=\frac{3xt}{3-\lambda}$, valid by continuation for all $\lambda\ne3$ (Neumann series converges for $|\lambda|<3$). (B) drops the factor 3.
+**Q12 — (D).** $K_n=\frac{xt}{3^{n-1}}$ ⇒ $R=\sum\lambda^{n-1}\frac{xt}{3^{n-1}}=\frac{xt}{1-\lambda/3}=\frac{3xt}{3-\lambda}$, valid by continuation for all $\lambda\ne3$ (Neumann series converges for $|\lambda|\lt 3$). (B) drops the factor 3.

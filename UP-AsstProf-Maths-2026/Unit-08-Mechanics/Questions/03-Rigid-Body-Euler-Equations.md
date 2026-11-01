@@ -4,13 +4,13 @@
 
 **Q1.** `[Concept]` ★ With $A, B, C$ the principal moments of inertia at a fixed point (or at the centre of mass) and $N_1, N_2, N_3$ the torque components along the principal axes, the first of Euler's dynamical equations is
 
-(A) $A\dot\omega_1 - (B - C)\,\omega_2\omega_3 = N_1$
+(A) $A\dot\omega_1 - (B - C)\thinspace \omega_2\omega_3 = N_1$
 
-(B) $A\dot\omega_1 + (B - C)\,\omega_2\omega_3 = N_1$
+(B) $A\dot\omega_1 + (B - C)\thinspace \omega_2\omega_3 = N_1$
 
-(C) $A\dot\omega_1 - (B + C)\,\omega_2\omega_3 = N_1$
+(C) $A\dot\omega_1 - (B + C)\thinspace \omega_2\omega_3 = N_1$
 
-(D) $A\dot\omega_1 - (C - A)\,\omega_3\omega_1 = N_1$
+(D) $A\dot\omega_1 - (C - A)\thinspace \omega_3\omega_1 = N_1$
 
 **Q2.** `[Concept]` ★ The products of inertia of a body at a point all vanish when the coordinate axes are
 
@@ -42,7 +42,7 @@
 
 (D) $\dfrac{5Ma^2}{12}$
 
-**Q5.** `[Numerical]` ★★ The inertia tensor of a body at a point is $I = \begin{pmatrix}2 & -1 & 0\\ -1 & 2 & 0\\ 0 & 0 & 3\end{pmatrix}$. Its principal moments of inertia are
+**Q5.** `[Numerical]` ★★ The inertia tensor of a body at a point is $`I = \begin{pmatrix}2 & -1 & 0\cr  -1 & 2 & 0\cr  0 & 0 & 3\end{pmatrix}`$. Its principal moments of inertia are
 
 (A) $1, 2, 3$
 
@@ -72,7 +72,7 @@ Which of the above is/are correct?
 
 **Q7.** `[Assertion-Reason]` ★★
 **Assertion (A):** In torque-free motion of a body with $A = B$, the component $\omega_3$ along the symmetry axis stays constant.
-**Reason (R):** For torque-free motion Euler's third equation reads $C\dot\omega_3 = (A - B)\,\omega_1\omega_2$.
+**Reason (R):** For torque-free motion Euler's third equation reads $C\dot\omega_3 = (A - B)\thinspace \omega_1\omega_2$.
 
 (A) Both A and R are true and R is the correct explanation of A
 
@@ -101,7 +101,7 @@ Which of the above is/are correct?
 
 **Q9.** `[NOT-true / Counterexample]` ★★ Which of the following is NOT true for a rigid body rotating about a fixed point?
 
-(A) $T = \tfrac12\,\vec\omega\cdot\mathbf I\,\vec\omega$
+(A) $T = \tfrac12\thinspace \vec\omega\cdot\mathbf I\thinspace \vec\omega$
 
 (B) The angular momentum $\vec L$ is always parallel to $\vec\omega$.
 
@@ -165,9 +165,9 @@ Which of the above is/are correct?
 
 **Q4 — (C).** About a central axis parallel to an edge the moment is $\tfrac16 Ma^2$. The edge is at distance $a/\sqrt2$ from that axis, so the parallel-axis theorem gives $\tfrac16 Ma^2 + \tfrac12 Ma^2 = \tfrac23 Ma^2$.
 
-**Q5 — (B).** The $2\times2$ block $\begin{pmatrix}2&-1\\-1&2\end{pmatrix}$ has eigenvalues $1$ and $3$, and the third moment is $3$. So the principal moments are $1, 3, 3$ (checked numerically). The trace is $7$, which rules out (A), (C) and (D).
+**Q5 — (B).** The $2\times2$ block $`\begin{pmatrix}2&-1\cr -1&2\end{pmatrix}`$ has eigenvalues $1$ and $3$, and the third moment is $3$. So the principal moments are $1, 3, 3$ (checked numerically). The trace is $7$, which rules out (A), (C) and (D).
 
-**Q6 — (D).** I: the inertia tensor is real symmetric, so it has an orthonormal eigenbasis. II: $A + B - C = 2\int z^2\,dm \ge 0$ (equality for a lamina, which gives the perpendicular-axis theorem). III is false: $\int xy\,dm$ can have either sign.
+**Q6 — (D).** I: the inertia tensor is real symmetric, so it has an orthonormal eigenbasis. II: $A + B - C = 2\int z^2\thinspace dm \ge 0$ (equality for a lamina, which gives the perpendicular-axis theorem). III is false: $\int xy\thinspace dm$ can have either sign.
 
 **Q7 — (A).** Euler's third equation is $C\dot\omega_3 - (A - B)\omega_1\omega_2 = 0$. With $A = B$ the right side vanishes, so $\omega_3$ is constant. R gives exactly the reason.
 
@@ -179,8 +179,8 @@ Which of the above is/are correct?
 
 **Q9 — (B).** $\vec L = \mathbf I\vec\omega$ is parallel to $\vec\omega$ only when $\vec\omega$ lies along a principal axis (or the body is isotropic). A dumbbell rotating about an oblique axis is the standard counterexample. In (D) the axis must pass through **G**, and it does.
 
-**Q10 — (C).** Linearising Euler's equations about rotation $\omega_0$ about axis 1 gives $\ddot\omega_2 = \dfrac{(C - A)(A - B)}{BC}\omega_0^2\,\omega_2$. This oscillates when $A$ is the largest or the smallest moment and grows when $A$ is intermediate. So the axes of maximum and minimum moment are stable and the intermediate axis is unstable (the tennis-racket theorem).
+**Q10 — (C).** Linearising Euler's equations about rotation $\omega_0$ about axis 1 gives $\ddot\omega_2 = \dfrac{(C - A)(A - B)}{BC}\omega_0^2\thinspace \omega_2$. This oscillates when $A$ is the largest or the smallest moment and grows when $A$ is intermediate. So the axes of maximum and minimum moment are stable and the intermediate axis is unstable (the tennis-racket theorem).
 
 **Q11 — (A).** At the centre of a cube $A = B = C = \tfrac16 Ma^2$ with no products of inertia, so the momental ellipsoid is a sphere. Every line through the centre, including a body diagonal, therefore has moment $\tfrac16 Ma^2$. The answer $\tfrac23 Ma^2$ (about an edge) is the trap.
 
-**Q12 — (B).** The equations are $\dot\omega_1 = (B - C)\omega_2\omega_3/A = -\omega_2$ and $\dot\omega_2 = (C - A)\omega_3\omega_1/B = \omega_1$, with $\omega_3 = 1$ constant. So $\omega_1 = \cos t$ and $\omega_2 = \sin t$, a precession at rate $\Omega = (C - A)\omega_3/A = 1$. Option (D) has the wrong sense of precession; that would be the answer for an oblate/prolate swap ($C < A$).
+**Q12 — (B).** The equations are $\dot\omega_1 = (B - C)\omega_2\omega_3/A = -\omega_2$ and $\dot\omega_2 = (C - A)\omega_3\omega_1/B = \omega_1$, with $\omega_3 = 1$ constant. So $\omega_1 = \cos t$ and $\omega_2 = \sin t$, a precession at rate $\Omega = (C - A)\omega_3/A = 1$. Option (D) has the wrong sense of precession; that would be the answer for an oblate/prolate swap ($C \lt  A$).

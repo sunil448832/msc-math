@@ -109,7 +109,7 @@ Which of the above is/are correct?
 
 (D) $(2, -1)$
 
-**Q10.** `[Numerical]` ★★ The number of solutions of $x^2 \equiv 11 \pmod{35}$ in $\{0, 1, \dots, 34\}$ is
+**Q10.** `[Numerical]` ★★ The number of solutions of $x^2 \equiv 11 \pmod{35}$ in $\lbrace 0, 1, \dots, 34\rbrace$ is
 
 (A) 0
 
@@ -119,7 +119,7 @@ Which of the above is/are correct?
 
 (D) 8
 
-**Q11.** `[Application]` ★★★ For a prime $p > 3$, the congruence $x^2 + x + 1 \equiv 0 \pmod p$ has a solution if and only if
+**Q11.** `[Application]` ★★★ For a prime $p \gt  3$, the congruence $x^2 + x + 1 \equiv 0 \pmod p$ has a solution if and only if
 
 (A) $p \equiv 1 \pmod 4$
 
@@ -129,7 +129,7 @@ Which of the above is/are correct?
 
 (D) $p \equiv \pm1 \pmod 8$
 
-**Q12.** `[Numerical]` ★★ The sum of all quadratic residues of 13 lying in $\{1, 2, \dots, 12\}$ is
+**Q12.** `[Numerical]` ★★ The sum of all quadratic residues of 13 lying in $\lbrace 1, 2, \dots, 12\rbrace$ is
 
 (A) 26
 
@@ -170,7 +170,7 @@ Which of the above is/are correct?
 ## Solutions
 **Q1 — (A).** Squaring maps $U(\mathbb Z_p)$ onto the residues 2-to-1 (since $x$ and $-x$ have the same square), so there are $(p-1)/2$ residues. (B) counts 0 as well.
 
-**Q2 — (B).** Both 3 and 7 are $\equiv 3\pmod 4$, so $\left(\frac37\right) = -\left(\frac73\right) = -\left(\frac13\right) = -1$. Directly: the squares mod 7 are $\{1,2,4\}$, which does not contain 3.
+**Q2 — (B).** Both 3 and 7 are $\equiv 3\pmod 4$, so $\left(\frac37\right) = -\left(\frac73\right) = -\left(\frac13\right) = -1$. Directly: the squares mod 7 are $\lbrace 1,2,4\rbrace$, which does not contain 3.
 
 **Q3 — (D).** $\left(\frac{-1}{p}\right) = (-1)^{(p-1)/2}$ by Euler's criterion. This is $+1$ iff $p\equiv1\pmod4$. (C) is the condition for $\left(\frac2p\right)$.
 
@@ -193,7 +193,7 @@ The product is $+1$. (D) is wrong because the Legendre symbol is multiplicative 
 
 **Q7 — (C).** A is true: $7\equiv 8^2=64\pmod{19}$, since $64-57=7$. R is false: when both primes are $\equiv3\pmod4$, reciprocity gives $\left(\frac7{19}\right) = -\left(\frac{19}7\right)$. Indeed $\left(\frac{19}{7}\right)=\left(\frac57\right)=-1$.
 
-**Q8 — (C).** The squares mod 13 are $1,4,9,3,12,10$, i.e. $\{1,3,4,9,10,12\}$. So 5 is a non-residue. (Also $\left(\frac5{13}\right)=\left(\frac{13}5\right)=\left(\frac35\right)=-1$.)
+**Q8 — (C).** The squares mod 13 are $1,4,9,3,12,10$, i.e. $\lbrace 1,3,4,9,10,12\rbrace$. So 5 is a non-residue. (Also $\left(\frac5{13}\right)=\left(\frac{13}5\right)=\left(\frac35\right)=-1$.)
 
 **Q9 — (A).** The residues are $5,10,4,9,3$. Those exceeding $5.5$ are $10$ and $9$, so $n=2$ and $\left(\frac5{11}\right)=(-1)^2=+1$. Check: $4^2=16\equiv5\pmod{11}$.
 

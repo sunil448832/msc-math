@@ -47,23 +47,23 @@
 ## 4. Worked techniques
 **Nikhilam (base $B=10^n$).** For $a=B-x$ and $b=B-y$:
 $$ab = (a-y)\cdot B + xy \quad (\text{write } xy \text{ in } n \text{ digits, carry if it overflows}).$$
-- $97\times96$: $93\,|\,12 = 9312$.
-- $103\times105$: $108\,|\,15 = 10815$.
-- $998\times997$: $995\,|\,006 = 995006$.
+- $97\times96$: $93\thinspace |\thinspace 12 = 9312$.
+- $103\times105$: $108\thinspace |\thinspace 15 = 10815$.
+- $998\times997$: $995\thinspace |\thinspace 006 = 995006$.
 - Mixed case $(B+x)(B-y)$: the right part is $-xy$, so borrow from the left.
 
 **Anurupyena (working base).** For example, base 50 = 100/2: compute with the deficiencies, then halve the left part.
 
-**Ekadhikena: squares ending in 5.** $(10a+5)^2 = a(a+1)\,|\,25$. Examples: $85^2 = 72\,|\,25 = 7225$ and $115^2 = 132\,|\,25=13225$.
+**Ekadhikena: squares ending in 5.** $(10a+5)^2 = a(a+1)\thinspace |\thinspace 25$. Examples: $85^2 = 72\thinspace |\thinspace 25 = 7225$ and $115^2 = 132\thinspace |\thinspace 25=13225$.
 
-**Antyayordashake'pi.** If the leading parts are equal ($=a$) and the last digits add to 10: $\overline{a u}\times\overline{a v} = a(a+1)\,|\,uv$. Example: $47\times43=2021$.
+**Antyayordashake'pi.** If the leading parts are equal ($=a$) and the last digits add to 10: $\overline{a u}\times\overline{a v} = a(a+1)\thinspace |\thinspace uv$. Example: $47\times43=2021$.
 
-**Yavadunam (squares near a base).** For $N=B\pm d$: $N^2 = (N\pm d)\,|\,d^2$, i.e. the left part is $N\pm d = B\pm 2d$ and the right part $d^2$ is padded to $n$ digits.
-- $96^2 = 92\,|\,16 = 9216$; $104^2 = 108\,|\,16=10816$; $996^2 = 992\,|\,016=992016$.
+**Yavadunam (squares near a base).** For $N=B\pm d$: $N^2 = (N\pm d)\thinspace |\thinspace d^2$, i.e. the left part is $N\pm d = B\pm 2d$ and the right part $d^2$ is padded to $n$ digits.
+- $96^2 = 92\thinspace |\thinspace 16 = 9216$; $104^2 = 108\thinspace |\thinspace 16=10816$; $996^2 = 992\thinspace |\thinspace 016=992016$.
 
-**Ekanyunena (multiplier $99\ldots9$ with the same number of digits).** $N\times(10^n-1) = (N-1)\,|\,(10^n-1-(N-1))$. Example: $457\times999=456\,|\,543$.
+**Ekanyunena (multiplier $99\ldots9$ with the same number of digits).** $N\times(10^n-1) = (N-1)\thinspace |\thinspace (10^n-1-(N-1))$. Example: $457\times999=456\thinspace |\thinspace 543$.
 
-**Urdhva-Tiryagbhyam (2-digit).** $\overline{ab}\times\overline{cd}$: the columns are $ac \;|\; ad+bc \;|\; bd$ (with carries). Example: $23\times41$ gives $8\,|\,2+12=14\,|\,3$, so $943$.
+**Urdhva-Tiryagbhyam (2-digit).** $\overline{ab}\times\overline{cd}$: the columns are $ac \ |\  ad+bc \ |\  bd$ (with carries). Example: $23\times41$ gives $8\thinspace |\thinspace 2+12=14\thinspace |\thinspace 3$, so $943$.
 
 **Paravartya Yojayet (division).** For a divisor just above a base, write its excess digits with the sign changed (the "flag"). Bring down the first digit. Multiply each quotient digit by the flag and add it into the next columns. The last $n$ columns form the remainder.
 - Example: $1234\div112$ gives quotient $11$, remainder $2$.

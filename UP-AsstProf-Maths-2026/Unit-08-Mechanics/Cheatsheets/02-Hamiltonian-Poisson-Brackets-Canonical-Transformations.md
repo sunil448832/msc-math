@@ -8,7 +8,7 @@ $$\dot q_j = \frac{\partial H}{\partial p_j},\qquad \dot p_j = -\frac{\partial H
 - $\dfrac{dH}{dt} = \dfrac{\partial H}{\partial t}$, so $H$ is conserved iff it has no explicit $t$.
 - $H = T + V$ (total energy) **iff** the constraints are scleronomic ($T$ quadratic in $\dot q$) and $V = V(q)$.
 - A **cyclic coordinate** is absent from $H$ exactly when it is absent from $L$; then $p_j$ is constant. Routhian: $R = \sum_{\text{cyclic}} p\dot q - L$.
-- **Modified Hamilton's principle:** $\delta\displaystyle\int(\sum p\dot q - H)\,dt = 0$ (independent variations of $q$ and $p$) gives the canonical equations.
+- **Modified Hamilton's principle:** $\delta\displaystyle\int(\sum p\dot q - H)\thinspace dt = 0$ (independent variations of $q$ and $p$) gives the canonical equations.
 
 | System | $H$ |
 |---|---|
@@ -19,34 +19,34 @@ $$\dot q_j = \frac{\partial H}{\partial p_j},\qquad \dot p_j = -\frac{\partial H
 | Quadratic $L = \tfrac12\dot q^{T}M\dot q - V$ | $\tfrac12 p^{T}M^{-1}p + V$ |
 
 ## 2. Poisson brackets
-$$\{f,g\} = \sum_j\left(\frac{\partial f}{\partial q_j}\frac{\partial g}{\partial p_j} - \frac{\partial f}{\partial p_j}\frac{\partial g}{\partial q_j}\right)$$
-(Some books use the opposite sign; check the convention used for $\{q,p\}$.)
+$$\lbrace f,g\rbrace  = \sum_j\left(\frac{\partial f}{\partial q_j}\frac{\partial g}{\partial p_j} - \frac{\partial f}{\partial p_j}\frac{\partial g}{\partial q_j}\right)$$
+(Some books use the opposite sign; check the convention used for $\lbrace q,p\rbrace$.)
 
-- **Fundamental brackets:** $\{q_i,q_j\} = 0 = \{p_i,p_j\}$ and $\{q_i,p_j\} = \delta_{ij}$.
+- **Fundamental brackets:** $\lbrace q_i,q_j\rbrace  = 0 = \lbrace p_i,p_j\rbrace$ and $\lbrace q_i,p_j\rbrace  = \delta_{ij}$.
 - **Properties:**
-  - antisymmetry $\{f,g\} = -\{g,f\}$, hence $\{f,f\} = 0$;
+  - antisymmetry $\lbrace f,g\rbrace  = -\lbrace g,f\rbrace$, hence $\lbrace f,f\rbrace  = 0$;
   - bilinearity;
-  - Leibniz rule $\{f,gh\} = \{f,g\}h + g\{f,h\}$;
-  - **Jacobi identity** $\{f,\{g,h\}\} + \{g,\{h,f\}\} + \{h,\{f,g\}\} = 0$;
-  - $\{f, c\} = 0$ for a constant $c$.
-- **Equation of motion:** $\dfrac{df}{dt} = \{f,H\} + \dfrac{\partial f}{\partial t}$. In particular $\dot q = \{q,H\}$ and $\dot p = \{p,H\}$.
-- $f$ is a constant of motion $\iff \{f,H\} + \partial_t f = 0$.
-- **Poisson's theorem:** if $f$ and $g$ are integrals of motion, then $\{f,g\}$ is also one (it may be trivial or dependent on them).
+  - Leibniz rule $\lbrace f,gh\rbrace  = \lbrace f,g\rbrace h + g\lbrace f,h\rbrace$;
+  - **Jacobi identity** $\lbrace f,\lbrace g,h\rbrace \rbrace  + \lbrace g,\lbrace h,f\rbrace \rbrace  + \lbrace h,\lbrace f,g\rbrace \rbrace  = 0$;
+  - $\lbrace f, c\rbrace  = 0$ for a constant $c$.
+- **Equation of motion:** $\dfrac{df}{dt} = \lbrace f,H\rbrace  + \dfrac{\partial f}{\partial t}$. In particular $\dot q = \lbrace q,H\rbrace$ and $\dot p = \lbrace p,H\rbrace$.
+- $f$ is a constant of motion $\iff \lbrace f,H\rbrace  + \partial_t f = 0$.
+- **Poisson's theorem:** if $f$ and $g$ are integrals of motion, then $\lbrace f,g\rbrace$ is also one (it may be trivial or dependent on them).
 - **Angular momentum:**
-  - $\{L_x,L_y\} = L_z$ (cyclic), $\{L_i,L_j\} = \varepsilon_{ijk}L_k$;
-  - $\{L^2, L_i\} = 0$;
-  - $\{x, L_z\} = -y$, $\{y, L_z\} = x$, $\{p_x, L_z\} = -p_y$;
-  - $\{L_z, x\} = y$ (order matters).
+  - $\lbrace L_x,L_y\rbrace  = L_z$ (cyclic), $\lbrace L_i,L_j\rbrace  = \varepsilon_{ijk}L_k$;
+  - $\lbrace L^2, L_i\rbrace  = 0$;
+  - $\lbrace x, L_z\rbrace  = -y$, $\lbrace y, L_z\rbrace  = x$, $\lbrace p_x, L_z\rbrace  = -p_y$;
+  - $\lbrace L_z, x\rbrace  = y$ (order matters).
   - If two components of $\vec L$ are conserved, so is the third.
-- Other values: $\{q, p^n\} = np^{n-1}$, $\{q,H\} = \partial H/\partial p$, $\{x, \vec p\cdot\vec r\} = x$.
+- Other values: $\lbrace q, p^n\rbrace  = np^{n-1}$, $\lbrace q,H\rbrace  = \partial H/\partial p$, $\lbrace x, \vec p\cdot\vec r\rbrace  = x$.
 
 ## 3. Canonical transformations
 $(q,p)\to(Q,P)$ is canonical if it preserves the form of Hamilton's equations (with some $K$).
 
 **Tests (for the restricted, time-independent case):**
-1. $\{Q_i,P_j\}_{q,p} = \delta_{ij}$ and $\{Q_i,Q_j\} = \{P_i,P_j\} = 0$.
-2. $\sum p\,dq - \sum P\,dQ$ is an exact differential.
-3. One degree of freedom: Jacobian $\dfrac{\partial(Q,P)}{\partial(q,p)} = 1$, which is the same as $\{Q,P\} = 1$.
+1. $`\lbrace Q_i,P_j\rbrace _{q,p} = \delta_{ij}`$ and $\lbrace Q_i,Q_j\rbrace  = \lbrace P_i,P_j\rbrace  = 0$.
+2. $\sum p\thinspace dq - \sum P\thinspace dQ$ is an exact differential.
+3. One degree of freedom: Jacobian $\dfrac{\partial(Q,P)}{\partial(q,p)} = 1$, which is the same as $\lbrace Q,P\rbrace  = 1$.
 4. Symplectic condition $M^{T}JM = J$.
 
 **Generating functions** ($K = H + \partial F/\partial t$):
@@ -62,9 +62,9 @@ $(q,p)\to(Q,P)$ is canonical if it preserves the form of Hamilton's equations (w
 - $F_2 = \sum q_iP_i$ gives the **identity**.
 - $F_2 = \sum f_i(q)P_i$ gives a point transformation $Q = f(q)$.
 - $F_1 = \sum q_iQ_i$ gives the **exchange** $Q = p,\ P = -q$. Note that $Q = p,\ P = q$ is **not** canonical.
-- The family $Q = q^{\alpha}\cos\beta p,\ P = q^{\alpha}\sin\beta p$ is canonical only for $\alpha = 1/2,\ \beta = 2$, i.e. $Q = \sqrt{q}\cos 2p$, $P = \sqrt{q}\sin 2p$, since $\{Q,P\} = \alpha\beta q^{2\alpha-1}$.
-- $Q = \log\!\left(\dfrac{\sin p}{q}\right)$, $P = q\cot p$ is canonical (textbook classic).
-- **Oscillator:** $q = \sqrt{2P/m\omega}\,\sin Q$, $p = \sqrt{2Pm\omega}\,\cos Q$, generated by $F_1 = \tfrac12 m\omega q^2\cot Q$. It gives $K = \omega P$, so $P = E/\omega$ (the action) and $Q = \omega t + \delta$.
+- The family $Q = q^{\alpha}\cos\beta p,\ P = q^{\alpha}\sin\beta p$ is canonical only for $\alpha = 1/2,\ \beta = 2$, i.e. $Q = \sqrt{q}\cos 2p$, $P = \sqrt{q}\sin 2p$, since $\lbrace Q,P\rbrace  = \alpha\beta q^{2\alpha-1}$.
+- $Q = \log\negthinspace \left(\dfrac{\sin p}{q}\right)$, $P = q\cot p$ is canonical (textbook classic).
+- **Oscillator:** $q = \sqrt{2P/m\omega}\thinspace \sin Q$, $p = \sqrt{2Pm\omega}\thinspace \cos Q$, generated by $F_1 = \tfrac12 m\omega q^2\cot Q$. It gives $K = \omega P$, so $P = E/\omega$ (the action) and $Q = \omega t + \delta$.
 - Scaling $Q = \lambda q,\ P = \mu p$ is canonical only if $\lambda\mu = 1$. (With $\lambda\mu \ne 1$ it is an "extended canonical" transformation with $K = \lambda\mu H$.)
 
 **Invariants of canonical transformations:**
@@ -73,12 +73,12 @@ $(q,p)\to(Q,P)$ is canonical if it preserves the form of Hamilton's equations (w
 - phase-space volume (**Liouville**);
 - Poincaré integral invariants.
 
-**Infinitesimal canonical transformation:** $F_2 = qP + \varepsilon G$ gives $\delta q = \varepsilon\,\partial G/\partial p$ and $\delta p = -\varepsilon\,\partial G/\partial q$. $H$ itself generates the time evolution, so **the motion is a continuous canonical transformation**.
+**Infinitesimal canonical transformation:** $F_2 = qP + \varepsilon G$ gives $\delta q = \varepsilon\thinspace \partial G/\partial p$ and $\delta p = -\varepsilon\thinspace \partial G/\partial q$. $H$ itself generates the time evolution, so **the motion is a continuous canonical transformation**.
 
 ## Exam traps
 - Sign in $(\vec p - e\vec A)^2$: since $\vec p = m\vec v + e\vec A$, the bracket has a **minus** sign.
-- $\{f,g\}$ vs $\{g,f\}$: the answer changes sign (for example $\{x,L_z\} = -y$).
+- $\lbrace f,g\rbrace$ vs $\lbrace g,f\rbrace$: the answer changes sign (for example $\lbrace x,L_z\rbrace  = -y$).
 - A coordinate–momentum swap needs a minus sign to be canonical.
 - $H$ conserved ($\partial_tH = 0$) does **not** imply $H = E$.
-- Canonicity requires $\{Q,P\} = 1$ **identically** in $q$ and $p$, not just at one point.
+- Canonicity requires $\lbrace Q,P\rbrace  = 1$ **identically** in $q$ and $p$, not just at one point.
 - In Poisson's theorem the new integral may turn out to be a constant or a function of the old ones.

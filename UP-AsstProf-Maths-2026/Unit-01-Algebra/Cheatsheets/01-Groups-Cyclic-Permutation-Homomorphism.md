@@ -12,33 +12,33 @@
 ## 2. Cyclic groups
 | Fact | Statement |
 |---|---|
-| Classification | Every cyclic group is $\cong\mathbb{Z}$ or $\mathbb{Z}_n$ |
-| Subgroups | Every subgroup of a cyclic group is cyclic. $\mathbb{Z}_n$ has exactly one subgroup of order $d$ for each $d\mid n$, so $d(n)$ subgroups in all |
-| Generators | $\mathbb{Z}_n$ has $\varphi(n)$ generators: $k$ is a generator iff $\gcd(k,n)=1$. $\mathbb{Z}$ has 2 generators, $\pm1$ |
-| Order of $k$ in $\mathbb{Z}_n$ | $n/\gcd(k,n)$ |
+| Classification | Every cyclic group is $\cong\mathbb{Z}$ or $\mathbb Z_n$ |
+| Subgroups | Every subgroup of a cyclic group is cyclic. $\mathbb Z_n$ has exactly one subgroup of order $d$ for each $d\mid n$, so $d(n)$ subgroups in all |
+| Generators | $\mathbb Z_n$ has $\varphi(n)$ generators: $k$ is a generator iff $\gcd(k,n)=1$. $\mathbb{Z}$ has 2 generators, $\pm1$ |
+| Order of $k$ in $\mathbb Z_n$ | $n/\gcd(k,n)$ |
 | Elements of order $d$ | In cyclic $G$ of order $n$: $\varphi(d)$ elements for each $d\mid n$, and $\sum_{d\mid n}\varphi(d)=n$ |
-| Prime order | $|G|=p$ implies $G\cong\mathbb{Z}_p$ |
-| Products | $\mathbb{Z}_m\times\mathbb{Z}_n\cong\mathbb{Z}_{mn}\iff\gcd(m,n)=1$. Order of $(a,b)$ is $\operatorname{lcm}(o(a),o(b))$ |
+| Prime order | $\vert G\vert =p$ implies $G\cong\mathbb Z_p$ |
+| Products | $\mathbb Z_m\times\mathbb Z_n\cong\mathbb Z_{mn}\iff\gcd(m,n)=1$. Order of $(a,b)$ is $\operatorname{lcm}(o(a),o(b))$ |
 | Infinite | $\mathbb{Z}$ is the only infinite cyclic group. $(\mathbb{Q},+)$ and $(\mathbb{R},+)$ are not cyclic, but every finitely generated subgroup of $\mathbb{Q}$ is cyclic |
 | Finite subgroups of $F^{\times}$ | Every finite subgroup of the multiplicative group of a field is cyclic |
 
-**Counting in $\mathbb{Z}_m\times\mathbb{Z}_n$:** the number of solutions of $dx=0$ is $\gcd(d,m)\gcd(d,n)$. Use inclusion–exclusion over the divisors to get the elements of exact order $d$.
+**Counting in $\mathbb Z_m\times\mathbb Z_n$:** the number of solutions of $dx=0$ is $\gcd(d,m)\gcd(d,n)$. Use inclusion–exclusion over the divisors to get the elements of exact order $d$.
 
 ## 3. Homomorphisms and isomorphism theorems
-- $\ker\phi\trianglelefteq G$, $\phi(e)=e'$, $o(\phi(g))\mid o(g)$, and $\phi$ is injective iff $\ker\phi=\{e\}$.
+- $\ker\phi\trianglelefteq G$, $\phi(e)=e'$, $o(\phi(g))\mid o(g)$, and $\phi$ is injective iff $\ker\phi=\lbrace e\rbrace$.
 - **First (Fundamental) Isomorphism Theorem:** for $\phi:G\to G'$ a homomorphism, $G/\ker\phi\cong\phi(G)$. So $|\phi(G)|$ divides $|G|$ and $|G'|$.
 - **Second:** $H\le G$, $N\trianglelefteq G$ gives $HN/N\cong H/(H\cap N)$.
 - **Third:** $N\le K$ both normal in $G$ gives $(G/N)/(K/N)\cong G/K$.
 - **Correspondence:** subgroups of $G/N$ correspond to subgroups of $G$ containing $N$.
-- $\#\operatorname{Hom}(\mathbb{Z}_m,\mathbb{Z}_n)=\gcd(m,n)$. $\#\operatorname{Hom}(\mathbb{Z},G)=|G|$. The surjections $\mathbb{Z}_m\to\mathbb{Z}_n$ exist iff $n\mid m$, and there are $\varphi(n)$ of them.
-- Standard quotients: $\mathbb{Z}/n\mathbb{Z}\cong\mathbb{Z}_n$, $\mathbb{R}/\mathbb{Z}\cong S^1$, $\mathbb{C}^{\times}/S^1\cong\mathbb{R}^+$, $GL_n/SL_n\cong F^{\times}$, $S_n/A_n\cong\mathbb{Z}_2$, $(\mathbb{Z}\times\mathbb{Z})/\langle(1,1)\rangle\cong\mathbb{Z}$, $\mathbb{Q}/\mathbb{Z}$ (infinite, every element of finite order).
+- $\sharp \operatorname{Hom}(\mathbb Z_m,\mathbb Z_n)=\gcd(m,n)$. $\sharp \operatorname{Hom}(\mathbb{Z},G)=|G|$. The surjections $\mathbb Z_m\to\mathbb Z_n$ exist iff $n\mid m$, and there are $\varphi(n)$ of them.
+- Standard quotients: $\mathbb{Z}/n\mathbb{Z}\cong\mathbb Z_n$, $\mathbb{R}/\mathbb{Z}\cong S^1$, $\mathbb C^{\times}/S^1\cong\mathbb R^+$, $GL_n/SL_n\cong F^{\times}$, $S_n/A_n\cong\mathbb Z_2$, $(\mathbb{Z}\times\mathbb{Z})/\langle(1,1)\rangle\cong\mathbb{Z}$, $\mathbb{Q}/\mathbb{Z}$ (infinite, every element of finite order).
 
 ## 4. Automorphisms
-- $\operatorname{Aut}(\mathbb{Z}_n)\cong U(n)$, with order $\varphi(n)$. $\operatorname{Aut}(\mathbb{Z})\cong\mathbb{Z}_2$.
-- $U(n)$ is cyclic iff $n=1,2,4,p^k,2p^k$ ($p$ an odd prime). E.g. $U(8)\cong\mathbb{Z}_2^2$, $U(15)\cong\mathbb{Z}_2\times\mathbb{Z}_4$, $U(16)\cong\mathbb{Z}_2\times\mathbb{Z}_4$.
+- $\operatorname{Aut}(\mathbb Z_n)\cong U(n)$, with order $\varphi(n)$. $\operatorname{Aut}(\mathbb{Z})\cong\mathbb Z_2$.
+- $U(n)$ is cyclic iff $n=1,2,4,p^k,2p^k$ ($p$ an odd prime). E.g. $U(8)\cong\mathbb Z_2^2$, $U(15)\cong\mathbb Z_2\times\mathbb Z_4$, $U(16)\cong\mathbb Z_2\times\mathbb Z_4$.
 - $\operatorname{Inn}(G)\cong G/Z(G)\trianglelefteq\operatorname{Aut}(G)$.
-- $\operatorname{Aut}(\mathbb{Z}_p^n)\cong GL_n(\mathbb{F}_p)$, of order $\prod_{i=0}^{n-1}(p^n-p^i)$. E.g. $|\operatorname{Aut}(\mathbb{Z}_2^2)|=6$ ($\cong S_3$) and $|\operatorname{Aut}(\mathbb{Z}_2^3)|=168$.
-- $\operatorname{Aut}(\mathbb{Z}_2\times\mathbb{Z}_4)\cong D_4$ (order 8). $\operatorname{Aut}(S_3)\cong S_3$. $\operatorname{Aut}(S_n)\cong S_n$ for $n\ne 2,6$. $\operatorname{Aut}(Q_8)\cong S_4$.
+- $\operatorname{Aut}(\mathbb Z_p^n)\cong GL_n(\mathbb F_p)$, of order $\prod_{i=0}^{n-1}(p^n-p^i)$. E.g. $|\operatorname{Aut}(\mathbb Z_2^2)|=6$ ($\cong S_3$) and $|\operatorname{Aut}(\mathbb Z_2^3)|=168$.
+- $\operatorname{Aut}(\mathbb Z_2\times\mathbb Z_4)\cong D_4$ (order 8). $\operatorname{Aut}(S_3)\cong S_3$. $\operatorname{Aut}(S_n)\cong S_n$ for $n\ne 2,6$. $\operatorname{Aut}(Q_8)\cong S_4$.
 
 ## 5. Permutation groups
 - Every permutation is a product of disjoint cycles, uniquely up to order.
@@ -46,33 +46,33 @@
 - A $k$-cycle is a product of $k-1$ transpositions, so its sign is $(-1)^{k-1}$: **even-length cycles are odd**.
 - $\operatorname{sgn}\sigma=(-1)^{n-c}$, where $c$ is the number of cycles (counting fixed points).
 - $|S_n|=n!$ and $|A_n|=n!/2$ for $n\ge2$. $A_n$ is simple for $n\ge5$. $A_4$ is not simple ($V_4\trianglelefteq A_4$). $Z(S_n)=1$ for $n\ge3$.
-- Number of $k$-cycles in $S_n$: $\dfrac{n!}{(n-k)!\,k}$.
+- Number of $k$-cycles in $S_n$: $\dfrac{n!}{(n-k)!\thinspace k}$.
 - Elements of order 2 in $S_n$: $\sum_{j\ge1}\dfrac{n!}{2^j j!(n-2j)!}$. For $S_4$ this is $6+3=9$, for $S_5$ it is $10+15=25$.
 - Maximum element order (Landau's function): $S_4$: 4, $S_5$: 6, $S_6$: 6, $S_7$: 12, $S_8$: 15.
-- Generators: $S_n=\langle(1\,2),(1\,2\cdots n)\rangle$. $A_n$ is generated by 3-cycles.
+- Generators: $S_n=\langle(1\thinspace 2),(1\thinspace 2\cdots n)\rangle$. $A_n$ is generated by 3-cycles.
 - Two permutations are conjugate in $S_n$ iff they have the same cycle type.
 
 ## 6. Cayley's Theorem
 **Every group $G$ is isomorphic to a subgroup of $\operatorname{Sym}(G)$**, via the left regular representation $g\mapsto\lambda_g$ with $\lambda_g(x)=gx$. A finite group of order $n$ therefore embeds in $S_n$.
 - **Generalized Cayley:** if $H\le G$ with $[G:H]=n$, there is a homomorphism $G\to S_n$ whose kernel $\operatorname{core}(H)=\bigcap gHg^{-1}$ is contained in $H$. Consequence: if $|G|\nmid n!$ then $G$ has a non-trivial normal subgroup inside $H$ (non-simplicity test).
-- Minimal $n$ with $G\hookrightarrow S_n$: $\mathbb{Z}_6$: 5 (as $(1\,2)(3\,4\,5)$). $Q_8$: 8. $\mathbb{Z}_{p^k}$: $p^k$. $D_n$ ($n$ odd prime): $n$.
+- Minimal $n$ with $G\hookrightarrow S_n$: $\mathbb Z_6$: 5 (as $`(1\thinspace 2)(3\thinspace 4\thinspace 5)`$). $Q_8$: 8. $\mathbb Z_{p^k}$: $p^k$. $D_n$ ($n$ odd prime): $n$.
 
 ## 7. Small groups to remember
 | Order | Groups up to isomorphism |
 |---|---|
-| $p$ | $\mathbb{Z}_p$ |
-| $p^2$ | $\mathbb{Z}_{p^2},\ \mathbb{Z}_p^2$ (both abelian) |
-| 4 | $\mathbb{Z}_4$, $V_4$ |
-| 6 | $\mathbb{Z}_6$, $S_3$ |
-| 8 | $\mathbb{Z}_8$, $\mathbb{Z}_4\times\mathbb{Z}_2$, $\mathbb{Z}_2^3$, $D_4$, $Q_8$ (5 groups) |
-| $2p$ | $\mathbb{Z}_{2p}$, $D_p$ |
-| 12 | 5 groups: $\mathbb{Z}_{12}$, $\mathbb{Z}_6\times\mathbb{Z}_2$, $A_4$, $D_6$, $\mathrm{Dic}_3$ |
+| $p$ | $\mathbb Z_p$ |
+| $p^2$ | $\mathbb Z_{p^2},\ \mathbb Z_p^2$ (both abelian) |
+| 4 | $\mathbb Z_4$, $V_4$ |
+| 6 | $\mathbb Z_6$, $S_3$ |
+| 8 | $\mathbb Z_8$, $\mathbb Z_4\times\mathbb Z_2$, $\mathbb Z_2^3$, $D_4$, $Q_8$ (5 groups) |
+| $2p$ | $\mathbb Z_{2p}$, $D_p$ |
+| 12 | 5 groups: $\mathbb Z_{12}$, $\mathbb Z_6\times\mathbb Z_2$, $A_4$, $D_6$, $\mathrm{Dic}_3$ |
 
 Number of abelian groups of order $p^n$ is $p(n)$ (the partition number), and it is multiplicative over the prime powers.
 
 ## Exam traps
 - **Order of a product of non-disjoint cycles:** write it as disjoint cycles first. And the order is the lcm, not the product.
-- $U(n)$ having order 4 does not make it $\cong\mathbb{Z}_4$: check for an element of order 4.
+- $U(n)$ having order 4 does not make it $\cong\mathbb Z_4$: check for an element of order 4.
 - **$\mathbb{Z}\cong2\mathbb{Z}$ as groups but not as rings.** $\mathbb{Q}\not\cong\mathbb{Z}$ and $\mathbb{R}\not\cong\mathbb{Q}$ as groups.
 - **"Number of homomorphisms" ≠ "number of onto homomorphisms."**
 - A group in which every element has order $\le2$ is abelian, but an abelian group need not be cyclic.

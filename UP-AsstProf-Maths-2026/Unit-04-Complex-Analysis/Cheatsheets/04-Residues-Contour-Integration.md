@@ -1,10 +1,10 @@
 # Cheatsheet · Unit 4 · Topic 04 — Calculus of Residues and Contour Integration
 
 ## 1. Residue
-If $f$ has an isolated singularity at $a$, then $\operatorname{Res}_a f = a_{-1}$, the coefficient of $(z-a)^{-1}$ in the Laurent series on $0 < |z-a| < r$.
+If $f$ has an isolated singularity at $a$, then $`\operatorname{Res}_a f = a_{-1}`$, the coefficient of $(z-a)^{-1}$ in the Laurent series on $0 \lt  |z-a| \lt  r$.
 
 **Residue theorem:** if $f$ is analytic inside and on a simple closed $\gamma$ (positively oriented) except at $a_1,\dots,a_n$ inside $\gamma$, then
-$$\oint_\gamma f\,dz = 2\pi i\sum_k\operatorname{Res}_{a_k}f.$$
+$$\oint_\gamma f\thinspace dz = 2\pi i\sum_k\operatorname{Res}_{a_k}f.$$
 
 ## 2. Computing residues
 | Situation | Formula |
@@ -30,47 +30,47 @@ Useful values:
 | $\frac{1}{z^2\sin z}$ at $0$ | $\frac16$ |
 
 ## 3. Residue at infinity
-$$\operatorname{Res}_{\infty}f = -\operatorname{Res}_{w=0}\frac{1}{w^2}f\!\left(\frac1w\right) = -(\text{coefficient of } 1/z \text{ in the expansion for large } |z|).$$
+$$\operatorname{Res}_{\infty}f = -\operatorname{Res}_{w=0}\frac{1}{w^2}f\negthinspace \left(\frac1w\right) = -(\text{coefficient of } 1/z \text{ in the expansion for large } |z|).$$
 - The sum of all residues, including $\infty$, is $0$. So if all singularities lie inside $\gamma$, then $\oint_\gamma f = -2\pi i\operatorname{Res}_\infty f$.
-- **Shortcut for rationals:** if $f = P/Q$ with $\deg Q = \deg P + 1$ and leading coefficients $p$ and $q$, then $\operatorname{Res}_\infty = -p/q$. If $\deg Q \ge \deg P + 2$, then $\operatorname{Res}_\infty = 0$.
+- **Shortcut for rationals:** if $f = P/Q$ with $\deg Q = \deg P + 1$ and leading coefficients $p$ and $q$, then $`\operatorname{Res}_\infty = -p/q`$. If $\deg Q \ge \deg P + 2$, then $`\operatorname{Res}_\infty = 0`$.
 - **Trap:** $f$ can be analytic at $\infty$ with $\operatorname{Res}_\infty \ne 0$, e.g. $1/z$. Conversely, $z$ has a pole at $\infty$ but residue $0$ there.
 
 ## 4. Standard real integrals
-**(i) Trigonometric $\int_0^{2\pi}R(\cos\theta,\sin\theta)\,d\theta$.** Substitute $z = e^{i\theta}$, $\cos\theta = \frac{z+z^{-1}}{2}$, $\sin\theta = \frac{z-z^{-1}}{2i}$, $d\theta = \frac{dz}{iz}$, and sum the residues inside $|z| = 1$.
-$$\int_0^{2\pi}\frac{d\theta}{a+b\cos\theta} = \frac{2\pi}{\sqrt{a^2-b^2}}\ (a>|b|),\qquad \int_0^{2\pi}\frac{d\theta}{(a+b\cos\theta)^2} = \frac{2\pi a}{(a^2-b^2)^{3/2}}.$$
+**(i) Trigonometric $\int_0^{2\pi}R(\cos\theta,\sin\theta)\thinspace d\theta$.** Substitute $z = e^{i\theta}$, $\cos\theta = \frac{z+z^{-1}}{2}$, $\sin\theta = \frac{z-z^{-1}}{2i}$, $d\theta = \frac{dz}{iz}$, and sum the residues inside $|z| = 1$.
+$$\int_0^{2\pi}\frac{d\theta}{a+b\cos\theta} = \frac{2\pi}{\sqrt{a^2-b^2}}\ (a\gt |b|),\qquad \int_0^{2\pi}\frac{d\theta}{(a+b\cos\theta)^2} = \frac{2\pi a}{(a^2-b^2)^{3/2}}.$$
 
-**(ii) Rational $\int_{-\infty}^{\infty}\frac{P}{Q}\,dx$.** This needs $\deg Q \ge \deg P + 2$ and no real zeros of $Q$. The value is $2\pi i\sum_{\operatorname{Im} a > 0}\operatorname{Res}$.
+**(ii) Rational $\int_{-\infty}^{\infty}\frac{P}{Q}\thinspace dx$.** This needs $`\deg Q \ge \deg P + 2`$ and no real zeros of $Q$. The value is $2\pi i\sum_{\operatorname{Im} a \gt  0}\operatorname{Res}$.
 - $\int_{\mathbb{R}}\frac{dx}{1+x^2} = \pi$
 - $\int_{\mathbb{R}}\frac{dx}{(1+x^2)^2} = \frac\pi2$
 - $\int_0^\infty\frac{dx}{1+x^4} = \frac{\pi}{2\sqrt2}$
 - $\int_0^\infty\frac{dx}{1+x^n} = \frac{\pi/n}{\sin(\pi/n)}$
 
-**(iii) Fourier type $\int_{\mathbb{R}}\frac{P}{Q}e^{imx}\,dx$ with $m > 0$.** This needs only $\deg Q \ge \deg P + 1$, by Jordan's lemma. Close the contour in the **upper** half-plane, where $|e^{imz}| = e^{-my} \le 1$.
-- $\int_{\mathbb{R}}\frac{\cos mx}{x^2+a^2}\,dx = \frac{\pi}{a}e^{-ma}$
-- $\int_{\mathbb{R}}\frac{x\sin mx}{x^2+a^2}\,dx = \pi e^{-ma}$
+**(iii) Fourier type $\int_{\mathbb{R}}\frac{P}{Q}e^{imx}\thinspace dx$ with $m \gt  0$.** This needs only $\deg Q \ge \deg P + 1$, by Jordan's lemma. Close the contour in the **upper** half-plane, where $|e^{imz}| = e^{-my} \le 1$.
+- $\int_{\mathbb{R}}\frac{\cos mx}{x^2+a^2}\thinspace dx = \frac{\pi}{a}e^{-ma}$
+- $\int_{\mathbb{R}}\frac{x\sin mx}{x^2+a^2}\thinspace dx = \pi e^{-ma}$
 
 **(iv) Indented contours (pole on the real axis).** For simple poles $b_j$ on $\mathbb{R}$:
 $$\mathrm{P.V.}\int_{\mathbb{R}}f = 2\pi i\sum_{\text{UHP}}\operatorname{Res} + \pi i\sum_{\mathbb{R}}\operatorname{Res}.$$
 A small semicircle around a simple pole contributes $-\pi i\operatorname{Res}$ when traversed clockwise above the pole.
-- $\int_0^\infty\frac{\sin x}{x}\,dx = \frac\pi2$
-- $\mathrm{P.V.}\int_{\mathbb{R}}\frac{e^{ix}}{x}\,dx = i\pi$
-- $\int_0^\infty\frac{\sin^2x}{x^2}\,dx = \frac\pi2$
+- $\int_0^\infty\frac{\sin x}{x}\thinspace dx = \frac\pi2$
+- $\mathrm{P.V.}\int_{\mathbb{R}}\frac{e^{ix}}{x}\thinspace dx = i\pi$
+- $\int_0^\infty\frac{\sin^2x}{x^2}\thinspace dx = \frac\pi2$
 
 **(v) Branch cuts, keyhole and other contours.**
-- $\int_0^\infty\frac{x^{a-1}}{1+x}\,dx = \frac{\pi}{\sin a\pi}$ for $0 < a < 1$.
-- $\int_0^\infty\frac{\ln x}{1+x^2}\,dx = 0$, by the substitution $x \mapsto 1/x$.
-- $\int_0^\infty\frac{\ln x}{(1+x^2)^2}\,dx = -\frac\pi4$.
-- Fresnel: $\int_0^\infty\cos x^2\,dx = \int_0^\infty\sin x^2\,dx = \frac12\sqrt{\frac\pi2}$.
-- Gaussian: $\int_{\mathbb{R}}e^{-x^2}\cos 2bx\,dx = \sqrt\pi\,e^{-b^2}$.
+- $\int_0^\infty\frac{x^{a-1}}{1+x}\thinspace dx = \frac{\pi}{\sin a\pi}$ for $0 \lt  a \lt  1$.
+- $\int_0^\infty\frac{\ln x}{1+x^2}\thinspace dx = 0$, by the substitution $x \mapsto 1/x$.
+- $\int_0^\infty\frac{\ln x}{(1+x^2)^2}\thinspace dx = -\frac\pi4$.
+- Fresnel: $\int_0^\infty\cos x^2\thinspace dx = \int_0^\infty\sin x^2\thinspace dx = \frac12\sqrt{\frac\pi2}$.
+- Gaussian: $\int_{\mathbb{R}}e^{-x^2}\cos 2bx\thinspace dx = \sqrt\pi\thinspace e^{-b^2}$.
 
 ## 5. Estimation lemmas
 - **ML:** if $|zf(z)| \to 0$ on $C_R$, then $\int_{C_R}f \to 0$. This is the rational case, which needs a degree gap $\ge 2$.
-- **Jordan's lemma:** if $\max_{C_R}|f| \to 0$ and $m > 0$, then $\int_{C_R}e^{imz}f\,dz \to 0$. It rests on $\int_0^\pi e^{-R\sin\theta}d\theta < \pi/R$.
+- **Jordan's lemma:** if $\max_{C_R}|f| \to 0$ and $m \gt  0$, then $\int_{C_R}e^{imz}f\thinspace dz \to 0$. It rests on $\int_0^\pi e^{-R\sin\theta}d\theta \lt  \pi/R$.
 - **Small-circle lemma:** if $f$ has a simple pole at $a$ and $C_\varepsilon$ is an arc of angle $\alpha$ around $a$, then $\int_{C_\varepsilon}f \to i\alpha\operatorname{Res}_a f$.
 
 ## Exam traps
 1. Count only the poles **inside** the contour. For $|z - i| = 1$, the pole $-i$ is outside.
-2. For $e^{imx}$ with $m > 0$, close upward. For $m < 0$, close downward and add a minus sign for the orientation.
+2. For $e^{imx}$ with $m \gt  0$, close upward. For $m \lt  0$, close downward and add a minus sign for the orientation.
 3. Real parts: $\int\frac{\cos x}{x^2+1} = \operatorname{Re}\frac{\pi}{e}$. Do not use $\cos z$ directly on the large arc, because it blows up.
 4. $\int_0^\infty$ is half of $\int_{\mathbb{R}}$ only for **even** integrands.
 5. A pole on the axis contributes $\pi i\operatorname{Res}$, not $2\pi i\operatorname{Res}$, to the principal value.

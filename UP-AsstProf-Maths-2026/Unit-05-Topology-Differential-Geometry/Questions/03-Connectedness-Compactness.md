@@ -8,11 +8,11 @@
 
 (B) $[0,1]\cup[2,3]$
 
-(C) $\{x: x^2>1\}$
+(C) $\lbrace x: x^2\gt 1\rbrace$
 
 (D) $[0,\infty)$
 
-**Q2.** `[Concept]` ★★ The topologist's sine curve $S=\{(x,\sin\tfrac1x):0<x\le1\}\cup(\{0\}\times[-1,1])$ is
+**Q2.** `[Concept]` ★★ The topologist's sine curve $S=\lbrace (x,\sin\tfrac1x):0\lt x\le1\rbrace \cup(\lbrace 0\rbrace \times[-1,1])$ is
 
 (A) path-connected
 
@@ -111,7 +111,7 @@ Which of the above is/are correct?
 
 (D) $(0,1)$
 
-**Q10.** `[Numerical]` ★ The number of connected components of $\{(x,y)\in\mathbb R^2: x^2+y^2\ne1,\ xy\ne0\}$ is
+**Q10.** `[Numerical]` ★ The number of connected components of $\lbrace (x,y)\in\mathbb R^2: x^2+y^2\ne1,\ xy\ne0\rbrace$ is
 
 (A) 4
 
@@ -157,7 +157,7 @@ Which of the above is/are correct?
 
 (C) $[0,1)$ and $[0,1]$
 
-(D) $S^1\setminus\{p\}$ and $(0,1)$
+(D) $S^1\setminus\lbrace p\rbrace$ and $(0,1)$
 
 ---
 ## Answer Key
@@ -180,26 +180,26 @@ Which of the above is/are correct?
 ## Solutions
 **Q1 — (D).** The connected subsets of $\mathbb R$ are exactly the intervals. $[0,\infty)$ is an interval. $\mathbb Q$ is totally disconnected, and the sets in (B) and (C) are unions of two disjoint closed rays or intervals.
 
-**Q2 — (B).** $S$ is the closure of the connected graph $\{(x,\sin1/x)\}$, so it is connected. No path can join $(0,0)$ to a point of the graph, because $\sin(1/x)$ oscillates without a limit as $x\to0^+$. It is not locally connected at points of the segment either.
+**Q2 — (B).** $S$ is the closure of the connected graph $\lbrace (x,\sin1/x)\rbrace$, so it is connected. No path can join $(0,0)$ to a point of the graph, because $\sin(1/x)$ oscillates without a limit as $x\to0^+$. It is not locally connected at points of the segment either.
 
-**Q3 — (B).** $\det: GL_2(\mathbb R)\to\mathbb R\setminus\{0\}$ is continuous and onto, so there are at least 2 components. Each of $\{\det>0\}$ and $\{\det<0\}$ is path-connected. $GL_n(\mathbb C)$ is connected, which is the trap (A).
+**Q3 — (B).** $\det: GL_2(\mathbb R)\to\mathbb R\setminus\lbrace 0\rbrace$ is continuous and onto, so there are at least 2 components. Each of $\lbrace \det\gt 0\rbrace$ and $\lbrace \det\lt 0\rbrace$ is path-connected. $GL_n(\mathbb C)$ is connected, which is the trap (A).
 
-**Q4 — (A).** I: every open cover has a member $U$ missing only finitely many points, and finitely many more members cover those points. II: the cover $\{[1-\tfrac1n,1-\tfrac1{n+1})\}_{n\ge1}\cup\{[1,2)\}$ of $[0,1]$ consists of disjoint sets, so it has no finite subcover. III: take distinct $x_1,x_2,\dots$ and $U_n=\mathbb R\setminus\{x_k:k\ge n\}$. These are open and increasing with union $\mathbb R$, but no finite subfamily covers $\mathbb R$.
+**Q4 — (A).** I: every open cover has a member $U$ missing only finitely many points, and finitely many more members cover those points. II: the cover $\lbrace [1-\tfrac1n,1-\tfrac1{n+1})\rbrace _{n\ge1}\cup\lbrace [1,2)\rbrace$ of $[0,1]$ consists of disjoint sets, so it has no finite subcover. III: take distinct $x_1,x_2,\dots$ and $U_n=\mathbb R\setminus\lbrace x_k:k\ge n\rbrace$. These are open and increasing with union $\mathbb R$, but no finite subfamily covers $\mathbb R$.
 
 **Q5 — (D).** R is the Heine–Borel theorem. A is false: in $\mathbb R$ with the discrete metric $d\le1$, the whole space is closed and bounded but not compact. Likewise the closed unit ball of $\ell^2$ is not compact.
 
 **Q6 — (A).** $\mathbb Q$: components are singletons, and no point has a compact neighbourhood. Topologist's sine curve: Q2. $\mathbb R^n$: Heine–Borel gives local compactness, but it is unbounded. Cantor set: compact, totally disconnected and perfect.
 
-**Q7 — (C).** In an indiscrete space with at least two points, every subset is compact, but $\{x\}$ is not closed. (A) needs the Hausdorff hypothesis.
+**Q7 — (C).** In an indiscrete space with at least two points, every subset is compact, but $\lbrace x\rbrace$ is not closed. (A) needs the Hausdorff hypothesis.
 
 **Q8 — (B).** $S^1$ is a compact Hausdorff space and $f$ is bijective, so the domain must fail to be compact. Indeed $f$ maps the open set $[0,1)$ to a set that is not open in $S^1$.
 
-**Q9 — (C).** The one-point compactification of $X$ is Hausdorff iff $X$ is locally compact Hausdorff. $\mathbb Q$ is not locally compact. The others give $S^1$, $\{0\}\cup\{1/n\}$ and $S^1$ respectively.
+**Q9 — (C).** The one-point compactification of $X$ is Hausdorff iff $X$ is locally compact Hausdorff. $\mathbb Q$ is not locally compact. The others give $S^1$, $\lbrace 0\rbrace \cup\lbrace 1/n\rbrace$ and $S^1$ respectively.
 
 **Q10 — (C).** The two coordinate axes cut the plane into 4 open quadrants. The unit circle splits each quadrant into an inner piece and an outer piece, giving $4\times2=8$.
 
 **Q11 — (A).** I: a compact neighbourhood of a point of $\mathbb Q$ would contain $[a,b]\cap\mathbb Q$ with closure $[a,b]$ in $\mathbb R$, which is not a subset of $\mathbb Q$. II: every basic neighbourhood contains entire factors $\mathbb R$, so its closure is not compact. III: take the whole space as the compact neighbourhood.
 
-**Q12 — (B).** The closure of a connected set is connected, so each component is closed. Components need not be open: in $\mathbb Q$ the components $\{q\}$ are not open. Components need not be path-connected: see the topologist's sine curve.
+**Q12 — (B).** The closure of a connected set is connected, so each component is closed. Components need not be open: in $\mathbb Q$ the components $\lbrace q\rbrace$ are not open. Components need not be path-connected: see the topologist's sine curve.
 
-**Q13 — (D).** $S^1\setminus\{p\}\cong\mathbb R\cong(0,1)$. The other pairs are distinguished by invariants. (A) Removing an interior point disconnects $[0,1]$, but removing any single point leaves $S^1$ connected. (B) $\mathbb R$ minus a point is disconnected, but $\mathbb R^2$ minus a point is not. (C) Compactness.
+**Q13 — (D).** $S^1\setminus\lbrace p\rbrace \cong\mathbb R\cong(0,1)$. The other pairs are distinguished by invariants. (A) Removing an interior point disconnects $[0,1]$, but removing any single point leaves $S^1$ connected. (B) $\mathbb R$ minus a point is disconnected, but $\mathbb R^2$ minus a point is not. (C) Compactness.

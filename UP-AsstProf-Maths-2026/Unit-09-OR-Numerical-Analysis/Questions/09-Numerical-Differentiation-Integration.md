@@ -22,7 +22,7 @@
 
 (D) $h\left[\Delta y_0-\dfrac12\Delta^2y_0+\dfrac13\Delta^3y_0-\cdots\right]$
 
-**Q3.** `[Numerical]` ★ The trapezoidal rule with $h=0.5$ applied to $\displaystyle\int_0^1x^2\,dx$ gives
+**Q3.** `[Numerical]` ★ The trapezoidal rule with $h=0.5$ applied to $\displaystyle\int_0^1x^2\thinspace dx$ gives
 
 (A) $0.3333$
 
@@ -52,7 +52,7 @@
 
 (D) $3.01$
 
-**Q6.** `[Numerical]` ★★ The two-point Gauss–Legendre rule $\displaystyle\int_{-1}^{1}f(x)\,dx\approx f\!\left(-\tfrac1{\sqrt3}\right)+f\!\left(\tfrac1{\sqrt3}\right)$ applied to $\displaystyle\int_{-1}^1x^4\,dx$ gives
+**Q6.** `[Numerical]` ★★ The two-point Gauss–Legendre rule $\displaystyle\int_{-1}^{1}f(x)\thinspace dx\approx f\negthinspace \left(-\tfrac1{\sqrt3}\right)+f\negthinspace \left(\tfrac1{\sqrt3}\right)$ applied to $\displaystyle\int_{-1}^1x^4\thinspace dx$ gives
 
 (A) $2/5$
 
@@ -62,7 +62,7 @@
 
 (D) $2/3$
 
-**Q7.** `[Numerical]` ★★ Simpson's 3/8 rule with $h=1$ applied to $\displaystyle\int_0^3x^4\,dx$ (exact value $48.6$) gives
+**Q7.** `[Numerical]` ★★ Simpson's 3/8 rule with $h=1$ applied to $\displaystyle\int_0^3x^4\thinspace dx$ (exact value $48.6$) gives
 
 (A) $48.6$
 
@@ -91,7 +91,7 @@ Which are correct?
 (D) I and II only
 
 **Q9.** `[Assertion-Reason]` ★★
-**Assertion (A):** If $f''>0$ on $[a,b]$, the composite trapezoidal rule overestimates $\int_a^bf$.
+**Assertion (A):** If $f''\gt 0$ on $[a,b]$, the composite trapezoidal rule overestimates $\int_a^bf$.
 **Reason (R):** The composite trapezoidal error is $\int_a^bf-T_h=-\dfrac{(b-a)h^2}{12}f''(\xi)$ for some $\xi\in(a,b)$.
 
 (A) Both A and R are true and R is the correct explanation of A
@@ -173,7 +173,7 @@ Which are correct?
 
 **Q8 — (D).** I and II are true (Weddle needs $n$ to be a multiple of 6). III is false: the trapezoidal rule has degree of precision 1. For example, $\int_0^1x^2=1/3\ne1/2$.
 
-**Q9 — (A).** By R, $f''>0$ gives $\int f-T_h<0$, so $T_h$ overestimates. The chord also lies above a convex curve. R directly yields A.
+**Q9 — (A).** By R, $f''\gt 0$ gives $\int f-T_h\lt 0$, so $T_h$ overestimates. The chord also lies above a convex curve. R directly yields A.
 
 **Q10 — (A).** These are the standard error terms: $-\frac{h^3}{12}f''$, $-\frac{h^5}{90}f^{(4)}$, $-\frac{3h^5}{80}f^{(4)}$ and $-\frac{h^7}{140}f^{(6)}$.
 

@@ -4,13 +4,13 @@
 
 **Q1.** `[Concept]` ★ The symmetric matrix of the quadratic form $q(x,y)=x^2+4xy+2y^2$ is
 
-(A) $\begin{pmatrix}1&4\\0&2\end{pmatrix}$
+(A) $`\begin{pmatrix}1&4\cr 0&2\end{pmatrix}`$
 
-(B) $\begin{pmatrix}1&4\\4&2\end{pmatrix}$
+(B) $`\begin{pmatrix}1&4\cr 4&2\end{pmatrix}`$
 
-(C) $\begin{pmatrix}1&2\\2&2\end{pmatrix}$
+(C) $`\begin{pmatrix}1&2\cr 2&2\end{pmatrix}`$
 
-(D) $\begin{pmatrix}1&2\\2&1\end{pmatrix}$
+(D) $`\begin{pmatrix}1&2\cr 2&1\end{pmatrix}`$
 
 **Q2.** `[Numerical]` ★★ For the real quadratic form $q=2xy+2yz+2zx$, the (rank, index, signature) is
 
@@ -24,13 +24,13 @@
 
 **Q3.** `[Numerical]` ★★★ The quadratic form $q=x^2+y^2+z^2+2k(xy+yz+zx)$ is positive definite if and only if
 
-(A) $-1<k<1$
+(A) $-1\lt k\lt 1$
 
-(B) $-\tfrac12<k<1$
+(B) $-\tfrac12\lt k\lt 1$
 
-(C) $0<k<1$
+(C) $0\lt k\lt 1$
 
-(D) $-1<k<\tfrac12$
+(D) $-1\lt k\lt \tfrac12$
 
 **Q4.** `[Multi-Statement]` ★★ Let $A$ be a real symmetric $n\times n$ matrix. Consider:
 
@@ -62,7 +62,7 @@ Which is/are correct?
 
 (D) A is false but R is true
 
-**Q6.** `[Match]` ★★ Match the form on $\mathbb{R}^2$ with its nature.
+**Q6.** `[Match]` ★★ Match the form on $\mathbb R^2$ with its nature.
 
 | List-I | List-II |
 |---|---|
@@ -150,11 +150,11 @@ Which is/are correct?
 
 **Q2 — (C).** The matrix $J-I$ has eigenvalues $2,-1,-1$. So the rank is 3, the index $p=1$, and the signature $p-q=1-2=-1$. Some books define signature as $p+q$ or report $(p,q)$; under the standard convention $s=p-q$, (C) is correct.
 
-**Q3 — (B).** The matrix $(1-k)I+kJ$ has eigenvalues $1+2k$ (once) and $1-k$ (twice). Both are positive iff $-\tfrac12<k<1$. (A) uses only the $2\times2$ leading minor $1-k^2>0$.
+**Q3 — (B).** The matrix $(1-k)I+kJ$ has eigenvalues $1+2k$ (once) and $1-k$ (twice). Both are positive iff $-\tfrac12\lt k\lt 1$. (A) uses only the $2\times2$ leading minor $1-k^2\gt 0$.
 
 **Q4 — (B).** III is false: $\operatorname{diag}(0,-1)$ has leading minors $0,0$ but is negative semidefinite. For PSD you need **all** principal minors to be $\ge0$.
 
-**Q5 — (A).** The matrix $\begin{pmatrix}1&-2\\-2&1\end{pmatrix}$ has $\det=-3<0$, so the eigenvalues $3$ and $-1$ have opposite signs. Example values: $q(1,1)=-2$ and $q(1,0)=1$.
+**Q5 — (A).** The matrix $`\begin{pmatrix}1&-2\cr -2&1\end{pmatrix}`$ has $\det=-3\lt 0$, so the eigenvalues $3$ and $-1$ have opposite signs. Example values: $q(1,1)=-2$ and $q(1,0)=1$.
 
 **Q6 — (D).** $(x-y)^2\ge0$ and it vanishes on $x=y$, so it is positive semidefinite but not definite.
 
@@ -164,6 +164,6 @@ Which is/are correct?
 
 **Q9 — (A).** The counts $p$ and $q$ of positive and negative squares are invariants, while the actual diagonal coefficients are not. That rules out (C) and (D).
 
-**Q10 — (A).** The matrix $\begin{pmatrix}5&4\\4&5\end{pmatrix}$ has eigenvalues $9$ and $1$. Orthogonal reduction gives $\lambda_1X^2+\lambda_2Y^2$.
+**Q10 — (A).** The matrix $`\begin{pmatrix}5&4\cr 4&5\end{pmatrix}`$ has eigenvalues $9$ and $1$. Orthogonal reduction gives $\lambda_1X^2+\lambda_2Y^2$.
 
-**Q11 — (C).** $q=(x+y+z)^2$ has matrix $J$ with eigenvalues $3,0,0$. The maximum of $x^TAx$ on $\|x\|=1$ is $\lambda_{\max}=3$, attained at $\frac1{\sqrt3}(1,1,1)$ (Rayleigh quotient). (D) forgets the normalization.
+**Q11 — (C).** $q=(x+y+z)^2$ has matrix $J$ with eigenvalues $3,0,0$. The maximum of $x^TAx$ on $\Vert x\Vert =1$ is $\lambda_{\max}=3$, attained at $\frac1{\sqrt3}(1,1,1)$ (Rayleigh quotient). (D) forgets the normalization.
