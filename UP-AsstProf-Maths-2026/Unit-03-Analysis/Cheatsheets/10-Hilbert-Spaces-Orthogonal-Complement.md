@@ -1,0 +1,95 @@
+# Cheatsheet · Unit 3 · Topic 10 — Hilbert Spaces and Orthogonal Complement
+> Questions: [../Questions/10-Hilbert-Spaces-Orthogonal-Complement.md](../Questions/10-Hilbert-Spaces-Orthogonal-Complement.md)
+
+## 1. Inner product spaces
+- **Axioms:** $\langle x,x\rangle\ge0$ with $=0\iff x=0$; $\langle x,y\rangle=\overline{\langle y,x\rangle}$; linear in the first slot. Then $\|x\|=\sqrt{\langle x,x\rangle}$.
+- A **Hilbert space** is a complete inner product space.
+- **Cauchy–Schwarz:** $|\langle x,y\rangle|\le\|x\|\|y\|$, with equality $\iff$ $x,y$ are linearly dependent.
+- **Parallelogram law:** $\|x+y\|^2+\|x-y\|^2=2\|x\|^2+2\|y\|^2$.
+  - **Jordan–von Neumann:** a norm comes from an inner product $\iff$ the parallelogram law holds.
+  - Hence $\ell^p$, $L^p$ ($p\ne2$), $C[a,b]$ with sup norm, $\|\cdot\|_1$ and $\|\cdot\|_\infty$ on $\mathbb R^n$ are **not** inner product spaces.
+- **Polarization:**
+  - real: $\langle x,y\rangle=\frac14(\|x+y\|^2-\|x-y\|^2)$
+  - complex: $\langle x,y\rangle=\frac14\sum_{k=0}^3 i^k\|x+i^ky\|^2$
+- **Pythagoras:** $x\perp y\Rightarrow\|x+y\|^2=\|x\|^2+\|y\|^2$. Over $\mathbb R$ the converse also holds.
+- **Continuity:** the inner product is jointly continuous, and $x_n\to x$, $y_n\to y$ imply $\langle x_n,y_n\rangle\to\langle x,y\rangle$.
+- **Examples:**
+  - Hilbert: $\mathbb C^n$, $\ell^2$, $L^2[a,b]$, Sobolev $H^1$.
+  - Incomplete inner product spaces: $c_{00}$ with the $\ell^2$ inner product; $C[a,b]$ with $\int f\bar g$.
+
+## 2. Orthogonal complement and projection
+- $M^\perp=\{x:\langle x,m\rangle=0\ \forall m\in M\}$ is a **closed subspace for every subset $M$**.
+- **Basic properties:**
+  - $M\subseteq N\Rightarrow N^\perp\subseteq M^\perp$
+  - $M^\perp=\overline M^\perp=(\operatorname{span}M)^\perp$
+  - $M\cap M^\perp\subseteq\{0\}$
+- **Double complement:** $M^{\perp\perp}=\overline{\operatorname{span}M}$, which equals $M$ iff $M$ is a closed subspace.
+- **Density test:** $M$ is dense $\iff$ $M^\perp=\{0\}$ (for a subspace $M$).
+- **Closest point theorem:** in a Hilbert space, every non-empty **closed convex** set $K$ has a **unique** point nearest to any $x$. This fails in general Banach spaces: in $(\mathbb R^2,\|\cdot\|_\infty)$ there are infinitely many nearest points.
+- **Projection theorem:** if $M$ is a closed subspace, then $H=M\oplus M^\perp$ and $x=Px+(x-Px)$, where $Px$ is the best approximation and is characterised by $x-Px\perp M$.
+- **Distance formulas:**
+  - $d(x,M)^2=\|x\|^2-\|Px\|^2$.
+  - For $M=\{u\}^\perp$: $d(x,M)=\frac{|\langle x,u\rangle|}{\|u\|}$.
+  - For a finite-dimensional $M$: solve the normal equations with the Gram matrix.
+  - $d(t^2,\operatorname{span}\{1,t\})$ in $L^2[0,1]$ is $\frac{1}{6\sqrt5}$, with projection $t-\frac16$.
+- **Orthogonal projection $P$:** the following are equivalent for an idempotent $P$ ($P^2=P$):
+  - $P$ is orthogonal ($\operatorname{ran}P\perp\ker P$)
+  - $P=P^*$
+  - $\|P\|\le1$
+
+  Also $\|P\|=1$ if $P\ne0$, $\langle Px,x\rangle=\|Px\|^2$, and $\sigma(P)\subseteq\{0,1\}$.
+  - An oblique idempotent can have norm $>1$: $(x,y)\mapsto(x+y,0)$ has norm $\sqrt2$.
+- **Projection formula:** for an orthonormal basis $\{u_1,\dots,u_k\}$ of $M$, $Px=\sum\langle x,u_i\rangle u_i$.
+
+## 3. Orthonormal sets and bases
+- **Bessel's inequality:** $\sum|\langle x,e_\alpha\rangle|^2\le\|x\|^2$ for every orthonormal set. Only countably many coefficients are non-zero, and $\langle x,e_n\rangle\to0$.
+- **Equivalent conditions for a maximal (complete) orthonormal set $\{e_\alpha\}$:**
+  - $\{e_\alpha\}$ is maximal (complete)
+  - $\{e_\alpha\}^\perp=\{0\}$
+  - $\overline{\operatorname{span}}=H$
+  - $x=\sum\langle x,e_\alpha\rangle e_\alpha$ for every $x$
+  - **Parseval:** $\|x\|^2=\sum|\langle x,e_\alpha\rangle|^2$ for every $x$
+  - $\langle x,y\rangle=\sum\langle x,e_\alpha\rangle\overline{\langle y,e_\alpha\rangle}$
+- **Riesz–Fischer:** if $\sum|c_n|^2<\infty$, then $\sum c_ne_n$ converges in $H$.
+- Every Hilbert space has an orthonormal basis (Zorn), and all orthonormal bases have the same cardinality (the Hilbert dimension).
+- $H$ is **separable** $\iff$ it has a **countable** orthonormal basis.
+- Every infinite-dimensional separable Hilbert space is isometrically isomorphic to $\ell^2$.
+- An orthonormal basis is **not** a Hamel basis in infinite dimensions.
+- **Gram–Schmidt** turns an independent sequence into an orthonormal one. Applied to $1,x,x^2,\dots$ in $L^2[-1,1]$ it gives the normalised **Legendre** polynomials; the first two are $\frac1{\sqrt2}$ and $\sqrt{\frac32}\,x$.
+- **Standard orthonormal bases:**
+  - $\{e_n\}$ in $\ell^2$
+  - $\left\{\frac{1}{\sqrt{2\pi}}e^{inx}\right\}_{n\in\mathbb Z}$ in $L^2[-\pi,\pi]$, which gives Parseval for Fourier series: $\frac1\pi\int_{-\pi}^{\pi}f^2=\frac{a_0^2}2+\sum(a_n^2+b_n^2)$
+- A weakly convergent orthonormal sequence: $e_n\rightharpoonup0$, but $\|e_n-e_m\|=\sqrt2$ for $n\neq m$, so the unit ball is not compact.
+
+## 4. Riesz representation and adjoints
+- **Riesz:** each $f\in H^*$ is $f(x)=\langle x,y_f\rangle$ for a unique $y_f$, and $\|f\|=\|y_f\|$. So $H^*\cong H$ (conjugate-linearly), and every Hilbert space is **reflexive**.
+- **Norms via Riesz:**
+  - On $\ell^2$, $f(x)=\sum a_nx_n$ has $\|f\|=\|a\|_2$.
+  - On $L^2$, $f(x)=\int xg$ has $\|f\|=\|g\|_2$.
+- **Adjoint** $T^*$: $\langle Tx,y\rangle=\langle x,T^*y\rangle$. Properties:
+  - $\|T^*\|=\|T\|$ and $T^{**}=T$
+  - $(ST)^*=T^*S^*$ and $(\alpha T)^*=\bar\alpha T^*$
+  - **C\*-identity:** $\|T^*T\|=\|T\|^2$
+  - $\ker T^*=(\operatorname{ran}T)^\perp$ and $\overline{\operatorname{ran}T}=(\ker T^*)^\perp$
+- **Classes of operators:**
+
+| Class | Definition | Spectrum / remarks |
+|---|---|---|
+| self-adjoint | $T=T^*$ | real spectrum; $\langle Tx,x\rangle\in\mathbb R$; $\|T\|=\sup_{\|x\|=1}\lvert\langle Tx,x\rangle\rvert$ |
+| normal | $TT^*=T^*T$ | $\|Tx\|=\|T^*x\|$ |
+| unitary | $T^*T=TT^*=I$ | onto isometry; spectrum $\subseteq$ unit circle |
+| isometry | $T^*T=I$ | right shift $S$: $S^*S=I$, $SS^*\ne I$ |
+| positive | $\langle Tx,x\rangle\ge0$ | self-adjoint (complex $H$) |
+
+- **Shifts:** the adjoint of the right shift is the left shift. The right shift has no eigenvalues. Every $\lambda$ with $|\lambda|<1$ is an eigenvalue of the left shift.
+- **Matrix case:** the adjoint is the conjugate transpose. Hermitian $\leftrightarrow$ self-adjoint, unitary $\leftrightarrow$ unitary.
+
+## Exam traps
+- $M^\perp$ is closed even when $M$ is not, and $M^{\perp\perp}=\overline M$, not $M$.
+- $H=M\oplus M^\perp$ requires $M$ **closed**: $c_{00}\oplus c_{00}^\perp=c_{00}\ne\ell^2$.
+- Unique nearest points require a Hilbert-space norm (or uniform convexity) **and** a closed convex set.
+- An orthonormal basis is not a Hamel basis, and a countable orthonormal basis exists only in **separable** $H$.
+- Idempotent does not mean orthogonal projection: $\|P\|=1$ only for $P=P^*\ne0$.
+- An isometry need not be unitary (the right shift).
+- Bessel holds for any orthonormal set. Parseval only for a complete one.
+- In the distance formula, take the **square root** of $\|x\|^2-\|Px\|^2$.
