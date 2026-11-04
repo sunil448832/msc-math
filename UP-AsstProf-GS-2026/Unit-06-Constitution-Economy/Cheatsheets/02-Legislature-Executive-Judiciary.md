@@ -50,7 +50,7 @@
 |---|---|---|
 | Article | 124 | 214 / 217 |
 | Retirement | 65 | 62 |
-| Strength | 34 (CJI + 33) | Fixed by President |
+| Strength | 38 (CJI + 37), since the 2026 Act | Fixed by President |
 | Writs | Art 32 (FRs only) | Art 226 (FRs + other purposes) |
 | Court of record | Art 129 | Art 215 |
 | Removal | By President after address by each House: special majority, for proved misbehaviour or incapacity | Same |

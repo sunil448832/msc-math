@@ -178,7 +178,7 @@ Which of the statements given above is/are correct?
 
 **Q6 — (D).** Chinese aggression (Oct 1962) → Indo-Pak war (Dec 1971) → internal disturbance (June 1975) → 44th Amendment (1978). *Also remember:* in June 1975 the 1971 emergency was still in force, so two emergencies ran at the same time.
 
-**Q7 — (A).** SC judges retire at 65 (Art 124); High Court judges at 62 (Art 217). *Also remember:* the sanctioned strength of the SC is 34 (CJI + 33) since the 2019 amendment of the Supreme Court (Number of Judges) Act.
+**Q7 — (A).** SC judges retire at 65 (Art 124); High Court judges at 62 (Art 217). *Also remember:* the sanctioned strength of the SC is 38 (CJI + 37), under the Supreme Court (Number of Judges) Amendment Act, 2026, deemed in force from 16 May 2026.
 
 **Q8 — (B).** It was set up in 1866 at **Agra** as the High Court for the North-Western Provinces and shifted to Allahabad in 1869. *Also remember:* its Lucknow Bench was set up in 1948 after the Oudh Chief Court was merged into it.
 
